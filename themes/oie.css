@@ -154,3 +154,31 @@
 [data-theme="oie"] .landing-shell__footer {
   display: none;
 }
+
+[data-theme="oie"] .landing-shell .landing-shell__skip {
+  color: var(--color-on-primary);
+}
+
+[data-theme="oie"] .landing-shell__icon-button,
+[data-theme="oie"] .landing-shell__nav-link {
+  min-block-size: 2.75rem;
+}
+
+[data-theme="oie"] .landing-shell__icon-button {
+  min-inline-size: 2.75rem;
+}
+
+[data-theme="oie"] .landing-shell__nav-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  [data-theme="oie"] .landing-shell__header-inner {
+    flex-flow: row wrap;
+    align-items: center;
+    gap: .5rem 1rem;
+    padding-block: .5rem;
+    min-block-size: 3.75rem;
+  }
+}

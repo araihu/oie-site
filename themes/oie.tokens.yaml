@@ -1,5 +1,5 @@
 schema: margo.theme.tokens/v1
-css_digest: sha256-03dd4a994547b50f9e17bdf294c5480c9bb7718ca3c04e1d5932f677e4844577
+css_digest: sha256-2a2992449d9154483946ab82539909b740f9ad669fa6c6382e4f5e55c92caa4f
 fonts: []
 minimum_text_size: 1rem
 touch_target:
