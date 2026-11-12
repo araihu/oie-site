@@ -1,0 +1,84 @@
+name: Publicar site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: oie-site-production
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+env:
+  GOWORK: 'off'
+  WRANGLER_VERSION: '4.114.0'
+  WRANGLER_SEND_METRICS: 'false'
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    environment:
+      name: production
+      url: https://oie.araihu.com
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version: '1.27.4'
+          cache: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+          package-manager-cache: false
+      - name: Gerar site com Margo
+        run: |
+          ./scripts/sync-theme.sh
+          go run github.com/araihu/margo/cmd/margo@v0.0.35 site site.yaml
+          test -s dist/index.html
+          test -s dist/baixar/index.html
+          cmp themes/oie.css dist/themes/oie.css
+      - name: Validar configuração do Worker
+        run: npx --yes "wrangler@${WRANGLER_VERSION}" deploy --dry-run
+      - name: Verificar se o commit ainda é o atual da main
+        id: main
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          head=$(gh api "repos/$GITHUB_REPOSITORY/git/ref/heads/main" --jq .object.sha)
+          if [[ "$head" == "$GITHUB_SHA" ]]; then
+            echo 'publish=true' >> "$GITHUB_OUTPUT"
+          fi
+      - name: Publicar no Cloudflare Workers
+        if: steps.main.outputs.publish == 'true'
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          : "${CLOUDFLARE_ACCOUNT_ID:?Configure a variável CLOUDFLARE_ACCOUNT_ID}"
+          : "${CLOUDFLARE_API_TOKEN:?Configure o secret CLOUDFLARE_API_TOKEN}"
+          npx --yes "wrangler@${WRANGLER_VERSION}" deploy
+      - name: Conferir site publicado
+        if: steps.main.outputs.publish == 'true'
+        run: |
+          for attempt in {1..24}; do
+            if curl --fail --silent --show-error --max-time 10 \
+              "https://oie.araihu.com/?commit=$GITHUB_SHA" -o "$RUNNER_TEMP/oie-home.html" &&
+              curl --fail --silent --show-error --max-time 10 \
+              "https://oie.araihu.com/baixar/?commit=$GITHUB_SHA" -o "$RUNNER_TEMP/oie-downloads.html" &&
+              curl --fail --silent --show-error --max-time 10 \
+              "https://oie.araihu.com/themes/oie.css?commit=$GITHUB_SHA" -o "$RUNNER_TEMP/oie-theme.css" &&
+              cmp -s dist/index.html "$RUNNER_TEMP/oie-home.html" &&
+              cmp -s dist/baixar/index.html "$RUNNER_TEMP/oie-downloads.html" &&
+              cmp -s dist/themes/oie.css "$RUNNER_TEMP/oie-theme.css"; then
+              exit 0
+            fi
+            sleep 5
+          done
+          echo 'O domínio ainda não serve os arquivos gerados neste deploy.' >&2
+          exit 1

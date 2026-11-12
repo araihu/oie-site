@@ -1,57 +1,6 @@
-/* Brand palette from araihu/oie docs/branding.md and the web app's theme tokens. */
-[data-theme="oie"] {
-  --font-body: ui-sans-serif, system-ui, sans-serif;
-  --font-title: var(--font-body);
-  --document-font-body: var(--font-body);
-  --document-font-heading: var(--font-title);
-  --radius-radius: .65rem;
-
-  --color-surface: #f7f8f7;
-  --color-surface-alt: #f0f2f1;
-  --color-on-surface: #17211c;
-  --color-on-surface-strong: #17211c;
-  --color-on-surface-muted: #4b5951;
-  --color-outline: #d7ddd9;
-  --color-outline-strong: #6b7871;
-  --color-primary: #6092ab;
-  --color-on-primary: #07111f;
-  --color-focus-ring: #274c5e;
-
-  --color-surface-dark: #1c1d1c;
-  --color-surface-dark-alt: #2b2c2b;
-  --color-on-surface-dark: #f3f4f3;
-  --color-on-surface-dark-strong: #f3f4f3;
-  --color-on-surface-dark-muted: #afb5b0;
-  --color-outline-dark: #383b38;
-  --color-outline-dark-strong: #858e88;
-  --color-primary-dark: #6092ab;
-  --color-on-primary-dark: #07111f;
-  --color-focus-ring-dark: #9ac3d8;
-
-  --margo-surface: var(--color-surface);
-  --margo-surface-alt: var(--color-surface-alt);
-  --margo-text: var(--color-on-surface);
-  --margo-text-strong: var(--color-on-surface-strong);
-  --margo-accent: #274c5e;
-  --margo-outline: var(--color-outline);
-  --margo-focus-ring: var(--color-focus-ring);
-  --margo-reading-measure: 68ch;
-  --oie-hero-panel: #e1eef5;
-  --oie-muted: var(--color-on-surface-muted);
-  --oie-control-outline: var(--color-outline-strong);
-}
-
 [data-theme="oie"].dark {
-  --margo-surface: var(--color-surface-dark);
-  --margo-surface-alt: var(--color-surface-dark-alt);
-  --margo-text: var(--color-on-surface-dark);
-  --margo-text-strong: var(--color-on-surface-dark-strong);
-  --margo-accent: #9ac3d8;
-  --margo-outline: var(--color-outline-dark);
-  --margo-focus-ring: var(--color-focus-ring-dark);
-  --oie-hero-panel: #203d4d;
   --oie-muted: var(--color-on-surface-dark-muted);
-  --oie-control-outline: var(--color-outline-dark-strong);
+  --oie-control-outline: var(--color-control-outline-dark);
 }
 
 /* The landing layout ships the header, hero slots, and accessible controls. */
@@ -85,7 +34,7 @@
 
 [data-theme="oie"] .margo-landing-hero__copy > ul a {
   justify-content: center;
-  border-color: var(--oie-control-outline);
+  border-color: var(--oie-control-outline, var(--color-control-outline));
   border-radius: var(--radius-radius);
   padding-inline: 1.1rem;
 }
@@ -107,7 +56,7 @@
   padding: clamp(1.5rem, 5vw, 3.75rem);
   margin-inline: 0;
   border-radius: 1.25rem;
-  background: var(--oie-hero-panel);
+  background: var(--oie-accent-soft);
 }
 
 [data-theme="oie"] .margo-landing-hero__visual img {
@@ -144,7 +93,7 @@
 }
 
 [data-theme="oie"] .margo-landing-media + p {
-  color: var(--oie-muted);
+  color: var(--oie-muted, var(--color-on-surface-muted));
 }
 
 [data-theme="oie"].dark .margo-landing-hero__visual img {

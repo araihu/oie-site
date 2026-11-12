@@ -1,1 +1,6 @@
 /dist/
+
+/themes/oie.css
+/themes/oie.tokens.yaml
+/.wrangler/
+/themes/.oie-theme.*/

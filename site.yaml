@@ -3,12 +3,11 @@ source: content
 output: dist
 assets: local
 offline: true
-base_path: /oie-site
 site:
   name: Oiê
   description: Um aplicativo de código aberto para suas conversas e salas no XMPP.
   repository_url: https://github.com/araihu/oie
-  base_url: https://araihu.github.io
+  base_url: https://oie.araihu.com
   logo: content/brand/favicon.svg
   logo_dark: content/brand/logo-dark.svg
   icon: content/brand/favicon.svg
@@ -33,3 +32,5 @@ themes:
   - name: oie
     css_url: themes/oie.css
     token_catalog: themes/oie.tokens.yaml
+custom_css:
+  - css_url: themes/site.css
