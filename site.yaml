@@ -1,0 +1,35 @@
+version: 1
+source: content
+output: dist
+assets: local
+offline: true
+base_path: /oie-site
+site:
+  name: Oiê
+  description: Um aplicativo de código aberto para suas conversas e salas no XMPP.
+  repository_url: https://github.com/araihu/oie
+  base_url: https://araihu.github.io
+  logo: content/brand/favicon.svg
+  logo_dark: content/brand/logo-dark.svg
+  icon: content/brand/favicon.svg
+  application_name: Oiê
+  theme_color: '#6092ab'
+  social_image:
+    path: content/brand/social.png
+    alt: Logotipo do Oiê, um balão de conversa azul com o rosto de uma lua.
+layout:
+  kind: landing
+  default:
+    shell: true
+    navigation: [baixar/index.md]
+locales:
+  default: pt-BR
+  supported: [pt-BR]
+theme:
+  name: oie
+  color_mode: system
+  allow_switch_theme: true
+themes:
+  - name: oie
+    css_url: themes/oie.css
+    token_catalog: themes/oie.tokens.yaml

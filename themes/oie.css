@@ -1,0 +1,156 @@
+/* Brand palette from araihu/oie docs/branding.md and the web app's theme tokens. */
+[data-theme="oie"] {
+  --font-body: ui-sans-serif, system-ui, sans-serif;
+  --font-title: var(--font-body);
+  --document-font-body: var(--font-body);
+  --document-font-heading: var(--font-title);
+  --radius-radius: .65rem;
+
+  --color-surface: #f7f8f7;
+  --color-surface-alt: #f0f2f1;
+  --color-on-surface: #17211c;
+  --color-on-surface-strong: #17211c;
+  --color-on-surface-muted: #4b5951;
+  --color-outline: #d7ddd9;
+  --color-outline-strong: #6b7871;
+  --color-primary: #6092ab;
+  --color-on-primary: #07111f;
+  --color-focus-ring: #274c5e;
+
+  --color-surface-dark: #1c1d1c;
+  --color-surface-dark-alt: #2b2c2b;
+  --color-on-surface-dark: #f3f4f3;
+  --color-on-surface-dark-strong: #f3f4f3;
+  --color-on-surface-dark-muted: #afb5b0;
+  --color-outline-dark: #383b38;
+  --color-outline-dark-strong: #858e88;
+  --color-primary-dark: #6092ab;
+  --color-on-primary-dark: #07111f;
+  --color-focus-ring-dark: #9ac3d8;
+
+  --margo-surface: var(--color-surface);
+  --margo-surface-alt: var(--color-surface-alt);
+  --margo-text: var(--color-on-surface);
+  --margo-text-strong: var(--color-on-surface-strong);
+  --margo-accent: #274c5e;
+  --margo-outline: var(--color-outline);
+  --margo-focus-ring: var(--color-focus-ring);
+  --margo-reading-measure: 68ch;
+  --oie-hero-panel: #e1eef5;
+  --oie-muted: var(--color-on-surface-muted);
+  --oie-control-outline: var(--color-outline-strong);
+}
+
+[data-theme="oie"].dark {
+  --margo-surface: var(--color-surface-dark);
+  --margo-surface-alt: var(--color-surface-dark-alt);
+  --margo-text: var(--color-on-surface-dark);
+  --margo-text-strong: var(--color-on-surface-dark-strong);
+  --margo-accent: #9ac3d8;
+  --margo-outline: var(--color-outline-dark);
+  --margo-focus-ring: var(--color-focus-ring-dark);
+  --oie-hero-panel: #203d4d;
+  --oie-muted: var(--color-on-surface-dark-muted);
+  --oie-control-outline: var(--color-outline-dark-strong);
+}
+
+/* The landing layout ships the header, hero slots, and accessible controls. */
+[data-theme="oie"] .margo-landing-hero,
+[data-theme="oie"] .margo-landing-section {
+  inline-size: min(100%, 70rem);
+  padding-inline: 0;
+}
+
+[data-theme="oie"] .margo-landing-hero {
+  gap: clamp(2rem, 6vw, 5rem);
+  padding-block: clamp(2.5rem, 7vw, 6.5rem);
+}
+
+[data-theme="oie"] .margo-landing-hero__copy h1 {
+  max-inline-size: 13ch;
+  font-size: clamp(2.6rem, 6vw, 5.25rem);
+  line-height: 1.02;
+  text-wrap: pretty;
+}
+
+[data-theme="oie"] .margo-landing-hero__copy > p {
+  max-inline-size: 47ch;
+}
+
+[data-theme="oie"] .margo-landing-hero__copy > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+
+[data-theme="oie"] .margo-landing-hero__copy > ul a {
+  justify-content: center;
+  border-color: var(--oie-control-outline);
+  border-radius: var(--radius-radius);
+  padding-inline: 1.1rem;
+}
+
+[data-theme="oie"] .margo-landing-hero__copy > ul li:first-child a {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+[data-theme="oie"] .landing-shell :is(a, button):focus-visible {
+  outline: 2px solid var(--margo-focus-ring);
+  outline-offset: 3px;
+}
+
+[data-theme="oie"] .margo-landing-hero__visual {
+  display: grid;
+  place-items: center;
+  min-block-size: clamp(11rem, 28vw, 24rem);
+  padding: clamp(1.5rem, 5vw, 3.75rem);
+  margin-inline: 0;
+  border-radius: 1.25rem;
+  background: var(--oie-hero-panel);
+}
+
+[data-theme="oie"] .margo-landing-hero__visual img {
+  aspect-ratio: auto;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+[data-theme="oie"] .margo-landing-article {
+  padding-block: 0 clamp(2rem, 6vw, 5rem);
+}
+
+[data-theme="oie"] .margo-landing-section {
+  border-block-start: 1px solid var(--margo-outline);
+  padding-block: clamp(1.75rem, 5vw, 3.5rem) 0;
+  margin-block-end: clamp(2rem, 5vw, 4rem);
+}
+
+[data-theme="oie"] .margo-landing-section > :is(h2, p, ul) {
+  margin-inline: 0 auto;
+}
+
+[data-theme="oie"] .margo-landing-section > .margo-landing-media {
+  max-inline-size: 100%;
+  margin-block: 1.5rem 0;
+}
+
+[data-theme="oie"] .margo-landing-section > .margo-landing-media > img {
+  inline-size: 100%;
+  border: 1px solid var(--margo-outline);
+  border-radius: var(--radius-radius);
+}
+
+[data-theme="oie"] .margo-landing-media + p {
+  color: var(--oie-muted);
+}
+
+[data-theme="oie"].dark .margo-landing-hero__visual img {
+  content: url("../content/brand/logo-dark.svg");
+}
+
+[data-theme="oie"] .landing-shell__footer {
+  display: none;
+}
