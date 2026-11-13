@@ -60,17 +60,17 @@ Os atalhos **Mídia**, **Links** e **Documentos** abrem o catálogo com o mesmo 
 
 ## Adicionar arquivos e localização
 
-A revisão de anexos ao colar ou arrastar arquivos está disponível em compilações de desenvolvimento que incluem essa mudança. O instalador publicado da v0.0.1-rc.8 é anterior a esse recurso.
+Este fluxo está disponível em compilações de desenvolvimento posteriores à v0.0.1-rc.8.
 
 Na conversa, abra **+** e escolha **Imagem**, **Arquivo** ou **Localização**. No navegador, também dá para colar uma imagem ou um arquivo no campo de mensagem ou arrastá-lo para a conversa.
 
-Em **Revisar anexos**, confira os arquivos, ajuste a legenda e remova o que precisar. **Adicionar ao rascunho** guarda a legenda e os anexos. **Cancelar** ou **Esc** mantém o rascunho anterior.
+Os arquivos aparecem no rascunho assim que você os adiciona. Escreva a legenda no próprio campo de mensagem. As prévias passam para a linha seguinte quando falta espaço. Para tirar um item do rascunho, use **Remover anexo** ao lado dele.
 
-![Janela Revisar anexos com uma imagem, um arquivo de texto, o campo Legenda e o botão Adicionar ao rascunho.](imagens/revisar-anexos.webp)
+![Rascunho com três anexos empilhados acima do campo de mensagem, que contém a legenda.](imagens/rascunho-anexos.webp)
 
-[Ver a captura da revisão de anexos no tamanho original](imagens/revisar-anexos.webp)
+[Ver a captura do rascunho no tamanho original](imagens/rascunho-anexos.webp)
 
-Em **Localização**, cole um link de mapa ou escolha **Usar localização atual**, quando disponível. Use **Adicionar ao rascunho** para incluir o link no texto da conversa.
+Em **Localização**, informe a latitude e a longitude ou escolha **Usar localização atual**, quando disponível. Use **Adicionar ao rascunho** para inserir as coordenadas no texto. Quem recebe pode copiá-las para o mapa de sua preferência.
 
 Quando o rascunho estiver pronto, use **Enviar mensagem** na conversa ou escolha **Agendar mensagem** no menu de envio.
 

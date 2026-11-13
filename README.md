@@ -29,7 +29,7 @@ A página **Baixar** aponta para os binários e para o código-fonte corresponde
 
 O manual, os atalhos, os exemplos do CLI e os guias de instalação e arquitetura foram revisados com a [main do aplicativo em 9929391](https://github.com/araihu/oie/tree/9929391579532045b61fcad8d8883f7e3a351215) e a [v0.0.1-rc.3](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.3). Ao atualizar, registre o SHA das páginas revisadas e confira as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
 
-A seção de revisão de anexos no manual foi conferida com a revisão de desenvolvimento do aplicativo `ad8aee5e416f54268b7a38db18293cb8610bdd22`, posterior à v0.0.1-rc.8.
+A seção de arquivos e localização do manual foi conferida com a revisão de desenvolvimento do aplicativo `34b40ec22d26c8b2b5a342bcade0b3f27ea89d5f`, posterior à v0.0.1-rc.8.
 
 A seção de atualização via APT no guia de instalação foi conferida com a [main do aplicativo em baae7e6](https://github.com/araihu/oie/tree/baae7e69541d4f32e999fa277238d34c9808e427) e com o pacote publicado da [v0.0.1-rc.7](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.7).
 
