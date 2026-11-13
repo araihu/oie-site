@@ -58,6 +58,22 @@ Os resultados destacam os termos encontrados e mostram a conta e a conversa de o
 
 Os atalhos **Mídia**, **Links** e **Documentos** abrem o catálogo com o mesmo texto de busca e as contas selecionadas. Para uma consulta rápida em todas as contas, use [Ctrl + K ou ⌘ + K](../atalhos/index.md#busca-geral). A consulta dessa janela é independente da busca da lista.
 
+## Enviar arquivos
+
+A revisão de anexos ao colar ou arrastar arquivos está disponível em compilações de desenvolvimento que incluem essa mudança. O instalador publicado da v0.0.1-rc.8 é anterior a esse recurso.
+
+Cole uma imagem ou um arquivo no campo de mensagem, arraste arquivos para a conversa ou use **Adicionar anexo**. Na janela **Revisar anexos**, confira os arquivos, ajuste a legenda e remova o que não quiser enviar.
+
+![Janela Revisar anexos com uma imagem, um arquivo de texto, o campo Legenda e as opções de rascunho ou envio.](imagens/revisar-anexos.webp)
+
+[Ver a captura da revisão de anexos no tamanho original](imagens/revisar-anexos.webp)
+
+- **Enviar mensagem** envia os arquivos selecionados junto com a legenda.
+- **Adicionar ao rascunho** guarda a legenda e os anexos na conversa. Use essa opção também se quiser agendar o envio.
+- **Cancelar** ou **Esc** fecha a revisão e mantém o rascunho que você já tinha.
+
+O Oiê aceita até 16 arquivos de 20 MiB por mensagem. O serviço XMPP pode impor um limite menor ou não oferecer envio de arquivos. Quem recebe a mensagem pode baixar os arquivos pelos links enviados junto com a legenda.
+
 ## Envio agendado
 
 Abra o menu junto ao botão de envio, escolha **Agendar mensagem** e confira a data, o horário e a mensagem. Em **Agendadas**, você pode editar, reagendar, cancelar ou pedir o envio imediato enquanto a mensagem ainda estiver aguardando o primeiro envio.
