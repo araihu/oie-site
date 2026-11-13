@@ -10,9 +10,13 @@ O `oiectl` acessa um motor do Oiê em execução. Os exemplos usam o CLI e o mot
 
 ## Instalar o CLI
 
-O `oiectl` tem releases próprias no GitHub com tags `cli/vX.Y.Z`. Escolha a release para Linux x86-64 ou macOS Apple Silicon, confira o arquivo com `SHA256SUMS` e coloque o executável extraído no `PATH`. As notas também trazem o comando `go install` com a versão exata. [GitHub Releases do Oiê](https://github.com/araihu/oie/releases)
+Na release `cli/v0.30.0`, baixe o pacote para Linux x86-64 ou macOS Apple Silicon, confira o arquivo com `SHA256SUMS` e coloque o executável extraído no `PATH`. As notas também trazem o comando `go install` com a versão exata. [Baixar o oiectl v0.30.0](https://github.com/araihu/oie/releases/tag/cli/v0.30.0)
 
-Rode `oiectl --version` para conferir a versão do CLI e a tag do contrato usado para gerá-lo. As duas versões compartilham os números de major e minor. O patch do CLI pode avançar por conta própria. Em versões anteriores do CLI, `--version` exibe apenas a versão do contrato.
+Rode `oiectl --version` para conferir a versão do CLI e a tag do contrato usado para gerá-lo.
+
+```text
+oiectl version v0.30.0 (spec openapi/engine/v0.30.0)
+```
 
 ## Compilar e conectar
 
