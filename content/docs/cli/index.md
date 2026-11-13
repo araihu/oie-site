@@ -6,36 +6,39 @@ language: pt-BR
 
 # CLI do Oiê
 
-O `oiectl` acessa um motor do Oiê em execução. Os exemplos abaixo usam a API em `http://127.0.0.1:8080`. A versão de `oiectl --version` identifica o contrato OpenAPI usado para gerar o CLI.
+O `oiectl` acessa um motor do Oiê em execução. Os exemplos usam o CLI e o motor da mesma revisão de desenvolvimento e uma instância local em `http://127.0.0.1:8080`. O comando `oiectl --version` mostra a versão do contrato OpenAPI usada para gerar o CLI.
 
 ## Compilar e conectar
 
-Com Go 1.27.3 ou mais recente, no checkout do [repositório do Oiê](https://github.com/araihu/oie), rode `make build-cli` para gerar `bin/oiectl`. Para iniciar um motor local independente da interface, compile também com `make build` e rode:
+Use Make e Go 1.27.4 ou mais recente para compilar e iniciar o Oiê a partir do [repositório do aplicativo](https://github.com/araihu/oie/tree/7ae805764c4d019d85eff7880617939955979527).
 
 ```sh
-bin/oie --role local --data-only --listen 127.0.0.1:8080 --data-dir ./data-cli
+make build build-cli
+bin/oie --role local --listen 127.0.0.1:8080 --data-dir ./data-cli
 ```
 
-Em outro terminal, no mesmo checkout:
+Em outro terminal, no mesmo checkout, confira a conexão com a API.
 
 ```sh
 export OIECTL_SERVER=http://127.0.0.1:8080
 bin/oiectl system health --output json
 bin/oiectl system engine --output json
-bin/oiectl accounts list --output json
 ```
 
-O diretório `./data-cli` começa com um perfil vazio. Para consultar conversas existentes, aponte o CLI para o motor que já contém essas conversas. Use `--server` para escolher outro motor em um único comando. Para comandos que recebem JSON, use `--body-stdin` ou `--body-file`. Use um arquivo privado ou stdin para dados com senha.
+Em um perfil novo, abra [a interface local](http://127.0.0.1:8080) no navegador. [Adicione e conecte sua conta XMPP](../manual/index.md#contas-xmpp). Em **Nova conversa**, informe outro endereço XMPP e selecione **Abrir conversa**. Ela aparecerá em `conversations list`.
+
+Para configurar uma instância sem navegador, inicie o motor com `--data-only` e siga o [exemplo de conexão e envio pela API](https://github.com/araihu/oie/blob/7ae805764c4d019d85eff7880617939955979527/README.md#connect-and-message-through-the-api). Para consultar um motor independente que já está em execução, ajuste `OIECTL_SERVER` ou use `--server` em um único comando. Para comandos que recebem JSON, use `--body-stdin` ou `--body-file`. Use um arquivo privado ou stdin para dados com senha.
 
 ## Consultar e enviar mensagens
 
 ```sh
+bin/oiectl accounts list --output json
 bin/oiectl conversations list --output json
 bin/oiectl messages search --q 'trilha' --output json
 bin/oiectl messages search --q 'trilha' --include-edit-history --output json
 ```
 
-Para enviar, substitua `CONVERSATION_UUID` pelo ID retornado em `conversations list` e `REQUEST_UUID` por um UUIDv7 novo para essa mensagem:
+Para enviar, substitua `CONVERSATION_UUID` pelo ID retornado em `conversations list` e `REQUEST_UUID` por um UUIDv7 novo para essa mensagem.
 
 ```sh
 printf '%s\n' '{"originalText":"Oiê! Tudo certo para sábado?"}' |
@@ -43,7 +46,13 @@ printf '%s\n' '{"originalText":"Oiê! Tudo certo para sábado?"}' |
     --idempotency-key REQUEST_UUID --body-stdin --output json
 ```
 
-A resposta confirma que o motor aceitou a mensagem. Consulte o estado do envio com `messages get`, usando o ID retornado. Se perder a resposta e precisar repetir a mesma solicitação, mantenha a chave e o corpo originais para evitar um envio duplicado.
+A resposta confirma que o motor aceitou a mensagem. Substitua `MESSAGE_UUID` pelo ID retornado no envio para acompanhar o estado.
+
+```sh
+bin/oiectl messages get --message-id MESSAGE_UUID --output json
+```
+
+Se perder a resposta e precisar repetir a mesma solicitação, mantenha a chave e o corpo originais para evitar um envio duplicado.
 
 ## Eventos e saída
 

@@ -4,20 +4,20 @@ Site do [Oiê](https://github.com/araihu/oie), gerado com [Margo](https://github
 
 ## Desenvolvimento
 
-Com Go 1.27.3 ou mais recente, sincronize o tema antes de iniciar o Margo:
+Com Go 1.27.3 ou mais recente, sincronize o tema e gere os arquivos estáticos:
 
 ```sh
 ./scripts/sync-theme.sh
-go run github.com/araihu/margo/cmd/margo@v0.0.35 serve .
+go run ./cmd/build-site
 ```
 
-Abra o endereço que o Margo imprimir. Para gerar os arquivos estáticos:
+O comando gera o site com Margo. O código em `cmd/build-site` adapta a busca e a cópia de código para pt-BR, sincroniza a seleção acessível da busca com a ordem dos resultados e inclui um sumário nas telas estreitas. Ao atualizar o Margo, confira esses controles no navegador. Para pré-visualizar a publicação com Python 3, sirva os arquivos gerados e abra `http://127.0.0.1:8080/`.
 
 ```sh
-go run github.com/araihu/margo/cmd/margo@v0.0.35 site site.yaml
+python3 -m http.server --bind 127.0.0.1 --directory dist 8080
 ```
 
-O Margo escreve em `dist/` e exige um destino que ainda não exista. Use `--output-dir` para gerar outra cópia.
+O comando escreve em `dist/` e exige um destino que ainda não exista. Use `--output-dir` para gerar outra cópia.
 
 Os links em `content/baixar/index.md` apontam para arquivos de uma versão específica. Ao atualizar a página, confira os nomes dos arquivos e as plataformas na publicação do Oiê.
 

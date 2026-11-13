@@ -147,3 +147,19 @@
   border: 1px solid var(--margo-outline);
   border-radius: var(--radius-radius);
 }
+
+[data-theme="oie"] .oie-mobile-toc {
+  margin-block: 1.25rem;
+}
+
+[data-theme="oie"] .oie-mobile-toc summary {
+  min-block-size: 2.75rem;
+  align-content: center;
+  cursor: pointer;
+}
+
+@media (min-width: 1280px) {
+  [data-theme="oie"] .oie-mobile-toc {
+    display: none;
+  }
+}

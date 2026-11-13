@@ -39,7 +39,7 @@ jobs:
       - name: Gerar site com Margo
         run: |
           ./scripts/sync-theme.sh
-          go run github.com/araihu/margo/cmd/margo@v0.0.35 site site.yaml
+          go run ./cmd/build-site
           test -s dist/index.html
           test -s dist/baixar/index.html
           cmp themes/oie.css dist/themes/oie.css

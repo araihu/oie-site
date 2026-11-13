@@ -11,4 +11,4 @@ language: pt-BR
 - [CLI](cli/index.md) — como compilar e usar o `oiectl`.
 - [OpenAPI do Oiê no catálogo da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/) — contrato da API do motor, gerado pelo Manja.
 
-Estas páginas acompanham a versão de desenvolvimento do Oiê. Para conferir o que vem no instalador atual, consulte as [notas do pré-lançamento](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.1).
+Estas páginas acompanham a versão de desenvolvimento do Oiê. O manual sinaliza recursos que chegaram depois do instalador atual, o [pré-lançamento v0.0.1-rc.1](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.1).
