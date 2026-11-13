@@ -6,7 +6,7 @@ language: pt-BR
 
 # CLI do Oiê
 
-O `oiectl` acessa um motor do Oiê em execução. Os exemplos usam o CLI e o motor da v0.0.1-rc.2 e uma instância local em `http://127.0.0.1:8080`.
+O `oiectl` acessa um motor do Oiê em execução. Os exemplos usam uma instância local em `http://127.0.0.1:8080` e o contrato OpenAPI 0.30.0, disponível no [Oiê v0.0.1-rc.3](../../baixar/index.md).
 
 ## Instalar o CLI
 
@@ -20,7 +20,7 @@ oiectl version v0.30.0 (spec openapi/engine/v0.30.0)
 
 ## Compilar e conectar
 
-Use Make e Go 1.27.4 ou mais recente para compilar e iniciar o Oiê a partir do [repositório do aplicativo](https://github.com/araihu/oie/tree/f4d08255b9d5c725718ffa099756fc409a9898d9).
+Use Make e Go 1.27.4 ou mais recente para compilar e iniciar o Oiê a partir do [código-fonte da v0.0.1-rc.3](https://github.com/araihu/oie/tree/abdac26090d1b8259ffcc5a2c7f9a46da0ada3aa).
 
 ```sh
 make build build-cli
@@ -37,7 +37,7 @@ bin/oiectl system engine --output json
 
 Em um perfil novo, abra [a interface local](http://127.0.0.1:8080) no navegador. [Adicione e conecte sua conta XMPP](../manual/index.md#contas-xmpp). Em **Nova conversa**, informe outro endereço XMPP e selecione **Abrir conversa**. Ela aparecerá em `conversations list`.
 
-Para configurar uma instância sem navegador, inicie o motor com `--data-only` e siga o [exemplo de conexão e envio pela API](https://github.com/araihu/oie/blob/f4d08255b9d5c725718ffa099756fc409a9898d9/README.md#connect-and-message-through-the-api). Para consultar um motor independente que já está em execução, ajuste `OIECTL_SERVER` ou use `--server` em um único comando. Para comandos que recebem JSON, use `--body-stdin` ou `--body-file`. Use um arquivo privado ou stdin para dados com senha.
+Para configurar uma instância sem navegador, inicie o motor com `--data-only` e siga o [exemplo de conexão e envio pela API](https://github.com/araihu/oie/blob/abdac26090d1b8259ffcc5a2c7f9a46da0ada3aa/README.md#connect-and-message-through-the-api). Para consultar um motor independente que já está em execução, ajuste `OIECTL_SERVER` ou use `--server` em um único comando. Para comandos que recebem JSON, use `--body-stdin` ou `--body-file`. Use um arquivo privado ou stdin para dados com senha.
 
 Veja [Arquitetura e deploy](../arquitetura/index.md#motor-hospedado) para hospedar um motor e acessá-lo por uma conexão privada.
 
@@ -93,4 +93,4 @@ Na retomada, use o ID do último evento que você processou por completo. Use `-
 | Ver arquivos e links de conversas | `shared content list` |
 | Retomar o fluxo de eventos | `events stream` |
 
-Acrescente `--help` ao grupo ou comando para ver as opções da sua versão, por exemplo `bin/oiectl messages send --help`. Consulte a [OpenAPI do Oiê no Manja](https://oapi.araihu.com/catalogs/oie/documents/engine-next/) para conferir operações, campos e respostas.
+Acrescente `--help` ao grupo ou comando para ver as opções da sua versão, por exemplo `bin/oiectl messages send --help`. Consulte o [contrato OpenAPI 0.30.0 no Manja](https://oapi.araihu.com/catalogs/oie/documents/engine-v0.30.0/) para conferir as operações, os campos e as respostas usados nestes exemplos.

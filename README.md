@@ -27,7 +27,7 @@ Ao atualizar **Baixar**, confira também os comandos e requisitos do [guia de in
 
 A página **Baixar** aponta para os binários e para o código-fonte correspondente da [revisão da v0.0.1-rc.3](https://github.com/araihu/oie/tree/abdac26090d1b8259ffcc5a2c7f9a46da0ada3aa).
 
-O manual, os atalhos e os exemplos do CLI foram conferidos com a [revisão da v0.0.1-rc.2](https://github.com/araihu/oie/tree/f4d08255b9d5c725718ffa099756fc409a9898d9). A página de arquitetura e deploy foi conferida com a [revisão 883551a](https://github.com/araihu/oie/tree/883551afe9f4f9a4ef2c27b1fc34c87fd4fd1a2f). Ao atualizar, registre o SHA das páginas revisadas e confira as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
+O manual, os atalhos, os exemplos do CLI e os guias de instalação e arquitetura foram revisados com a [main do aplicativo em 9929391](https://github.com/araihu/oie/tree/9929391579532045b61fcad8d8883f7e3a351215) e a [v0.0.1-rc.3](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.3). Ao atualizar, registre o SHA das páginas revisadas e confira as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
 
 A instalação do `oiectl` por release independente foi conferida com a [release cli/v0.30.0](https://github.com/araihu/oie/releases/tag/cli/v0.30.0), gerada a partir do [contrato no commit 713234d](https://github.com/araihu/oie/tree/713234d523519e7ec01bbdebddb41a0166654a51/api).
 

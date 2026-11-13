@@ -37,9 +37,7 @@ Em **Configurações → Este dispositivo**, use **Idiomas dos atalhos de emoji*
 
 ## Busca na conversa
 
-Na conversa, abra **Mais opções** e selecione **Pesquisar mensagens**. Com o foco no campo de busca, **Enter** vai para o resultado mais antigo seguinte, **Shift + Enter** volta para um resultado mais recente e **Esc** fecha a busca.
-
-Na versão de desenvolvimento, **↓** também vai para o resultado mais antigo seguinte e **↑** volta para um resultado mais recente.
+Na conversa, abra **Mais opções** e selecione **Pesquisar mensagens**. Com o foco no campo de busca, **Enter** ou **↓** vai para o próximo resultado mais antigo. **Shift + Enter** ou **↑** volta para um resultado mais recente. **Esc** fecha a busca.
 
 ## Barra lateral
 

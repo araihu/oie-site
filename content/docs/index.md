@@ -6,10 +6,10 @@ language: pt-BR
 
 # Documentação do Oiê
 
-- [Instalação](instalacao/index.md) — como instalar, abrir e atualizar o Oiê no macOS e no Ubuntu.
+- [Instalação](instalacao/index.md) — pacotes para macOS e Linux, instalação com APT e execução com Docker.
 - [Manual](manual/index.md) — contas XMPP, solicitações, convites, busca e envio agendado.
 - [Atalhos](atalhos/index.md) — edição, menções, emoji, busca e navegação por teclado.
-- [CLI](cli/index.md) — como compilar e usar o `oiectl`.
+- [CLI](cli/index.md) — como instalar, compilar e usar o `oiectl`.
 - [Arquitetura e deploy](arquitetura/index.md) — como rodar o Oiê no computador ou hospedar o motor em um servidor.
 - [OpenAPI do Oiê no catálogo da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/) — contrato da API do motor, gerado pelo Manja.
 
