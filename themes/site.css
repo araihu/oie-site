@@ -151,6 +151,12 @@
   color: var(--margo-accent);
 }
 
+/* Keep the site links at their natural height above the docs navigation. */
+[data-theme="oie"] .component-doc-shell__sidebar-content > .component-doc-shell__global-navigation--drawer {
+  flex: none;
+  border-color: var(--margo-outline);
+}
+
 [data-theme="oie"] .margo-document img[src*="/imagens/"],
 [data-theme="oie"] .margo-document img[src^="imagens/"] {
   display: block;
