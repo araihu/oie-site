@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.7](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.8](../../baixar/index.md).
 
 ## Contas XMPP
 
