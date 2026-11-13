@@ -40,7 +40,7 @@ O pacote tem assinatura ad hoc. Se o macOS bloquear a abertura, tente abrir o Oi
 
 ## Compilar a partir do código-fonte
 
-Use Go 1.27.4 ou mais recente e compile no sistema e na arquitetura em que pretende usar o aplicativo. Nos exemplos, substitua `v0.0.1-rc.2` pela versão que você escolheu na página [Baixar](../../baixar/index.md). O comando instala o executável em `~/.local/bin`.
+Use Go 1.27.4 ou mais recente e compile no sistema e na arquitetura em que pretende usar o aplicativo. Nos exemplos, substitua `v0.0.1-rc.3` pela versão que você escolheu na página [Baixar](../../baixar/index.md). O comando instala o executável em `~/.local/bin`.
 
 ### Ubuntu 24.04 x86-64
 
@@ -57,7 +57,7 @@ pkg-config --modversion gtk4 webkitgtk-6.0 libsoup-3.0 gio-unix-2.0
 mkdir -p "$HOME/.local/bin"
 GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
   GONOPROXY=github.com/araihu/oie \
-  go install -tags production github.com/araihu/oie/cmd/oie-desktop@v0.0.1-rc.2
+  go install -tags production github.com/araihu/oie/cmd/oie-desktop@v0.0.1-rc.3
 ```
 
 ### macOS com Apple Silicon
@@ -72,7 +72,7 @@ GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
   CGO_CFLAGS="-O2 -g -mmacosx-version-min=13.0" \
   CGO_LDFLAGS="-O2 -g -mmacosx-version-min=13.0" \
   go install -tags production -ldflags='-extldflags=-mmacosx-version-min=13.0' \
-  github.com/araihu/oie/cmd/oie-desktop@v0.0.1-rc.2
+  github.com/araihu/oie/cmd/oie-desktop@v0.0.1-rc.3
 ```
 
 Os parâmetros de compilação e linkedição mantêm o mesmo alvo. Consulte o [escopo verificado no guia do repositório](https://github.com/araihu/oie/blob/f9c6a01625232e7132a358b27372759144588258/docs/installation.md#platforms-and-verified-scope) para as versões de sistema testadas.
