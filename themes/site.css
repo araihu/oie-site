@@ -148,6 +148,46 @@
   border-radius: var(--radius-radius);
 }
 
+/* Mermaid's SVG has its own palette. Use the Oiê theme for flowcharts. */
+[data-theme="oie"] .margo-mermaid svg.flowchart {
+  --oie-diagram-fill: var(--oie-accent-soft);
+  --oie-diagram-text: var(--margo-text-strong);
+  --oie-diagram-line: var(--margo-accent);
+}
+
+[data-theme="oie"] .margo-mermaid svg.flowchart .node > .label-container {
+  fill: var(--oie-diagram-fill) !important;
+  stroke: var(--oie-diagram-line) !important;
+}
+
+[data-theme="oie"] .margo-mermaid svg.flowchart .node .label text {
+  fill: var(--oie-diagram-text) !important;
+}
+
+[data-theme="oie"] .margo-mermaid svg.flowchart :is(.flowchart-link, .arrowMarkerPath) {
+  stroke: var(--oie-diagram-line) !important;
+}
+
+[data-theme="oie"] .margo-mermaid svg.flowchart .flowchart-link {
+  stroke-width: 1.5px !important;
+}
+
+[data-theme="oie"] .margo-mermaid svg.flowchart .arrowMarkerPath {
+  fill: var(--oie-diagram-line) !important;
+}
+
+@media print {
+  [data-theme="oie"] .margo-document .margo-mermaid:has(svg.flowchart) {
+    background: var(--color-surface);
+  }
+
+  [data-theme="oie"] .margo-mermaid svg.flowchart {
+    --oie-diagram-fill: var(--color-surface-alt);
+    --oie-diagram-text: var(--color-on-surface-strong);
+    --oie-diagram-line: var(--color-focus-ring);
+  }
+}
+
 [data-theme="oie"] .oie-mobile-toc {
   margin-block: 1.25rem;
 }
