@@ -2,6 +2,8 @@
 title: Atalhos
 description: Abra a busca geral com Ctrl + K ou ⌘ + K e use o teclado para percorrer mensagens, menções e sugestões de emoji.
 language: pt-BR
+margo:
+  imageViewer: true
 ---
 
 # Atalhos do Oiê
@@ -20,13 +22,9 @@ language: pt-BR
 
 Em **Configurações → Este dispositivo**, use **Idiomas dos atalhos de emoji** para escolher os idiomas das sugestões. Por padrão, o Oiê aceita nomes em português e inglês.
 
-![Ao digitar @an no campo de mensagem de uma sala, aparecem as sugestões Ana e André.](imagens/mencoes.webp)
+![Ao digitar @an no campo de mensagem de uma sala, aparecem as sugestões Ana e André.](imagens/mencoes.webp "Sugestões de menção em uma sala")
 
-[Ampliar captura das sugestões de menção](imagens/mencoes.webp)
-
-![Ao digitar :joinha no campo de mensagem, aparece a sugestão do emoji de polegar para cima.](imagens/atalho-de-emoji.webp)
-
-[Ampliar captura da sugestão de emoji](imagens/atalho-de-emoji.webp)
+![Ao digitar :joinha no campo de mensagem, aparece a sugestão do emoji de polegar para cima.](imagens/atalho-de-emoji.webp "Sugestão de emoji no campo de mensagem")
 
 ## Busca geral
 
