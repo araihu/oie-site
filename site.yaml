@@ -8,7 +8,7 @@ site:
   description: Um aplicativo de código aberto para suas conversas e salas no XMPP.
   repository_url: https://github.com/araihu/oie
   base_url: https://oie.araihu.com
-  logo: content/brand/favicon.svg
+  logo: content/brand/logo.svg
   logo_dark: content/brand/logo-dark.svg
   hide_name: true
   icon: content/brand/favicon.svg
