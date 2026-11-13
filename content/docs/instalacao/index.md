@@ -37,6 +37,31 @@ Ubuntu 24.04 LTS, em ambientes x86-64 emulados, com o repositório já cadastrad
 
 Para remover o aplicativo e manter seu perfil, execute `sudo apt remove oie`.
 
+## Instalar com Flatpak
+
+No Linux x86-64, baixe o arquivo `.flatpak` dos [arquivos da versão v0.0.1-rc.8](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.8). Se ainda não tiver o Flathub cadastrado, adicione-o para obter o runtime do GNOME.
+
+```sh
+flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak install --user ./oie-v0.0.1-rc.8-x86_64.flatpak
+```
+
+Abra o Oiê pelo menu de aplicativos ou execute `flatpak run org.araihu.oie` para essa versão.
+
+### Migrar para `com.araihu.oie`
+
+O novo identificador estará nos pacotes gerados depois da `rc.8`. Ao instalar um pacote com `com.araihu.oie`, feche as duas cópias do Oiê. Antes de abrir a nova, copie o perfil completo se o destino ainda estiver vazio.
+
+```sh
+perfil_antigo="$HOME/.var/app/org.araihu.oie/data/oie"
+dados_novos="$HOME/.var/app/com.araihu.oie/data"
+if [ -d "$perfil_antigo" ] && [ ! -e "$dados_novos/oie" ]; then
+  mkdir -p "$dados_novos" && cp -a "$perfil_antigo" "$dados_novos/oie"
+fi
+```
+
+Abra o novo pacote com `flatpak run com.araihu.oie` e confira o perfil antes de remover a instalação antiga.
+
 ## Instalar com Homebrew
 
 No **macOS com Apple Silicon**, instale o aplicativo pelo [tap da Arai Hû](https://github.com/araihu/homebrew-oie).
