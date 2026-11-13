@@ -62,7 +62,7 @@ Os atalhos **Mídia**, **Links** e **Documentos** abrem o catálogo com o mesmo 
 
 A revisão de anexos ao colar ou arrastar arquivos está disponível em compilações de desenvolvimento que incluem essa mudança. O instalador publicado da v0.0.1-rc.8 é anterior a esse recurso.
 
-Cole uma imagem ou um arquivo no campo de mensagem, arraste arquivos para a conversa ou use **Adicionar anexo**. Na janela **Revisar anexos**, confira os arquivos, ajuste a legenda e remova o que não quiser enviar.
+No navegador, cole uma imagem ou um arquivo no campo de mensagem ou arraste arquivos para a conversa. Você também pode selecionar os arquivos em **Adicionar anexo**. Na janela **Revisar anexos**, confira os arquivos, ajuste a legenda e remova o que não quiser enviar.
 
 ![Janela Revisar anexos com uma imagem, um arquivo de texto, o campo Legenda e as opções de rascunho ou envio.](imagens/revisar-anexos.webp)
 
