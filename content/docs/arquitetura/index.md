@@ -1,6 +1,6 @@
 ---
 title: Arquitetura e deploy
-description: Como executar o Oiê no modo local ou hospedado (hosted) e separar a interface web da API.
+description: Como rodar o Oiê com Docker, usar o modo local ou hospedado e separar a interface web da API.
 language: pt-BR
 ---
 
@@ -36,6 +36,21 @@ bin/oie --role local --listen 127.0.0.1:8080 --data-dir ./data
 ```
 
 Abra [127.0.0.1:8080](http://127.0.0.1:8080) e [conecte sua conta XMPP](../manual/index.md#contas-xmpp). O processo continua ativo quando você fecha a aba. Para automação, use o [guia do CLI](../cli/index.md#compilar-e-conectar).
+
+## Docker
+
+A [imagem de desenvolvimento do Oiê](https://github.com/araihu/oie/pkgs/container/oie) roda o motor e a interface web em Linux amd64 e arm64. Essa opção chegou depois do instalador v0.0.1-rc.1.
+
+```sh
+docker run -d --name oie \
+  --publish 127.0.0.1:8080:8080 \
+  --volume oie-data:/data \
+  ghcr.io/araihu/oie:main
+```
+
+Abra [127.0.0.1:8080](http://127.0.0.1:8080) e [conecte sua conta XMPP](../manual/index.md#contas-xmpp). O volume `oie-data` guarda as contas, o histórico e os arquivos de mídia. Para atualizar, baixe a imagem com `docker pull ghcr.io/araihu/oie:main` e recrie o contêiner com o mesmo volume. Se o pacote for privado, [autentique-se no GHCR](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry) antes de baixar.
+
+Mantenha a porta em localhost. Para acessar o Oiê de outro computador, use o túnel SSH descrito em [Motor hospedado](#motor-hospedado). A geração de miniaturas de vídeo está indisponível nessa imagem, que vem sem FFmpeg.
 
 ## Motor hospedado
 

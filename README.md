@@ -27,6 +27,8 @@ O manual, os atalhos e os exemplos do CLI foram conferidos com a [main do aplica
 
 As capturas no manual e nos atalhos mostram a interface em pt-BR com dados fictícios em instâncias isoladas. As capturas da busca geral e da solicitação de mensagem são de `6c8e8c0`. As demais foram conferidas em `7ae8057`. Os recortes estão em WebP, ao lado da página que os usa.
 
+A seção Docker da página de arquitetura descreve a [CI da imagem em 01074ee](https://github.com/araihu/oie/commit/01074ee129a36106a6470ffa84940c6c980c1552).
+
 ## Publicação
 
 O GitHub Actions roda a cada push em `main`, gera os arquivos do Margo e publica `dist/` no Cloudflare Workers com Wrangler. O domínio do Worker é [oie.araihu.com](https://oie.araihu.com/). O pipeline confere as URLs canônicas das páginas e compara o manifesto do Margo e o CSS publicado com os arquivos gerados. Ele usa o secret organizacional `CLOUDFLARE_API_TOKEN` e a variável do repositório `CLOUDFLARE_ACCOUNT_ID`.
