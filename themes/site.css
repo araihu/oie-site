@@ -157,6 +157,11 @@
   border-color: var(--margo-outline);
 }
 
+/* The docs navigation already links to /docs/ as Visão geral. */
+[data-theme="oie"] .component-doc-shell__global-navigation--drawer > a[href="/docs/"] {
+  display: none;
+}
+
 [data-theme="oie"] .margo-document img[src*="/imagens/"],
 [data-theme="oie"] .margo-document img[src^="imagens/"] {
   display: block;
