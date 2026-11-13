@@ -43,11 +43,11 @@ A prévia pode mostrar nome, descrição, assunto, foto e número de participant
 Estas opções estão em desenvolvimento para uma versão posterior à v0.0.1-rc.8 disponível em **Baixar**.
 
 - Em **Nova conversa → Entrar na sala**, abra **Explorar salas públicas** e selecione uma sala para preencher o endereço e ver a prévia. Se a sala exigir senha, informe-a antes de entrar.
-- Dentro da sala, use **Mais opções → Gerenciar sala** para editar o nome e o tópico em um formulário. Os campos dependem das permissões da conta na sala. Use **Mais opções → Convidar pessoas** para enviar um convite.
-- Abra o nome de um participante para alterar sua função ou removê-lo. Em **Acesso à sala**, quem administra pode conceder ou retirar acesso, banir e consultar as listas que o serviço disponibiliza.
+- Dentro da sala, use **Mais opções → Gerenciar sala** A aba **Detalhes** mostra a imagem da sala e reúne o nome e o tópico, que aceita várias linhas. Os campos são editáveis conforme as permissões da conta na sala. Use **Mais opções → Convidar pessoas** para enviar um convite.
+- Na aba **Participantes**, abra o nome de uma pessoa para alterar a função ou remover a pessoa da sala. Em **Acesso à sala**, quem administra pode conceder ou retirar acesso, banir e consultar as listas que o serviço disponibiliza.
 - Quando a sala oferece moderação de mensagens, moderadores podem usar **Remover mensagem** no menu da mensagem. A remoção aparece na conversa após a confirmação da sala.
 
-![Painel Gerenciar sala com um formulário de nome e tópico e a lista de participantes.](imagens/gerenciar-sala.webp "Painel Gerenciar sala")
+![Aba Detalhes de Gerenciar sala com a imagem da sala e os campos de nome e tópico.](imagens/gerenciar-sala.webp "Aba Detalhes de Gerenciar sala")
 
 [Ver a captura completa](imagens/gerenciar-sala-original.webp)
 
