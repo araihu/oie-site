@@ -58,6 +58,18 @@ Os resultados destacam os termos encontrados e mostram a conta e a conversa de o
 
 Os atalhos **Mídia**, **Links** e **Documentos** abrem o catálogo com o mesmo texto de busca e as contas selecionadas. Para uma consulta rápida em todas as contas, use [Ctrl + K ou ⌘ + K](../atalhos/index.md#busca-geral). A consulta dessa janela é independente da busca da lista.
 
+## Mensagens favoritas
+
+No menu da mensagem, escolha **Marcar mensagem com estrela**. Abra **Favoritas** na barra lateral para ver as mensagens marcadas em conversas diretas e salas, inclusive nas arquivadas. A lista segue a conta selecionada. Use **Todas as contas** no seletor para reunir as mensagens de todas elas.
+
+Em cada resultado, use **Ir para a mensagem** para voltar à conversa de origem. Selecione a estrela para remover a mensagem da lista.
+
+![Seção Favoritas com mensagens das contas Pessoal e Trabalho, cada uma com uma estrela e o link Ir para a mensagem.](imagens/mensagens-favoritas.webp "Mensagens favoritas")
+
+[Ver a captura de Favoritas no tamanho original](imagens/mensagens-favoritas-original.webp)
+
+A seção **Favoritas** da barra lateral está disponível na prévia de desenvolvimento posterior à v0.0.1-rc.8.
+
 ## Envio agendado
 
 Abra o menu junto ao botão de envio, escolha **Agendar mensagem** e confira a data, o horário e a mensagem. Em **Agendadas**, você pode editar, reagendar, cancelar ou pedir o envio imediato enquanto a mensagem ainda estiver aguardando o primeiro envio.
