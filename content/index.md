@@ -16,7 +16,7 @@ Conecte as contas que você já usa, retome conversas pelo histórico e guarde a
 
 ## Uma olhada no Oiê
 
-![Janela do Oiê com a lista de conversas e a sala Casa aberta, com mensagens de exemplo sobre uma trilha no sábado](brand/conversa.webp)
+![Interface do Oiê com a lista de conversas, a sala Trilhas de sábado aberta e o campo de mensagem](brand/conversa.webp)
 
 *Interface do Oiê com uma conversa de exemplo.*
 
