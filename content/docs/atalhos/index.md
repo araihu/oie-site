@@ -28,8 +28,6 @@ Em **Configurações → Este dispositivo**, use **Idiomas dos atalhos de emoji*
 
 ## Busca geral
 
-Estes atalhos chegaram depois do [instalador v0.0.1-rc.1](../../baixar/index.md).
-
 | Tecla | Ação |
 | --- | --- |
 | **⌘ + K** no macOS ou **Ctrl + K** no Linux | Abre uma janela de busca em todas as contas, quando não há outra janela do Oiê aberta sobre a conversa. |
