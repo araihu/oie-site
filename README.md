@@ -29,6 +29,8 @@ A página **Baixar** aponta para os binários e para o código-fonte corresponde
 
 O manual, os atalhos, os exemplos do CLI e os guias de instalação e arquitetura foram revisados com a [main do aplicativo em 9929391](https://github.com/araihu/oie/tree/9929391579532045b61fcad8d8883f7e3a351215) e a [v0.0.1-rc.3](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.3). Ao atualizar, registre o SHA das páginas revisadas e confira as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
 
+A seção de descoberta e gerenciamento de salas acompanha a implementação baseada na [main do aplicativo em b246ead](https://github.com/araihu/oie/tree/b246ead0ef3daeecbfd2d07d394be23a4155bd0c). O manual marca esses fluxos como posteriores ao instalador da rc.8.
+
 A seção de atualização via APT no guia de instalação foi conferida com a [main do aplicativo em baae7e6](https://github.com/araihu/oie/tree/baae7e69541d4f32e999fa277238d34c9808e427) e com o pacote publicado da [v0.0.1-rc.7](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.7).
 
 A migração do perfil Flatpak para `com.araihu.oie` foi documentada a partir da [revisão 16dd0c2 do aplicativo](https://github.com/araihu/oie/tree/16dd0c22001197d547e946c04ddd43999e98364f). O bundle da rc.8 usa `org.araihu.oie`.

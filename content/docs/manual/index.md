@@ -38,6 +38,19 @@ A prévia pode mostrar nome, descrição, assunto, foto e número de participant
 
 ![Cartão de convite para a sala Trilhas de sábado com endereço, descrição e o link Ver sala.](imagens/convite-de-sala.webp "Cartão de convite para uma sala")
 
+### Descobrir e gerenciar salas
+
+Estas opções estão em desenvolvimento para uma versão posterior à v0.0.1-rc.8 disponível em **Baixar**.
+
+- Em **Nova conversa → Entrar na sala**, abra **Explorar salas públicas** e selecione uma sala para preencher o endereço e ver a prévia. Se a sala exigir senha, informe-a antes de entrar.
+- Dentro da sala, use **Mais → Gerenciar sala** para alterar o nome ou o tópico e enviar convites. As opções dependem das permissões da conta na sala.
+- Abra o nome de um participante para alterar sua função ou removê-lo. Em **Acesso à sala**, quem administra pode conceder ou retirar acesso, banir e consultar as listas que o serviço disponibiliza.
+- Quando a sala oferece moderação de mensagens, moderadores podem usar **Remover mensagem** no menu da mensagem. A remoção aparece na conversa após a confirmação da sala.
+
+![Painel Gerenciar sala com os campos de nome, tópico e endereço para convite.](imagens/gerenciar-sala.webp "Painel Gerenciar sala")
+
+[Ver a captura completa](imagens/gerenciar-sala-original.webp)
+
 ## Histórico e busca em salas
 
 Em **Detalhes da conversa**, use **Baixar histórico antigo automaticamente** para escolher como o Oiê recupera o histórico daquela sala. Com a opção ligada, ele baixa mensagens antigas aos poucos. Com a opção desligada, pode buscá-las quando você usa **Mensagens anteriores** no topo da conversa ou faz uma busca, conforme o servidor permitir.

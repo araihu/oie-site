@@ -93,4 +93,6 @@ Na retomada, use o ID do último evento que você processou por completo. Use `-
 | Ver arquivos e links de conversas | `shared content list` |
 | Retomar o fluxo de eventos | `events stream` |
 
+Em desenvolvimento após o contrato 0.30.1, `conversations discover-rooms` lista salas públicas, `conversations get-room-management` consulta as ações disponíveis e `conversations manage-room` envia a ação escolhida. A consulta fornece a revisão usada na ação seguinte. Veja o [contrato em desenvolvimento](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
+
 Acrescente `--help` ao grupo ou comando para ver as opções da sua versão, por exemplo `bin/oiectl messages send --help`. Consulte o [contrato OpenAPI 0.30.1 no Manja](https://oapi.araihu.com/catalogs/oie/documents/engine-v0.30.1/) para conferir as operações, os campos e as respostas usados nestes exemplos.
