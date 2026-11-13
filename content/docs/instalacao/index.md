@@ -1,12 +1,12 @@
 ---
 title: Instalação
-description: Instale o Oiê com Homebrew, APT ou o instalador, rode com Docker ou compile a partir do código-fonte.
+description: Instale o Oiê com Homebrew, APT, Flatpak ou o instalador, rode com Docker ou compile a partir do código-fonte.
 language: pt-BR
 ---
 
 # Instalação do Oiê
 
-Os pacotes do Oiê estão disponíveis para **macOS com Apple Silicon** e **Ubuntu 24.04 x86-64**. O repositório APT atende também ao **Trisquel 12 x86-64**. Para começar a conversar, tenha uma conta XMPP e siga o [passo a passo do manual](../manual/index.md#contas-xmpp) depois de abrir o aplicativo.
+Os pacotes do Oiê estão disponíveis para **macOS com Apple Silicon** e **Ubuntu 24.04 x86-64**. O repositório APT atende também ao **Trisquel 12 x86-64**, e o bundle Flatpak roda no **Linux x86-64**. Para começar a conversar, tenha uma conta XMPP e siga o [passo a passo do manual](../manual/index.md#contas-xmpp) depois de abrir o aplicativo.
 
 
 ## Instalar com APT
@@ -39,28 +39,32 @@ Para remover o aplicativo e manter seu perfil, execute `sudo apt remove oie`.
 
 ## Instalar com Flatpak
 
-No Linux x86-64, baixe o arquivo `.flatpak` dos [arquivos da versão v0.0.1-rc.8](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.8). Se ainda não tiver o Flathub cadastrado, adicione-o para obter o runtime do GNOME.
+No Linux x86-64, baixe o [bundle Flatpak da v0.0.1-rc.9](https://github.com/araihu/oie/releases/download/v0.0.1-rc.9/oie-v0.0.1-rc.9-x86_64.flatpak). Adicione o Flathub se ainda não estiver cadastrado, para que o Flatpak possa baixar o runtime GNOME 51. Execute os comandos na pasta onde salvou o arquivo.
 
 ```sh
 flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak install --user ./oie-v0.0.1-rc.8-x86_64.flatpak
+flatpak install --user ./oie-v0.0.1-rc.9-x86_64.flatpak
 ```
 
-Abra o Oiê pelo menu de aplicativos ou execute `flatpak run org.araihu.oie` para essa versão.
+Se você já usava o Flatpak da `rc.8` ou anterior, [migre seu perfil](#migrar-para-comaraihuoie) antes de abrir o novo Oiê. Depois, abra o aplicativo pelo menu ou execute `flatpak run com.araihu.oie`.
 
 ### Migrar para `com.araihu.oie`
 
-O novo identificador estará nos pacotes gerados depois da `rc.8`. Ao instalar um pacote com `com.araihu.oie`, feche as duas cópias do Oiê. Antes de abrir a nova, copie o perfil completo se o destino ainda estiver vazio.
+Até a `rc.8`, o Flatpak usava o identificador `org.araihu.oie`. Para manter suas contas, histórico e mídia, encerre qualquer instância do Oiê em execução com **Ctrl + Q**. Após instalar a `rc.9` e antes de abri-la pela primeira vez, copie o perfil completo. O comando só copia quando a pasta do perfil novo ainda não existe.
 
 ```sh
 perfil_antigo="$HOME/.var/app/org.araihu.oie/data/oie"
 dados_novos="$HOME/.var/app/com.araihu.oie/data"
-if [ -d "$perfil_antigo" ] && [ ! -e "$dados_novos/oie" ]; then
+if [ ! -d "$perfil_antigo" ]; then
+  printf '%s\n' 'Perfil do Flatpak antigo não encontrado.'
+elif [ -e "$dados_novos/oie" ]; then
+  printf '%s\n' 'Já existe um perfil na nova instalação.'
+else
   mkdir -p "$dados_novos" && cp -a "$perfil_antigo" "$dados_novos/oie"
 fi
 ```
 
-Abra o novo pacote com `flatpak run com.araihu.oie` e confira o perfil antes de remover a instalação antiga.
+Abra o novo pacote com `flatpak run com.araihu.oie` e confira suas contas e seu histórico antes de remover a instalação antiga. Se já existe um perfil na nova instalação, encerre o Oiê e mova `~/.var/app/com.araihu.oie/data/oie` para um local de backup antes de repetir a cópia. Essa cópia usa o perfil antigo completo. Guarde o backup para preservar os dados criados na nova instalação.
 
 ## Instalar com Homebrew
 
@@ -116,7 +120,7 @@ O pacote tem assinatura ad hoc. Se o macOS bloquear a abertura, tente abrir o Oi
 
 ## Compilar a partir do código-fonte
 
-Use Go 1.27.4 ou mais recente e compile no sistema e na arquitetura em que pretende usar o aplicativo. Nos exemplos, substitua `v0.0.1-rc.8` pela versão que você escolheu na página [Baixar](../../baixar/index.md). O comando instala o executável em `~/.local/bin`.
+Use Go 1.27.4 ou mais recente e compile no sistema e na arquitetura em que pretende usar o aplicativo. Nos exemplos, substitua `v0.0.1-rc.9` pela versão que você escolheu na página [Baixar](../../baixar/index.md). O comando instala o executável em `~/.local/bin`.
 
 ### Ubuntu 24.04 x86-64
 
@@ -133,7 +137,7 @@ pkg-config --modversion gtk4 webkitgtk-6.0 libsoup-3.0 gio-unix-2.0
 mkdir -p "$HOME/.local/bin"
 GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
   GONOPROXY=github.com/araihu/oie \
-  go install -tags production github.com/araihu/oie/cmd/oie-desktop@v0.0.1-rc.8
+  go install -tags production github.com/araihu/oie/cmd/oie-desktop@v0.0.1-rc.9
 ```
 
 ### macOS com Apple Silicon
@@ -148,10 +152,10 @@ GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
   CGO_CFLAGS="-O2 -g -mmacosx-version-min=13.0" \
   CGO_LDFLAGS="-O2 -g -mmacosx-version-min=13.0" \
   go install -tags production -ldflags='-extldflags=-mmacosx-version-min=13.0' \
-  github.com/araihu/oie/cmd/oie-desktop@v0.0.1-rc.8
+  github.com/araihu/oie/cmd/oie-desktop@v0.0.1-rc.9
 ```
 
-Os parâmetros de compilação e linkedição mantêm o mesmo alvo. Consulte o [escopo verificado no guia do repositório](https://github.com/araihu/oie/blob/f9c6a01625232e7132a358b27372759144588258/docs/installation.md#platforms-and-verified-scope) para as versões de sistema testadas.
+Os parâmetros de compilação e linkedição mantêm o mesmo alvo. Consulte o [escopo verificado no guia do repositório](https://github.com/araihu/oie/blob/d6ce9ae95c6f67850cb7a8e2ab91979fe35171ea/docs/installation.md#platforms-and-verified-scope) para as versões de sistema testadas.
 
 ### Abrir pelo Terminal
 
