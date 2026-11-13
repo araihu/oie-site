@@ -1,6 +1,6 @@
 ---
 title: Manual
-description: Conecte contas XMPP, aceite solicitações e convites, pesquise mensagens e arquivos em várias contas e gerencie envios agendados.
+description: Conecte contas XMPP, envie anexos, acompanhe mensagens não lidas, agende envios e ajuste o idioma e o fuso horário.
 language: pt-BR
 margo:
   imageViewer: true
@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.8](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.9](../../baixar/index.md).
 
 ## Contas XMPP
 
@@ -46,6 +46,10 @@ Dentro de uma sala, abra **Mais opções** e selecione **Pesquisar mensagens**. 
 
 ![Busca por trilha em uma sala. O primeiro de três resultados está destacado na conversa e o campo oferece a opção de incluir o histórico de edições.](imagens/busca-na-sala.webp "Busca no histórico da sala")
 
+## Mensagens não lidas
+
+Depois de percorrer o histórico, role até o fim ou use **Ir para as mais recentes** acima do campo de mensagem, quando esse botão aparecer. Se chegarem mensagens enquanto você estiver no histórico, o botão mostra **Novas mensagens · ir para as últimas**. Ao permanecer no fim com a janela ou aba em foco e sem buscas ou diálogos abertos, o Oiê marca como lidas também as mensagens anteriores que ficaram fora da tela. O contador de não lidas e o indicador de menções são atualizados na lista de conversas.
+
 ## Busca geral e filtros por conta
 
 Digite no campo **Pesquisar**, na lista de conversas. **Tudo** reúne conversas, contatos salvos e mensagens guardadas. Use **Conversas** ou **Mensagens** para restringir os resultados. Em **Contas**, marque uma ou mais contas ou limpe a seleção para pesquisar em todas.
@@ -57,6 +61,22 @@ Os resultados destacam os termos encontrados e mostram a conta e a conversa de o
 [Ver a captura da busca geral no tamanho original](imagens/busca-geral-original.webp)
 
 Os atalhos **Mídia**, **Links** e **Documentos** abrem o catálogo com o mesmo texto de busca e as contas selecionadas. Para uma consulta rápida em todas as contas, use [Ctrl + K ou ⌘ + K](../atalhos/index.md#busca-geral). A consulta dessa janela é independente da busca da lista.
+
+## Anexos no rascunho
+
+Ao lado do campo de mensagem, abra **+** e escolha **Imagem** ou **Arquivo**. No navegador, você também pode colar um arquivo no campo ou arrastá-lo para a conversa. Escreva a legenda no próprio campo de mensagem.
+
+![Menu de anexos aberto pelo botão de mais, com as opções Imagem e Arquivo.](imagens/menu-de-anexos.webp "Menu de anexos")
+
+[Ver a captura do menu de anexos no tamanho original](imagens/menu-de-anexos-original.webp)
+
+Você pode clicar no nome de um anexo pronto para baixar o original. No aplicativo de desktop, isso abre a janela do sistema para salvar o arquivo. Use **Remover anexo** para tirar um item do rascunho. Se o preparo falhar, use **Tentar novamente** ou remova o arquivo. Se usou o seletor do Flatpak, escolha o arquivo novamente. Quando todos estiverem prontos, envie a mensagem ou [agende o envio](#envio-agendado).
+
+![Rascunho com uma imagem, dois arquivos de texto e a legenda no campo de mensagem. Cada anexo tem um botão de remoção.](imagens/rascunho-anexos.webp "Anexos no rascunho")
+
+[Ver a captura do rascunho no tamanho original](imagens/rascunho-anexos-original.webp)
+
+O Oiê aceita até 16 arquivos por mensagem, de até 20 MiB cada. O serviço XMPP pode impor um limite menor ou não permitir anexos naquela conversa. Quem recebe a mensagem pode baixar os arquivos pelos links enviados junto com a legenda. Os anexos prontos ficam no rascunho ao recarregar a página. Aguarde o preparo antes de trocar de conversa.
 
 ## Envio agendado
 
@@ -75,3 +95,13 @@ O Oiê exibe Markdown nas mensagens por padrão. Para citar várias linhas, come
 O lápis ao lado do horário indica uma mensagem editada. Selecione-o ou use **Ver histórico de edições** no menu da mensagem para consultar as versões que o Oiê guardou.
 
 ![Mensagem com a pergunta citada em um bloco e a resposta Sim! Levo o café abaixo, fora da citação.](imagens/citacao-markdown.webp "Citação em Markdown")
+
+## Idioma e fuso horário
+
+Em **Configurações → Geral**, use a busca em **Idioma** ou **Fuso horário de exibição**. A lista de fusos mostra o deslocamento atual em relação ao UTC, incluindo o horário de verão quando aplicável. Você pode buscar pela cidade ou pelo deslocamento, como `UTC+09:00`.
+
+Escolha **Fuso horário do sistema** para acompanhar o fuso do dispositivo. O idioma e o fuso escolhidos ficam salvos neste aplicativo ou navegador. O agendamento também usa esse fuso para interpretar a data e o horário que você informa.
+
+![Busca de fuso horário em Geral, com o fuso do sistema e o deslocamento UTC do resultado.](imagens/fuso-horario.webp "Busca por fuso horário")
+
+[Ver a captura da busca de fuso horário no tamanho original](imagens/fuso-horario-original.webp)
