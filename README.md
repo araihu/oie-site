@@ -21,6 +21,8 @@ O comando escreve em `dist/` e exige um destino que ainda não exista. Use `--ou
 
 Os links em `content/baixar/index.md` apontam para arquivos de uma versão específica. Ao atualizar a página, confira os nomes dos arquivos e as plataformas na publicação do Oiê.
 
+Ao atualizar **Baixar**, confira também os comandos e requisitos do [guia de instalação](content/docs/instalacao/index.md) com o [guia do aplicativo](https://github.com/araihu/oie/blob/main/docs/installation.md).
+
 ## Documentação do Oiê
 
 O manual, os atalhos e os exemplos do CLI foram conferidos com a [revisão da v0.0.1-rc.2](https://github.com/araihu/oie/tree/f4d08255b9d5c725718ffa099756fc409a9898d9). A página de arquitetura e deploy foi conferida com a [revisão 883551a](https://github.com/araihu/oie/tree/883551afe9f4f9a4ef2c27b1fc34c87fd4fd1a2f). Ao atualizar, registre o SHA das páginas revisadas e confira as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
