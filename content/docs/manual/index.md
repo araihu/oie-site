@@ -62,9 +62,11 @@ Os atalhos **Mídia**, **Links** e **Documentos** abrem o catálogo com o mesmo 
 
 No menu da mensagem, escolha **Marcar mensagem com estrela**. Abra **Favoritas** na barra lateral para ver as mensagens marcadas em conversas diretas e salas, inclusive nas arquivadas. A lista segue a conta selecionada. Use **Todas as contas** no seletor para reunir as mensagens de todas elas.
 
+As mensagens aparecem em balões, com o texto formatado e as prévias da conversa. Selecione a prévia de uma imagem para ampliá-la.
+
 No menu de cada resultado, use **Ir para a mensagem** para voltar à conversa de origem, **Copiar mensagem original** para copiar o texto ou **Encaminhar** para enviar uma cópia. Selecione a estrela para remover a mensagem da lista.
 
-![Seção Favoritas com o menu da mensagem aberto e as opções Ir para a mensagem, Copiar mensagem original e Encaminhar.](imagens/mensagens-favoritas.webp "Mensagens favoritas")
+![Seção Favoritas com balões de mensagem, uma prévia de link e uma imagem no corpo da mensagem.](imagens/mensagens-favoritas.webp "Mensagens favoritas")
 
 [Ver a captura de Favoritas no tamanho original](imagens/mensagens-favoritas-original.webp)
 
