@@ -23,7 +23,7 @@ Os links em `content/baixar/index.md` apontam para arquivos de uma versão espec
 
 ## Documentação do Oiê
 
-O manual, os atalhos e os exemplos do CLI foram conferidos com a [main do aplicativo em 6c8e8c0](https://github.com/araihu/oie/tree/6c8e8c08803e2e9433dc7bcb474024589aa63699). A página de arquitetura e deploy foi conferida com a [revisão 883551a](https://github.com/araihu/oie/tree/883551afe9f4f9a4ef2c27b1fc34c87fd4fd1a2f). Ao atualizar, registre o SHA das páginas revisadas e confira as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
+O manual, os atalhos e os exemplos do CLI foram conferidos com a [revisão da v0.0.1-rc.2](https://github.com/araihu/oie/tree/f4d08255b9d5c725718ffa099756fc409a9898d9). A página de arquitetura e deploy foi conferida com a [revisão 883551a](https://github.com/araihu/oie/tree/883551afe9f4f9a4ef2c27b1fc34c87fd4fd1a2f). Ao atualizar, registre o SHA das páginas revisadas e confira as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
 
 A instalação do `oiectl` por release independente foi conferida com a [release cli/v0.30.0](https://github.com/araihu/oie/releases/tag/cli/v0.30.0), gerada a partir do [contrato no commit 713234d](https://github.com/araihu/oie/tree/713234d523519e7ec01bbdebddb41a0166654a51/api).
 
