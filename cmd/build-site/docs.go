@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-// Margo v0.0.35 leaves these search and code-copy strings in English.
+// Margo v0.0.35 leaves these interface strings in English.
 var docsLabels = strings.NewReplacer(
 	`aria-label="Clear search"`, `aria-label="Limpar busca"`,
 	`>Clear</button>`, `>Limpar</button>`,
@@ -19,6 +19,12 @@ var docsLabels = strings.NewReplacer(
 	`data-code-block-success-text="Copied!"`, `data-code-block-success-text="Copiado!"`,
 	`data-code-block-error-text="Unable to copy"`, `data-code-block-error-text="Falha ao copiar"`,
 	`aria-live="polite">Copy</span>`, `aria-live="polite">Copiar</span>`,
+	"Complete Mermaid source: ", "Código-fonte do diagrama. ",
+	"Scroll diagram horizontally to inspect all labels.", "Role o diagrama na horizontal para ler todos os rótulos.",
+	"Mermaid source for ", "Código-fonte do diagrama de ",
+	"Diagram help", "Ajuda do diagrama",
+	"Zoom with + / − or Ctrl + wheel. Fit with 0 or Home. Pan with arrow keys, left/middle-button drag, or touch swipes. Double-click to expand. Close with X or Escape.",
+	"Use +, − ou Ctrl com a roda do mouse para ajustar o zoom. Use 0 ou Home para ajustar à área visível. Mova com as setas, arraste com o mouse ou deslize na tela. Dê dois cliques para expandir. Feche com X ou Esc.",
 )
 
 var searchLabels = strings.NewReplacer(
@@ -40,6 +46,26 @@ var copyLabels = strings.NewReplacer(
 	`"Copied!"`, `"Copiado!"`,
 	`"Code copied"`, `"Código copiado"`,
 	`"Copy failed"`, `"Falha ao copiar"`,
+)
+
+var mediaViewerLabels = strings.NewReplacer(
+	`? "Image" : "Diagram"`, `? "Imagem" : "Diagrama"`,
+	`noun + " controls"`, `"Controles: " + noun`,
+	`"Zoom in"`, `"Aumentar zoom"`,
+	`"Zoom out"`, `"Diminuir zoom"`,
+	`"Fit " + noun.toLowerCase()`, `"Ajustar à área visível"`,
+	`"Expand"`, `"Expandir"`,
+	`"Fullscreen"`, `"Tela cheia"`,
+	`"Close expanded view"`, `"Fechar visualização expandida"`,
+	`noun + " zoom"`, `"Zoom: " + noun`,
+	`noun + " zoom controls"`, `"Controles de zoom: " + noun`,
+	`noun + " view controls"`, `"Controles de visualização: " + noun`,
+	`"Actual size"`, `"Tamanho original"`,
+	`noun + " help"`, `"Ajuda: " + noun`,
+	`"Mermaid diagram"`, `"Diagrama"`,
+	`media.alt || "Image"`, `media.alt || "Imagem"`,
+	`noun + " caption and controls"`, `"Legenda e controles: " + noun`,
+	`"Exit fullscreen"`, `"Sair da tela cheia"`,
 )
 
 var sectionHeading = regexp.MustCompile(`<h2 id="([^"]+)" data-toc-heading="">([^<]+)</h2>`)

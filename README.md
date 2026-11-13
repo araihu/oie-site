@@ -11,7 +11,7 @@ Com Go 1.27.3 ou mais recente, sincronize o tema e gere os arquivos estáticos:
 go run ./cmd/build-site
 ```
 
-O comando gera o site com Margo. O código em `cmd/build-site` adapta a busca e a cópia de código para pt-BR, sincroniza a seleção acessível da busca com a ordem dos resultados e inclui um sumário nas telas estreitas. Ao atualizar o Margo, confira esses controles no navegador. Para pré-visualizar a publicação com Python 3, sirva os arquivos gerados e abra `http://127.0.0.1:8080/`.
+O comando gera o site com Margo. O código em `cmd/build-site` adapta os controles de busca, cópia e diagramas para pt-BR, sincroniza a seleção acessível da busca com a ordem dos resultados e inclui um sumário nas telas estreitas. Ao atualizar o Margo, confira esses controles no navegador. Para pré-visualizar a publicação com Python 3, sirva os arquivos gerados e abra `http://127.0.0.1:8080/`.
 
 ```sh
 python3 -m http.server --bind 127.0.0.1 --directory dist 8080
@@ -23,7 +23,7 @@ Os links em `content/baixar/index.md` apontam para arquivos de uma versão espec
 
 ## Documentação do Oiê
 
-As páginas em `content/docs/` foram conferidas com a [main do aplicativo em 7ae8057](https://github.com/araihu/oie/tree/7ae805764c4d019d85eff7880617939955979527). Ao atualizar, revise o comportamento e a ajuda do CLI na nova revisão, registre o SHA aqui e confira separadamente as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
+O manual, os atalhos e os exemplos do CLI foram conferidos com a [main do aplicativo em 7ae8057](https://github.com/araihu/oie/tree/7ae805764c4d019d85eff7880617939955979527). A página de arquitetura e deploy foi conferida com a [revisão 883551a](https://github.com/araihu/oie/tree/883551afe9f4f9a4ef2c27b1fc34c87fd4fd1a2f). Ao atualizar, registre o SHA das páginas revisadas e confira as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
 
 As capturas no manual e nos atalhos mostram a interface em pt-BR da mesma revisão, com dados fictícios servidos a uma instância local. Os recortes estão em WebP, ao lado da página que os usa.
 

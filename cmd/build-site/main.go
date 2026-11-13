@@ -42,6 +42,8 @@ func build(ctx context.Context, output string) error {
 			result.Artifacts[i].Content = []byte(strings.Replace(script, searchResultOrder, rankedSearchResultOrder, 1))
 		case artifact.Path == "margo-assets/code-copy.js":
 			result.Artifacts[i].Content = []byte(copyLabels.Replace(string(artifact.Content)))
+		case artifact.Path == "margo-assets/media-viewer.js":
+			result.Artifacts[i].Content = []byte(mediaViewerLabels.Replace(string(artifact.Content)))
 		}
 	}
 	manifest, err := site.MarshalManifest(result, "")

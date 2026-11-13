@@ -29,6 +29,8 @@ Em um perfil novo, abra [a interface local](http://127.0.0.1:8080) no navegador.
 
 Para configurar uma instância sem navegador, inicie o motor com `--data-only` e siga o [exemplo de conexão e envio pela API](https://github.com/araihu/oie/blob/7ae805764c4d019d85eff7880617939955979527/README.md#connect-and-message-through-the-api). Para consultar um motor independente que já está em execução, ajuste `OIECTL_SERVER` ou use `--server` em um único comando. Para comandos que recebem JSON, use `--body-stdin` ou `--body-file`. Use um arquivo privado ou stdin para dados com senha.
 
+Veja [Arquitetura e deploy](../arquitetura/index.md#motor-hospedado) para hospedar um motor e acessá-lo por uma conexão privada.
+
 ## Consultar e enviar mensagens
 
 ```sh
