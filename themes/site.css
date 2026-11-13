@@ -96,7 +96,8 @@
   color: var(--oie-muted, var(--color-on-surface-muted));
 }
 
-[data-theme="oie"].dark .margo-landing-hero__visual img {
+[data-theme="oie"].dark .margo-landing-hero__visual img,
+[data-theme="oie"].dark .landing-shell__brand > img {
   content: url("../content/brand/logo-dark.svg");
 }
 
@@ -109,8 +110,19 @@
 }
 
 [data-theme="oie"] .landing-shell__icon-button,
-[data-theme="oie"] .landing-shell__nav-link {
+[data-theme="oie"] .landing-shell__nav-link,
+[data-theme="oie"] .landing-shell__brand {
   min-block-size: 2.75rem;
+}
+
+[data-theme="oie"] .landing-shell__brand > img {
+  inline-size: auto;
+  block-size: 2rem;
+}
+
+/* The landing shell includes the site name alongside the configured logo. */
+[data-theme="oie"] .landing-shell__brand-copy {
+  display: none;
 }
 
 [data-theme="oie"] .landing-shell__icon-button {
@@ -132,16 +144,22 @@
   }
 }
 
-/* The docs header uses the wordmark. The landing header uses the icon. */
-[data-theme="oie"] .component-doc-shell__brand .margo-theme-logo__light {
-  content: url("../brand/logo.svg");
-}
-
 /* The shared primary blue is a fill color. Use the text accent for docs links. */
 [data-theme="oie"] .margo-document a,
 [data-theme="oie"] .margo-shell-footer a,
 [data-theme="oie"] .component-doc-shell a[aria-current="page"] {
   color: var(--margo-accent);
+}
+
+/* Keep the site links at their natural height above the docs navigation. */
+[data-theme="oie"] .component-doc-shell__sidebar-content > .component-doc-shell__global-navigation--drawer {
+  flex: none;
+  border-color: var(--margo-outline);
+}
+
+/* The docs navigation already links to /docs/ as Visão geral. */
+[data-theme="oie"] .component-doc-shell__global-navigation--drawer > a[href="/docs/"] {
+  display: none;
 }
 
 [data-theme="oie"] .margo-document img[src*="/imagens/"],

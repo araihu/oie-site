@@ -25,7 +25,7 @@ Os links em `content/baixar/index.md` apontam para arquivos de uma versão espec
 
 O manual, os atalhos e os exemplos do CLI foram conferidos com a [main do aplicativo em 6c8e8c0](https://github.com/araihu/oie/tree/6c8e8c08803e2e9433dc7bcb474024589aa63699). A página de arquitetura e deploy foi conferida com a [revisão 883551a](https://github.com/araihu/oie/tree/883551afe9f4f9a4ef2c27b1fc34c87fd4fd1a2f). Ao atualizar, registre o SHA das páginas revisadas e confira as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
 
-As capturas no manual e nos atalhos mostram a interface em pt-BR com dados fictícios em instâncias isoladas. As capturas da busca geral e da solicitação de mensagem são de `6c8e8c0`. As demais foram conferidas em `7ae8057`. Os recortes estão em WebP, ao lado da página que os usa.
+As capturas da página inicial, do manual e dos atalhos mostram a interface em pt-BR com dados fictícios em instâncias isoladas. A captura da página inicial e as sete capturas de recursos mais antigas foram refeitas na [revisão e87ea75](https://github.com/araihu/oie/tree/e87ea75b0dac62915c0b4e7fe8cb49d01ecc6692). As capturas da busca geral e da solicitação de mensagem são de `6c8e8c0`, que tem a mesma interface. As imagens estão em WebP.
 
 A seção Docker da página de arquitetura descreve a [CI da imagem em 01074ee](https://github.com/araihu/oie/commit/01074ee129a36106a6470ffa84940c6c980c1552).
 
@@ -37,5 +37,4 @@ O GitHub Actions roda a cada push em `main`, gera os arquivos do Margo e publica
 
 - O tema Oiê e o catálogo Margo vêm de [araihu/assets](https://github.com/araihu/assets/tree/main/themes). Para atualizar os dois, altere `themes/assets-revision` para o SHA completo desejado e rode `./scripts/sync-theme.sh`. O script valida o SHA-256 do CSS. `themes/site.css` concentra os estilos da página.
 - `content/brand/logo.svg` e `favicon.svg` são, respectivamente, `dist/brand/oie/logo/light-transparent-optical.svg` e `dist/icons/brand/oie-icon-light-transparent-optical.svg` do [Assets, revisão 428dbea](https://github.com/araihu/assets/tree/428dbea099d6bceab3333aeaef0ade4350d36a54). A versão escura em `logo-dark.svg` usa `dist/brand/oie/logo/dark-transparent-optical.svg` da mesma revisão. A imagem de compartilhamento usa o mesmo logotipo sobre um fundo da paleta do Oiê.
-- A captura de tela usa apenas dados de exemplo do [servidor de demonstração do Oiê](https://github.com/araihu/oie/tree/f819b9d0fe746d9f0cd3e89905379eec760d3fb5/cmd/oie-mock).
 - O site usa GPL-3.0, a mesma licença do aplicativo. As licenças e os créditos de terceiros acompanham o repositório em `LICENSES/`.

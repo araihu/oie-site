@@ -2,6 +2,8 @@
 title: Manual
 description: Conecte contas XMPP, aceite solicitações e convites, pesquise mensagens e arquivos em várias contas e gerencie envios agendados.
 language: pt-BR
+margo:
+  imageViewer: true
 ---
 
 # Manual do Oiê
@@ -14,15 +16,13 @@ No rodapé da lista de conversas, abra **Trocar de conta** e selecione **Adicion
 
 Use **Trocar de conta** para ver todas as conversas ou filtrar por uma conta. Ao iniciar uma conversa, escolha a conta que você quer usar. As conversas de cada conta são independentes.
 
-![Seletor de contas do Oiê aberto, com as opções Todas as contas, Pessoal e Trabalho.](imagens/seletor-de-contas.webp)
-
-[Ampliar captura do seletor de contas](imagens/seletor-de-contas.webp)
+![Seletor de contas do Oiê aberto, com as opções Todas as contas, Pessoal e Trabalho.](imagens/seletor-de-contas.webp "Seletor de contas")
 
 ## Solicitações de mensagem e convites recebidos
 
 Na versão de desenvolvimento, a primeira mensagem de uma conversa direta sem histórico anterior pode aparecer como **Solicitação de mensagem**. Confira o endereço no cabeçalho. Use **Aceitar** para ler e responder, ou **Arquivar** para tirar a solicitação da lista principal. O conteúdo fica oculto até você aceitar.
 
-![Solicitação de mensagem arquivada com o endereço do remetente no cabeçalho e o botão Aceitar.](imagens/solicitacao-de-mensagem.webp)
+![Solicitação de mensagem arquivada com o endereço do remetente no cabeçalho e o botão Aceitar.](imagens/solicitacao-de-mensagem.webp "Solicitação de mensagem arquivada")
 
 [Ver a captura da solicitação no tamanho original](imagens/solicitacao-de-mensagem-original.webp)
 
@@ -36,9 +36,7 @@ Na versão de desenvolvimento, abra **Nova conversa** e escolha **Entrar na sala
 
 A prévia pode mostrar nome, descrição, assunto, foto e número de participantes, conforme o que o serviço disponibiliza à conta selecionada. A entrada só acontece depois que você confirma. A criação de salas depende do suporte do serviço XMPP. A entrada por endereço aceita salas sem senha.
 
-![Cartão de convite para a sala Trilhas de sábado com endereço, descrição e o link Ver sala.](imagens/convite-de-sala.webp)
-
-[Ampliar captura do convite de sala](imagens/convite-de-sala.webp)
+![Cartão de convite para a sala Trilhas de sábado com endereço, descrição e o link Ver sala.](imagens/convite-de-sala.webp "Cartão de convite para uma sala")
 
 ## Histórico e busca em salas
 
@@ -46,9 +44,7 @@ Em **Detalhes da conversa**, use **Baixar histórico antigo automaticamente** pa
 
 Dentro de uma sala, abra **Mais opções** e selecione **Pesquisar mensagens**. Essa busca também pode consultar o arquivo do servidor, quando ele oferece busca por texto. Ative **Incluir histórico de edições** para encontrar versões anteriores de mensagens editadas. Use os [atalhos de busca](../atalhos/index.md#busca-na-conversa) para percorrer os resultados.
 
-![Busca por trilha em uma sala. O primeiro de três resultados está destacado na conversa e o campo oferece a opção de incluir o histórico de edições.](imagens/busca-na-sala.webp)
-
-[Ampliar captura da busca na sala](imagens/busca-na-sala.webp)
+![Busca por trilha em uma sala. O primeiro de três resultados está destacado na conversa e o campo oferece a opção de incluir o histórico de edições.](imagens/busca-na-sala.webp "Busca no histórico da sala")
 
 ## Busca geral e filtros por conta
 
@@ -56,7 +52,7 @@ Na versão de desenvolvimento, digite em **Pesquisar conversas**, na lista de co
 
 Os resultados destacam os termos encontrados e mostram a conta e a conversa de origem. Abra um resultado para ir à mensagem. Se ativar **Incluir histórico de edições**, um resultado marcado como **Versão anterior** mostra o trecho guardado e abre a mensagem atual na conversa.
 
-![Busca por plataformas com duas contas selecionadas e o termo destacado no texto e no link da mensagem.](imagens/busca-geral.webp)
+![Busca por plataformas com duas contas selecionadas e o termo destacado no texto e no link da mensagem.](imagens/busca-geral.webp "Busca em várias contas")
 
 [Ver a captura da busca geral no tamanho original](imagens/busca-geral-original.webp)
 
@@ -66,9 +62,7 @@ Os atalhos **Mídia**, **Links** e **Documentos** abrem o catálogo com o mesmo 
 
 Na versão de desenvolvimento, abra o menu junto ao botão de envio, escolha **Agendar mensagem** e confira a data, o horário e a mensagem. Em **Agendadas**, você pode editar, reagendar, cancelar ou pedir o envio imediato enquanto a mensagem ainda estiver aguardando o primeiro envio.
 
-![Janela Agendar mensagem, com a prévia do lembrete e o campo de data e horário de envio.](imagens/envio-agendado.webp)
-
-[Ampliar captura do envio agendado](imagens/envio-agendado.webp)
+![Janela Agendar mensagem, com a prévia do lembrete e o campo de data e horário de envio.](imagens/envio-agendado.webp "Prévia e horário do envio agendado")
 
 Para editar uma mensagem sem sair da conversa, abra **Mais opções → Agendadas → Editar mensagem**. O campo de mensagem passa a mostrar o conteúdo agendado. Ao salvar ou cancelar a edição, o Oiê restaura o rascunho que você já tinha naquela conversa.
 
@@ -80,6 +74,4 @@ O Oiê exibe Markdown nas mensagens por padrão. Para citar várias linhas, come
 
 Na versão de desenvolvimento, o lápis ao lado do horário indica uma mensagem editada. Selecione-o ou use **Ver histórico de edições** no menu da mensagem para consultar as versões que o Oiê guardou.
 
-![Mensagem com a pergunta citada em um bloco e a resposta Sim! Levo o café abaixo, fora da citação.](imagens/citacao-markdown.webp)
-
-[Ampliar captura da citação em Markdown](imagens/citacao-markdown.webp)
+![Mensagem com a pergunta citada em um bloco e a resposta Sim! Levo o café abaixo, fora da citação.](imagens/citacao-markdown.webp "Citação em Markdown")
