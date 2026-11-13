@@ -31,7 +31,7 @@ O manual, os atalhos, os exemplos do CLI e os guias de instalação e arquitetur
 
 A seção de atualização via APT no guia de instalação foi conferida com a [main do aplicativo em baae7e6](https://github.com/araihu/oie/tree/baae7e69541d4f32e999fa277238d34c9808e427) e com o pacote publicado da [v0.0.1-rc.7](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.7).
 
-A instalação do `oiectl` por release independente foi conferida com a [release cli/v0.30.0](https://github.com/araihu/oie/releases/tag/cli/v0.30.0), gerada a partir do [contrato no commit 713234d](https://github.com/araihu/oie/tree/713234d523519e7ec01bbdebddb41a0166654a51/api).
+A instalação do `oiectl` por release independente foi conferida com a [release cli/v0.30.1](https://github.com/araihu/oie/releases/tag/cli/v0.30.1), gerada a partir do [contrato no commit f21196a](https://github.com/araihu/oie/tree/f21196a6d8fe2d1b75180470ccd26089db5d6bb9/api).
 
 As capturas da página inicial, do manual e dos atalhos mostram a interface em pt-BR com dados fictícios em instâncias isoladas. A captura da página inicial e as sete capturas de recursos mais antigas foram refeitas na [revisão e87ea75](https://github.com/araihu/oie/tree/e87ea75b0dac62915c0b4e7fe8cb49d01ecc6692). As capturas da busca geral e da solicitação de mensagem são de `6c8e8c0`, que tem a mesma interface. As imagens estão em WebP.
 
