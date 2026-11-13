@@ -138,3 +138,12 @@
 [data-theme="oie"] .component-doc-shell a[aria-current="page"] {
   color: var(--margo-accent);
 }
+
+[data-theme="oie"] .margo-document img[src*="/imagens/"],
+[data-theme="oie"] .margo-document img[src^="imagens/"] {
+  display: block;
+  max-inline-size: min(100%, 32rem);
+  block-size: auto;
+  border: 1px solid var(--margo-outline);
+  border-radius: var(--radius-radius);
+}

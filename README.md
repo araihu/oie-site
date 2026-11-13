@@ -25,6 +25,8 @@ Os links em `content/baixar/index.md` apontam para arquivos de uma versão espec
 
 As páginas em `content/docs/` foram conferidas com a [main do aplicativo em 7ae8057](https://github.com/araihu/oie/tree/7ae805764c4d019d85eff7880617939955979527). Ao atualizar, revise o comportamento e a ajuda do CLI na nova revisão, registre o SHA aqui e confira separadamente as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
 
+As capturas no manual e nos atalhos mostram a interface em pt-BR da mesma revisão, com dados fictícios servidos a uma instância local. Os recortes estão em WebP, ao lado da página que os usa.
+
 ## Publicação
 
 O GitHub Actions roda a cada push em `main`, gera os arquivos do Margo e publica `dist/` no Cloudflare Workers com Wrangler. O domínio do Worker é [oie.araihu.com](https://oie.araihu.com/). O pipeline confere as URLs canônicas das páginas e compara o manifesto do Margo e o CSS publicado com os arquivos gerados. Ele usa o secret organizacional `CLOUDFLARE_API_TOKEN` e a variável do repositório `CLOUDFLARE_ACCOUNT_ID`.

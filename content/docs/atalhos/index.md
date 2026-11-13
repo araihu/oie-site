@@ -20,6 +20,10 @@ language: pt-BR
 
 Os idiomas dos atalhos de emoji podem ser escolhidos nas configurações de composição. Por padrão, o Oiê aceita nomes em português e inglês.
 
+![Ao digitar @an no campo de mensagem de uma sala, aparecem as sugestões Ana e André.](imagens/mencoes.webp)
+
+![Ao digitar :joinha no campo de mensagem, aparece a sugestão do emoji de polegar para cima.](imagens/atalho-de-emoji.webp)
+
 ## Busca na conversa
 
 Com o foco no campo de busca da conversa, **Enter** vai para o resultado mais antigo seguinte, **Shift + Enter** volta para um resultado mais recente e **Esc** fecha a busca.
