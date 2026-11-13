@@ -2,7 +2,7 @@
 
 Site do [Oiê](https://github.com/araihu/oie), gerado com [Margo](https://github.com/araihu/margo/tree/v0.0.35). O conteúdo está em `content/` e a configuração em `site.yaml`.
 
-A seção de mensagens favoritas do manual foi conferida na prévia do aplicativo, revisão `30539b2478a30f825b3592017fdf5aaa1e82a293`, a partir da main `b246ead0ef3daeecbfd2d07d394be23a4155bd0c`.
+As seções de mensagens favoritas e encaminhamento do manual foram conferidas na prévia do aplicativo, revisão `f74d0bd3ed3d6178875317f044e5dbd5d8008b58`, a partir da main `b246ead0ef3daeecbfd2d07d394be23a4155bd0c`.
 
 ## Desenvolvimento
 

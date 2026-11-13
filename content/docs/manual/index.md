@@ -62,13 +62,25 @@ Os atalhos **Mídia**, **Links** e **Documentos** abrem o catálogo com o mesmo 
 
 No menu da mensagem, escolha **Marcar mensagem com estrela**. Abra **Favoritas** na barra lateral para ver as mensagens marcadas em conversas diretas e salas, inclusive nas arquivadas. A lista segue a conta selecionada. Use **Todas as contas** no seletor para reunir as mensagens de todas elas.
 
-Em cada resultado, use **Ir para a mensagem** para voltar à conversa de origem. Selecione a estrela para remover a mensagem da lista.
+No menu de cada resultado, use **Ir para a mensagem** para voltar à conversa de origem, **Copiar mensagem original** para copiar o texto ou **Encaminhar** para enviar uma cópia. Selecione a estrela para remover a mensagem da lista.
 
-![Seção Favoritas com mensagens das contas Pessoal e Trabalho, cada uma com uma estrela e o link Ir para a mensagem.](imagens/mensagens-favoritas.webp "Mensagens favoritas")
+![Seção Favoritas com o menu da mensagem aberto e as opções Ir para a mensagem, Copiar mensagem original e Encaminhar.](imagens/mensagens-favoritas.webp "Mensagens favoritas")
 
 [Ver a captura de Favoritas no tamanho original](imagens/mensagens-favoritas-original.webp)
 
 A seção **Favoritas** da barra lateral está disponível na prévia de desenvolvimento posterior à v0.0.1-rc.8.
+
+## Encaminhar mensagens
+
+Abra **Encaminhar** no menu de uma mensagem em **Conversas**, **Favoritas** ou **Mídia e links**. Escolha uma ou mais salas e confirme em **Encaminhar**. O seletor mostra a conta de cada sala. Cada cópia é enviada pela conta da sala escolhida.
+
+O Oiê copia o texto da mensagem e prepara os anexos para o novo envio. Se houver falha em um destino, confira o aviso ao lado da sala e use **Tentar novamente**. As salas cuja cópia já entrou na fila ficam marcadas.
+
+![Janela Encaminhar mensagem com duas salas selecionadas, uma da conta Pessoal e outra da conta Trabalho.](imagens/encaminhar-mensagem.webp "Selecionar salas para encaminhar")
+
+[Ver a captura do encaminhamento no tamanho original](imagens/encaminhar-mensagem-original.webp)
+
+O encaminhamento está disponível na prévia de desenvolvimento posterior à v0.0.1-rc.8.
 
 ## Envio agendado
 
