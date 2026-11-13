@@ -1,12 +1,30 @@
 ---
 title: Instalação
-description: Instale o Oiê no macOS ou Ubuntu, rode com Docker ou compile a partir do código-fonte.
+description: Instale o Oiê no macOS, Trisquel ou Ubuntu, rode com Docker ou compile a partir do código-fonte.
 language: pt-BR
 ---
 
 # Instalação do Oiê
 
-Os pacotes do Oiê estão disponíveis para **macOS com Apple Silicon** e **Ubuntu 24.04 x86-64**. Para começar a conversar, tenha uma conta XMPP e siga o [passo a passo do manual](../manual/index.md#contas-xmpp) depois de abrir o aplicativo.
+Os pacotes do Oiê estão disponíveis para **macOS com Apple Silicon** e **Ubuntu 24.04 x86-64**. O repositório APT atende também ao **Trisquel 12 x86-64**. Para começar a conversar, tenha uma conta XMPP e siga o [passo a passo do manual](../manual/index.md#contas-xmpp) depois de abrir o aplicativo.
+
+
+## Instalar com APT
+
+No **Trisquel 12** e no **Ubuntu 24.04**, em computadores x86-64, adicione
+uma vez o repositório assinado da Arai Hû. Baixe o
+[arquivo oie.sources](https://araihu.github.io/oie/apt/oie.sources) e execute
+na pasta onde o salvou:
+
+```sh
+sudo install -m 0644 oie.sources /etc/apt/sources.list.d/oie.sources
+sudo apt update
+sudo apt install oie
+```
+
+Abra o Oiê pelo menu de aplicativos. As novas versões chegam pelo APT,
+incluindo pré-lançamentos. O repositório começa na versão 0.0.1-rc.3.
+Para remover o aplicativo e manter seu perfil, execute `sudo apt remove oie`.
 
 ## Instalar o pacote publicado
 

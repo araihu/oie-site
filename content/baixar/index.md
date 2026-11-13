@@ -17,6 +17,11 @@ Tenha em mãos uma conta XMPP para começar a conversar.
 - [macOS · Apple Silicon](https://github.com/araihu/oie/releases/download/v0.0.1-rc.3/oie_v0.0.1-rc.3_darwin_arm64.tar.gz)
 - [Ubuntu 24.04 · x86-64](https://github.com/araihu/oie/releases/download/v0.0.1-rc.3/oie_v0.0.1-rc.3_linux_amd64.tar.gz)
 
+## Instalar com APT
+
+No Trisquel 12 e no Ubuntu 24.04 x86-64, você pode
+[instalar e atualizar o Oiê pelo APT](../docs/instalacao/index.md#instalar-com-apt).
+
 ## Instalação e arquivos da versão
 
 O guia explica a primeira abertura no macOS e quais bibliotecas instalar no Ubuntu.
