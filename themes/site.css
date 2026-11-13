@@ -131,3 +131,10 @@
     min-block-size: 3.75rem;
   }
 }
+
+/* The shared primary blue is a fill color. Use the text accent for docs links. */
+[data-theme="oie"] .margo-document a,
+[data-theme="oie"] .margo-shell-footer a,
+[data-theme="oie"] .component-doc-shell a[aria-current="page"] {
+  color: var(--margo-accent);
+}

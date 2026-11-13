@@ -20,7 +20,17 @@ layout:
   kind: landing
   default:
     shell: true
-    navigation: [baixar/index.md]
+    navigation: [baixar/index.md, docs/index.md]
+navigation:
+  mode: file-tree
+  links:
+    - label: Baixar
+      href: /baixar/
+    - label: Documentação
+      href: /docs/
+  footer_links:
+    - label: OpenAPI do Oiê
+      href: https://oapi.araihu.com/catalogs/oie/documents/engine-next/
 locales:
   default: pt-BR
   supported: [pt-BR]

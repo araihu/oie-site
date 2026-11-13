@@ -5,8 +5,7 @@ language: pt-BR
 layout:
   kind: landing
   values:
-    navigation: [index.md]
-    navigation_label: Início
+    navigation: [docs/index.md]
 ---
 
 # Baixar o Oiê

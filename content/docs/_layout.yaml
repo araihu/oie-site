@@ -1,0 +1,4 @@
+kind: docs
+values:
+  sidebar: true
+  toc: true
