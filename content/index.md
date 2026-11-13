@@ -11,7 +11,6 @@ Reúna suas conversas e salas do XMPP em um só lugar.
 Conecte as contas que você já usa, retome conversas pelo histórico e guarde as mensagens que quer encontrar depois.
 
 - [Baixar o Oiê](baixar/index.md)
-- [Conhecer o projeto](https://github.com/araihu/oie)
 
 ![Logotipo do Oiê, com um balão de conversa azul e o rosto de uma lua](brand/logo.svg)
 
