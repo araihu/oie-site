@@ -7,6 +7,7 @@ import (
 
 // Margo v0.0.35 leaves these interface strings in English.
 var docsLabels = strings.NewReplacer(
+	`aria-label="Oiê home" class="component-doc-shell__brand"`, `aria-label="Oiê início" class="component-doc-shell__brand"`,
 	`aria-label="Clear search"`, `aria-label="Limpar busca"`,
 	`>Clear</button>`, `>Limpar</button>`,
 	`>⌘ K</kbd>`, `>Ctrl/⌘ + K</kbd>`,
@@ -70,8 +71,12 @@ var mediaViewerLabels = strings.NewReplacer(
 
 var sectionHeading = regexp.MustCompile(`<h2 id="([^"]+)" data-toc-heading="">([^<]+)</h2>`)
 
+// Margo derives both the sidebar section and its first link from the page title.
+var docsOverviewLink = regexp.MustCompile(`(<a [^>]*href="/docs/"[^>]*title=")Documentação("[^>]*><span class="min-w-0 flex-1 truncate">)Documentação(</span>)`)
+
 func prepareDocs(content []byte) []byte {
 	page := docsLabels.Replace(string(content))
+	page = docsOverviewLink.ReplaceAllString(page, `${1}Visão geral${2}Visão geral${3}`)
 	headings := sectionHeading.FindAllStringSubmatchIndex(page, -1)
 	if len(headings) < 2 {
 		return []byte(page)

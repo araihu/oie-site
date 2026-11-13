@@ -132,6 +132,11 @@
   }
 }
 
+/* The docs header uses the wordmark. The landing header uses the icon. */
+[data-theme="oie"] .component-doc-shell__brand .margo-theme-logo__light {
+  content: url("../brand/logo.svg");
+}
+
 /* The shared primary blue is a fill color. Use the text accent for docs links. */
 [data-theme="oie"] .margo-document a,
 [data-theme="oie"] .margo-shell-footer a,
