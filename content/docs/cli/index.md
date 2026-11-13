@@ -6,11 +6,11 @@ language: pt-BR
 
 # CLI do Oiê
 
-O `oiectl` acessa um motor do Oiê em execução. Os exemplos usam o CLI e o motor da mesma revisão de desenvolvimento e uma instância local em `http://127.0.0.1:8080`. O comando `oiectl --version` mostra a versão do contrato OpenAPI usada para gerar o CLI.
+O `oiectl` acessa um motor do Oiê em execução. Os exemplos usam o CLI e o motor da mesma revisão de desenvolvimento e uma instância local em `http://127.0.0.1:8080`. Nesta revisão, `oiectl --version` mostra `0.30.0`, a versão do contrato OpenAPI usado para gerar o CLI.
 
 ## Compilar e conectar
 
-Use Make e Go 1.27.4 ou mais recente para compilar e iniciar o Oiê a partir do [repositório do aplicativo](https://github.com/araihu/oie/tree/7ae805764c4d019d85eff7880617939955979527).
+Use Make e Go 1.27.4 ou mais recente para compilar e iniciar o Oiê a partir do [repositório do aplicativo](https://github.com/araihu/oie/tree/6c8e8c08803e2e9433dc7bcb474024589aa63699).
 
 ```sh
 make build build-cli
@@ -27,7 +27,7 @@ bin/oiectl system engine --output json
 
 Em um perfil novo, abra [a interface local](http://127.0.0.1:8080) no navegador. [Adicione e conecte sua conta XMPP](../manual/index.md#contas-xmpp). Em **Nova conversa**, informe outro endereço XMPP e selecione **Abrir conversa**. Ela aparecerá em `conversations list`.
 
-Para configurar uma instância sem navegador, inicie o motor com `--data-only` e siga o [exemplo de conexão e envio pela API](https://github.com/araihu/oie/blob/7ae805764c4d019d85eff7880617939955979527/README.md#connect-and-message-through-the-api). Para consultar um motor independente que já está em execução, ajuste `OIECTL_SERVER` ou use `--server` em um único comando. Para comandos que recebem JSON, use `--body-stdin` ou `--body-file`. Use um arquivo privado ou stdin para dados com senha.
+Para configurar uma instância sem navegador, inicie o motor com `--data-only` e siga o [exemplo de conexão e envio pela API](https://github.com/araihu/oie/blob/6c8e8c08803e2e9433dc7bcb474024589aa63699/README.md#connect-and-message-through-the-api). Para consultar um motor independente que já está em execução, ajuste `OIECTL_SERVER` ou use `--server` em um único comando. Para comandos que recebem JSON, use `--body-stdin` ou `--body-file`. Use um arquivo privado ou stdin para dados com senha.
 
 Veja [Arquitetura e deploy](../arquitetura/index.md#motor-hospedado) para hospedar um motor e acessá-lo por uma conexão privada.
 
@@ -38,6 +38,13 @@ bin/oiectl accounts list --output json
 bin/oiectl conversations list --output json
 bin/oiectl messages search --q 'trilha' --output json
 bin/oiectl messages search --q 'trilha' --include-edit-history --output json
+```
+
+Na versão de desenvolvimento, repita `--account-ids` para pesquisar em mais de uma conta. Use os IDs de `accounts list` e reserve `--account-id` para a busca em uma única conta. `shared content list` também aceita o filtro de múltiplas contas.
+
+```sh
+bin/oiectl messages search --q 'trilha' \
+  --account-ids PESSOAL_UUID --account-ids TRABALHO_UUID --output json
 ```
 
 Para enviar, substitua `CONVERSATION_UUID` pelo ID retornado em `conversations list` e `REQUEST_UUID` por um UUIDv7 novo para essa mensagem.

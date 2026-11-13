@@ -1,6 +1,6 @@
 ---
 title: Atalhos
-description: Atalhos para menções, sugestões de emoji, edição de mensagens e navegação pelos resultados da busca.
+description: Abra a busca geral com Ctrl + K ou ⌘ + K e use o teclado para percorrer mensagens, menções e sugestões de emoji.
 language: pt-BR
 ---
 
@@ -28,9 +28,22 @@ Em **Configurações → Este dispositivo**, use **Idiomas dos atalhos de emoji*
 
 [Ampliar captura da sugestão de emoji](imagens/atalho-de-emoji.webp)
 
+## Busca geral
+
+Estes atalhos chegaram depois do [instalador v0.0.1-rc.1](../../baixar/index.md).
+
+| Tecla | Ação |
+| --- | --- |
+| **⌘ + K** no macOS ou **Ctrl + K** no Linux | Abre uma janela de busca em todas as contas, quando não há outra janela do Oiê aberta sobre a conversa. |
+| **↓** ou **↑** no campo de busca ou em um resultado | Move o foco entre os resultados da janela ou da lista de conversas. **↑** no primeiro resultado volta ao campo. |
+| **Enter** | Abre o resultado em foco. Com o foco no campo de busca, abre o primeiro resultado. |
+| **Esc** | Fecha a janela ou, com o foco na busca da lista de conversas, cancela a pesquisa. Se o seletor de contas ou a ajuda do histórico de edições estiver em foco e aberto, o primeiro **Esc** fecha esse controle. |
+
 ## Busca na conversa
 
 Na conversa, abra **Mais opções** e selecione **Pesquisar mensagens**. Com o foco no campo de busca, **Enter** vai para o resultado mais antigo seguinte, **Shift + Enter** volta para um resultado mais recente e **Esc** fecha a busca.
+
+Na versão de desenvolvimento, **↓** também vai para o resultado mais antigo seguinte e **↑** volta para um resultado mais recente.
 
 ## Barra lateral
 

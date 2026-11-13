@@ -6,7 +6,7 @@ language: pt-BR
 
 # Documentação do Oiê
 
-- [Manual](manual/index.md) — contas XMPP, convites, histórico e particularidades do Oiê.
+- [Manual](manual/index.md) — contas XMPP, solicitações, convites, busca e envio agendado.
 - [Atalhos](atalhos/index.md) — edição, menções, emoji, busca e navegação por teclado.
 - [CLI](cli/index.md) — como compilar e usar o `oiectl`.
 - [Arquitetura e deploy](arquitetura/index.md) — como rodar o Oiê no computador ou hospedar o motor em um servidor.

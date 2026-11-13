@@ -23,9 +23,9 @@ Os links em `content/baixar/index.md` apontam para arquivos de uma versão espec
 
 ## Documentação do Oiê
 
-O manual, os atalhos e os exemplos do CLI foram conferidos com a [main do aplicativo em 7ae8057](https://github.com/araihu/oie/tree/7ae805764c4d019d85eff7880617939955979527). A página de arquitetura e deploy foi conferida com a [revisão 883551a](https://github.com/araihu/oie/tree/883551afe9f4f9a4ef2c27b1fc34c87fd4fd1a2f). Ao atualizar, registre o SHA das páginas revisadas e confira as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
+O manual, os atalhos e os exemplos do CLI foram conferidos com a [main do aplicativo em 6c8e8c0](https://github.com/araihu/oie/tree/6c8e8c08803e2e9433dc7bcb474024589aa63699). A página de arquitetura e deploy foi conferida com a [revisão 883551a](https://github.com/araihu/oie/tree/883551afe9f4f9a4ef2c27b1fc34c87fd4fd1a2f). Ao atualizar, registre o SHA das páginas revisadas e confira as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
 
-As capturas no manual e nos atalhos mostram a interface em pt-BR da mesma revisão, com dados fictícios servidos a uma instância local. Os recortes estão em WebP, ao lado da página que os usa.
+As capturas no manual e nos atalhos mostram a interface em pt-BR com dados fictícios em instâncias isoladas. As capturas da busca geral e da solicitação de mensagem são de `6c8e8c0`. As demais foram conferidas em `7ae8057`. Os recortes estão em WebP, ao lado da página que os usa.
 
 ## Publicação
 
