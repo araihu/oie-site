@@ -1,6 +1,6 @@
 ---
 title: Manual
-description: Conecte contas XMPP, aceite solicitações e convites, pesquise mensagens e arquivos em várias contas e gerencie envios agendados.
+description: Conecte contas XMPP, acompanhe mensagens não lidas, pesquise conversas e arquivos, gerencie envios agendados e ajuste o idioma e o fuso horário.
 language: pt-BR
 margo:
   imageViewer: true
@@ -45,6 +45,16 @@ Em **Detalhes da conversa**, use **Baixar histórico antigo automaticamente** pa
 Dentro de uma sala, abra **Mais opções** e selecione **Pesquisar mensagens**. Essa busca também pode consultar o arquivo do servidor, quando ele oferece busca por texto. Ative **Incluir histórico de edições** para encontrar versões anteriores de mensagens editadas. Use os [atalhos de busca](../atalhos/index.md#busca-na-conversa) para percorrer os resultados.
 
 ![Busca por trilha em uma sala. O primeiro de três resultados está destacado na conversa e o campo oferece a opção de incluir o histórico de edições.](imagens/busca-na-sala.webp "Busca no histórico da sala")
+
+## Mensagens não lidas
+
+Na versão de desenvolvimento posterior à rc.8, **Ir para as mais recentes** leva até o fim da conversa, mesmo depois de navegar por várias páginas do histórico. Quando a conversa está ativa e você chega ao fim, o Oiê marca as mensagens anteriores como lidas, inclusive as que ficaram fora da tela. O contador e o indicador de menções não lidas são atualizados na lista de conversas.
+
+## Idioma e fuso horário
+
+Na versão de desenvolvimento posterior à rc.8, abra **Configurações → Geral** e use a busca em **Idioma** ou **Fuso horário de exibição**. Os fusos mostram a diferença atual em relação ao UTC. Você pode buscar pela cidade ou pelo deslocamento, como `UTC+09:00`.
+
+Escolha **Fuso horário do sistema** para seguir o dispositivo. Um fuso escolhido manualmente muda a exibição dos horários neste dispositivo.
 
 ## Busca geral e filtros por conta
 
