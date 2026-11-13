@@ -24,8 +24,6 @@ A primeira mensagem de uma conversa direta sem histórico anterior pode aparecer
 
 ![Solicitação de mensagem arquivada com o endereço do remetente no cabeçalho e o botão Aceitar.](imagens/solicitacao-de-mensagem.webp "Solicitação de mensagem arquivada")
 
-[Ver a captura da solicitação no tamanho original](imagens/solicitacao-de-mensagem-original.webp)
-
 Uma solicitação arquivada continua em **Arquivadas** mesmo se chegarem mais mensagens. Se você aceitar uma solicitação de mensagem por lá, a conversa volta à lista principal. Em **Convite para sala**, use **Entrar na sala** para pedir a entrada. O conteúdo aparece quando o servidor XMPP confirma. Você também pode arquivar o convite e decidir depois.
 
 ## Salas, convites e entrada automática
@@ -58,8 +56,6 @@ Os resultados destacam os termos encontrados e mostram a conta e a conversa de o
 
 ![Busca por plataformas com duas contas selecionadas e o termo destacado no texto e no link da mensagem.](imagens/busca-geral.webp "Busca em várias contas")
 
-[Ver a captura da busca geral no tamanho original](imagens/busca-geral-original.webp)
-
 Os atalhos **Mídia**, **Links** e **Documentos** abrem o catálogo com o mesmo texto de busca e as contas selecionadas. Para uma consulta rápida em todas as contas, use [Ctrl + K ou ⌘ + K](../atalhos/index.md#busca-geral). A consulta dessa janela é independente da busca da lista.
 
 ## Anexos no rascunho
@@ -68,13 +64,9 @@ Ao lado do campo de mensagem, abra **+** e escolha **Imagem** ou **Arquivo**. No
 
 ![Menu de anexos aberto pelo botão de mais, com as opções Imagem e Arquivo.](imagens/menu-de-anexos.webp "Menu de anexos")
 
-[Ver a captura do menu de anexos no tamanho original](imagens/menu-de-anexos-original.webp)
-
 Você pode clicar no nome de um anexo pronto para baixar o original. No aplicativo de desktop, isso abre a janela do sistema para salvar o arquivo. Use **Remover anexo** para tirar um item do rascunho. Se o preparo falhar, use **Tentar novamente** ou remova o arquivo. Se usou o seletor do Flatpak, escolha o arquivo novamente. Quando todos estiverem prontos, envie a mensagem ou [agende o envio](#envio-agendado).
 
 ![Rascunho com uma imagem, dois arquivos de texto e a legenda no campo de mensagem. Cada anexo tem um botão de remoção.](imagens/rascunho-anexos.webp "Anexos no rascunho")
-
-[Ver a captura do rascunho no tamanho original](imagens/rascunho-anexos-original.webp)
 
 O Oiê aceita até 16 arquivos por mensagem, de até 20 MiB cada. O serviço XMPP pode impor um limite menor ou não permitir anexos naquela conversa. Quem recebe a mensagem pode baixar os arquivos pelos links enviados junto com a legenda. Os anexos prontos ficam no rascunho ao recarregar a página. Aguarde o preparo antes de trocar de conversa.
 
