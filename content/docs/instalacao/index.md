@@ -1,6 +1,6 @@
 ---
 title: Instalação
-description: Instale o Oiê no macOS ou Ubuntu, abra o aplicativo pela primeira vez ou compile a partir do código-fonte.
+description: Instale o Oiê no macOS ou Ubuntu, rode com Docker ou compile a partir do código-fonte.
 language: pt-BR
 ---
 
@@ -108,6 +108,19 @@ Para remover o aplicativo, encerre o Oiê. No macOS, mova `Oie.app` para o Lixo.
 - `~/.local/share/doc/oie`
 
 Se usou `--prefix`, procure os mesmos arquivos no destino escolhido. Se usou `go install`, basta remover o executável instalado. Preserve o perfil se quiser manter seus dados.
+
+## Rodar com Docker
+
+Com o Docker em execução, inicie o Oiê com a imagem publicada e um volume para guardar seus dados.
+
+```sh
+docker run -d --name oie \
+  --publish 127.0.0.1:8080:8080 \
+  --volume oie-data:/data \
+  ghcr.io/araihu/oie:latest
+```
+
+Abra [127.0.0.1:8080](http://127.0.0.1:8080) no navegador e [conecte sua conta XMPP](../manual/index.md#contas-xmpp). Para escolher a tag da imagem, atualizar o contêiner ou acessar o Oiê de outro computador, veja [Docker em Arquitetura e deploy](../arquitetura/index.md#docker).
 
 ## Rodar pelo navegador ou usar o CLI
 

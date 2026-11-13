@@ -39,23 +39,15 @@ Abra [127.0.0.1:8080](http://127.0.0.1:8080) e [conecte sua conta XMPP](../manua
 
 ## Docker
 
-A [imagem de desenvolvimento do Oiê](https://github.com/araihu/oie/pkgs/container/oie) roda o motor e a interface web em Linux amd64 e arm64. Essa opção chegou depois do instalador v0.0.1-rc.1.
+A [imagem do Oiê](https://github.com/araihu/oie/pkgs/container/oie) roda o motor e a interface web em Linux amd64 e arm64. O [guia de instalação](../instalacao/index.md#rodar-com-docker) mostra como iniciar o contêiner.
 
-```sh
-docker run -d --name oie \
-  --publish 127.0.0.1:8080:8080 \
-  --volume oie-data:/data \
-  ghcr.io/araihu/oie:main
-```
+- `:latest` acompanha a versão mais recente marcada com uma tag, incluindo pré-lançamentos.
+- `:main` acompanha a versão de desenvolvimento.
+- Uma tag como `:v0.0.1-rc.3` seleciona uma versão específica.
 
-Abra [127.0.0.1:8080](http://127.0.0.1:8080) e [conecte sua conta XMPP](../manual/index.md#contas-xmpp). O volume `oie-data` guarda as contas, o histórico e os arquivos de mídia. Para atualizar, baixe a imagem com `docker pull ghcr.io/araihu/oie:main` e recrie o contêiner com o mesmo volume. Se o pacote for privado, [autentique-se no GHCR](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry) antes de baixar.
+O volume `oie-data` guarda as contas, o histórico e os arquivos de mídia. Para atualizar com `:latest`, baixe a imagem com `docker pull ghcr.io/araihu/oie:latest`, pare e remova o contêiner antigo e execute novamente o comando do guia com o mesmo volume.
 
-`:main` acompanha a versão de desenvolvimento. Para acompanhar a última versão
-do aplicativo marcada com uma tag, inclusive candidatos a lançamento, use
-`ghcr.io/araihu/oie:latest`. Para fixar uma versão, use uma tag como
-`ghcr.io/araihu/oie:v0.0.1-rc.3`.
-
-Mantenha a porta em localhost. Para acessar o Oiê de outro computador, use o túnel SSH descrito em [Motor hospedado](#motor-hospedado). A geração de miniaturas de vídeo está indisponível nessa imagem, que vem sem FFmpeg.
+Mantenha a porta em localhost. Para acessar o Oiê de outro computador, use o túnel SSH descrito em [Motor hospedado](#motor-hospedado). A imagem vem sem FFmpeg, por isso a geração de miniaturas de vídeo está indisponível no contêiner.
 
 ## Motor hospedado
 
