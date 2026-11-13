@@ -103,5 +103,3 @@ Em **Configurações → Geral**, use a busca em **Idioma** ou **Fuso horário d
 Escolha **Fuso horário do sistema** para acompanhar o fuso do dispositivo. O idioma e o fuso escolhidos ficam salvos neste aplicativo ou navegador. O agendamento também usa esse fuso para interpretar a data e o horário que você informa.
 
 ![Busca de fuso horário em Geral, com o fuso do sistema e o deslocamento UTC do resultado.](imagens/fuso-horario.webp "Busca por fuso horário")
-
-[Ver a captura da busca de fuso horário no tamanho original](imagens/fuso-horario-original.webp)
