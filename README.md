@@ -21,6 +21,8 @@ O comando escreve em `dist/` e exige um destino que ainda não exista. Use `--ou
 
 Os links em `content/baixar/index.md` apontam para arquivos de uma versão específica. Ao atualizar a página, confira os nomes dos arquivos e as plataformas na publicação do Oiê.
 
+Ao atualizar **Baixar**, confira também os comandos e requisitos do [guia de instalação](content/docs/instalacao/index.md) com o [guia do aplicativo](https://github.com/araihu/oie/blob/main/docs/installation.md).
+
 ## Documentação do Oiê
 
 A página **Baixar** aponta para os binários e para o código-fonte correspondente da [revisão da v0.0.1-rc.3](https://github.com/araihu/oie/tree/abdac26090d1b8259ffcc5a2c7f9a46da0ada3aa).

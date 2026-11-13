@@ -21,7 +21,7 @@ Tenha em mãos uma conta XMPP para começar a conversar.
 
 O guia explica a primeira abertura no macOS e quais bibliotecas instalar no Ubuntu.
 
-- [Guia de instalação](https://github.com/araihu/oie/blob/v0.0.1-rc.3/docs/installation.md)
+- [Guia de instalação](../docs/instalacao/index.md)
 - [Notas da versão e instalador](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.3)
 - [Somas de verificação SHA-256](https://github.com/araihu/oie/releases/download/v0.0.1-rc.3/SHA256SUMS)
 

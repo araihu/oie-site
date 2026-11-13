@@ -6,6 +6,7 @@ language: pt-BR
 
 # Documentação do Oiê
 
+- [Instalação](instalacao/index.md) — como instalar, abrir e atualizar o Oiê no macOS e no Ubuntu.
 - [Manual](manual/index.md) — contas XMPP, solicitações, convites, busca e envio agendado.
 - [Atalhos](atalhos/index.md) — edição, menções, emoji, busca e navegação por teclado.
 - [CLI](cli/index.md) — como compilar e usar o `oiectl`.
