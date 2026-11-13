@@ -1,12 +1,18 @@
 ---
 title: CLI
-description: Compile o oiectl e consulte contas, conversas, mensagens e eventos do motor do Oiê.
+description: Instale ou compile o oiectl e consulte contas, conversas, mensagens e eventos do motor do Oiê.
 language: pt-BR
 ---
 
 # CLI do Oiê
 
-O `oiectl` acessa um motor do Oiê em execução. Os exemplos usam o CLI e o motor da mesma revisão de desenvolvimento e uma instância local em `http://127.0.0.1:8080`. Nesta revisão, `oiectl --version` mostra `0.30.0`, a versão do contrato OpenAPI usado para gerar o CLI.
+O `oiectl` acessa um motor do Oiê em execução. Os exemplos usam o CLI e o motor da mesma revisão de desenvolvimento e uma instância local em `http://127.0.0.1:8080`.
+
+## Instalar o CLI
+
+O `oiectl` tem releases próprias no GitHub com tags `cli/vX.Y.Z`. Escolha a release para Linux x86-64 ou macOS Apple Silicon, confira o arquivo com `SHA256SUMS` e coloque o executável extraído no `PATH`. As notas também trazem o comando `go install` com a versão exata. [GitHub Releases do Oiê](https://github.com/araihu/oie/releases)
+
+Rode `oiectl --version` para conferir a versão do CLI e a tag do contrato usado para gerá-lo. As duas versões compartilham os números de major e minor. O patch do CLI pode avançar por conta própria. Em versões anteriores do CLI, `--version` exibe apenas a versão do contrato.
 
 ## Compilar e conectar
 
