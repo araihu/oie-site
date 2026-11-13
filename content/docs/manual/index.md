@@ -58,19 +58,21 @@ Os resultados destacam os termos encontrados e mostram a conta e a conversa de o
 
 Os atalhos **Mídia**, **Links** e **Documentos** abrem o catálogo com o mesmo texto de busca e as contas selecionadas. Para uma consulta rápida em todas as contas, use [Ctrl + K ou ⌘ + K](../atalhos/index.md#busca-geral). A consulta dessa janela é independente da busca da lista.
 
-## Enviar arquivos
+## Adicionar arquivos e localização
 
 A revisão de anexos ao colar ou arrastar arquivos está disponível em compilações de desenvolvimento que incluem essa mudança. O instalador publicado da v0.0.1-rc.8 é anterior a esse recurso.
 
-No navegador, cole uma imagem ou um arquivo no campo de mensagem ou arraste arquivos para a conversa. Você também pode selecionar os arquivos em **Adicionar anexo**. Na janela **Revisar anexos**, confira os arquivos, ajuste a legenda e remova o que não quiser enviar.
+Na conversa, abra **+** e escolha **Imagem**, **Arquivo** ou **Localização**. No navegador, também dá para colar uma imagem ou um arquivo no campo de mensagem ou arrastá-lo para a conversa.
 
-![Janela Revisar anexos com uma imagem, um arquivo de texto, o campo Legenda e as opções de rascunho ou envio.](imagens/revisar-anexos.webp)
+Em **Revisar anexos**, confira os arquivos, ajuste a legenda e remova o que precisar. **Adicionar ao rascunho** guarda a legenda e os anexos. **Cancelar** ou **Esc** mantém o rascunho anterior.
+
+![Janela Revisar anexos com uma imagem, um arquivo de texto, o campo Legenda e o botão Adicionar ao rascunho.](imagens/revisar-anexos.webp)
 
 [Ver a captura da revisão de anexos no tamanho original](imagens/revisar-anexos.webp)
 
-- **Enviar mensagem** envia os arquivos selecionados junto com a legenda.
-- **Adicionar ao rascunho** guarda a legenda e os anexos na conversa. Use essa opção também se quiser agendar o envio.
-- **Cancelar** ou **Esc** fecha a revisão e mantém o rascunho que você já tinha.
+Em **Localização**, cole um link de mapa ou escolha **Usar localização atual**, quando disponível. Use **Adicionar ao rascunho** para incluir o link no texto da conversa.
+
+Quando o rascunho estiver pronto, use **Enviar mensagem** na conversa ou escolha **Agendar mensagem** no menu de envio.
 
 O Oiê aceita até 16 arquivos de 20 MiB por mensagem. O serviço XMPP pode impor um limite menor ou não oferecer envio de arquivos. Quem recebe a mensagem pode baixar os arquivos pelos links enviados junto com a legenda.
 
