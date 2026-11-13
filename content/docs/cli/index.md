@@ -12,7 +12,7 @@ O `oiectl` acessa um motor do Oiê em execução. Os exemplos usam uma instânci
 
 Na release `cli/v0.30.0`, baixe o pacote para Linux x86-64 ou macOS Apple Silicon, confira o arquivo com `SHA256SUMS` e coloque o executável extraído no `PATH`. As notas também trazem o comando `go install` com a versão exata. [Baixar o oiectl v0.30.0](https://github.com/araihu/oie/releases/tag/cli/v0.30.0)
 
-Rode `oiectl --version` para conferir a versão do CLI e a tag do contrato usado para gerá-lo.
+O `oiectl` v0.30.0 foi gerado a partir do [contrato OpenAPI 0.30.0 no catálogo da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-v0.30.0/). Rode `oiectl --version` para conferir a versão do CLI e a tag do contrato.
 
 ```text
 oiectl version v0.30.0 (spec openapi/engine/v0.30.0)
