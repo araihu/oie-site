@@ -1,6 +1,6 @@
 ---
 title: Instalação
-description: Instale o Oiê no macOS, Trisquel ou Ubuntu, rode com Docker ou compile a partir do código-fonte.
+description: Instale o Oiê com Homebrew, APT ou o instalador, rode com Docker ou compile a partir do código-fonte.
 language: pt-BR
 ---
 
@@ -25,6 +25,28 @@ sudo apt install oie
 Abra o Oiê pelo menu de aplicativos. As novas versões chegam pelo APT,
 incluindo pré-lançamentos. O repositório começa na versão 0.0.1-rc.3.
 Para remover o aplicativo e manter seu perfil, execute `sudo apt remove oie`.
+
+## Instalar com Homebrew
+
+No **macOS com Apple Silicon**, instale o aplicativo pelo [tap da Arai Hû](https://github.com/araihu/homebrew-oie).
+
+```sh
+brew install --cask araihu/oie/oie
+```
+
+Abra o Oiê na pasta **Aplicativos**. Se o macOS bloquear a abertura, siga os passos de [primeira abertura](#primeira-abertura-no-macos).
+
+No **Ubuntu 24.04 x86-64**, instale as bibliotecas do sistema e depois a fórmula do Oiê.
+
+```sh
+sudo apt update
+sudo apt install libgtk-4-1 libwebkitgtk-6.0-4 libsoup-3.0-0
+brew install --formula araihu/oie/oie
+```
+
+Abra o aplicativo em uma sessão gráfica com `oie-desktop`.
+
+Para atualizar, encerre o Oiê e execute `brew upgrade --cask araihu/oie/oie` no macOS ou `brew upgrade --formula araihu/oie/oie` no Linux. Para remover o aplicativo, use `brew uninstall --cask araihu/oie/oie` ou `brew uninstall --formula araihu/oie/oie`.
 
 ## Instalar o pacote publicado
 
@@ -109,7 +131,7 @@ O FFmpeg é opcional e permite ao Oiê gerar miniaturas de vídeo. No Ubuntu, in
 
 ## Atualizar, remover e guardar seus dados
 
-Para atualizar, encerre o Oiê e execute o instalador da versão desejada com o mesmo destino. Se compilou a partir do código-fonte, rode o comando de compilação com a nova versão. Os dados ficam em um perfil separado da instalação.
+Se usou o instalador, encerre o Oiê e execute o instalador da versão desejada com o mesmo destino. Se compilou a partir do código-fonte, rode o comando de compilação com a nova versão. Os dados ficam em um perfil separado da instalação.
 
 | Sistema | Diretório do perfil |
 | --- | --- |
@@ -118,7 +140,7 @@ Para atualizar, encerre o Oiê e execute o instalador da versão desejada com o 
 
 O perfil guarda o histórico, as credenciais e a mídia retida. Encerre o aplicativo antes de copiar esse diretório. Use `--data-dir` para abrir o Oiê com outro perfil.
 
-Para remover o aplicativo, encerre o Oiê. No macOS, mova `Oie.app` para o Lixo. Para a instalação padrão no Ubuntu, remova estes arquivos e a pasta de documentação.
+Para remover uma instalação feita com `install.sh`, encerre o Oiê. No macOS, mova `Oie.app` para o Lixo. Na instalação padrão no Ubuntu, remova estes arquivos e a pasta de documentação.
 
 - `~/.local/bin/oie-desktop`
 - `~/.local/share/applications/org.araihu.oie.desktop`
