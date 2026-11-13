@@ -58,25 +58,17 @@ Os resultados destacam os termos encontrados e mostram a conta e a conversa de o
 
 Os atalhos **Mídia**, **Links** e **Documentos** abrem o catálogo com o mesmo texto de busca e as contas selecionadas. Para uma consulta rápida em todas as contas, use [Ctrl + K ou ⌘ + K](../atalhos/index.md#busca-geral). A consulta dessa janela é independente da busca da lista.
 
-## Adicionar arquivos e localização
+## Adicionar arquivos
 
 Este fluxo está disponível em compilações de desenvolvimento posteriores à v0.0.1-rc.8.
 
-Na conversa, abra **+** e escolha **Imagem**, **Arquivo** ou **Localização**. No navegador, também dá para colar uma imagem ou um arquivo no campo de mensagem ou arrastá-lo para a conversa.
+Na conversa, abra **+** e escolha **Imagem** ou **Arquivo**. No navegador, também dá para colar uma imagem ou um arquivo no campo de mensagem ou arrastá-lo para a conversa.
 
 Os arquivos aparecem no rascunho assim que você os adiciona. Escreva a legenda no próprio campo de mensagem. As prévias passam para a linha seguinte quando falta espaço. Para tirar um item do rascunho, use **Remover anexo** ao lado dele.
 
 ![Rascunho com três anexos empilhados acima do campo de mensagem, que contém a legenda.](imagens/rascunho-anexos.webp)
 
 [Ver a captura do rascunho no tamanho original](imagens/rascunho-anexos.webp)
-
-Em **Localização**, clique ou toque no mapa para marcar um ponto. Você também pode mover o mapa e usar **Marcar centro do mapa**. A prévia local cobre a região da Avenida Paulista, em São Paulo. Para outros locais, informe a latitude e a longitude ou escolha **Usar localização atual**, quando disponível.
-
-Use **Adicionar ao rascunho** para inserir as coordenadas no texto. Quem recebe pode copiá-las para o mapa de sua preferência.
-
-![Mapa da região da Avenida Paulista com um ponto selecionado e as coordenadas preenchidas.](imagens/localizacao-no-mapa.webp)
-
-[Ver a captura do seletor de localização no tamanho original](imagens/localizacao-no-mapa.webp)
 
 Quando o rascunho estiver pronto, use **Enviar mensagem** na conversa ou escolha **Agendar mensagem** no menu de envio.
 
