@@ -22,8 +22,19 @@ sudo apt update
 sudo apt install oie
 ```
 
-Abra o Oiê pelo menu de aplicativos. As novas versões chegam pelo APT,
-incluindo pré-lançamentos. O repositório começa na versão 0.0.1-rc.3.
+Abra o Oiê pelo menu de aplicativos. O repositório inclui pré-lançamentos.
+
+### Atualizar com APT
+
+Se o repositório já estiver cadastrado, feche o Oiê e execute o comando abaixo.
+
+```sh
+sudo apt update && sudo apt upgrade oie
+```
+
+A atualização direta da `rc.5` para a `rc.7` passou no Trisquel 12 e no
+Ubuntu 24.04 LTS, em ambientes x86-64 emulados, com o repositório já cadastrado.
+
 Para remover o aplicativo e manter seu perfil, execute `sudo apt remove oie`.
 
 ## Instalar com Homebrew
