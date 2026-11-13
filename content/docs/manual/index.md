@@ -70,7 +70,13 @@ Os arquivos aparecem no rascunho assim que você os adiciona. Escreva a legenda 
 
 [Ver a captura do rascunho no tamanho original](imagens/rascunho-anexos.webp)
 
-Em **Localização**, informe a latitude e a longitude ou escolha **Usar localização atual**, quando disponível. Use **Adicionar ao rascunho** para inserir as coordenadas no texto. Quem recebe pode copiá-las para o mapa de sua preferência.
+Em **Localização**, clique ou toque no mapa para marcar um ponto. Você também pode mover o mapa e usar **Marcar centro do mapa**. A prévia local cobre a região da Avenida Paulista, em São Paulo. Para outros locais, informe a latitude e a longitude ou escolha **Usar localização atual**, quando disponível.
+
+Use **Adicionar ao rascunho** para inserir as coordenadas no texto. Quem recebe pode copiá-las para o mapa de sua preferência.
+
+![Mapa da região da Avenida Paulista com um ponto selecionado e as coordenadas preenchidas.](imagens/localizacao-no-mapa.webp)
+
+[Ver a captura do seletor de localização no tamanho original](imagens/localizacao-no-mapa.webp)
 
 Quando o rascunho estiver pronto, use **Enviar mensagem** na conversa ou escolha **Agendar mensagem** no menu de envio.
 
