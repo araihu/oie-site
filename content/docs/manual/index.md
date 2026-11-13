@@ -62,11 +62,11 @@ Os atalhos **Mídia**, **Links** e **Documentos** abrem o catálogo com o mesmo 
 
 No menu da mensagem, escolha **Marcar mensagem com estrela**. Abra **Favoritas** na barra lateral para ver as mensagens marcadas em conversas diretas e salas, inclusive nas arquivadas. A lista segue a conta selecionada. Use **Todas as contas** no seletor para reunir as mensagens de todas elas.
 
-As mensagens aparecem em balões, com o texto formatado e as prévias da conversa. Selecione a prévia de uma imagem para ampliá-la.
+Use **Pesquisar mensagens favoritas** para buscar pelo texto, pelo remetente ou pela conversa de origem. As mensagens aparecem em balões, com o texto formatado e as prévias da conversa. Selecione a prévia de uma imagem para ampliá-la.
 
 No menu de cada resultado, use **Ir para a mensagem** para voltar à conversa de origem, **Copiar mensagem original** para copiar o texto ou **Encaminhar** para enviar uma cópia. Selecione a estrela para remover a mensagem da lista.
 
-![Seção Favoritas com balões de mensagem, uma prévia de link e uma imagem no corpo da mensagem.](imagens/mensagens-favoritas.webp "Mensagens favoritas")
+![Seção Favoritas com um campo de pesquisa, uma prévia de link e uma imagem no corpo da mensagem.](imagens/mensagens-favoritas.webp "Mensagens favoritas")
 
 [Ver a captura de Favoritas no tamanho original](imagens/mensagens-favoritas-original.webp)
 
@@ -74,11 +74,11 @@ A seção **Favoritas** da barra lateral está disponível na prévia de desenvo
 
 ## Encaminhar mensagens
 
-Abra **Encaminhar** no menu de uma mensagem em **Conversas**, **Favoritas** ou **Mídia e links**. Escolha uma ou mais salas e confirme em **Encaminhar**. O seletor mostra a conta de cada sala. Cada cópia é enviada pela conta da sala escolhida.
+Abra **Encaminhar** no menu de uma mensagem em **Conversas**, **Favoritas** ou **Mídia e links**. Confira a prévia no balão, escolha uma ou mais salas e confirme em **Encaminhar**. Você pode pesquisar na lista de destinos. Cada sala mostra a conta pela qual a cópia será enviada e exibe a foto e o tópico quando disponíveis.
 
 O Oiê copia o texto da mensagem e prepara os anexos para o novo envio. Se houver falha em um destino, confira o aviso ao lado da sala e use **Tentar novamente**. As salas cuja cópia já entrou na fila ficam marcadas.
 
-![Janela Encaminhar mensagem com duas salas selecionadas, uma da conta Pessoal e outra da conta Trabalho.](imagens/encaminhar-mensagem.webp "Selecionar salas para encaminhar")
+![Janela Encaminhar mensagem com uma imagem na prévia e duas salas selecionadas. Um dos tópicos aparece em uma linha com reticências.](imagens/encaminhar-mensagem.webp "Selecionar salas para encaminhar")
 
 [Ver a captura do encaminhamento no tamanho original](imagens/encaminhar-mensagem-original.webp)
 
