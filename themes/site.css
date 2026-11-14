@@ -176,6 +176,12 @@
   border-radius: var(--radius-radius);
 }
 
+/* Keep room to pan the wide database diagram in the inline viewer. */
+[data-theme="oie"] .margo-image > .margo-viewer__viewer > .margo-viewer__viewport:has(img[src="diagramas/completo.svg"]) {
+  min-block-size: clamp(16rem, 40svh, 28rem);
+  align-content: safe center;
+}
+
 /* Mermaid's SVG has its own palette. Use the Oiê theme for flowcharts. */
 [data-theme="oie"] .margo-mermaid svg.flowchart {
   --oie-diagram-fill: var(--oie-accent-soft);

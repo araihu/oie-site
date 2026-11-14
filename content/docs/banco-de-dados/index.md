@@ -18,7 +18,7 @@ Abra o [catálogo](catalogo/index.md) para consultar colunas, definições SQL, 
 
 ## Diagramas por assunto
 
-Cada diagrama mostra as chaves primárias e as colunas ligadas pelas chaves estrangeiras do recorte. O [DER completo em SVG](diagramas/completo.svg) reúne todas as tabelas e views, com todas as colunas.
+Cada diagrama mostra as chaves primárias e as colunas ligadas pelas chaves estrangeiras do recorte.
 
 ### Contas, contatos e conversas
 
@@ -49,3 +49,9 @@ As tabelas deste recorte guardam [respostas](catalogo/message_replies.md), [estr
 [Referências extraídas das mensagens](catalogo/shared_content.md) alimentam as abas de mídia, links e documentos. As [entradas ordenadas](catalogo/shared_catalog_order.md) registram a posição das referências em cada escopo e aba.
 
 ![Chaves estrangeiras das tabelas de conteúdo compartilhado, prévias e catálogo](diagramas/conteudo.svg "DER de conteúdo compartilhado")
+
+## Diagrama completo
+
+Use **1:1** para ler os nomes das colunas e arraste o diagrama para percorrer as tabelas. Também é possível [abrir o SVG em uma aba](diagramas/completo.svg).
+
+![DER com todas as tabelas, views, colunas e chaves estrangeiras do SQLite do Oiê](diagramas/completo.svg "DER completo do banco de dados do Oiê")
