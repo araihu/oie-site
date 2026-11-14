@@ -37,6 +37,8 @@ As seções sobre anexos, leitura, idioma e fuso horário, a instalação Flatpa
 
 As seções **Mensagens favoritadas** e **Envio agendado** foram conferidas na [revisão ad3f9be do aplicativo](https://github.com/araihu/oie/tree/ad3f9bebd78cb2f9a62769a3f26aabf4a419e808), usada na rc.11. A captura de **Favoritas** usa mensagens fictícias.
 
+As seções de prévia e reprodução de vídeo foram conferidas na [revisão c0bc373 do aplicativo](https://github.com/araihu/oie/tree/c0bc373423340724b909e2e7028f324d005640d1). As capturas mostram uma conversa fictícia em pt-BR. A miniatura no rascunho e a geração de prévias sem FFmpeg ainda não estão no instalador da rc.11.
+
 A instalação do `oiectl` por release independente foi conferida com a [release cli/v0.30.1](https://github.com/araihu/oie/releases/tag/cli/v0.30.1), gerada a partir do [contrato no commit f21196a](https://github.com/araihu/oie/tree/f21196a6d8fe2d1b75180470ccd26089db5d6bb9/api).
 
 As capturas da página inicial, do manual e dos atalhos mostram a interface em pt-BR com dados fictícios em instâncias isoladas. A captura da página inicial e as sete capturas de recursos mais antigas foram refeitas na [revisão e87ea75](https://github.com/araihu/oie/tree/e87ea75b0dac62915c0b4e7fe8cb49d01ecc6692). As capturas da busca geral e da solicitação de mensagem são de `6c8e8c0`, que tem a mesma interface. As capturas dos anexos e da busca de fuso horário foram feitas na revisão da rc.9 (`d6ce9ae`). As imagens estão em WebP.

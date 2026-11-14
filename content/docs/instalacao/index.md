@@ -167,7 +167,13 @@ Se estiver trabalhando em um checkout, execute o comando de compilação da sua 
 
 ### Miniaturas de vídeo
 
-O FFmpeg é opcional e permite ao Oiê gerar miniaturas de vídeo. No Ubuntu, instale com `sudo apt install ffmpeg`. Se o aplicativo não encontrar o executável, passe o caminho absoluto com `oie-desktop --ffmpeg /caminho/para/ffmpeg`.
+Na rc.11 oferecida em **Baixar**, o FFmpeg é opcional para gerar miniaturas
+de vídeos recebidos. No Ubuntu, instale com `sudo apt install ffmpeg`.
+Se precisar indicar o caminho, use `oie-desktop --ffmpeg /caminho/para/ffmpeg`.
+
+Na versão de desenvolvimento, o navegador ou o aplicativo de desktop gera
+as miniaturas com o suporte a vídeo do próprio dispositivo. A instalação dispensa o
+executável FFmpeg. Veja [Prévia e reprodução de vídeos](../manual/index.md#prvia-e-reproduo-de-vdeos).
 
 ## Atualizar, remover e guardar seus dados
 
