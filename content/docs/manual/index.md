@@ -26,7 +26,7 @@ A primeira mensagem de uma conversa direta sem histórico anterior pode aparecer
 
 [Ver a captura da solicitação no tamanho original](imagens/solicitacao-de-mensagem-original.webp)
 
-Uma solicitação arquivada continua em **Arquivadas** mesmo se chegarem mais mensagens. Se você aceitar uma solicitação de mensagem por lá, a conversa volta à lista principal. Em **Convite para sala**, use **Entrar na sala** para pedir a entrada. O conteúdo aparece quando o servidor XMPP confirma. Você também pode arquivar o convite e decidir depois.
+Uma solicitação arquivada continua em **Arquivadas** mesmo se chegarem mais mensagens. Abra **Arquivadas** na linha abaixo dos filtros de conversas. Se você aceitar uma solicitação de mensagem por lá, a conversa volta à lista principal. Em **Convite para sala**, use **Entrar na sala** para pedir a entrada. O conteúdo aparece quando o servidor XMPP confirma. Você também pode arquivar o convite e decidir depois.
 
 ## Salas, convites e entrada automática
 
