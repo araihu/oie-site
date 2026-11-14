@@ -60,7 +60,7 @@ Os atalhos **Mídia**, **Links** e **Documentos** abrem o catálogo com o mesmo 
 
 ## Mídia e links
 
-Abra **Mídia e links** na barra lateral para encontrar o que foi compartilhado nas conversas. Use a pesquisa e o seletor de contas para filtrar o catálogo. As abas **Mídia** e **Links** agrupam os resultados por mês e, quando há espaço, distribuem as prévias em colunas com alturas independentes.
+Abra **Mídia e links** na barra lateral para encontrar o que foi compartilhado nas conversas. Use a pesquisa e o seletor de contas para filtrar o catálogo. As abas **Mídia**, **Links** e **Documentos** agrupam os resultados por mês e, quando há espaço, distribuem os cartões em colunas com alturas independentes. Documentos com prévia mostram o conteúdo abaixo do nome do arquivo. Quando só há um ícone, o cartão é mais compacto.
 
 ## Mensagens favoritas
 
