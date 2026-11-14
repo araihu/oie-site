@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.11](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.12](../../baixar/index.md).
 
 ## Contas XMPP
 
@@ -69,6 +69,18 @@ No menu do cartão, use **Ir para a mensagem** para abrir a conversa no ponto em
 ![Grade de mensagens favoritadas, com o remetente, a conversa e o balão da mensagem em cada cartão.](imagens/favoritas.webp "Mensagens favoritadas")
 [Ver a captura em tamanho original](imagens/favoritas-original.webp)
 
+### Favoritar em Mídia e links
+
+Em **Mídia e links**, clique na estrela no canto superior esquerdo do
+cartão para favoritar a mensagem de origem. A estrela cinza aparece ao
+passar o mouse ou focar o cartão pelo teclado. Nos favoritos, ela fica
+amarela e visível. Em telas de toque, o botão fica sempre disponível.
+Itens da mesma mensagem compartilham a estrela.
+
+![Estrela cinza no primeiro cartão e estrela amarela no terceiro, ambas no canto superior esquerdo.](imagens/favoritar-midia.webp "Favoritar em Mídia e links")
+
+[Ver a captura em tamanho original](imagens/favoritar-midia-original.webp)
+
 ## Anexos no rascunho
 
 Ao lado do campo de mensagem, abra **+** e escolha **Imagem** ou **Arquivo**. No navegador, você também pode colar um arquivo no campo ou arrastá-lo para a conversa. Escreva a legenda no próprio campo de mensagem.
@@ -83,9 +95,7 @@ O Oiê aceita até 16 arquivos por mensagem, de até 20 MiB cada. O serviço XMP
 
 ## Prévia e reprodução de vídeos
 
-A miniatura de vídeo no rascunho está na versão de desenvolvimento do Oiê.
-O instalador rc.11 em **Baixar** ainda não inclui esse recurso. Para anexar
-um vídeo, escolha **+ → Arquivo** e selecione o arquivo.
+Para anexar um vídeo, escolha **+ → Arquivo** e selecione o arquivo.
 Use **Reproduzir vídeo** na miniatura para assistir antes de enviar. O nome
 do arquivo e a opção **Remover anexo** continuam disponíveis se a miniatura
 não puder ser criada.
