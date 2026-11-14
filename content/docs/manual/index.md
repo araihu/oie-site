@@ -70,6 +70,28 @@ Você pode clicar no nome de um anexo pronto para baixar o original. No aplicati
 
 O Oiê aceita até 16 arquivos por mensagem, de até 20 MiB cada. O serviço XMPP pode impor um limite menor ou não permitir anexos naquela conversa. Quem recebe a mensagem pode baixar os arquivos pelos links enviados junto com a legenda. Os anexos prontos ficam no rascunho ao recarregar a página. Aguarde o preparo antes de trocar de conversa.
 
+## Prévia e reprodução de vídeos
+
+A miniatura de vídeo no rascunho está na próxima versão do Oiê, após a
+rc.9 oferecida em **Baixar**. Escolha **+ → Arquivo** e selecione o vídeo.
+Use **Reproduzir vídeo** na miniatura para assistir antes de enviar. O nome
+do arquivo e a opção **Remover anexo** continuam disponíveis se a miniatura
+não puder ser criada.
+
+![Vídeo no rascunho com botão de reprodução, nome do arquivo e botão para remover o anexo.](imagens/video-no-rascunho.webp "Vídeo no rascunho")
+
+[Ver captura em tamanho original](imagens/video-no-rascunho-original.webp).
+
+Em uma conversa direta ou sala, escolha **Reproduzir vídeo** no cartão para
+assistir. Se a miniatura não aparecer, você ainda pode usar o botão de
+reprodução. Em **Configurações → Este dispositivo**, ajuste **Gerar prévias de
+vídeo automaticamente**. Com essa opção desativada, você pode pedir uma prévia
+pelo cartão ou pelo menu de ações em **Mídia**.
+
+![Cartão de vídeo recebido em uma sala, com uma imagem estática e o botão de reprodução ao centro.](imagens/video-recebido.webp "Vídeo recebido em uma sala")
+
+[Ver captura em tamanho original](imagens/video-recebido-original.webp).
+
 ## Envio agendado
 
 Abra o menu junto ao botão de envio, escolha **Agendar mensagem** e confira a data, o horário e a mensagem. Em **Agendadas**, você pode editar, reagendar, cancelar ou pedir o envio imediato enquanto a mensagem ainda estiver aguardando o primeiro envio.

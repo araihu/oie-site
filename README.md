@@ -35,6 +35,8 @@ A seção de backup antes de atualizar o banco foi conferida na [revisão dd2e61
 
 As seções sobre anexos, leitura, idioma e fuso horário, a instalação Flatpak e os exemplos de compilação foram conferidos na [revisão d6ce9ae do aplicativo](https://github.com/araihu/oie/tree/d6ce9ae95c6f67850cb7a8e2ab91979fe35171ea), usada na rc.9. O bundle da rc.8 usa `org.araihu.oie`.
 
+As seções de prévia e reprodução de vídeo foram conferidas na revisão local `c26ed359134da5c78748d3279c4d51f949dea9c0` da implementação do aplicativo, baseada na main `be2518b`. As capturas mostram uma conversa fictícia em pt-BR. A miniatura no rascunho e a geração de prévias sem FFmpeg ainda não estão no instalador da rc.9.
+
 A instalação do `oiectl` por release independente foi conferida com a [release cli/v0.30.1](https://github.com/araihu/oie/releases/tag/cli/v0.30.1), gerada a partir do [contrato no commit f21196a](https://github.com/araihu/oie/tree/f21196a6d8fe2d1b75180470ccd26089db5d6bb9/api).
 
 As capturas da página inicial, do manual e dos atalhos mostram a interface em pt-BR com dados fictícios em instâncias isoladas. A captura da página inicial e as sete capturas de recursos mais antigas foram refeitas na [revisão e87ea75](https://github.com/araihu/oie/tree/e87ea75b0dac62915c0b4e7fe8cb49d01ecc6692). As capturas da busca geral e da solicitação de mensagem são de `6c8e8c0`, que tem a mesma interface. As capturas dos anexos e da busca de fuso horário foram feitas na revisão da rc.9 (`d6ce9ae`). As imagens estão em WebP.
