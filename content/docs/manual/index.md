@@ -64,7 +64,7 @@ Abra **Mídia e links** na barra lateral para encontrar o que foi compartilhado 
 
 ## Mensagens favoritas
 
-No menu da mensagem, escolha **Marcar mensagem com estrela**. Abra **Favoritas** na barra lateral para ver as mensagens marcadas em conversas diretas e salas, inclusive nas arquivadas. A lista segue a conta selecionada. Use **Todas as contas** no seletor para reunir as mensagens de todas elas.
+No menu da mensagem, escolha **Favoritar**. Abra **Favoritas** na barra lateral para ver as mensagens marcadas em conversas diretas e salas, inclusive nas arquivadas. A lista segue a conta selecionada. Use **Todas as contas** no seletor para reunir as mensagens de todas elas.
 
 Use **Pesquisar mensagens favoritas** para buscar pelo texto, pelo remetente ou pela conversa de origem. As mensagens aparecem em balões, com o texto formatado e as prévias da conversa. Em telas mais largas, os resultados ocupam várias colunas e cada mensagem aparece logo abaixo da anterior na mesma coluna. Selecione a prévia de uma imagem para ampliá-la.
 
