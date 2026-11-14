@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.9](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.11](../../baixar/index.md).
 
 ## Contas XMPP
 
@@ -58,6 +58,15 @@ Os resultados destacam os termos encontrados e mostram a conta e a conversa de o
 
 Os atalhos **Mídia**, **Links** e **Documentos** abrem o catálogo com o mesmo texto de busca e as contas selecionadas. Para uma consulta rápida em todas as contas, use [Ctrl + K ou ⌘ + K](../atalhos/index.md#busca-geral). A consulta dessa janela é independente da busca da lista.
 
+## Mensagens favoritadas
+
+No menu de uma mensagem, escolha **Favoritar**. Abra **Favoritas** na navegação lateral para buscar nas mensagens que você marcou. Cada cartão mostra o remetente, a conversa e a mensagem. Use **Trocar de conta** para ver os favoritos de uma conta específica.
+
+No menu do cartão, use **Ir para a mensagem** para abrir a conversa no ponto em que ela foi enviada. Se quiser tirar uma mensagem da lista, clique na estrela do cartão.
+
+![Grade de mensagens favoritadas, com o remetente, a conversa e o balão da mensagem em cada cartão.](imagens/favoritas.webp "Mensagens favoritadas")
+[Ver a captura em tamanho original](imagens/favoritas-original.webp)
+
 ## Anexos no rascunho
 
 Ao lado do campo de mensagem, abra **+** e escolha **Imagem** ou **Arquivo**. No navegador, você também pode colar um arquivo no campo ou arrastá-lo para a conversa. Escreva a legenda no próprio campo de mensagem.
@@ -75,6 +84,8 @@ O Oiê aceita até 16 arquivos por mensagem, de até 20 MiB cada. O serviço XMP
 Abra o menu junto ao botão de envio, escolha **Agendar mensagem** e confira a data, o horário e a mensagem. Em **Agendadas**, você pode editar, reagendar, cancelar ou pedir o envio imediato enquanto a mensagem ainda estiver aguardando o primeiro envio.
 
 ![Janela Agendar mensagem, com a prévia do lembrete e o campo de data e horário de envio.](imagens/envio-agendado.webp "Prévia e horário do envio agendado")
+
+Na agenda da navegação lateral, use **Conversas** para escolher quais destinos quer ver. Os envios do mesmo dia aparecem em colunas quando há espaço.
 
 Para editar uma mensagem sem sair da conversa, abra **Mais opções → Agendadas → Editar mensagem**. O campo de mensagem passa a mostrar o conteúdo agendado. Ao salvar ou cancelar a edição, o Oiê restaura o rascunho que você já tinha naquela conversa.
 
