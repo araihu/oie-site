@@ -7,6 +7,9 @@ language: pt-BR
 # `{{ .Table.Name }}`
 
 [Catálogo de tabelas e views](index.md)
+{{ if (eq .Table.Name "shared_catalog_sources" "shared_catalog_counts" "shared_catalog_order" "shared_catalog_visible_sources" "shared_catalog_order_rows" "shared_catalog_refresh") }}
+Disponível a partir da migração `000027`, posterior à `v0.0.1-rc.9`.
+{{ end -}}
 {{ if .Table.Comment }}
 {{ .Table.Comment }}
 {{ end -}}
