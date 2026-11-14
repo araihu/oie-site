@@ -1,6 +1,6 @@
 ---
 title: Manual
-description: Conecte contas XMPP, aceite solicitações e convites, pesquise mensagens e arquivos em várias contas e gerencie envios agendados.
+description: Conecte contas XMPP, envie anexos, acompanhe mensagens não lidas, agende envios e ajuste o idioma e o fuso horário.
 language: pt-BR
 margo:
   imageViewer: true
@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.8](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.9](../../baixar/index.md).
 
 ## Contas XMPP
 
@@ -24,8 +24,6 @@ A primeira mensagem de uma conversa direta sem histórico anterior pode aparecer
 
 ![Solicitação de mensagem arquivada com o endereço do remetente no cabeçalho e o botão Aceitar.](imagens/solicitacao-de-mensagem.webp "Solicitação de mensagem arquivada")
 
-[Ver a captura da solicitação no tamanho original](imagens/solicitacao-de-mensagem-original.webp)
-
 Uma solicitação arquivada continua em **Arquivadas** mesmo se chegarem mais mensagens. Se você aceitar uma solicitação de mensagem por lá, a conversa volta à lista principal. Em **Convite para sala**, use **Entrar na sala** para pedir a entrada. O conteúdo aparece quando o servidor XMPP confirma. Você também pode arquivar o convite e decidir depois.
 
 ## Salas, convites e entrada automática
@@ -40,7 +38,7 @@ A prévia pode mostrar nome, descrição, assunto, foto e número de participant
 
 ### Descobrir e gerenciar salas
 
-Estas opções estão em desenvolvimento para uma versão posterior à v0.0.1-rc.8 disponível em **Baixar**.
+Estas opções estão em desenvolvimento para uma versão posterior à v0.0.1-rc.9 disponível em **Baixar**.
 
 - Em **Nova conversa → Entrar na sala**, abra **Explorar salas públicas** e selecione uma sala para preencher o endereço e ver a prévia. Se a sala exigir senha, informe-a antes de entrar.
 - Dentro da sala, abra **Mais opções → Gerenciar sala**. Em **Detalhes**, edite o nome e o tópico conforme suas permissões. Se você for proprietário e o servidor oferecer suporte, use **Trocar imagem da sala** ou **Remover imagem da sala**.
@@ -50,8 +48,6 @@ Estas opções estão em desenvolvimento para uma versão posterior à v0.0.1-rc
 
 ![Aba Participantes de Gerenciar sala, com avatares e grupos por permissão.](imagens/gerenciar-sala.webp "Aba Participantes de Gerenciar sala")
 
-[Ver a captura completa](imagens/gerenciar-sala-original.webp)
-
 ## Histórico e busca em salas
 
 Em **Detalhes da conversa**, use **Baixar histórico antigo automaticamente** para escolher como o Oiê recupera o histórico daquela sala. Com a opção ligada, ele baixa mensagens antigas aos poucos. Com a opção desligada, pode buscá-las quando você usa **Mensagens anteriores** no topo da conversa ou faz uma busca, conforme o servidor permitir.
@@ -59,6 +55,10 @@ Em **Detalhes da conversa**, use **Baixar histórico antigo automaticamente** pa
 Dentro de uma sala, abra **Mais opções** e selecione **Pesquisar mensagens**. Essa busca também pode consultar o arquivo do servidor, quando ele oferece busca por texto. Ative **Incluir histórico de edições** para encontrar versões anteriores de mensagens editadas. Use os [atalhos de busca](../atalhos/index.md#busca-na-conversa) para percorrer os resultados.
 
 ![Busca por trilha em uma sala. O primeiro de três resultados está destacado na conversa e o campo oferece a opção de incluir o histórico de edições.](imagens/busca-na-sala.webp "Busca no histórico da sala")
+
+## Mensagens não lidas
+
+Depois de percorrer o histórico, role até o fim ou use **Ir para as mais recentes** acima do campo de mensagem, quando esse botão aparecer. Se chegarem mensagens enquanto você estiver no histórico, o botão mostra **Novas mensagens · ir para as últimas**. Ao permanecer no fim com a janela ou aba em foco e sem buscas ou diálogos abertos, o Oiê marca como lidas também as mensagens anteriores que ficaram fora da tela. O contador de não lidas e o indicador de menções são atualizados na lista de conversas.
 
 ## Busca geral e filtros por conta
 
@@ -68,9 +68,19 @@ Os resultados destacam os termos encontrados e mostram a conta e a conversa de o
 
 ![Busca por plataformas com duas contas selecionadas e o termo destacado no texto e no link da mensagem.](imagens/busca-geral.webp "Busca em várias contas")
 
-[Ver a captura da busca geral no tamanho original](imagens/busca-geral-original.webp)
-
 Os atalhos **Mídia**, **Links** e **Documentos** abrem o catálogo com o mesmo texto de busca e as contas selecionadas. Para uma consulta rápida em todas as contas, use [Ctrl + K ou ⌘ + K](../atalhos/index.md#busca-geral). A consulta dessa janela é independente da busca da lista.
+
+## Anexos no rascunho
+
+Ao lado do campo de mensagem, abra **+** e escolha **Imagem** ou **Arquivo**. No navegador, você também pode colar um arquivo no campo ou arrastá-lo para a conversa. Escreva a legenda no próprio campo de mensagem.
+
+![Menu de anexos aberto pelo botão de mais, com as opções Imagem e Arquivo.](imagens/menu-de-anexos.webp "Menu de anexos")
+
+Você pode clicar no nome de um anexo pronto para baixar o original. No aplicativo de desktop, isso abre a janela do sistema para salvar o arquivo. Use **Remover anexo** para tirar um item do rascunho. Se o preparo falhar, use **Tentar novamente** ou remova o arquivo. Se usou o seletor do Flatpak, escolha o arquivo novamente. Quando todos estiverem prontos, envie a mensagem ou [agende o envio](#envio-agendado).
+
+![Rascunho com uma imagem, dois arquivos de texto e a legenda no campo de mensagem. Cada anexo tem um botão de remoção.](imagens/rascunho-anexos.webp "Anexos no rascunho")
+
+O Oiê aceita até 16 arquivos por mensagem, de até 20 MiB cada. O serviço XMPP pode impor um limite menor ou não permitir anexos naquela conversa. Quem recebe a mensagem pode baixar os arquivos pelos links enviados junto com a legenda. Os anexos prontos ficam no rascunho ao recarregar a página. Aguarde o preparo antes de trocar de conversa.
 
 ## Envio agendado
 
@@ -89,3 +99,11 @@ O Oiê exibe Markdown nas mensagens por padrão. Para citar várias linhas, come
 O lápis ao lado do horário indica uma mensagem editada. Selecione-o ou use **Ver histórico de edições** no menu da mensagem para consultar as versões que o Oiê guardou.
 
 ![Mensagem com a pergunta citada em um bloco e a resposta Sim! Levo o café abaixo, fora da citação.](imagens/citacao-markdown.webp "Citação em Markdown")
+
+## Idioma e fuso horário
+
+Em **Configurações → Geral**, use a busca em **Idioma** ou **Fuso horário de exibição**. A lista de fusos mostra o deslocamento atual em relação ao UTC, incluindo o horário de verão quando aplicável. Você pode buscar pela cidade ou pelo deslocamento, como `UTC+09:00`.
+
+Escolha **Fuso horário do sistema** para acompanhar o fuso do dispositivo. O idioma e o fuso escolhidos ficam salvos neste aplicativo ou navegador. O agendamento também usa esse fuso para interpretar a data e o horário que você informa.
+
+![Busca de fuso horário em Geral, com o fuso do sistema e o deslocamento UTC do resultado.](imagens/fuso-horario.webp "Busca por fuso horário")
