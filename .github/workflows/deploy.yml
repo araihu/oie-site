@@ -63,6 +63,21 @@ jobs:
           : "${CLOUDFLARE_ACCOUNT_ID:?Configure a variável CLOUDFLARE_ACCOUNT_ID}"
           : "${CLOUDFLARE_API_TOKEN:?Configure o secret CLOUDFLARE_API_TOKEN}"
           npx --yes "wrangler@${WRANGLER_VERSION}" deploy
+      - name: Conferir a rota de uma tabela SQLite
+        if: steps.main.outputs.publish == 'true'
+        run: |
+          origin=https://oie.araihu.com
+          route=/docs/banco-de-dados/catalogo/messages
+          for attempt in {1..24}; do
+            url=$(curl --fail --silent --show-error --location --max-time 10 \
+              --write-out '%{url_effective}' --output /dev/null "$origin$route.html?commit=$GITHUB_SHA") || url=
+            if [[ "$url" == "$origin$route?commit=$GITHUB_SHA" ]]; then
+              exit 0
+            fi
+            sleep 5
+          done
+          echo 'A página da tabela redirecionou para uma URL incompatível com seus assets relativos.' >&2
+          exit 1
       - name: Conferir site publicado
         if: steps.main.outputs.publish == 'true'
         run: |
