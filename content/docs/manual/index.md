@@ -48,7 +48,7 @@ Dentro de uma sala, abra **Mais opções** e selecione **Pesquisar mensagens**. 
 
 Disponível em compilações posteriores à v0.0.1-rc.12.
 
-Em **Configurações → Geral → Retenção de mensagens**, escolha os prazos padrão para **Salas** e **Conversas diretas**. Para mudar o prazo só de uma conversa, abra **Detalhes da conversa → Retenção de mensagens**. Use **Usar o padrão** para voltar ao prazo global.
+Em **Configurações → Este dispositivo → Retenção de mensagens**, escolha os prazos padrão para **Salas** e **Conversas diretas**. Para mudar o prazo só de uma conversa, abra **Detalhes da conversa → Retenção de mensagens**. Use **Usar o padrão** para voltar ao prazo global.
 
 Por padrão, as salas têm prazo de **180 dias** e as conversas diretas usam **Sem limite**. O Oiê preserva as **100 mensagens mais recentes já guardadas de cada sala** e todas as mensagens favoritadas. Um prazo menor pode remover outras mensagens antigas do Oiê. Em um envio agendado, a contagem começa quando a mensagem é enviada.
 
