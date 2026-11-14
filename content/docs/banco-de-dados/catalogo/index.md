@@ -8,6 +8,8 @@ language: pt-BR
 
 Estrutura SQLite gerada a partir das [migrações do Oiê](https://github.com/araihu/oie/tree/dd2e6106e56f34c86a1b74c6dd989ecdbd350bc6/internal/adapters/sqlite/migrations). Consulte os [diagramas por assunto](../index.md#diagramas-por-assunto) para localizar as relações principais.
 
+As tabelas e views introduzidas pela migração `000027` exigem uma versão posterior à `v0.0.1-rc.9`.
+
 ## Tabelas e views
 
 | Nome | Colunas | Descrição | Tipo |

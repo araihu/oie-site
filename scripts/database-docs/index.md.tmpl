@@ -8,6 +8,8 @@ language: pt-BR
 
 {{ .Schema.Desc }} Consulte os [diagramas por assunto](../index.md#diagramas-por-assunto) para localizar as relações principais.
 
+As tabelas e views introduzidas pela migração `000027` exigem uma versão posterior à `v0.0.1-rc.9`.
+
 ## Tabelas e views
 {{ range .Tables }}
 |{{ range $i, $value := . }} {{ if and (eq $i 3) (eq $value "table") }}Tabela{{ else if and (eq $i 3) (eq $value "view") }}View{{ else }}{{ $value | nl2br }}{{ end }} |{{ end }}
