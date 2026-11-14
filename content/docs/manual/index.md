@@ -58,6 +58,10 @@ Os resultados destacam os termos encontrados e mostram a conta e a conversa de o
 
 Os atalhos **Mídia**, **Links** e **Documentos** abrem o catálogo com o mesmo texto de busca e as contas selecionadas. Para uma consulta rápida em todas as contas, use [Ctrl + K ou ⌘ + K](../atalhos/index.md#busca-geral). A consulta dessa janela é independente da busca da lista.
 
+## Mídia e links
+
+Abra **Mídia e links** na barra lateral para encontrar o que foi compartilhado nas conversas. Use a pesquisa e o seletor de contas para filtrar o catálogo. As abas **Mídia** e **Links** agrupam os resultados por mês e, quando há espaço, distribuem as prévias em colunas com alturas independentes.
+
 ## Mensagens favoritas
 
 No menu da mensagem, escolha **Marcar mensagem com estrela**. Abra **Favoritas** na barra lateral para ver as mensagens marcadas em conversas diretas e salas, inclusive nas arquivadas. A lista segue a conta selecionada. Use **Todas as contas** no seletor para reunir as mensagens de todas elas.
