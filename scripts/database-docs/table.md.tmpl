@@ -1,0 +1,59 @@
+---
+title: {{ printf "%q" .Table.Name }}
+description: {{ printf "%q" (printf "Definição SQL, colunas e relações de %s no banco de dados do Oiê." .Table.Name) }}
+language: pt-BR
+---
+
+# `{{ .Table.Name }}`
+
+[Catálogo de tabelas e views](index.md)
+{{ if .Table.Comment }}
+{{ .Table.Comment }}
+{{ end -}}
+{{ if .Table.Def }}
+## Definição SQL
+
+```sql
+{{ .Table.Def }}
+```
+{{ end }}
+## Colunas
+{{ range .Columns }}
+|{{ range $i, $value := . }} {{ if and (eq $i 3) (eq $value "true") }}Sim{{ else if and (eq $i 3) (eq $value "false") }}Não{{ else }}{{ $value | nl2br }}{{ end }} |{{ end }}
+{{- end }}
+{{ if gt (len .ReferencedTables) 2 }}
+
+## Objetos referenciados
+{{ range .ReferencedTables }}
+|{{ range . }} {{ . | nl2br }} |{{ end }}
+{{- end }}
+{{ end -}}
+{{ if gt (len .Constraints) 2 }}
+
+## Restrições
+{{ range .Constraints }}
+|{{ range . }} {{ . | nl2br }} |{{ end }}
+{{- end }}
+{{ end -}}
+{{ if .Table.Indexes }}
+
+## Índices
+{{ range .Table.Indexes }}
+- `{{ .Name }}`
+
+  ```sql
+  {{ .Def }}
+  ```
+{{ end -}}
+{{ end -}}
+{{ if .Table.Triggers }}
+
+## Gatilhos
+{{ range .Table.Triggers }}
+### `{{ .Name }}`
+
+```sql
+{{ .Def }}
+```
+{{ end -}}
+{{ end -}}

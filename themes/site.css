@@ -162,6 +162,11 @@
   display: none;
 }
 
+/* Object pages are linked from the SQLite catalog and site search. */
+[data-theme="oie"] .component-doc-shell__sidebar-content a[href^="/docs/banco-de-dados/catalogo/"][href$=".html"] {
+  display: none;
+}
+
 [data-theme="oie"] .margo-document img[src*="/imagens/"],
 [data-theme="oie"] .margo-document img[src^="imagens/"] {
   display: block;

@@ -16,6 +16,7 @@ var docsLabels = strings.NewReplacer(
 	`data-search-section="default"`, `data-search-section="Documentação"`,
 	`>default</span>`, `>Documentação</span>`,
 	`aria-label="Copy sh code"`, `aria-label="Copiar código"`,
+	`aria-label="Copy sql code"`, `aria-label="Copiar SQL"`,
 	`data-code-block-idle-text="Copy"`, `data-code-block-idle-text="Copiar"`,
 	`data-code-block-success-text="Copied!"`, `data-code-block-success-text="Copiado!"`,
 	`data-code-block-error-text="Unable to copy"`, `data-code-block-error-text="Falha ao copiar"`,
