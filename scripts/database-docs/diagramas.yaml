@@ -1,0 +1,28 @@
+name: Banco de dados do Oiê
+requiredVersion: '= 1.96.1'
+er:
+  hideDef: true
+  showColumnTypes:
+    primary: true
+    related: true
+viewpoints:
+  - id: conversas
+    name: Contas, contatos e conversas
+    desc: As conversas e os contatos ficam vinculados à conta XMPP.
+    tables: [accounts, contacts, contact_revisions, conversations, conversation_revisions, messages]
+  - id: historico
+    name: Histórico e leitura
+    desc: Checkpoints acompanham a recuperação do histórico e as revisões registram o estado de leitura.
+    tables: [accounts, conversations, messages, archive_aliases, archive_checkpoints, conversation_read_revisions, conversation_read_states, message_reads]
+  - id: envios
+    name: Envios e anexos
+    desc: A fila guarda mensagens a enviar e a tabela de anexos em preparação referencia a conversa.
+    tables: [conversations, messages, outbox, staged_attachments]
+  - id: interacoes
+    name: Interações com mensagens
+    desc: Respostas, estrelas, edições e comandos de reação ficam ligados às mensagens.
+    tables: [messages, message_replies, message_stars, message_edit_commands, message_reaction_commands, message_content_heads, message_revisions]
+  - id: conteudo
+    name: Conteúdo compartilhado
+    desc: As referências extraídas das mensagens alimentam o catálogo de mídia, links e documentos.
+    tables: [messages, message_previews, shared_content, shared_content_state, shared_catalog_sources, shared_catalog_counts, shared_catalog_order]

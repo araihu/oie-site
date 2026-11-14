@@ -1,0 +1,38 @@
+requiredVersion: '= 1.96.1'
+name: Banco de dados do Oiê
+# A revisão é fornecida pelo script de geração.
+desc: 'Estrutura SQLite gerada a partir das [migrações do Oiê](https://github.com/araihu/oie/tree/${OIE_SCHEMA_REVISION}/internal/adapters/sqlite/migrations).'
+disableOutputSchema: true
+format:
+  hideColumnsWithoutValues: [Comment, Children, Parents]
+er:
+  hideDef: true
+dict:
+  Name: Nome
+  Columns: Colunas
+  Comment: Descrição
+  Type: Tipo
+  Default: Padrão
+  Nullable: Aceita NULL
+  Children: Referenciada por
+  Parents: Referencia
+  Definition: Definição
+  Labels: Rótulos
+  Tables: Tabelas e views
+templates:
+  md:
+    index: scripts/database-docs/index.md.tmpl
+    table: scripts/database-docs/table.md.tmpl
+comments:
+  - table: messages
+    tableComment: Mensagens armazenadas pelo motor por conta e conversa.
+    columnComments:
+      timeline_at_ms: Posição na linha do tempo, quando definida. A consulta usa `created_at_ms` como alternativa.
+  - table: outbox
+    tableComment: Fila de envio do motor, incluindo mensagens agendadas.
+  - table: shared_content
+    tableComment: Referências a mídia, links e documentos identificados nas mensagens.
+  - table: shared_catalog_order
+    tableComment: Entradas que ordenam as referências por escopo e aba do catálogo.
+  - table: hidden_scheduled_messages
+    tableComment: Mensagens agendadas que ficam fora das consultas da linha do tempo.
