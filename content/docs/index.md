@@ -6,8 +6,8 @@ language: pt-BR
 
 # Documentação do Oiê
 
-- [Instalação](instalacao/index.md) — pacotes para macOS e Linux, instalação com APT e execução com Docker.
-- [Manual](manual/index.md) — contas XMPP, solicitações, convites, busca e envio agendado.
+- [Instalação](instalacao/index.md) — pacotes para macOS e Linux, APT, Flatpak, Homebrew e Docker.
+- [Manual](manual/index.md) — contas XMPP, solicitações, convites, busca, anexos e envio agendado.
 - [Atalhos](atalhos/index.md) — edição, menções, emoji, busca e navegação por teclado.
 - [CLI](cli/index.md) — como instalar, compilar e usar o `oiectl`.
 - [Arquitetura e deploy](arquitetura/index.md) — como rodar o Oiê no computador ou hospedar o motor em um servidor.

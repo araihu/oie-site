@@ -6,7 +6,7 @@ language: pt-BR
 
 # CLI do Oiê
 
-O `oiectl` acessa um motor do Oiê em execução. Os exemplos usam uma instância local em `http://127.0.0.1:8080` e o contrato OpenAPI 0.30.1, disponível no [Oiê v0.0.1-rc.7](../../baixar/index.md).
+O `oiectl` acessa um motor do Oiê em execução. Os exemplos usam uma instância local em `http://127.0.0.1:8080`. O [Oiê v0.0.1-rc.9](../../baixar/index.md) usa a API 0.31.0. A versão do CLI distribuída em separado acompanha o contrato 0.30.1.
 
 ## Instalar o CLI
 
@@ -20,12 +20,14 @@ oiectl version v0.30.1 (spec openapi/engine/v0.30.1)
 
 ## Compilar e conectar
 
-Use Make e Go 1.27.4 ou mais recente para compilar e iniciar o Oiê a partir do [código-fonte da v0.0.1-rc.7](https://github.com/araihu/oie/tree/af73877a7ac1c1111e65607dc9291d865a658375).
+Use Make e Go 1.27.4 ou mais recente para compilar e iniciar o Oiê a partir do [código-fonte da v0.0.1-rc.9](https://github.com/araihu/oie/tree/d6ce9ae95c6f67850cb7a8e2ab91979fe35171ea).
 
 ```sh
 make build build-cli
 bin/oie --role local --listen 127.0.0.1:8080 --data-dir ./data-cli
 ```
+
+Os exemplos usam o CLI compilado com a rc.9. `bin/oiectl --version` mostra `oiectl version devel (OpenAPI 0.31.0)`. Se instalou o binário no `PATH`, use `oiectl` no lugar de `bin/oiectl`.
 
 Em outro terminal, no mesmo checkout, confira a conexão com a API.
 
@@ -37,7 +39,7 @@ bin/oiectl system engine --output json
 
 Em um perfil novo, abra [a interface local](http://127.0.0.1:8080) no navegador. [Adicione e conecte sua conta XMPP](../manual/index.md#contas-xmpp). Em **Nova conversa**, informe outro endereço XMPP e selecione **Abrir conversa**. Ela aparecerá em `conversations list`.
 
-Para configurar uma instância sem navegador, inicie o motor com `--data-only` e siga o [exemplo de conexão e envio pela API](https://github.com/araihu/oie/blob/af73877a7ac1c1111e65607dc9291d865a658375/README.md#connect-and-message-through-the-api). Para consultar um motor independente que já está em execução, ajuste `OIECTL_SERVER` ou use `--server` em um único comando. Para comandos que recebem JSON, use `--body-stdin` ou `--body-file`. Use um arquivo privado ou stdin para dados com senha.
+Para ver a conexão e o envio pela API em um ambiente de desenvolvimento, consulte o [exemplo com servidor XMPP local](https://github.com/araihu/oie/blob/d6ce9ae95c6f67850cb7a8e2ab91979fe35171ea/README.md#connect-and-message-through-the-api). Para consultar um motor independente que já está em execução, ajuste `OIECTL_SERVER` ou use `--server` em um único comando. Para comandos que recebem JSON, use `--body-stdin` ou `--body-file`. Use um arquivo privado ou stdin para dados com senha.
 
 Veja [Arquitetura e deploy](../arquitetura/index.md#motor-hospedado) para hospedar um motor e acessá-lo por uma conexão privada.
 
@@ -93,4 +95,6 @@ Na retomada, use o ID do último evento que você processou por completo. Use `-
 | Ver arquivos e links de conversas | `shared content list` |
 | Retomar o fluxo de eventos | `events stream` |
 
-Acrescente `--help` ao grupo ou comando para ver as opções da sua versão, por exemplo `bin/oiectl messages send --help`. Consulte o [contrato OpenAPI 0.30.1 no Manja](https://oapi.araihu.com/catalogs/oie/documents/engine-v0.30.1/) para conferir as operações, os campos e as respostas usados nestes exemplos.
+Com o CLI compilado da rc.9, `shared content list --include-first-page-counts` inclui a contagem da primeira página de mídia, links e documentos com os filtros usados na consulta.
+
+Acrescente `--help` ao grupo ou comando para ver as opções da sua versão, por exemplo `bin/oiectl messages send --help`. Consulte o [contrato OpenAPI 0.30.1 da release do CLI](https://oapi.araihu.com/catalogs/oie/documents/engine-v0.30.1/) ou a [versão de desenvolvimento do contrato](https://oapi.araihu.com/catalogs/oie/documents/engine-next/), que inclui as operações e os campos da API 0.31.0.
