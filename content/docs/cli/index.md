@@ -75,6 +75,16 @@ bin/oiectl messages get --message-id MESSAGE_UUID --output json
 
 Se perder a resposta e precisar repetir a mesma solicitação, mantenha a chave e o corpo originais para evitar um envio duplicado.
 
+## Pesquisar mensagens favoritas
+
+A busca por texto em **Mensagens com estrela** está disponível no `oiectl` compilado da versão de desenvolvimento, com um motor que já inclui esse filtro. A rc.9 permite listar as mensagens com estrela sem a opção `--q`. O filtro também está no [contrato da revisão do Oiê usada neste exemplo](https://github.com/araihu/oie/blob/fbee978af9602c944ab892138504d3fb7cfbe6ba/api/openapi.yaml).
+
+```sh
+bin/oiectl messages stars list --q 'trilha' --output json
+```
+
+A pesquisa inclui o texto atual, o remetente e a conversa de origem. Use `--account-id` ou `--conversation-id` para restringir o resultado.
+
 ## Eventos e saída
 
 ```sh
@@ -97,4 +107,4 @@ Na retomada, use o ID do último evento que você processou por completo. Use `-
 
 Com o CLI compilado da rc.9, `shared content list --include-first-page-counts` inclui a contagem da primeira página de mídia, links e documentos com os filtros usados na consulta.
 
-Acrescente `--help` ao grupo ou comando para ver as opções da sua versão, por exemplo `bin/oiectl messages send --help`. Consulte o [contrato OpenAPI 0.30.1 da release do CLI](https://oapi.araihu.com/catalogs/oie/documents/engine-v0.30.1/) ou a [versão de desenvolvimento do contrato](https://oapi.araihu.com/catalogs/oie/documents/engine-next/), que inclui as operações e os campos da API 0.31.0.
+Acrescente `--help` ao grupo ou comando para ver as opções da sua versão, por exemplo `bin/oiectl messages send --help`. O catálogo reúne o [contrato OpenAPI 0.30.1 da release do CLI](https://oapi.araihu.com/catalogs/oie/documents/engine-v0.30.1/) e o [contrato de desenvolvimento publicado](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).

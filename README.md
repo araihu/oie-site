@@ -2,7 +2,7 @@
 
 Site do [Oiê](https://github.com/araihu/oie), gerado com [Margo](https://github.com/araihu/margo/tree/v0.0.35). O conteúdo está em `content/` e a configuração em `site.yaml`.
 
-Os fluxos de Arquivadas, Nova conversa e Mídia e links foram comparados entre a rc.9 e a prévia do aplicativo na revisão `c6db33dd495bc0785f10282184159358b145f1a4`. As capturas de mensagens favoritas e encaminhamento são da prévia na revisão `58d18454efe7715b76e4c659928f8dc8ef64630a`.
+Os fluxos de Arquivadas, Nova conversa, Mídia e links, mensagens favoritas e encaminhamento foram conferidos na [revisão fbee978 do Oiê](https://github.com/araihu/oie/tree/fbee978af9602c944ab892138504d3fb7cfbe6ba). As capturas de Favoritas e Encaminhar mensagem e o exemplo de busca de mensagens favoritas pelo CLI usam essa revisão. O instalador oferecido em **Baixar** é a rc.9.
 
 ## Desenvolvimento
 
