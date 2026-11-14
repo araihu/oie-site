@@ -74,6 +74,8 @@ Passe o mouse sobre o resultado para revelar o menu. O botão também aparece qu
 
 [Ver a captura de Favoritas no tamanho original](imagens/mensagens-favoritas-original.webp)
 
+O coração indica uma conversa favorita, como uma sala. Para ver essas conversas, use o filtro **Favoritas** na lista de conversas. A estrela identifica uma mensagem favorita.
+
 A seção **Favoritas** da barra lateral está disponível na prévia de desenvolvimento posterior à v0.0.1-rc.8.
 
 ## Encaminhar mensagens
