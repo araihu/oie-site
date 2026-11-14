@@ -1,6 +1,6 @@
 ---
 title: Manual
-description: Conecte contas XMPP, envie anexos, acompanhe mensagens não lidas, agende envios e ajuste o idioma e o fuso horário.
+description: Conecte contas XMPP, entre em salas, encontre mídias e documentos, favorite e encaminhe mensagens, envie anexos e agende envios.
 language: pt-BR
 margo:
   imageViewer: true
@@ -67,6 +67,8 @@ Os atalhos **Mídia**, **Links** e **Documentos** abrem o catálogo com o mesmo 
 Abra **Mídia e links** na barra lateral para encontrar o que foi compartilhado nas conversas. Use a pesquisa e o seletor de contas para filtrar o catálogo. As abas **Mídia**, **Links** e **Documentos** agrupam os resultados por mês.
 
 Na prévia de desenvolvimento, o seletor **Contas** aceita várias contas também quando você abre o catálogo pela barra lateral. Pesquise por nome ou endereço e limpe a seleção para ver todas as contas no catálogo. A conta escolhida no seletor global continua ativa para as outras telas. Em telas mais largas, os cartões ocupam colunas independentes, com a prévia acima do título. Quando a prévia de um documento está indisponível, o cartão mostra o nome do arquivo e o trecho da mensagem, se houver.
+
+Selecione um documento para abri-lo. Se o carregamento falhar na prévia de desenvolvimento, use o botão com a seta circular **Tentar novamente**. O cabeçalho também permite baixar o arquivo ou abrir o endereço original.
 
 ## Mensagens favoritas
 
