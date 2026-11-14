@@ -31,6 +31,8 @@ O manual, os atalhos, os exemplos do CLI e os guias de instalação e arquitetur
 
 A seção de atualização via APT no guia de instalação foi conferida com a [main do aplicativo em baae7e6](https://github.com/araihu/oie/tree/baae7e69541d4f32e999fa277238d34c9808e427) e com o pacote publicado da [v0.0.1-rc.7](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.7).
 
+A seção de backup antes de atualizar o banco foi conferida na [revisão dd2e610 do aplicativo](https://github.com/araihu/oie/tree/dd2e6106e56f34c86a1b74c6dd989ecdbd350bc6).
+
 As seções sobre anexos, leitura, idioma e fuso horário, a instalação Flatpak e os exemplos de compilação foram conferidos na [revisão d6ce9ae do aplicativo](https://github.com/araihu/oie/tree/d6ce9ae95c6f67850cb7a8e2ab91979fe35171ea), usada na rc.9. O bundle da rc.8 usa `org.araihu.oie`.
 
 A instalação do `oiectl` por release independente foi conferida com a [release cli/v0.30.1](https://github.com/araihu/oie/releases/tag/cli/v0.30.1), gerada a partir do [contrato no commit f21196a](https://github.com/araihu/oie/tree/f21196a6d8fe2d1b75180470ccd26089db5d6bb9/api).

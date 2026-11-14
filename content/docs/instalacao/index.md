@@ -180,6 +180,14 @@ Se usou o instalador, encerre o Oiê e execute o instalador da versão desejada 
 
 O perfil guarda o histórico, as credenciais e a mídia retida. Encerre o aplicativo antes de copiar esse diretório. Use `--data-dir` para abrir o Oiê com outro perfil.
 
+### Backup antes de atualizar o banco
+
+Disponível em versões de desenvolvimento posteriores à `v0.0.1-rc.9`, oferecida em **Baixar**.
+
+Quando o Oiê precisa atualizar um banco existente na inicialização, primeiro guarda uma cópia em `private/migration-backups/` dentro do perfil. O nome do arquivo inclui a versão anterior do banco e o horário em UTC. Reserve espaço para uma segunda cópia do banco. Se a cópia falhar, o Oiê interrompe a inicialização antes de atualizar o banco. Os arquivos de mídia ficam no perfil. A opção **Apagar todos os dados** também remove essas cópias.
+
+Se a janela não abrir após uma atualização, inicie o Oiê pelo terminal para ver o erro. No macOS com o pacote no local padrão, execute `~/Applications/Oie.app/Contents/MacOS/oie-desktop`. No Linux, abra o executável `oie-desktop` no caminho em que foi instalado ou execute `flatpak run com.araihu.oie` para Flatpak. Se o erro indicar falha no backup, confira o espaço livre e as permissões de gravação no perfil e tente novamente.
+
 Para remover uma instalação feita com `install.sh`, encerre o Oiê. No macOS, mova `Oie.app` para o Lixo. Na instalação padrão no Ubuntu, remova estes arquivos e a pasta de documentação.
 
 - `~/.local/bin/oie-desktop`
