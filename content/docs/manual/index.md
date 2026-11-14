@@ -44,11 +44,11 @@ Estas opções estão em desenvolvimento para uma versão posterior à v0.0.1-rc
 
 - Em **Nova conversa → Entrar na sala**, abra **Explorar salas públicas** e selecione uma sala para preencher o endereço e ver a prévia. Se a sala exigir senha, informe-a antes de entrar.
 - Dentro da sala, abra **Mais opções → Gerenciar sala**. Em **Detalhes**, edite o nome e o tópico conforme suas permissões. Se você for proprietário e o servidor oferecer suporte, use **Trocar imagem da sala** ou **Remover imagem da sala**.
-- Na aba **Participantes**, abra o menu de três pontos ao lado da pessoa para ver as ações disponíveis, como permitir falar, remover da sala ou banir. Use **Mais opções → Convidar pessoas** para enviar um convite.
+- A aba **Participantes** agrupa as pessoas por permissão e mostra as fotos disponíveis ou as iniciais. Selecione uma pessoa para gerenciar a função e o acesso, com ações como permitir falar, promover, remover da sala ou banir. Use **Mais opções → Convidar pessoas** para enviar um convite.
 - Administradores e proprietários podem consultar e alterar o acesso na aba **Acesso**. Na aba **Banimentos**, é possível banir um endereço ou retirar um banimento da lista.
 - Quando a sala oferece moderação de mensagens, moderadores podem usar **Remover mensagem** no menu da mensagem. A remoção aparece na conversa após a confirmação da sala.
 
-![Aba Detalhes de Gerenciar sala com as ações para trocar e remover a imagem da sala.](imagens/gerenciar-sala.webp "Aba Detalhes de Gerenciar sala")
+![Aba Participantes de Gerenciar sala, com avatares e grupos por permissão.](imagens/gerenciar-sala.webp "Aba Participantes de Gerenciar sala")
 
 [Ver a captura completa](imagens/gerenciar-sala-original.webp)
 
