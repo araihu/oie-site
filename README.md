@@ -43,6 +43,17 @@ As capturas da página inicial, do manual e dos atalhos mostram a interface em p
 
 A seção Docker da página de arquitetura descreve a [CI da imagem em f9c6a01](https://github.com/araihu/oie/commit/f9c6a01625232e7132a358b27372759144588258).
 
+### Referência do banco de dados
+
+O catálogo e os diagramas registram a [revisão dd2e610 do Oiê](https://github.com/araihu/oie/tree/dd2e6106e56f34c86a1b74c6dd989ecdbd350bc6), fixada em `scripts/database-docs/oie-revision`. Para atualizar a referência, coloque nesse arquivo o SHA completo do Oiê que será documentado. Com Python 3 com SQLite e o [tbls v1.96.1](https://github.com/k1LoW/tbls/releases/tag/v1.96.1) no PATH, rode a partir da raiz do site.
+
+```sh
+git -C ../oie fetch origin main
+./scripts/generate-database-docs.sh ../oie
+```
+
+O script aplica as migrações `.up.sql` desse commit a um SQLite temporário e gera o Markdown e os SVGs usados pelo Margo. Edite as descrições e os recortes em `scripts/database-docs/` e inclua os arquivos regenerados junto com a atualização do SHA. Confira na página **Banco de dados** quais migrações chegaram depois da versão oferecida em **Baixar**.
+
 ## Publicação
 
 O GitHub Actions roda a cada push em `main`, gera os arquivos do Margo e publica `dist/` no Cloudflare Workers com Wrangler. O domínio do Worker é [oie.araihu.com](https://oie.araihu.com/). O pipeline confere as URLs canônicas das páginas e compara o manifesto do Margo e o CSS publicado com os arquivos gerados. Ele usa o secret organizacional `CLOUDFLARE_API_TOKEN` e a variável do repositório `CLOUDFLARE_ACCOUNT_ID`.

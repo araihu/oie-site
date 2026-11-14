@@ -24,6 +24,8 @@ flowchart TD
 
 Cada instância atende a um único dono, que pode conectar várias contas XMPP. Vários dispositivos podem usar o mesmo motor hospedado e consultar o histórico que ele guarda. Rascunhos e preferências de exibição continuam no dispositivo, e motores independentes mantêm bases separadas. A sincronização entre motores ainda está planejada.
 
+Veja os diagramas e o catálogo de tabelas e views em [Banco de dados](../banco-de-dados/index.md).
+
 ## Uso local
 
 **Desktop.** [Instale o aplicativo](../../baixar/index.md) no macOS ou Linux. O motor e a interface rodam juntos no computador, e o aplicativo usa o diretório de dados do seu usuário. Fechar a janela mantém o motor ativo. Sair do aplicativo encerra o motor.

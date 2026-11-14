@@ -1,0 +1,14 @@
+---
+title: Catálogo de tabelas e views
+description: Colunas, chaves, índices, gatilhos e definições SQL do banco SQLite do Oiê.
+language: pt-BR
+---
+
+# Catálogo de tabelas e views
+
+{{ .Schema.Desc }} Consulte os [diagramas por assunto](../index.md#diagramas-por-assunto) para localizar as relações principais.
+
+## Tabelas e views
+{{ range .Tables }}
+|{{ range $i, $value := . }} {{ if and (eq $i 3) (eq $value "table") }}Tabela{{ else if and (eq $i 3) (eq $value "view") }}View{{ else }}{{ $value | nl2br }}{{ end }} |{{ end }}
+{{- end }}

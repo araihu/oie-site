@@ -1,6 +1,6 @@
 ---
 title: Documentação
-description: Manual, atalhos, CLI, arquitetura, deploy e referência OpenAPI do Oiê.
+description: Manual, atalhos, CLI, arquitetura, banco de dados e referência OpenAPI do Oiê.
 language: pt-BR
 ---
 
@@ -11,6 +11,7 @@ language: pt-BR
 - [Atalhos](atalhos/index.md) — edição, menções, emoji, busca e navegação por teclado.
 - [CLI](cli/index.md) — como instalar, compilar e usar o `oiectl`.
 - [Arquitetura e deploy](arquitetura/index.md) — como rodar o Oiê no computador ou hospedar o motor em um servidor.
+- [Banco de dados](banco-de-dados/index.md) — diagramas e catálogo de tabelas e views do SQLite.
 - [OpenAPI do Oiê no catálogo da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/) — contrato da API do motor, gerado pelo Manja.
 
 Estas páginas acompanham o desenvolvimento do Oiê. Veja os instaladores, as notas da versão e o código-fonte na [página de download](../baixar/index.md).
