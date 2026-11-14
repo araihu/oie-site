@@ -1,6 +1,6 @@
 ---
 title: Manual
-description: Conecte contas XMPP, envie anexos, acompanhe mensagens não lidas, agende envios e ajuste o idioma e o fuso horário.
+description: Conecte contas XMPP, envie anexos, acompanhe mensagens não lidas, agende envios e ajuste a retenção, o idioma e o fuso horário.
 language: pt-BR
 margo:
   imageViewer: true
@@ -43,6 +43,19 @@ Em **Detalhes da conversa**, use **Baixar histórico antigo automaticamente** pa
 Dentro de uma sala, abra **Mais opções** e selecione **Pesquisar mensagens**. Essa busca também pode consultar o arquivo do servidor, quando ele oferece busca por texto. Ative **Incluir histórico de edições** para encontrar versões anteriores de mensagens editadas. Use os [atalhos de busca](../atalhos/index.md#busca-na-conversa) para percorrer os resultados.
 
 ![Busca por trilha em uma sala. O primeiro de três resultados está destacado na conversa e o campo oferece a opção de incluir o histórico de edições.](imagens/busca-na-sala.webp "Busca no histórico da sala")
+
+## Retenção de mensagens
+
+Disponível em compilações posteriores à v0.0.1-rc.12.
+
+Em **Configurações → Geral → Retenção de mensagens**, escolha os prazos padrão para **Salas** e **Conversas diretas**. Para mudar o prazo só de uma conversa, abra **Detalhes da conversa → Retenção de mensagens**. Use **Usar o padrão** para voltar ao prazo global.
+
+Por padrão, as salas têm prazo de **180 dias** e as conversas diretas usam **Sem limite**. O Oiê preserva as **100 mensagens mais recentes já guardadas de cada sala** e todas as mensagens favoritadas. Um prazo menor pode remover outras mensagens antigas do Oiê. Em um envio agendado, a contagem começa quando a mensagem é enviada.
+
+O prazo também define até onde o Oiê busca o histórico no XMPP. Uma instalação nova pode recuperar menos de 100 mensagens de uma sala, dependendo do prazo e do histórico disponível no servidor. Com **Sem limite**, as mensagens deixam de expirar por idade e podem ocupar mais espaço. A recuperação alcança todo o histórico que o servidor ainda disponibiliza à sua conta.
+
+![Configuração de retenção com 180 dias para salas e Sem limite para conversas diretas.](imagens/retencao-de-mensagens.webp "Retenção de mensagens")
+[Ver a captura em tamanho original](imagens/retencao-de-mensagens-original.webp)
 
 ## Mensagens não lidas
 
