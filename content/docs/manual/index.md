@@ -72,8 +72,9 @@ O Oiê aceita até 16 arquivos por mensagem, de até 20 MiB cada. O serviço XMP
 
 ## Prévia e reprodução de vídeos
 
-A miniatura de vídeo no rascunho está na próxima versão do Oiê, após a
-rc.9 oferecida em **Baixar**. Escolha **+ → Arquivo** e selecione o vídeo.
+A miniatura de vídeo no rascunho está na versão de desenvolvimento do Oiê.
+O instalador rc.9 em **Baixar** ainda não inclui esse recurso. Para anexar
+um vídeo, escolha **+ → Arquivo** e selecione o arquivo.
 Use **Reproduzir vídeo** na miniatura para assistir antes de enviar. O nome
 do arquivo e a opção **Remover anexo** continuam disponíveis se a miniatura
 não puder ser criada.

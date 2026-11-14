@@ -171,8 +171,8 @@ Na rc.9 oferecida em **Baixar**, o FFmpeg é opcional para gerar miniaturas
 de vídeos recebidos. No Ubuntu, instale com `sudo apt install ffmpeg`.
 Se precisar indicar o caminho, use `oie-desktop --ffmpeg /caminho/para/ffmpeg`.
 
-Na próxima versão, o navegador ou o aplicativo de desktop gera as miniaturas
-com o suporte a vídeo do próprio dispositivo. A instalação dispensa o
+Na versão de desenvolvimento, o navegador ou o aplicativo de desktop gera
+as miniaturas com o suporte a vídeo do próprio dispositivo. A instalação dispensa o
 executável FFmpeg. Veja [Prévia e reprodução de vídeos](../manual/index.md#prvia-e-reproduo-de-vdeos).
 
 ## Atualizar, remover e guardar seus dados
