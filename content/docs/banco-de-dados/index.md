@@ -52,6 +52,4 @@ As tabelas deste recorte guardam [respostas](catalogo/message_replies.md), [estr
 
 ## Diagrama completo
 
-Use **1:1** para ler os nomes das colunas e arraste o diagrama para percorrer as tabelas. Também é possível [abrir o SVG em uma aba](diagramas/completo.svg).
-
 ![DER com todas as tabelas, views, colunas e chaves estrangeiras do SQLite do Oiê](diagramas/completo.svg "DER completo do banco de dados do Oiê")
