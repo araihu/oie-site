@@ -8,6 +8,8 @@ language: pt-BR
 
 [Catálogo de tabelas e views](index.md)
 
+Disponível a partir da migração `000027`, posterior à `v0.0.1-rc.9`.
+
 Entradas que ordenam as referências por escopo e aba do catálogo.
 
 ## Definição SQL

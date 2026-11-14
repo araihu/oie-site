@@ -177,6 +177,7 @@ Se usou o instalador, encerre o Oiê e execute o instalador da versão desejada 
 | --- | --- |
 | macOS | `~/Library/Application Support/Oiê` |
 | Linux | `$XDG_DATA_HOME/oie` quando `XDG_DATA_HOME` é um caminho absoluto, ou `~/.local/share/oie` |
+| Flatpak (`com.araihu.oie`) | `~/.var/app/com.araihu.oie/data/oie`. Para versões até a rc.8, veja [como migrar o perfil](#migrar-para-comaraihuoie). |
 
 O perfil guarda o histórico, as credenciais e a mídia retida. Encerre o aplicativo antes de copiar esse diretório. Use `--data-dir` para abrir o Oiê com outro perfil.
 
@@ -184,9 +185,13 @@ O perfil guarda o histórico, as credenciais e a mídia retida. Encerre o aplica
 
 Disponível em versões de desenvolvimento posteriores à `v0.0.1-rc.9`, oferecida em **Baixar**.
 
-Quando o Oiê precisa atualizar um banco existente na inicialização, primeiro guarda uma cópia em `private/migration-backups/` dentro do perfil. O nome do arquivo inclui a versão anterior do banco e o horário em UTC. Reserve espaço para uma segunda cópia do banco. Se a cópia falhar, o Oiê interrompe a inicialização antes de atualizar o banco. Os arquivos de mídia ficam no perfil. A opção **Apagar todos os dados** também remove essas cópias.
+Quando o Oiê precisa atualizar um banco existente na inicialização, primeiro guarda uma cópia em `private/migration-backups/` dentro do perfil. O nome começa com `oie-before-v` e inclui a versão anterior do banco e o horário em UTC. Reserve espaço para uma segunda cópia do banco. Se a cópia falhar, o Oiê interrompe a inicialização antes de atualizar o banco.
 
-Se a janela não abrir após uma atualização, inicie o Oiê pelo terminal para ver o erro. No macOS com o pacote no local padrão, execute `~/Applications/Oie.app/Contents/MacOS/oie-desktop`. No Linux, abra o executável `oie-desktop` no caminho em que foi instalado ou execute `flatpak run com.araihu.oie` para Flatpak. Se o erro indicar falha no backup, confira o espaço livre e as permissões de gravação no perfil e tente novamente.
+Guarde essas cópias em local privado, pois o banco contém o histórico e pode incluir senhas de convites para salas. Para guardar também a mídia e as credenciais de conexão XMPP, encerre o Oiê e copie o perfil inteiro. A opção **Apagar todos os dados** também remove as cópias automáticas do banco.
+
+Se a janela não abrir após uma atualização, inicie o Oiê pelo terminal para ver o erro. No macOS, se usou `install.sh` com o destino padrão, execute `~/Applications/Oie.app/Contents/MacOS/oie-desktop`. Se usou o Homebrew com o destino padrão, execute `/Applications/Oie.app/Contents/MacOS/oie-desktop`. No Linux, abra o executável `oie-desktop` no caminho em que foi instalado ou execute `flatpak run com.araihu.oie` para Flatpak. Se o erro indicar falha no backup, confira o espaço livre e as permissões de gravação no perfil e tente novamente.
+
+### Remover o aplicativo
 
 Para remover uma instalação feita com `install.sh`, encerre o Oiê. No macOS, mova `Oie.app` para o Lixo. Na instalação padrão no Ubuntu, remova estes arquivos e a pasta de documentação.
 

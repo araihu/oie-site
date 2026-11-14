@@ -8,9 +8,9 @@ margo:
 
 # Banco de dados
 
-O motor do Oiê usa SQLite para guardar contas, conversas, mensagens e envios pendentes. Para entender onde o banco fica em cada modo de execução, consulte [Arquitetura e deploy](../arquitetura/index.md).
+O motor do Oiê usa SQLite para guardar contas, conversas, mensagens e envios pendentes. No desktop com motor local, o banco `oie.sqlite` fica no [diretório do perfil](../instalacao/index.md#atualizar-remover-e-guardar-seus-dados). Para o motor em servidor ou Docker, consulte [Arquitetura e deploy](../arquitetura/index.md).
 
-Esta referência descreve o schema da versão de desenvolvimento. As tabelas e views do catálogo de conteúdo compartilhado adicionadas pela migração `000027` são posteriores à `v0.0.1-rc.9`.
+Esta referência descreve o esquema da versão de desenvolvimento. As abas de mídia, links e documentos já existiam na `v0.0.1-rc.9`. A migração `000027`, posterior à rc.9, acrescenta tabelas e views para indexar e ordenar esse conteúdo.
 
 ## Catálogo de tabelas e views
 
@@ -52,4 +52,6 @@ As tabelas deste recorte guardam [respostas](catalogo/message_replies.md), [estr
 
 ## Diagrama completo
 
-![DER com todas as tabelas, views, colunas e chaves estrangeiras do SQLite do Oiê](diagramas/completo.svg "DER completo do banco de dados do Oiê")
+O diagrama cobre o esquema definido pelas migrações SQL do Oiê. O motor cria `schema_migrations` separadamente para registrar a versão do banco.
+
+![DER com as tabelas, views, colunas e chaves estrangeiras definidas nas migrações SQL do Oiê](diagramas/completo.svg "DER completo do banco de dados do Oiê")
