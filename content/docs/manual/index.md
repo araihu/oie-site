@@ -42,7 +42,7 @@ Em **Detalhes da conversa**, use **Baixar histórico antigo automaticamente** pa
 
 Dentro de uma sala, abra **Mais opções** e selecione **Pesquisar mensagens**. Essa busca também pode consultar o arquivo do servidor, quando ele oferece busca por texto. Ative **Incluir histórico de edições** para encontrar versões anteriores de mensagens editadas. Use os [atalhos de busca](../atalhos/index.md#busca-na-conversa) para percorrer os resultados.
 
-Na prévia posterior à v0.0.1-rc.9, a busca nas mensagens guardadas pode realçar **arquivo** no balão ao pesquisar por `arqiuvo`. Se o resultado vier de uma versão anterior ou dos detalhes de um link, o realce aparece no trecho do resultado.
+No código posterior à v0.0.1-rc.12, pesquisar por `arqiuvo` nas mensagens guardadas pode realçar **arquivo** no balão. Se o resultado vier de uma versão anterior ou dos detalhes de um link, o realce aparece no trecho do resultado. Ao recarregar a página com a busca aberta, o Oiê volta à versão anterior selecionada.
 
 ![Busca por trilha em uma sala. O primeiro de três resultados está destacado na conversa e o campo oferece a opção de incluir o histórico de edições.](imagens/busca-na-sala.webp "Busca no histórico da sala")
 
