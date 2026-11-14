@@ -25,7 +25,7 @@ Ao atualizar **Baixar**, confira também os comandos e requisitos do [guia de in
 
 ## Documentação do Oiê
 
-A página **Baixar** aponta para os binários e para o código-fonte correspondente da [revisão da v0.0.1-rc.9](https://github.com/araihu/oie/tree/d6ce9ae95c6f67850cb7a8e2ab91979fe35171ea).
+A página **Baixar** aponta para os binários e para o código-fonte correspondente da [revisão da v0.0.1-rc.11](https://github.com/araihu/oie/tree/ad3f9bebd78cb2f9a62769a3f26aabf4a419e808).
 
 O manual, os atalhos, os exemplos do CLI e os guias de instalação e arquitetura foram revisados com a [main do aplicativo em 9929391](https://github.com/araihu/oie/tree/9929391579532045b61fcad8d8883f7e3a351215) e a [v0.0.1-rc.3](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.3). Ao atualizar, registre o SHA das páginas revisadas e confira as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
 
@@ -35,7 +35,9 @@ A seção de backup antes de atualizar o banco foi conferida na [revisão dd2e61
 
 As seções sobre anexos, leitura, idioma e fuso horário, a instalação Flatpak e os exemplos de compilação foram conferidos na [revisão d6ce9ae do aplicativo](https://github.com/araihu/oie/tree/d6ce9ae95c6f67850cb7a8e2ab91979fe35171ea), usada na rc.9. O bundle da rc.8 usa `org.araihu.oie`.
 
-As seções de prévia e reprodução de vídeo foram conferidas na [revisão 90466c6 do aplicativo](https://github.com/araihu/oie/tree/90466c680747d84a50db8d12b8baac4fe9b69522). As capturas mostram uma conversa fictícia em pt-BR. A miniatura no rascunho e a geração de prévias sem FFmpeg ainda não estão no instalador da rc.9.
+As seções **Mensagens favoritadas** e **Envio agendado** foram conferidas na [revisão ad3f9be do aplicativo](https://github.com/araihu/oie/tree/ad3f9bebd78cb2f9a62769a3f26aabf4a419e808), usada na rc.11. A captura de **Favoritas** usa mensagens fictícias.
+
+As seções de prévia e reprodução de vídeo foram conferidas na [revisão c0bc373 do aplicativo](https://github.com/araihu/oie/tree/c0bc373423340724b909e2e7028f324d005640d1). As capturas mostram uma conversa fictícia em pt-BR. A miniatura no rascunho e a geração de prévias sem FFmpeg ainda não estão no instalador da rc.11.
 
 A instalação do `oiectl` por release independente foi conferida com a [release cli/v0.30.1](https://github.com/araihu/oie/releases/tag/cli/v0.30.1), gerada a partir do [contrato no commit f21196a](https://github.com/araihu/oie/tree/f21196a6d8fe2d1b75180470ccd26089db5d6bb9/api).
 

@@ -39,11 +39,11 @@ Para remover o aplicativo e manter seu perfil, execute `sudo apt remove oie`.
 
 ## Instalar com Flatpak
 
-No Linux x86-64, baixe o [bundle Flatpak da v0.0.1-rc.9](https://github.com/araihu/oie/releases/download/v0.0.1-rc.9/oie-v0.0.1-rc.9-x86_64.flatpak). Adicione o Flathub se ainda não estiver cadastrado, para que o Flatpak possa baixar o runtime GNOME 51. Execute os comandos na pasta onde salvou o arquivo.
+No Linux x86-64, baixe o [bundle Flatpak da v0.0.1-rc.11](https://github.com/araihu/oie/releases/download/v0.0.1-rc.11/oie-v0.0.1-rc.11-x86_64.flatpak). Adicione o Flathub se ainda não estiver cadastrado, para que o Flatpak possa baixar o runtime GNOME 51. Execute os comandos na pasta onde salvou o arquivo.
 
 ```sh
 flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak install --user ./oie-v0.0.1-rc.9-x86_64.flatpak
+flatpak install --user ./oie-v0.0.1-rc.11-x86_64.flatpak
 ```
 
 Se você já usava o Flatpak da `rc.8` ou anterior, [migre seu perfil](#migrar-para-comaraihuoie) antes de abrir o novo Oiê. Depois, abra o aplicativo pelo menu ou execute `flatpak run com.araihu.oie`.
@@ -120,7 +120,7 @@ O pacote tem assinatura ad hoc. Se o macOS bloquear a abertura, tente abrir o Oi
 
 ## Compilar a partir do código-fonte
 
-Use Go 1.27.4 ou mais recente e compile no sistema e na arquitetura em que pretende usar o aplicativo. Nos exemplos, substitua `v0.0.1-rc.9` pela versão que você escolheu na página [Baixar](../../baixar/index.md). O comando instala o executável em `~/.local/bin`.
+Use Go 1.27.4 ou mais recente e compile no sistema e na arquitetura em que pretende usar o aplicativo. Nos exemplos, substitua `v0.0.1-rc.11` pela versão que você escolheu na página [Baixar](../../baixar/index.md). O comando instala o executável em `~/.local/bin`.
 
 ### Ubuntu 24.04 x86-64
 
@@ -137,7 +137,7 @@ pkg-config --modversion gtk4 webkitgtk-6.0 libsoup-3.0 gio-unix-2.0
 mkdir -p "$HOME/.local/bin"
 GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
   GONOPROXY=github.com/araihu/oie \
-  go install -tags production github.com/araihu/oie/cmd/oie-desktop@v0.0.1-rc.9
+  go install -tags production github.com/araihu/oie/cmd/oie-desktop@v0.0.1-rc.11
 ```
 
 ### macOS com Apple Silicon
@@ -152,10 +152,10 @@ GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
   CGO_CFLAGS="-O2 -g -mmacosx-version-min=13.0" \
   CGO_LDFLAGS="-O2 -g -mmacosx-version-min=13.0" \
   go install -tags production -ldflags='-extldflags=-mmacosx-version-min=13.0' \
-  github.com/araihu/oie/cmd/oie-desktop@v0.0.1-rc.9
+  github.com/araihu/oie/cmd/oie-desktop@v0.0.1-rc.11
 ```
 
-Os parâmetros de compilação e linkedição mantêm o mesmo alvo. Consulte o [escopo verificado no guia do repositório](https://github.com/araihu/oie/blob/d6ce9ae95c6f67850cb7a8e2ab91979fe35171ea/docs/installation.md#platforms-and-verified-scope) para as versões de sistema testadas.
+Os parâmetros de compilação e linkedição mantêm o mesmo alvo. Consulte o [escopo verificado no guia do repositório](https://github.com/araihu/oie/blob/ad3f9bebd78cb2f9a62769a3f26aabf4a419e808/docs/installation.md#platforms-and-verified-scope) para as versões de sistema testadas.
 
 ### Abrir pelo Terminal
 
@@ -167,7 +167,7 @@ Se estiver trabalhando em um checkout, execute o comando de compilação da sua 
 
 ### Miniaturas de vídeo
 
-Na rc.9 oferecida em **Baixar**, o FFmpeg é opcional para gerar miniaturas
+Na rc.11 oferecida em **Baixar**, o FFmpeg é opcional para gerar miniaturas
 de vídeos recebidos. No Ubuntu, instale com `sudo apt install ffmpeg`.
 Se precisar indicar o caminho, use `oie-desktop --ffmpeg /caminho/para/ffmpeg`.
 
@@ -189,7 +189,7 @@ O perfil guarda o histórico, as credenciais e a mídia retida. Encerre o aplica
 
 ### Backup antes de atualizar o banco
 
-Disponível em versões de desenvolvimento posteriores à `v0.0.1-rc.9`, oferecida em **Baixar**.
+Disponível desde a `v0.0.1-rc.10`.
 
 Quando o Oiê precisa atualizar um banco existente na inicialização, primeiro guarda uma cópia em `private/migration-backups/` dentro do perfil. O nome começa com `oie-before-v` e inclui a versão anterior do banco e o horário em UTC. Reserve espaço para uma segunda cópia do banco. Se a cópia falhar, o Oiê interrompe a inicialização antes de atualizar o banco.
 
