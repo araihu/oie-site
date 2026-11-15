@@ -258,6 +258,20 @@ O valor `"0s"` desativa o timeout de requisição para todos os caminhos da rota
 do Oiê. Se você omitir o valor, o controlador aplica seu comportamento padrão.
 [Timeouts do HTTPRoute na Gateway API](https://gateway-api.sigs.k8s.io/reference/api-types/httproute/#timeouts-optional)
 
+### Acesso ao diagnóstico no servidor
+
+Em versões posteriores à rc.20 que incluam **Diagnóstico**, configure
+`OIE_DIAGNOSTICS_KEY` no processo do servidor para habilitar o acesso pelo
+aplicativo. No Docker, use um arquivo de ambiente privado. No chart com
+suporte ao diagnóstico, use `diagnostics.existingSecret` para apontar para
+um Secret que contenha a chave. Proteja o acesso remoto com HTTPS e
+autenticação no proxy.
+
+O registro também fica disponível em `docker logs oie` ou
+`kubectl logs -n oie statefulset/oie`. Consulte o
+[manual do diagnóstico](../manual/#diagnstico-e-registro-de-erros)
+para copiar ou baixar o arquivo pelo aplicativo.
+
 ## Rodar pelo navegador ou usar o CLI
 
 Para executar o motor no navegador ou em um servidor, consulte [Arquitetura e deploy](../arquitetura/index.md). Para usar o `oiectl`, veja o [guia do CLI](../cli/index.md).

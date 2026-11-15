@@ -20,6 +20,23 @@ As contas e o histórico de cada motor ficam onde foram gravados. Para voltar à
 
 O acesso à API do motor remoto é aberto nesta versão. Use um [túnel SSH ou uma rede privada](../arquitetura/index.md#motor-hospedado) para restringir o acesso à sua instância.
 
+## Diagnóstico e registro de erros
+
+O diagnóstico chegou depois da versão oferecida em **Baixar** (rc.20).
+
+Abra **Configurações → Diagnóstico**, escolha um período e use **Atualizar**
+para ver os eventos recentes. **Copiar** e **Baixar** usam o mesmo trecho
+exibido na tela. O download gera o arquivo `oie-diagnostics.jsonl`.
+
+No aplicativo para computador, **Este dispositivo** continua disponível
+se o motor falhar na inicialização ou perder a conexão. Quando o motor
+remoto oferecer diagnóstico, selecione **Servidor** e informe a chave de
+acesso fornecida por quem administra a instalação.
+
+O registro inclui horários e detalhes de falhas. Mensagens, rascunhos,
+nomes de contas, endereços, credenciais e caminhos de arquivos ficam
+fora do registro. O arquivo só é compartilhado quando você decide enviá-lo.
+
 ## Apagar todos os dados
 
 Abra **Configurações → Geral → Ações destrutivas → Apagar todos os dados**.
