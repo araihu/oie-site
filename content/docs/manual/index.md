@@ -38,7 +38,7 @@ Com a conta conectada, abra seus detalhes em **Gerenciar contas**. Em **Foto de 
 
 ### Remover uma conta
 
-Em **Trocar de conta → Gerenciar contas**, abra a conta e selecione **Remover conta** no fim dos detalhes. Confira o endereço e confirme em **Remover conta**. Escolha **Desconectar** se quiser apenas sair do servidor e manter as conversas no Oiê.
+Em **Trocar de conta → Gerenciar contas**, abra a conta e selecione **Remover conta** no rodapé dos detalhes. Confira o endereço e confirme em **Remover conta**. Escolha **Desconectar** se quiser apenas sair do servidor e manter as conversas no Oiê.
 
 A remoção apaga a senha salva, as conversas e as mensagens pendentes dessa conta no Oiê. As outras contas e as mensagens no servidor XMPP são mantidas. Se você usa um motor remoto, a conta também some dos outros dispositivos conectados a ele.
 
