@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.17](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.19](../../baixar/index.md).
 
 ## Motor local ou remoto
 
@@ -31,6 +31,8 @@ Leia o aviso e digite `delete` para confirmar. A exclusão apaga as contas, o hi
 No rodapé da lista de conversas, abra **Trocar de conta** e selecione **Adicionar conta**. Informe o endereço completo da sua conta XMPP, como `ana@exemplo.org`, dê um nome à conta e selecione **Salvar conta**. No painel da conta, use **Conectar** com a senha do servidor XMPP. Para voltar a esse painel depois, use **Trocar de conta → Gerenciar contas**.
 
 Use **Trocar de conta** para ver todas as conversas ou filtrar por uma conta. Ao iniciar uma conversa, escolha a conta que você quer usar. As conversas de cada conta são independentes.
+
+Com a conta conectada, abra seus detalhes em **Gerenciar contas**. Em **Foto de perfil**, escolha uma imagem PNG, JPEG ou GIF de até 512 KB e selecione **Salvar foto**.
 
 ![Seletor de contas do Oiê aberto, com as opções Todas as contas, Pessoal e Trabalho.](imagens/seletor-de-contas.webp "Seletor de contas")
 
@@ -87,8 +89,6 @@ Depois de percorrer o histórico, role até o fim ou use **Ir para as mais recen
 
 ## Notificações de mensagens
 
-Disponível na versão de desenvolvimento. A versão oferecida em **Baixar** ainda não inclui esse recurso.
-
 Em **Configurações → Este dispositivo → Notificações**, ative **Notificações de mensagens** para receber banners e conceda a permissão quando o navegador ou o sistema pedir. Use **Ouvir som** para experimentar o toque de madeira e marimba.
 
 O som vem ativado para mensagens diretas e, nas salas, para menções e respostas a mensagens suas. Em **Som nas salas**, você pode escolher **Todas as mensagens**, manter **Menções e respostas a você** ou selecionar **Desativado**. Há controles para mensagens diretas, salas arquivadas e a conversa em foco. **Som de notificação** desliga todos os toques.
@@ -97,7 +97,7 @@ O som vem ativado para mensagens diretas e, nas salas, para menções e resposta
 
 Para silenciar uma conversa ou sala neste dispositivo, abra **Detalhes** no menu da conversa e ative **Silenciar notificações neste dispositivo**. Ao receber várias mensagens em sequência, o Oiê toca uma vez a cada dois segundos. O contador de mensagens não lidas continua funcionando.
 
-Os alertas chegam enquanto o Oiê está aberto e conectado. Selecione o banner para abrir a mensagem. No navegador ou no app web instalado, um banner que ainda estiver na central de notificações pode reabrir o Oiê após fechar a janela. Se o navegador bloquear áudio ao abrir o Oiê, interaja com a janela para habilitar a reprodução.
+Os alertas chegam enquanto o Oiê está aberto e conectado. Selecione o banner para abrir a mensagem. No desktop, o clique restaura a janela se ela estiver escondida. No navegador ou no app web instalado, um banner que ainda estiver na central de notificações pode reabrir o Oiê após fechar a janela. Se o navegador bloquear áudio ao abrir o Oiê, interaja com a janela para habilitar a reprodução.
 
 ## Busca geral e filtros por conta
 
