@@ -53,9 +53,10 @@ Os fluxos de **Mídia e links**, **Encaminhar mensagens** e **Descobrir e gerenc
 
 A seção Docker da página de arquitetura descreve a [CI da imagem em f9c6a01](https://github.com/araihu/oie/commit/f9c6a01625232e7132a358b27372759144588258).
 
-A seção **Rodar no Kubernetes com Helm** descreve a
-[release 0.2.1 do chart](https://github.com/araihu/oie/releases/tag/helm-v0.2.1),
-com suporte a Ingress e Gateway API e a imagem `v0.0.1-rc.21` por padrão.
+A seção **Rodar no Kubernetes com Helm** descreve a versão 0.2.2 do chart,
+que permite configurar timeouts no HTTPRoute e usa a imagem `v0.0.1-rc.21`
+por padrão. [Release 0.2.2 do chart](https://github.com/araihu/oie/releases/tag/helm-v0.2.2)
+· [Revisão do Oiê](https://github.com/araihu/oie/tree/5d0ac8b49adc11b950a61425e6e7cd6107f80f89)
 
 O fluxo de remoção de conta e o comando `oiectl accounts remove` foram conferidos com a [revisão 13160a0 do Oiê](https://github.com/araihu/oie/tree/13160a0d92ecf149563e8b46fb10813e2206d798) (contrato 0.34.0), posterior à rc.21 disponível em **Baixar**. A captura usa uma conta fictícia.
 
