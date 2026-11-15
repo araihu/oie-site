@@ -1,6 +1,6 @@
 ---
 title: Manual
-description: Conecte contas XMPP, gerencie salas, busque e encaminhe mensagens favoritas, envie anexos e agende envios.
+description: Conecte contas XMPP, gerencie salas, busque mensagens, encaminhe para salas, envie anexos e consulte as opções de retenção.
 language: pt-BR
 margo:
   imageViewer: true
@@ -54,6 +54,18 @@ Dentro de uma sala, abra **Mais opções** e selecione **Pesquisar mensagens**. 
 Buscar por `arqiuvo` nas mensagens guardadas pode realçar **arquivo** no balão. Se o resultado vier de uma versão anterior ou dos detalhes de um link, o realce aparece no trecho do resultado. Ao recarregar a página com a busca aberta, o Oiê volta à versão anterior selecionada.
 
 ![Busca por trilha em uma sala. O primeiro de três resultados está destacado na conversa e o campo oferece a opção de incluir o histórico de edições.](imagens/busca-na-sala.webp "Busca no histórico da sala")
+
+## Retenção de mensagens
+
+Disponível na prévia de desenvolvimento do Oiê. A `v0.0.1-rc.14` oferecida em **Baixar** ainda não inclui essas opções.
+
+Em **Configurações → Este dispositivo → Retenção de mensagens**, escolha os prazos padrão para **Salas** e **Conversas diretas**. Esses prazos valem para o motor do Oiê em uso, inclusive quando ele é compartilhado entre dispositivos. Para mudar o prazo de uma conversa, abra **Detalhes da conversa → Retenção de mensagens**. Use **Usar o padrão** para voltar ao prazo global.
+
+Por padrão, as salas têm prazo de **180 dias** e as conversas diretas usam **Sem limite**. O Oiê preserva as **100 mensagens mais recentes já guardadas de cada sala** e todas as mensagens favoritadas. Reduzir o prazo pode apagar outras mensagens antigas do histórico guardado pelo motor. Em um envio agendado, o prazo conta a partir do envio.
+
+O prazo também limita a recuperação do histórico no XMPP. Uma instalação nova pode recuperar menos de 100 mensagens de uma sala, dependendo do prazo e dos dados ainda disponíveis no servidor. Com **Sem limite**, as mensagens deixam de expirar por idade, o histórico pode ocupar mais espaço e a recuperação pode alcançar as mensagens mais antigas que o servidor ainda oferece à sua conta.
+
+![Configuração de retenção com 180 dias para salas e Sem limite para conversas diretas.](imagens/retencao-de-mensagens.webp "Retenção de mensagens")
 
 ## Mensagens não lidas
 

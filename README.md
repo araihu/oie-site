@@ -39,6 +39,8 @@ As seções **Mensagens favoritadas** e **Envio agendado** foram conferidas na [
 
 As seções de prévia e reprodução de vídeo foram conferidas na [revisão c0bc373 do aplicativo](https://github.com/araihu/oie/tree/c0bc373423340724b909e2e7028f324d005640d1). As capturas mostram uma conversa fictícia em pt-BR. A miniatura no rascunho e a geração de prévias sem FFmpeg estão na [rc.12](https://github.com/araihu/oie/tree/902efcdfb5c70e9e942d75eadaa61da2efedb028).
 
+A seção **Retenção de mensagens** foi conferida na revisão de prévia `f0c1b39cf14ce48d7a4d38e87ddbc358f8128587` do aplicativo. A captura foi feita em uma instância isolada com dados fictícios.
+
 A instalação do `oiectl` por release independente foi conferida com a [release cli/v0.30.1](https://github.com/araihu/oie/releases/tag/cli/v0.30.1), gerada a partir do [contrato no commit f21196a](https://github.com/araihu/oie/tree/f21196a6d8fe2d1b75180470ccd26089db5d6bb9/api).
 
 A seção **Histórico e busca em salas** descreve o realce e a seleção de versões anteriores disponíveis desde a rc.13. [Revisão 699be01 do Oiê](https://github.com/araihu/oie/tree/699be01c6aacad2a03f1ddcd2bdb4eb195a64c69)
