@@ -1,6 +1,6 @@
 ---
 title: Manual
-description: Escolha o motor local ou remoto, conecte contas XMPP, gerencie salas, busque e encaminhe mensagens, configure notificações, envie anexos e consulte as opções de retenção e exclusão de dados.
+description: Escolha o motor local ou remoto, conecte ou remova contas XMPP, gerencie salas, busque e encaminhe mensagens, configure notificações, envie anexos e consulte as opções de retenção e exclusão de dados.
 language: pt-BR
 margo:
   imageViewer: true
@@ -35,6 +35,16 @@ Use **Trocar de conta** para ver todas as conversas ou filtrar por uma conta. Ao
 Com a conta conectada, abra seus detalhes em **Gerenciar contas**. Em **Foto de perfil**, escolha uma imagem PNG, JPEG ou GIF de até 512 KB e selecione **Salvar foto**.
 
 ![Seletor de contas do Oiê aberto, com as opções Todas as contas, Pessoal e Trabalho.](imagens/seletor-de-contas.webp "Seletor de contas")
+
+### Remover uma conta
+
+Em **Trocar de conta → Gerenciar contas**, abra a conta e selecione **Remover conta** no rodapé dos detalhes. Confira o endereço e confirme em **Remover conta**. Escolha **Desconectar** se quiser apenas sair do servidor e manter as conversas no Oiê.
+
+A remoção apaga a senha salva, as conversas e as mensagens pendentes dessa conta no Oiê. As outras contas e as mensagens no servidor XMPP são mantidas. Se você usa um motor remoto, a conta também some dos outros dispositivos conectados a ele.
+
+[![Confirmação de remoção da conta Pessoal no Oiê, com as opções Cancelar e Remover conta.](imagens/remover-conta.webp "Confirmação de remoção")](imagens/remover-conta-original.webp)
+
+Esta opção ainda não está no instalador v0.0.1-rc.21 oferecido em [Baixar](../../baixar/index.md).
 
 ## Solicitações de mensagem e convites recebidos
 
