@@ -20,6 +20,14 @@ As contas e o histórico de cada motor ficam onde foram gravados. Para voltar à
 
 O acesso à API do motor remoto é aberto nesta versão. Use um [túnel SSH ou uma rede privada](../arquitetura/index.md#motor-hospedado) para restringir o acesso à sua instância.
 
+### Quando a conexão cai
+
+Na versão em desenvolvimento, posterior à rc.24, o Oiê tenta reabrir a
+conversa assim que o motor selecionado volta, mesmo se você abriu a janela
+durante a queda. Se a conversa já estava aberta, o rascunho continua no
+campo de mensagem. Em **Motor local**, o aplicativo de desktop também tenta
+reiniciar o motor do mesmo perfil se ele parar inesperadamente.
+
 ## Diagnóstico e registro de erros
 
 Abra **Configurações → Diagnóstico**, escolha um período e use **Atualizar**
@@ -39,6 +47,7 @@ O registro inclui horários e detalhes de falhas. Mensagens, rascunhos,
 nomes de contas, endereços, credenciais e caminhos de arquivos ficam
 fora do registro. O arquivo só é compartilhado quando você decide enviá-lo.
 
+
 ## Apagar todos os dados
 
 Abra **Configurações → Geral → Ações destrutivas → Apagar todos os dados**.
@@ -54,6 +63,11 @@ Use **Trocar de conta** para ver todas as conversas ou filtrar por uma conta. Ao
 Em **Gerenciar contas**, abra o **Perfil** da conta e use **Editar nome** e **Salvar nome** para alterar o nome mostrado no Oiê. Com a conta conectada, use **Editar foto**, escolha uma imagem PNG, JPEG ou GIF de até 512 KB e confira a prévia antes de selecionar **Salvar foto**.
 
 ![Seletor de contas do Oiê aberto, com as opções Todas as contas, Pessoal e Trabalho.](imagens/seletor-de-contas.webp "Seletor de contas")
+
+Na versão em desenvolvimento, o Oiê detecta quando o servidor XMPP deixa de
+responder e tenta reconectar a conta automaticamente. Os envios que aguardavam
+conexão são retomados. Se a conta parar por causa da senha ou da configuração
+do servidor, corrija o problema e volte ao **Perfil** para usar **Conectar**.
 
 ### Remover uma conta
 
