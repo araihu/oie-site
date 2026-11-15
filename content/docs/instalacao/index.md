@@ -219,14 +219,14 @@ Abra [127.0.0.1:8080](http://127.0.0.1:8080) no navegador e [conecte sua conta X
 
 ## Rodar no Kubernetes com Helm
 
-Use um cluster com armazenamento persistente e baixe o código-fonte da
-[v0.0.1-rc.18](https://github.com/araihu/oie/tree/v0.0.1-rc.18). O chart em
-`charts/oie` usa por padrão a imagem dessa versão. O instalador da
-página [Baixar](../../baixar/index.md) é destinado ao desktop. Na raiz do
-checkout, execute:
+Use um cluster com armazenamento persistente, o Helm e o `kubectl`.
+O [chart Helm 0.2.0](https://github.com/araihu/oie/releases/tag/helm-v0.2.0)
+tem versão própria e usa por padrão a imagem do Oiê `v0.0.1-rc.18`.
 
 ```sh
-helm upgrade --install oie ./charts/oie --namespace oie --create-namespace --wait --timeout 10m
+helm upgrade --install oie \
+  https://github.com/araihu/oie/releases/download/helm-v0.2.0/oie-0.2.0.tgz \
+  --namespace oie --create-namespace --wait --timeout 10m
 kubectl --namespace oie port-forward service/oie 8080:80
 ```
 
@@ -241,7 +241,7 @@ com autenticação em todas as rotas, incluindo a API. Use Ingress ou conecte
 o Oiê a um Gateway existente com `httpRoute.enabled`, `httpRoute.parentRefs`
 e `httpRoute.hostnames`. Se o Gateway estiver em outro namespace, permita
 rotas do namespace do Oiê no listener. Veja exemplos no
-[guia do chart](https://github.com/araihu/oie/tree/v0.0.1-rc.18/charts/oie#remote-access).
+[guia do chart](https://github.com/araihu/oie/tree/helm-v0.2.0/charts/oie#remote-access).
 
 ## Rodar pelo navegador ou usar o CLI
 
