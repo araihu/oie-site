@@ -57,7 +57,7 @@ A seção **Rodar no Kubernetes com Helm** descreve a
 [release 0.2.1 do chart](https://github.com/araihu/oie/releases/tag/helm-v0.2.1),
 com suporte a Ingress e Gateway API e a imagem `v0.0.1-rc.21` por padrão.
 
-O fluxo de remoção de conta e o comando `oiectl accounts remove` foram conferidos com a revisão `357500b` do Oiê (contrato 0.34.0), posterior à rc.20 disponível em **Baixar**. A captura usa uma conta fictícia.
+O fluxo de remoção de conta e o comando `oiectl accounts remove` foram conferidos com a [revisão 13160a0 do Oiê](https://github.com/araihu/oie/tree/13160a0d92ecf149563e8b46fb10813e2206d798) (contrato 0.34.0), posterior à rc.21 disponível em **Baixar**. A captura usa uma conta fictícia.
 
 ### Referência do banco de dados
 

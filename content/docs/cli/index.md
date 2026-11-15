@@ -83,7 +83,7 @@ Confira o ID da conta com `oiectl accounts list`. O comando abaixo remove a cont
 oiectl accounts remove --account-id ID_DA_CONTA
 ```
 
-O comando requer um CLI e um motor com suporte ao contrato 0.34.0 ou posterior. Ele ainda não está no CLI v0.30.1 nem no motor do instalador v0.0.1-rc.20.
+O comando requer um CLI e um motor com suporte ao contrato 0.34.0 ou posterior. Ele ainda não está no CLI v0.30.1 nem no motor do instalador v0.0.1-rc.21.
 
 ## Pesquisar mensagens favoritas
 

@@ -44,7 +44,7 @@ A remoção apaga a senha salva, as conversas e as mensagens pendentes dessa con
 
 [![Confirmação de remoção da conta Pessoal no Oiê, com as opções Cancelar e Remover conta.](imagens/remover-conta.webp "Confirmação de remoção")](imagens/remover-conta-original.webp)
 
-Esta opção ainda não está no instalador v0.0.1-rc.20 oferecido em [Baixar](../../baixar/index.md).
+Esta opção ainda não está no instalador v0.0.1-rc.21 oferecido em [Baixar](../../baixar/index.md).
 
 ## Solicitações de mensagem e convites recebidos
 
