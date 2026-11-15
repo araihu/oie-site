@@ -1,6 +1,6 @@
 ---
 title: Manual
-description: Conecte contas XMPP, gerencie salas, busque mensagens, encaminhe para salas, envie anexos e consulte as opções de retenção.
+description: Escolha o motor local ou remoto, conecte contas XMPP, gerencie salas, busque mensagens, encaminhe para salas, envie anexos e consulte as opções de retenção e exclusão de dados.
 language: pt-BR
 margo:
   imageViewer: true
@@ -8,7 +8,23 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.16](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.17](../../baixar/index.md).
+
+## Motor local ou remoto
+
+No desktop, entre em **Configurações → Geral** e abra **Motor**. **Local** é o padrão e roda o motor no seu dispositivo. Para acessar um motor hospedado, selecione **Remoto**, informe seu endereço completo, como `http://127.0.0.1:18084`, e clique em **Salvar**. O Oiê verifica a conexão antes de abrir as conversas do motor remoto. A escolha vale para esse perfil do desktop e é lembrada quando você reabre o aplicativo.
+
+![Tela Motor com o botão Voltar às configurações, a opção Remoto selecionada, o endereço preenchido e o botão Salvar.](imagens/motor-remoto.webp "Configurações do motor remoto") [Ver captura completa](imagens/motor-remoto-original.webp)
+
+As contas e o histórico de cada motor ficam onde foram gravados. Para voltar às suas conversas deste dispositivo, inclusive se o motor remoto sair do ar, selecione **Local** e salve. O motor remoto continua funcionando no servidor.
+
+O acesso à API do motor remoto é aberto nesta versão. Use um [túnel SSH ou uma rede privada](../arquitetura/index.md#motor-hospedado) para restringir o acesso à sua instância.
+
+## Apagar todos os dados
+
+Abra **Configurações → Geral → Ações destrutivas → Apagar todos os dados**.
+
+Leia o aviso e digite `delete` para confirmar. A exclusão apaga as contas, o histórico e os arquivos guardados pelo motor selecionado. Em um motor compartilhado, isso afeta todos os dispositivos conectados.
 
 ## Contas XMPP
 
