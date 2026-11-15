@@ -75,6 +75,16 @@ bin/oiectl messages get --message-id MESSAGE_UUID --output json
 
 Se perder a resposta e precisar repetir a mesma solicitação, mantenha a chave e o corpo originais para evitar um envio duplicado.
 
+## Remover uma conta
+
+Confira o ID da conta com `oiectl accounts list`. O comando abaixo remove a conta, a senha salva, as conversas e as mensagens pendentes do motor selecionado. As mensagens no servidor XMPP são mantidas. O CLI executa a remoção assim que você chama o comando.
+
+```sh
+oiectl accounts remove --account-id ID_DA_CONTA
+```
+
+O comando requer um CLI e um motor com suporte ao contrato 0.34.0 ou posterior. Ele ainda não está no CLI v0.30.1 nem no motor do instalador v0.0.1-rc.20.
+
 ## Pesquisar mensagens favoritas
 
 Com o CLI compilado da rc.16, consulte as mensagens favoritas pelo texto atual, remetente ou conversa de origem. Use `--account-id` ou `--conversation-id` para restringir a consulta.
