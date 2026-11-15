@@ -32,7 +32,7 @@ Veja os diagramas e o catálogo de tabelas e views em [Banco de dados](../banco-
 
 **Desktop.** [Instale o aplicativo](../../baixar/index.md) no macOS ou Linux. O motor e a interface rodam juntos no computador, e o aplicativo usa o diretório de dados do seu usuário. Fechar a janela mantém o motor ativo. Sair do aplicativo encerra o motor.
 
-**Navegador ou CLI.** Com Go 1.27.4 ou mais recente e Make, compile a partir do [código-fonte da v0.0.1-rc.23](https://github.com/araihu/oie/tree/c5c3f37aeb815dd9ee4a1e94512ebf7fd2467071) e inicie a interface e a API na mesma porta.
+**Navegador ou CLI.** Com Go 1.27.4 ou mais recente e Make, compile a partir do [código-fonte da v0.0.1-rc.24](https://github.com/araihu/oie/tree/c5c3f37aeb815dd9ee4a1e94512ebf7fd2467071) e inicie a interface e a API na mesma porta.
 
 ```sh
 make build
@@ -47,7 +47,7 @@ A [imagem do Oiê](https://github.com/araihu/oie/pkgs/container/oie) roda o moto
 
 - `:latest` acompanha a versão mais recente marcada com uma tag, incluindo pré-lançamentos.
 - `:main` acompanha a versão de desenvolvimento.
-- Uma tag como `:v0.0.1-rc.23` seleciona uma versão específica.
+- Uma tag como `:v0.0.1-rc.24` seleciona uma versão específica.
 
 O volume `oie-data` guarda as contas, o histórico e os arquivos de mídia. Para atualizar com `:latest`, baixe a imagem com `docker pull ghcr.io/araihu/oie:latest`, pare e remova o contêiner antigo e execute novamente o comando do guia com o mesmo volume.
 

@@ -6,7 +6,7 @@ language: pt-BR
 
 # CLI do Oiê
 
-O `oiectl` acessa um motor do Oiê em execução. Os exemplos usam uma instância local em `http://127.0.0.1:8080`. O [Oiê v0.0.1-rc.23](../../baixar/index.md) usa a API 0.34.0. A versão do CLI distribuída em separado acompanha o contrato 0.30.1.
+O `oiectl` acessa um motor do Oiê em execução. Os exemplos usam uma instância local em `http://127.0.0.1:8080`. O [Oiê v0.0.1-rc.24](../../baixar/index.md) usa a API 0.34.0. A versão do CLI distribuída em separado acompanha o contrato 0.30.1.
 
 ## Instalar o CLI
 
@@ -20,7 +20,7 @@ oiectl version v0.30.1 (spec openapi/engine/v0.30.1)
 
 ## Compilar e conectar
 
-Use Make e Go 1.27.4 ou mais recente para compilar e iniciar o Oiê a partir do [código-fonte da v0.0.1-rc.23](https://github.com/araihu/oie/tree/c5c3f37aeb815dd9ee4a1e94512ebf7fd2467071).
+Use Make e Go 1.27.4 ou mais recente para compilar e iniciar o Oiê a partir do [código-fonte da v0.0.1-rc.24](https://github.com/araihu/oie/tree/c5c3f37aeb815dd9ee4a1e94512ebf7fd2467071).
 
 ```sh
 make build build-cli
