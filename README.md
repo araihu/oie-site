@@ -54,8 +54,8 @@ Os fluxos de **Mídia e links**, **Encaminhar mensagens** e **Descobrir e gerenc
 A seção Docker da página de arquitetura descreve a [CI da imagem em f9c6a01](https://github.com/araihu/oie/commit/f9c6a01625232e7132a358b27372759144588258).
 
 A seção **Rodar no Kubernetes com Helm** descreve a
-[release 0.2.0 do chart](https://github.com/araihu/oie/releases/tag/helm-v0.2.0),
-com suporte a Ingress e Gateway API e a imagem `v0.0.1-rc.18` por padrão.
+[release 0.2.1 do chart](https://github.com/araihu/oie/releases/tag/helm-v0.2.1),
+com suporte a Ingress e Gateway API e a imagem `v0.0.1-rc.21` por padrão.
 
 ### Referência do banco de dados
 
