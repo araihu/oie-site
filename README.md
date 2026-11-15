@@ -25,7 +25,7 @@ Ao atualizar **Baixar**, confira também os comandos e requisitos do [guia de in
 
 ## Documentação do Oiê
 
-A página **Baixar** aponta para os binários e para o código-fonte correspondente da [revisão da v0.0.1-rc.14](https://github.com/araihu/oie/tree/48090057513b2eab83d526d44df1d7764ac16a0b).
+A página **Baixar** aponta para os binários e para o código-fonte correspondente da [revisão da v0.0.1-rc.16](https://github.com/araihu/oie/tree/505f6c90632a68eea50db9dae92c55e2d533ed13).
 
 O manual, os atalhos, os exemplos do CLI e os guias de instalação e arquitetura foram revisados com a [main do aplicativo em 9929391](https://github.com/araihu/oie/tree/9929391579532045b61fcad8d8883f7e3a351215) e a [v0.0.1-rc.3](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.3). Ao atualizar, registre o SHA das páginas revisadas e confira as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
 
@@ -39,7 +39,7 @@ As seções **Mensagens favoritadas** e **Envio agendado** foram conferidas na [
 
 As seções de prévia e reprodução de vídeo foram conferidas na [revisão c0bc373 do aplicativo](https://github.com/araihu/oie/tree/c0bc373423340724b909e2e7028f324d005640d1). As capturas mostram uma conversa fictícia em pt-BR. A miniatura no rascunho e a geração de prévias sem FFmpeg estão na [rc.12](https://github.com/araihu/oie/tree/902efcdfb5c70e9e942d75eadaa61da2efedb028).
 
-A seção **Retenção de mensagens** foi conferida na revisão de prévia `f0c1b39cf14ce48d7a4d38e87ddbc358f8128587` do aplicativo. A captura foi feita em uma instância isolada com dados fictícios.
+A seção **Retenção de mensagens** foi conferida na [revisão 505f6c9 do aplicativo](https://github.com/araihu/oie/tree/505f6c90632a68eea50db9dae92c55e2d533ed13), usada na rc.16. A captura foi feita com dados fictícios em uma instância isolada durante o desenvolvimento do recurso.
 
 A instalação do `oiectl` por release independente foi conferida com a [release cli/v0.30.1](https://github.com/araihu/oie/releases/tag/cli/v0.30.1), gerada a partir do [contrato no commit f21196a](https://github.com/araihu/oie/tree/f21196a6d8fe2d1b75180470ccd26089db5d6bb9/api).
 
