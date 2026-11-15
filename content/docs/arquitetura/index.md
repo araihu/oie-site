@@ -70,7 +70,7 @@ O Oiê ainda não tem autenticação própria para o acesso ao servidor. Mantenh
 ssh -N -L 127.0.0.1:8080:127.0.0.1:8080 usuario@servidor
 ```
 
-Com o túnel aberto, acesse [127.0.0.1:8080](http://127.0.0.1:8080) no computador cliente. Para manter o motor ativo após desconectar do servidor, execute-o como um serviço supervisionado pelo sistema. Confira se o motor está pronto pela rota de saúde.
+Com o túnel aberto, acesse [127.0.0.1:8080](http://127.0.0.1:8080) no computador cliente. Na versão em desenvolvimento do desktop, também é possível informar o endereço do túnel em [Configurações → Geral → Motor](../manual/index.md#motor-local-ou-remoto). Para manter o motor ativo após desconectar do servidor, execute-o como um serviço supervisionado pelo sistema. Confira se o motor está pronto pela rota de saúde.
 
 ```sh
 curl --fail http://127.0.0.1:8080/api/v1/health
