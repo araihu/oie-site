@@ -1,6 +1,6 @@
 ---
 title: Manual
-description: Escolha o motor local ou remoto, conecte contas XMPP, gerencie salas, busque mensagens, encaminhe para salas, envie anexos e consulte as opções de retenção e exclusão de dados.
+description: Escolha o motor local ou remoto, conecte contas XMPP, gerencie salas, busque e encaminhe mensagens, configure notificações, envie anexos e consulte as opções de retenção e exclusão de dados.
 language: pt-BR
 margo:
   imageViewer: true
@@ -84,6 +84,16 @@ O prazo também limita a recuperação do histórico no XMPP. Uma instalação n
 ## Mensagens não lidas
 
 Depois de percorrer o histórico, role até o fim ou use **Ir para as mais recentes** acima do campo de mensagem, quando esse botão aparecer. Se chegarem mensagens enquanto você estiver no histórico, o botão mostra **Novas mensagens · ir para as últimas**. Ao permanecer no fim com a janela ou aba em foco e sem buscas ou diálogos abertos, o Oiê marca como lidas também as mensagens anteriores que ficaram fora da tela. O contador de não lidas e o indicador de menções são atualizados na lista de conversas.
+
+## Notificações de mensagens
+
+Disponível na versão de desenvolvimento. A versão oferecida em **Baixar** ainda não inclui esse recurso.
+
+Em **Configurações → Este dispositivo → Notificações**, ative **Notificações de mensagens** para receber banners e conceda a permissão quando o navegador ou o sistema pedir. Use **Ouvir som** para experimentar o toque de madeira e marimba. O **Som de notificação** pode ser ativado separadamente. Se o navegador bloquear áudio ao abrir o Oiê, interaja com a janela para habilitar a reprodução.
+
+![Controles de notificações de mensagens e som na aba Este dispositivo.](imagens/notificacoes.webp "Notificações de mensagens no Oiê")
+
+Os alertas chegam enquanto o Oiê está aberto. O banner mostra quem enviou a mensagem e abre a conversa ao ser selecionado. A conversa visível na janela em foco fica silenciosa. Para silenciar uma conversa ou sala neste dispositivo, abra **Detalhes** no menu da conversa e ative **Silenciar notificações neste dispositivo**. O contador de mensagens não lidas continua funcionando.
 
 ## Busca geral e filtros por conta
 
