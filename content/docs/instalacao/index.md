@@ -220,12 +220,12 @@ Abra [127.0.0.1:8080](http://127.0.0.1:8080) no navegador e [conecte sua conta X
 ## Rodar no Kubernetes com Helm
 
 Use um cluster com armazenamento persistente, o Helm e o `kubectl`.
-O [chart Helm 0.2.2](https://github.com/araihu/oie/releases/tag/helm-v0.2.2)
-tem versão própria e usa por padrão a imagem do Oiê `v0.0.1-rc.21`.
+O [chart Helm 0.2.3](https://github.com/araihu/oie/releases/tag/helm-v0.2.3)
+tem versão própria e usa por padrão a imagem do Oiê `v0.0.1-rc.24`.
 
 ```sh
 helm upgrade --install oie \
-  https://github.com/araihu/oie/releases/download/helm-v0.2.2/oie-0.2.2.tgz \
+  https://github.com/araihu/oie/releases/download/helm-v0.2.3/oie-0.2.3.tgz \
   --namespace oie --create-namespace --wait --timeout 10m
 kubectl --namespace oie port-forward service/oie 8080:80
 ```
@@ -241,7 +241,7 @@ com autenticação em todas as rotas, incluindo a API. Use Ingress ou conecte
 o Oiê a um Gateway existente com `httpRoute.enabled`, `httpRoute.parentRefs`
 e `httpRoute.hostnames`. Se o Gateway estiver em outro namespace, permita
 rotas do namespace do Oiê no listener. Veja exemplos no
-[guia do chart](https://github.com/araihu/oie/tree/helm-v0.2.2/charts/oie#remote-access).
+[guia do chart](https://github.com/araihu/oie/tree/helm-v0.2.3/charts/oie#remote-access).
 
 Se o timeout de requisição do Gateway interromper as atualizações ao vivo
 das conversas, acrescente este trecho ao arquivo de valores do chart. Use
@@ -261,10 +261,11 @@ do Oiê. Se você omitir o valor, o controlador aplica seu comportamento padrão
 ### Acesso ao diagnóstico no servidor
 
 Configure `OIE_DIAGNOSTICS_KEY` no processo do servidor para habilitar o
-visualizador. No Docker, use um arquivo de ambiente privado. O chart no
-código-fonte da rc.24 aceita `diagnostics.existingSecret` para apontar para
-um Secret que contenha a chave. Proteja o acesso remoto com HTTPS e
-autenticação no proxy.
+visualizador. No Docker, use um arquivo de ambiente privado. No Helm,
+configure `diagnostics.existingSecret` com o nome de um Secret no mesmo
+namespace da instalação. O chart lê a entrada `key` desse Secret. Se a
+entrada tiver outro nome, informe-o em `diagnostics.secretKey`. Proteja o
+acesso remoto com HTTPS e autenticação no proxy.
 
 O registro também fica disponível em `docker logs oie` ou
 `kubectl logs -n oie statefulset/oie`. Consulte o
