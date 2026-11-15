@@ -98,6 +98,13 @@ troca a identidade vinculada e revoga as sessões e chaves existentes. O
 histórico e as contas XMPP ficam no diretório de dados. Para automação, veja
 [acesso ao motor hospedado pelo CLI](../cli/index.md#autenticar-no-motor-hospedado).
 
+Para checagens de um balanceador de carga, configure `--probe-listen` com
+um endereço HTTP restrito à rede privada. Consulte `/readyz` para saber se
+o motor pode receber tráfego e `/livez` para verificar se o processo
+responde. Essas rotas ficam em uma porta própria e dispensam credenciais.
+No chart Helm com autenticação habilitada, o Kubernetes consulta diretamente
+a porta 8081 do pod.
+
 ## Interface e motor em processos separados
 
 Para separar a interface do motor, inicie o motor hospedado com `--data-only` e rode o BFF apontando para ele. Os comandos abaixo usam duas portas privadas no mesmo servidor e rodam em terminais separados.
