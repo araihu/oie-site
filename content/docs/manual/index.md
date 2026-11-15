@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.20](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.21](../../baixar/index.md).
 
 ## Motor local ou remoto
 
