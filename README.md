@@ -51,6 +51,10 @@ Os fluxos de **Mídia e links**, **Encaminhar mensagens** e **Descobrir e gerenc
 
 A seção Docker da página de arquitetura descreve a [CI da imagem em f9c6a01](https://github.com/araihu/oie/commit/f9c6a01625232e7132a358b27372759144588258).
 
+A seção **Rodar no Kubernetes com Helm** foi conferida na revisão `73ca653`
+do Oiê. O chart foi criado depois da rc.16 e usa a imagem publicada dessa
+versão por padrão.
+
 ### Referência do banco de dados
 
 O catálogo e os diagramas registram a [revisão dd2e610 do Oiê](https://github.com/araihu/oie/tree/dd2e6106e56f34c86a1b74c6dd989ecdbd350bc6), fixada em `scripts/database-docs/oie-revision`. Para atualizar a referência, coloque nesse arquivo o SHA completo do Oiê que será documentado. Com Python 3 com SQLite e o [tbls v1.96.1](https://github.com/k1LoW/tbls/releases/tag/v1.96.1) no PATH, rode a partir da raiz do site.

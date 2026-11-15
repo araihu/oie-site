@@ -1,6 +1,6 @@
 ---
 title: Instalação
-description: Instale o Oiê com Homebrew, APT, Flatpak ou o instalador, rode com Docker ou compile a partir do código-fonte.
+description: Instale o Oiê para desktop, rode a versão web com Docker ou Kubernetes com Helm e confira como compilar o código-fonte.
 language: pt-BR
 ---
 
@@ -216,6 +216,29 @@ docker run -d --name oie \
 ```
 
 Abra [127.0.0.1:8080](http://127.0.0.1:8080) no navegador e [conecte sua conta XMPP](../manual/index.md#contas-xmpp). Para escolher a tag da imagem, atualizar o contêiner ou acessar o Oiê de outro computador, veja [Docker em Arquitetura e deploy](../arquitetura/index.md#docker).
+
+## Rodar no Kubernetes com Helm
+
+Use um cluster com armazenamento persistente e um checkout do Oiê que inclua
+`charts/oie`. O chart usa por padrão a imagem da v0.0.1-rc.16. O instalador da
+página [Baixar](../../baixar/index.md) é destinado ao desktop. Na raiz do
+checkout, execute:
+
+```sh
+helm upgrade --install oie ./charts/oie --namespace oie --create-namespace --wait --timeout 10m
+kubectl --namespace oie port-forward service/oie 8080:80
+```
+
+Abra [127.0.0.1:8080](http://127.0.0.1:8080) no navegador e
+[conecte sua conta XMPP](../manual/index.md#contas-xmpp). O chart roda uma
+instância e reserva 10 GiB para contas, histórico e mídia. Para usar um volume
+já existente, indique o nome do PVC com `persistence.existingClaim`. Use um
+PVC por instância. O volume é mantido quando você desinstala a release Helm.
+
+O Oiê não tem login próprio. Para acesso remoto, configure um proxy HTTPS
+com autenticação em todas as rotas, incluindo a API. Consulte o
+[guia do chart](https://github.com/araihu/oie/tree/main/charts/oie) para
+configurar a imagem, o armazenamento e o Ingress.
 
 ## Rodar pelo navegador ou usar o CLI
 
