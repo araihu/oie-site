@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.14](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.16](../../baixar/index.md).
 
 ## Contas XMPP
 
@@ -57,11 +57,9 @@ Buscar por `arqiuvo` nas mensagens guardadas pode realçar **arquivo** no balão
 
 ## Retenção de mensagens
 
-Disponível na prévia de desenvolvimento do Oiê. A `v0.0.1-rc.14` oferecida em **Baixar** ainda não inclui essas opções.
-
 Em **Configurações → Este dispositivo → Retenção de mensagens**, escolha os prazos padrão para **Salas** e **Conversas diretas**. Esses prazos valem para o motor do Oiê em uso, inclusive quando ele é compartilhado entre dispositivos. Para mudar o prazo de uma conversa, abra **Detalhes da conversa → Retenção de mensagens**. Use **Usar o padrão** para voltar ao prazo global.
 
-Por padrão, as salas têm prazo de **180 dias** e as conversas diretas usam **Sem limite**. O Oiê preserva as **100 mensagens mais recentes já guardadas de cada sala** e todas as mensagens favoritadas. Reduzir o prazo pode apagar outras mensagens antigas do histórico guardado pelo motor. Em um envio agendado, o prazo conta a partir do envio.
+Por padrão, as salas têm prazo de **180 dias** e as conversas diretas usam **Sem limite**. O Oiê preserva as **100 mensagens mais recentes já guardadas de cada sala** e todas as mensagens favoritadas. Reduzir o prazo pode apagar outras mensagens antigas do histórico guardado pelo motor. Em um envio agendado, o prazo conta a partir do envio. Se a mensagem original de uma resposta expirar, o texto da resposta continua visível e a citação fica indisponível.
 
 O prazo também limita a recuperação do histórico no XMPP. Uma instalação nova pode recuperar menos de 100 mensagens de uma sala, dependendo do prazo e dos dados ainda disponíveis no servidor. Com **Sem limite**, as mensagens deixam de expirar por idade, o histórico pode ocupar mais espaço e a recuperação pode alcançar as mensagens mais antigas que o servidor ainda oferece à sua conta.
 
