@@ -10,32 +10,34 @@ layout:
 
 # Baixar o Oiê
 
-Pré-lançamento v0.0.1-rc.17
+Pré-lançamento v0.0.1-rc.18
 
 Tenha em mãos uma conta XMPP para começar a conversar.
 
-- [macOS · Apple Silicon](https://github.com/araihu/oie/releases/download/v0.0.1-rc.17/oie_v0.0.1-rc.17_darwin_arm64.tar.gz)
-- [Ubuntu 24.04 · x86-64](https://github.com/araihu/oie/releases/download/v0.0.1-rc.17/oie_v0.0.1-rc.17_linux_amd64.tar.gz)
+- [macOS · Apple Silicon](https://github.com/araihu/oie/releases/download/v0.0.1-rc.18/oie_v0.0.1-rc.18_darwin_arm64.tar.gz)
+- [Ubuntu 24.04 · x86-64](https://github.com/araihu/oie/releases/download/v0.0.1-rc.18/oie_v0.0.1-rc.18_linux_amd64.tar.gz)
 
 ## Instalar com um gerenciador de pacotes
 
 - [APT](../docs/instalacao/index.md#instalar-com-apt) para Trisquel 12 e Ubuntu 24.04 x86-64.
-- [Flatpak](../docs/instalacao/index.md#instalar-com-flatpak) para Linux x86-64, com [download do bundle](https://github.com/araihu/oie/releases/download/v0.0.1-rc.17/oie-v0.0.1-rc.17-x86_64.flatpak).
+- [Flatpak](../docs/instalacao/index.md#instalar-com-flatpak) para Linux x86-64, com [download do bundle](https://github.com/araihu/oie/releases/download/v0.0.1-rc.18/oie-v0.0.1-rc.18-x86_64.flatpak).
 - [Homebrew](../docs/instalacao/index.md#instalar-com-homebrew) para macOS com Apple Silicon e Ubuntu 24.04 x86-64.
 
 O APT e o Homebrew seguem seus próprios canais de atualização.
+
+Para rodar a versão web no Kubernetes, veja [Rodar no Kubernetes com Helm](../docs/instalacao/index.md#rodar-no-kubernetes-com-helm).
 
 ## Instalação e arquivos da versão
 
 O guia explica a primeira abertura no macOS e quais bibliotecas instalar no Ubuntu.
 
 - [Guia de instalação](../docs/instalacao/index.md)
-- [Notas da versão e instalador](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.17)
-- [Somas de verificação SHA-256](https://github.com/araihu/oie/releases/download/v0.0.1-rc.17/SHA256SUMS)
+- [Notas da versão e instalador](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.18)
+- [Somas de verificação SHA-256](https://github.com/araihu/oie/releases/download/v0.0.1-rc.18/SHA256SUMS)
 
 ## Código-fonte
 
 Os arquivos abaixo correspondem aos binários da versão e incluem as dependências incorporadas e as instruções de compilação.
 
-- [Código-fonte para macOS](https://github.com/araihu/oie/releases/download/v0.0.1-rc.17/oie_v0.0.1-rc.17_darwin_arm64_source.tar.gz)
-- [Código-fonte para Linux e imagem OCI](https://github.com/araihu/oie/releases/download/v0.0.1-rc.17/oie_v0.0.1-rc.17_linux_amd64_source.tar.gz)
+- [Código-fonte para macOS](https://github.com/araihu/oie/releases/download/v0.0.1-rc.18/oie_v0.0.1-rc.18_darwin_arm64_source.tar.gz)
+- [Código-fonte para Linux e imagem OCI](https://github.com/araihu/oie/releases/download/v0.0.1-rc.18/oie_v0.0.1-rc.18_linux_amd64_source.tar.gz)
