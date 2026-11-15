@@ -89,11 +89,15 @@ Depois de percorrer o histórico, role até o fim ou use **Ir para as mais recen
 
 Disponível na versão de desenvolvimento. A versão oferecida em **Baixar** ainda não inclui esse recurso.
 
-Em **Configurações → Este dispositivo → Notificações**, ative **Notificações de mensagens** para receber banners e conceda a permissão quando o navegador ou o sistema pedir. Use **Ouvir som** para experimentar o toque de madeira e marimba. O **Som de notificação** pode ser ativado separadamente. Se o navegador bloquear áudio ao abrir o Oiê, interaja com a janela para habilitar a reprodução.
+Em **Configurações → Este dispositivo → Notificações**, ative **Notificações de mensagens** para receber banners e conceda a permissão quando o navegador ou o sistema pedir. Use **Ouvir som** para experimentar o toque de madeira e marimba.
+
+O som vem ativado para mensagens diretas e, nas salas, para menções e respostas a mensagens suas. Em **Som nas salas**, você pode escolher **Todas as mensagens**, manter **Menções e respostas a você** ou selecionar **Desativado**. Há controles para mensagens diretas, salas arquivadas e a conversa em foco. **Som de notificação** desliga todos os toques.
 
 ![Controles de notificações de mensagens e som na aba Este dispositivo.](imagens/notificacoes.webp "Notificações de mensagens no Oiê")
 
-Os alertas chegam enquanto o Oiê está aberto. O banner mostra quem enviou a mensagem e abre a conversa ao ser selecionado. A conversa visível na janela em foco fica silenciosa. Para silenciar uma conversa ou sala neste dispositivo, abra **Detalhes** no menu da conversa e ative **Silenciar notificações neste dispositivo**. O contador de mensagens não lidas continua funcionando.
+Para silenciar uma conversa ou sala neste dispositivo, abra **Detalhes** no menu da conversa e ative **Silenciar notificações neste dispositivo**. Ao receber várias mensagens em sequência, o Oiê toca uma vez a cada dois segundos. O contador de mensagens não lidas continua funcionando.
+
+Os alertas chegam enquanto o Oiê está aberto e conectado. O banner mostra quem enviou a mensagem e abre a conversa ao ser selecionado. Se o navegador bloquear áudio ao abrir o Oiê, interaja com a janela para habilitar a reprodução.
 
 ## Busca geral e filtros por conta
 
