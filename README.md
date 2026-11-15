@@ -57,6 +57,8 @@ A seção **Rodar no Kubernetes com Helm** descreve a
 [release 0.2.1 do chart](https://github.com/araihu/oie/releases/tag/helm-v0.2.1),
 com suporte a Ingress e Gateway API e a imagem `v0.0.1-rc.21` por padrão.
 
+O fluxo de remoção de conta e o comando `oiectl accounts remove` foram conferidos com a [revisão 13160a0 do Oiê](https://github.com/araihu/oie/tree/13160a0d92ecf149563e8b46fb10813e2206d798) (contrato 0.34.0), posterior à rc.21 disponível em **Baixar**. A captura usa uma conta fictícia.
+
 ### Referência do banco de dados
 
 O catálogo e os diagramas registram a [revisão dd2e610 do Oiê](https://github.com/araihu/oie/tree/dd2e6106e56f34c86a1b74c6dd989ecdbd350bc6), fixada em `scripts/database-docs/oie-revision`. Para atualizar a referência, coloque nesse arquivo o SHA completo do Oiê que será documentado. Com Python 3 com SQLite e o [tbls v1.96.1](https://github.com/k1LoW/tbls/releases/tag/v1.96.1) no PATH, rode a partir da raiz do site.
