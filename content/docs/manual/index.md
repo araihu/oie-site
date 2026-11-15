@@ -8,11 +8,9 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.16](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.17](../../baixar/index.md).
 
 ## Motor local ou remoto
-
-Os controles de seleção do motor fazem parte da versão em desenvolvimento. A versão v0.0.1-rc.16, oferecida em **Baixar**, permite conectar o desktop por meio da opção [`--engine-url`](../arquitetura/index.md#interface-e-motor-em-processos-separados).
 
 No desktop, entre em **Configurações → Geral** e abra **Motor**. **Local** é o padrão e roda o motor no seu dispositivo. Para acessar um motor hospedado, selecione **Remoto**, informe seu endereço completo, como `http://127.0.0.1:18084`, e clique em **Salvar**. O Oiê verifica a conexão antes de abrir as conversas do motor remoto. A escolha vale para esse perfil do desktop e é lembrada quando você reabre o aplicativo.
 
@@ -24,7 +22,7 @@ O acesso à API do motor remoto é aberto nesta versão. Use um [túnel SSH ou u
 
 ## Apagar todos os dados
 
-Na versão em desenvolvimento, abra **Configurações → Geral → Ações destrutivas → Apagar todos os dados**. Na v0.0.1-rc.16, a ação está diretamente em **Geral**.
+Abra **Configurações → Geral → Ações destrutivas → Apagar todos os dados**.
 
 Leia o aviso e digite `delete` para confirmar. A exclusão apaga as contas, o histórico e os arquivos guardados pelo motor selecionado. Em um motor compartilhado, isso afeta todos os dispositivos conectados.
 
