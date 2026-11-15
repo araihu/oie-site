@@ -25,7 +25,7 @@ Ao atualizar **Baixar**, confira também os comandos e requisitos do [guia de in
 
 ## Documentação do Oiê
 
-A página **Baixar** aponta para os binários e para o código-fonte correspondente da [revisão da v0.0.1-rc.21](https://github.com/araihu/oie/tree/f7bd401f5bc6e61c2b7e51f22709836899f74c32).
+A página **Baixar** aponta para os binários e para o código-fonte correspondente da [revisão da v0.0.1-rc.22](https://github.com/araihu/oie/tree/ffa480cb81a5b79287191a2220d554c4180be3ac).
 
 O manual, os atalhos, os exemplos do CLI e os guias de instalação e arquitetura foram revisados com a [main do aplicativo em 9929391](https://github.com/araihu/oie/tree/9929391579532045b61fcad8d8883f7e3a351215) e a [v0.0.1-rc.3](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.3). Ao atualizar, registre o SHA das páginas revisadas e confira as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
 
@@ -57,7 +57,7 @@ A seção **Rodar no Kubernetes com Helm** descreve a
 [release 0.2.1 do chart](https://github.com/araihu/oie/releases/tag/helm-v0.2.1),
 com suporte a Ingress e Gateway API e a imagem `v0.0.1-rc.21` por padrão.
 
-O fluxo de remoção de conta e o comando `oiectl accounts remove` foram conferidos com a [revisão 13160a0 do Oiê](https://github.com/araihu/oie/tree/13160a0d92ecf149563e8b46fb10813e2206d798) (contrato 0.34.0), posterior à rc.21 disponível em **Baixar**. A captura usa uma conta fictícia.
+O fluxo de remoção de conta e o comando `oiectl accounts remove` foram conferidos com a [revisão da rc.22](https://github.com/araihu/oie/tree/ffa480cb81a5b79287191a2220d554c4180be3ac) e o contrato 0.34.0. A captura usa uma conta fictícia.
 
 ### Referência do banco de dados
 
