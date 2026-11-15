@@ -6,7 +6,7 @@ language: pt-BR
 
 # CLI do Oiê
 
-O `oiectl` acessa um motor do Oiê em execução. Os exemplos usam uma instância local em `http://127.0.0.1:8080`. O [Oiê v0.0.1-rc.22](../../baixar/index.md) usa a API 0.34.0. A versão do CLI distribuída em separado acompanha o contrato 0.30.1.
+O `oiectl` acessa um motor do Oiê em execução. Os exemplos usam uma instância local em `http://127.0.0.1:8080`. O [Oiê v0.0.1-rc.23](../../baixar/index.md) usa a API 0.34.0. A versão do CLI distribuída em separado acompanha o contrato 0.30.1.
 
 ## Instalar o CLI
 
@@ -20,14 +20,14 @@ oiectl version v0.30.1 (spec openapi/engine/v0.30.1)
 
 ## Compilar e conectar
 
-Use Make e Go 1.27.4 ou mais recente para compilar e iniciar o Oiê a partir do [código-fonte da v0.0.1-rc.22](https://github.com/araihu/oie/tree/ffa480cb81a5b79287191a2220d554c4180be3ac).
+Use Make e Go 1.27.4 ou mais recente para compilar e iniciar o Oiê a partir do [código-fonte da v0.0.1-rc.23](https://github.com/araihu/oie/tree/c5c3f37aeb815dd9ee4a1e94512ebf7fd2467071).
 
 ```sh
 make build build-cli
 bin/oie --role local --listen 127.0.0.1:8080 --data-dir ./data-cli
 ```
 
-Os exemplos usam o CLI compilado com a rc.22. `bin/oiectl --version` mostra `oiectl version devel (OpenAPI 0.34.0)`. Se instalou o binário no `PATH`, use `oiectl` no lugar de `bin/oiectl`.
+Os exemplos usam o CLI compilado com a rc.23. `bin/oiectl --version` mostra `oiectl version devel (OpenAPI 0.34.0)`. Se instalou o binário no `PATH`, use `oiectl` no lugar de `bin/oiectl`.
 
 Em outro terminal, no mesmo checkout, confira a conexão com a API.
 
@@ -39,7 +39,7 @@ bin/oiectl system engine --output json
 
 Em um perfil novo, abra [a interface local](http://127.0.0.1:8080) no navegador. [Adicione e conecte sua conta XMPP](../manual/index.md#contas-xmpp). Em **Nova conversa**, informe outro endereço XMPP e selecione **Abrir conversa**. Ela aparecerá em `conversations list`.
 
-Para ver a conexão e o envio pela API em um ambiente de desenvolvimento, consulte o [exemplo com servidor XMPP local](https://github.com/araihu/oie/blob/ffa480cb81a5b79287191a2220d554c4180be3ac/README.md#connect-and-message-through-the-api). Para consultar um motor independente que já está em execução, ajuste `OIECTL_SERVER` ou use `--server` em um único comando. Para comandos que recebem JSON, use `--body-stdin` ou `--body-file`. Use um arquivo privado ou stdin para dados com senha.
+Para ver a conexão e o envio pela API em um ambiente de desenvolvimento, consulte o [exemplo com servidor XMPP local](https://github.com/araihu/oie/blob/c5c3f37aeb815dd9ee4a1e94512ebf7fd2467071/README.md#connect-and-message-through-the-api). Para consultar um motor independente que já está em execução, ajuste `OIECTL_SERVER` ou use `--server` em um único comando. Para comandos que recebem JSON, use `--body-stdin` ou `--body-file`. Use um arquivo privado ou stdin para dados com senha.
 
 Veja [Arquitetura e deploy](../arquitetura/index.md#motor-hospedado) para hospedar um motor e acessá-lo por uma conexão privada.
 
@@ -83,11 +83,11 @@ Confira o ID da conta com `oiectl accounts list`. O comando abaixo remove a cont
 oiectl accounts remove --account-id ID_DA_CONTA
 ```
 
-Use o CLI compilado a partir do código-fonte da rc.22 e um motor com a API 0.34.0 ou posterior.
+Use o CLI compilado a partir do código-fonte da rc.23 e um motor com a API 0.34.0 ou posterior.
 
 ## Pesquisar mensagens favoritas
 
-Com o CLI compilado da rc.22, consulte as mensagens favoritas pelo texto atual, remetente ou conversa de origem. Use `--account-id` ou `--conversation-id` para restringir a consulta.
+Com o CLI compilado da rc.23, consulte as mensagens favoritas pelo texto atual, remetente ou conversa de origem. Use `--account-id` ou `--conversation-id` para restringir a consulta.
 
 ```sh
 bin/oiectl messages stars list --q 'trilha' --output json

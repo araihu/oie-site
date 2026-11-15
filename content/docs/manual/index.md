@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.22](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.23](../../baixar/index.md).
 
 ## Motor local ou remoto
 
@@ -32,7 +32,7 @@ No rodapé da lista de conversas, abra **Trocar de conta** e selecione **Adicion
 
 Use **Trocar de conta** para ver todas as conversas ou filtrar por uma conta. Ao iniciar uma conversa, escolha a conta que você quer usar. As conversas de cada conta são independentes.
 
-Com a conta conectada, abra seus detalhes em **Gerenciar contas**. Em **Foto de perfil**, escolha uma imagem PNG, JPEG ou GIF de até 512 KB e selecione **Salvar foto**.
+Em **Gerenciar contas**, abra o **Perfil** da conta e use **Editar nome** e **Salvar nome** para alterar o nome mostrado no Oiê. Com a conta conectada, use **Editar foto**, escolha uma imagem PNG, JPEG ou GIF de até 512 KB e confira a prévia antes de selecionar **Salvar foto**.
 
 ![Seletor de contas do Oiê aberto, com as opções Todas as contas, Pessoal e Trabalho.](imagens/seletor-de-contas.webp "Seletor de contas")
 
@@ -97,11 +97,13 @@ Depois de percorrer o histórico, role até o fim ou use **Ir para as mais recen
 
 ## Notificações de mensagens
 
-Em **Configurações → Este dispositivo → Notificações**, ative **Notificações de mensagens** para receber banners e conceda a permissão quando o navegador ou o sistema pedir. Use **Ouvir som** para experimentar o toque de madeira e marimba.
+Em **Configurações → Este dispositivo → Notificações**, ative **Notificações de mensagens** para receber banners e conceda a permissão quando o navegador ou o sistema pedir.
 
 O som vem ativado para mensagens diretas e, nas salas, para menções e respostas a mensagens suas. Em **Som nas salas**, você pode escolher **Todas as mensagens**, manter **Menções e respostas a você** ou selecionar **Desativado**. Há controles para mensagens diretas, salas arquivadas e a conversa em foco. **Som de notificação** desliga todos os toques.
 
-![Controles de notificações de mensagens e som na aba Este dispositivo.](imagens/notificacoes.webp "Notificações de mensagens no Oiê")
+Use **Escolher arquivo** em **Toque** para usar um áudio seu de até 5 MB. O Oiê usa os primeiros dois segundos e guarda o toque neste dispositivo. Use o botão de reprodução para ouvi-lo ou o **X** ao lado do nome do arquivo para voltar ao toque do Oiê.
+
+![A seção Notificações mostra o arquivo Toque de exemplo.wav com o botão de reprodução, o X e a opção Escolher arquivo.](imagens/notificacoes.webp "Toque de notificação personalizado") [Ver captura completa](imagens/notificacoes-original.webp)
 
 Para silenciar uma conversa ou sala neste dispositivo, abra **Detalhes** no menu da conversa e ative **Silenciar notificações neste dispositivo**. Ao receber várias mensagens em sequência, o Oiê toca uma vez a cada dois segundos. O contador de mensagens não lidas continua funcionando.
 

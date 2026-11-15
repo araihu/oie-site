@@ -25,7 +25,7 @@ Ao atualizar **Baixar**, confira também os comandos e requisitos do [guia de in
 
 ## Documentação do Oiê
 
-A página **Baixar** aponta para os binários e para o código-fonte correspondente da [revisão da v0.0.1-rc.22](https://github.com/araihu/oie/tree/ffa480cb81a5b79287191a2220d554c4180be3ac).
+A página **Baixar** aponta para os binários e para o código-fonte correspondente da [revisão da v0.0.1-rc.23](https://github.com/araihu/oie/tree/c5c3f37aeb815dd9ee4a1e94512ebf7fd2467071).
 
 O manual, os atalhos, os exemplos do CLI e os guias de instalação e arquitetura foram revisados com a [main do aplicativo em 9929391](https://github.com/araihu/oie/tree/9929391579532045b61fcad8d8883f7e3a351215) e a [v0.0.1-rc.3](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.3). Ao atualizar, registre o SHA das páginas revisadas e confira as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
 
@@ -41,7 +41,7 @@ As seções de prévia e reprodução de vídeo foram conferidas na [revisão c0
 
 A seção **Retenção de mensagens** foi conferida na [revisão 505f6c9 do aplicativo](https://github.com/araihu/oie/tree/505f6c90632a68eea50db9dae92c55e2d533ed13), usada na rc.16. A captura foi feita com dados fictícios em uma instância isolada durante o desenvolvimento do recurso.
 
-A seção **Notificações de mensagens** acompanha a rc.21. A captura mostra as preferências em pt-BR em uma instância de teste. [Revisão do Oiê](https://github.com/araihu/oie/tree/f7bd401f5bc6e61c2b7e51f22709836899f74c32)
+A seção **Notificações de mensagens** e os controles de nome e foto no **Perfil** acompanham a rc.23. A captura de notificações mostra um áudio de exemplo importado numa instância de teste em pt-BR. [Revisão do Oiê](https://github.com/araihu/oie/tree/c5c3f37aeb815dd9ee4a1e94512ebf7fd2467071)
 
 A instalação do `oiectl` por release independente foi conferida com a [release cli/v0.30.1](https://github.com/araihu/oie/releases/tag/cli/v0.30.1), gerada a partir do [contrato no commit f21196a](https://github.com/araihu/oie/tree/f21196a6d8fe2d1b75180470ccd26089db5d6bb9/api).
 
