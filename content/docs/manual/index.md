@@ -97,7 +97,7 @@ O som vem ativado para mensagens diretas e, nas salas, para menções e resposta
 
 Para silenciar uma conversa ou sala neste dispositivo, abra **Detalhes** no menu da conversa e ative **Silenciar notificações neste dispositivo**. Ao receber várias mensagens em sequência, o Oiê toca uma vez a cada dois segundos. O contador de mensagens não lidas continua funcionando.
 
-Os alertas chegam enquanto o Oiê está aberto e conectado. O banner mostra quem enviou a mensagem e abre a conversa ao ser selecionado. Se o navegador bloquear áudio ao abrir o Oiê, interaja com a janela para habilitar a reprodução.
+Os alertas chegam enquanto o Oiê está aberto e conectado. Selecione o banner para abrir a mensagem. No navegador ou no app web instalado, um banner que ainda estiver na central de notificações pode reabrir o Oiê após fechar a janela. Se o navegador bloquear áudio ao abrir o Oiê, interaja com a janela para habilitar a reprodução.
 
 ## Busca geral e filtros por conta
 
