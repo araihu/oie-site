@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.21](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.22](../../baixar/index.md).
 
 ## Motor local ou remoto
 
@@ -43,8 +43,6 @@ Em **Trocar de conta → Gerenciar contas**, abra a conta e selecione **Remover 
 A remoção apaga a senha salva, as conversas e as mensagens pendentes dessa conta no Oiê. As outras contas e as mensagens no servidor XMPP são mantidas. Se você usa um motor remoto, a conta também some dos outros dispositivos conectados a ele.
 
 [![Confirmação de remoção da conta Pessoal no Oiê, com as opções Cancelar e Remover conta.](imagens/remover-conta.webp "Confirmação de remoção")](imagens/remover-conta-original.webp)
-
-Esta opção ainda não está no instalador v0.0.1-rc.21 oferecido em [Baixar](../../baixar/index.md).
 
 ## Solicitações de mensagem e convites recebidos
 
