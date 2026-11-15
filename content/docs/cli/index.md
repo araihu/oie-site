@@ -6,7 +6,7 @@ language: pt-BR
 
 # CLI do Oiê
 
-O `oiectl` acessa um motor do Oiê em execução. Os exemplos usam uma instância local em `http://127.0.0.1:8080`. O [Oiê v0.0.1-rc.13](../../baixar/index.md) usa a API 0.32.0. A versão do CLI distribuída em separado acompanha o contrato 0.30.1.
+O `oiectl` acessa um motor do Oiê em execução. Os exemplos usam uma instância local em `http://127.0.0.1:8080`. O [Oiê v0.0.1-rc.14](../../baixar/index.md) usa a API 0.32.0. A versão do CLI distribuída em separado acompanha o contrato 0.30.1.
 
 ## Instalar o CLI
 
@@ -20,14 +20,14 @@ oiectl version v0.30.1 (spec openapi/engine/v0.30.1)
 
 ## Compilar e conectar
 
-Use Make e Go 1.27.4 ou mais recente para compilar e iniciar o Oiê a partir do [código-fonte da v0.0.1-rc.13](https://github.com/araihu/oie/tree/d6d0872739426f85a4774dd956888f7bb880cd97).
+Use Make e Go 1.27.4 ou mais recente para compilar e iniciar o Oiê a partir do [código-fonte da v0.0.1-rc.14](https://github.com/araihu/oie/tree/48090057513b2eab83d526d44df1d7764ac16a0b).
 
 ```sh
 make build build-cli
 bin/oie --role local --listen 127.0.0.1:8080 --data-dir ./data-cli
 ```
 
-Os exemplos usam o CLI compilado com a rc.13. `bin/oiectl --version` mostra `oiectl version devel (OpenAPI 0.32.0)`. Se instalou o binário no `PATH`, use `oiectl` no lugar de `bin/oiectl`.
+Os exemplos usam o CLI compilado com a rc.14. `bin/oiectl --version` mostra `oiectl version devel (OpenAPI 0.32.0)`. Se instalou o binário no `PATH`, use `oiectl` no lugar de `bin/oiectl`.
 
 Em outro terminal, no mesmo checkout, confira a conexão com a API.
 
@@ -39,7 +39,7 @@ bin/oiectl system engine --output json
 
 Em um perfil novo, abra [a interface local](http://127.0.0.1:8080) no navegador. [Adicione e conecte sua conta XMPP](../manual/index.md#contas-xmpp). Em **Nova conversa**, informe outro endereço XMPP e selecione **Abrir conversa**. Ela aparecerá em `conversations list`.
 
-Para ver a conexão e o envio pela API em um ambiente de desenvolvimento, consulte o [exemplo com servidor XMPP local](https://github.com/araihu/oie/blob/d6d0872739426f85a4774dd956888f7bb880cd97/README.md#connect-and-message-through-the-api). Para consultar um motor independente que já está em execução, ajuste `OIECTL_SERVER` ou use `--server` em um único comando. Para comandos que recebem JSON, use `--body-stdin` ou `--body-file`. Use um arquivo privado ou stdin para dados com senha.
+Para ver a conexão e o envio pela API em um ambiente de desenvolvimento, consulte o [exemplo com servidor XMPP local](https://github.com/araihu/oie/blob/48090057513b2eab83d526d44df1d7764ac16a0b/README.md#connect-and-message-through-the-api). Para consultar um motor independente que já está em execução, ajuste `OIECTL_SERVER` ou use `--server` em um único comando. Para comandos que recebem JSON, use `--body-stdin` ou `--body-file`. Use um arquivo privado ou stdin para dados com senha.
 
 Veja [Arquitetura e deploy](../arquitetura/index.md#motor-hospedado) para hospedar um motor e acessá-lo por uma conexão privada.
 
@@ -75,6 +75,14 @@ bin/oiectl messages get --message-id MESSAGE_UUID --output json
 
 Se perder a resposta e precisar repetir a mesma solicitação, mantenha a chave e o corpo originais para evitar um envio duplicado.
 
+## Pesquisar mensagens favoritas
+
+Com o CLI compilado da rc.14, consulte as mensagens favoritas pelo texto atual, remetente ou conversa de origem. Use `--account-id` ou `--conversation-id` para restringir a consulta.
+
+```sh
+bin/oiectl messages stars list --q 'trilha' --output json
+```
+
 ## Eventos e saída
 
 ```sh
@@ -89,7 +97,7 @@ Na retomada, use o ID do último evento que você processou por completo. Use `-
 | Para | Comece com |
 | --- | --- |
 | Contas, conexão e histórico | `accounts list`, `accounts connection`, `accounts history` |
-| Salas e arquivo | `conversations preview-room`, `conversations open-room`, `conversations rooms archive` |
+| Salas e arquivo | `conversations discover-rooms`, `conversations open-room`, `conversations get-room-management`, `conversations rooms archive` |
 | Buscar mensagens e consultar estrelas | `messages search`, `messages stars list` |
 | Gerenciar envios pendentes | `messages list-scheduled-messages`, `messages update-pending-message`, `messages send-scheduled-message-now`, `messages outbox cancel` |
 | Ver arquivos e links de conversas | `shared content list` |

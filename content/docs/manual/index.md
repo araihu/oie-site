@@ -1,6 +1,6 @@
 ---
 title: Manual
-description: Conecte contas XMPP, envie anexos, acompanhe mensagens não lidas, agende envios e ajuste o idioma e o fuso horário.
+description: Conecte contas XMPP, gerencie salas, busque e encaminhe mensagens favoritas, envie anexos e agende envios.
 language: pt-BR
 margo:
   imageViewer: true
@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.13](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.14](../../baixar/index.md).
 
 ## Contas XMPP
 
@@ -24,17 +24,26 @@ A primeira mensagem de uma conversa direta sem histórico anterior pode aparecer
 
 ![Solicitação de mensagem arquivada com o endereço do remetente no cabeçalho e o botão Aceitar.](imagens/solicitacao-de-mensagem.webp "Solicitação de mensagem arquivada")
 
-Uma solicitação arquivada continua em **Arquivadas** mesmo se chegarem mais mensagens. Se você aceitar uma solicitação de mensagem por lá, a conversa volta à lista principal. Em **Convite para sala**, use **Entrar na sala** para pedir a entrada. O conteúdo aparece quando o servidor XMPP confirma. Você também pode arquivar o convite e decidir depois.
+Uma solicitação arquivada continua em **Arquivadas**, abaixo dos filtros da lista de conversas, mesmo se chegarem mais mensagens. Selecione **Arquivadas** novamente para voltar à lista principal. Se você aceitar uma solicitação de mensagem por lá, a conversa volta à lista principal. Em **Convite para sala**, use **Entrar na sala** para pedir a entrada. O conteúdo aparece quando o servidor XMPP confirma. Você também pode arquivar o convite e decidir depois.
 
 ## Salas, convites e entrada automática
 
 Ao conectar a conta, o Oiê respeita os favoritos XMPP marcados para entrada automática. Usa a parte antes do `@` no endereço da conta como apelido inicial. Se você escolheu outro apelido ou saiu explicitamente de uma sala no Oiê, essa decisão tem prioridade. Para entrar em uma sala salva, abra a conversa e use **Entrar na sala**.
 
-Abra **Nova conversa** e escolha **Entrar na sala** ou **Criar sala**. Selecione a conta e informe um endereço, como `trilha@salas.exemplo.org`. Para entrar, você também pode colar um convite no formato `xmpp:trilha@salas.exemplo.org?join`. Em um cartão de convite, **Ver sala** abre o formulário com o endereço preenchido.
+Abra o menu **Nova conversa** e escolha **Conversa direta**, **Entrar na sala** ou **Criar sala**. Para entrar ou criar uma sala, siga o formulário da opção escolhida. Selecione a conta e informe um endereço, como `trilha@salas.exemplo.org`. Para entrar, você também pode colar um convite no formato `xmpp:trilha@salas.exemplo.org?join`. Em um cartão de convite, **Ver sala** abre o formulário com o endereço preenchido.
 
-A prévia pode mostrar nome, descrição, assunto, foto e número de participantes, conforme o que o serviço disponibiliza à conta selecionada. A entrada só acontece depois que você confirma. A criação de salas depende do suporte do serviço XMPP. A entrada por endereço aceita salas sem senha.
+A prévia pode mostrar nome, descrição, assunto, foto e número de participantes, conforme o que o serviço disponibiliza à conta selecionada. A entrada só acontece depois que você confirma. A criação de salas depende do suporte do serviço XMPP. Se a sala exigir senha, informe-a no formulário de entrada.
 
 ![Cartão de convite para a sala Trilhas de sábado com endereço, descrição e o link Ver sala.](imagens/convite-de-sala.webp "Cartão de convite para uma sala")
+
+### Descobrir e gerenciar salas
+
+- Em **Nova conversa → Entrar na sala**, abra **Explorar salas públicas** e selecione uma sala para preencher o endereço e ver a prévia. Confirme quando quiser entrar.
+- Dentro de uma sala, abra **Mais opções → Gerenciar sala**. Em **Detalhes**, edite o nome, o tópico ou a foto conforme as permissões da sua conta. Use **Mais opções → Convidar pessoas** para enviar um convite quando a sala permitir.
+- Em **Participantes**, busque pelo apelido e abra o nome da pessoa para ver as ações disponíveis. Dependendo das permissões, você pode alterar a função, remover a pessoa ou ajustar o acesso à sala. Em **Banimentos**, administradores e proprietários podem buscar um banimento, banir por endereço ou retirar um banimento.
+- Se o servidor oferecer moderação e sua conta tiver permissão, use **Remover mensagem** no menu da mensagem. A remoção aparece quando a sala a confirma.
+
+![Aba Detalhes de Gerenciar sala com a imagem da sala e os campos de nome e tópico.](imagens/gerenciar-sala.webp "Aba Detalhes de Gerenciar sala")
 
 ## Histórico e busca em salas
 
@@ -42,7 +51,7 @@ Em **Detalhes da conversa**, use **Baixar histórico antigo automaticamente** pa
 
 Dentro de uma sala, abra **Mais opções** e selecione **Pesquisar mensagens**. Essa busca também pode consultar o arquivo do servidor, quando ele oferece busca por texto. Ative **Incluir histórico de edições** para encontrar versões anteriores de mensagens editadas. Use os [atalhos de busca](../atalhos/index.md#busca-na-conversa) para percorrer os resultados.
 
-Na rc.13, buscar por `arqiuvo` nas mensagens guardadas pode realçar **arquivo** no balão. Se o resultado vier de uma versão anterior ou dos detalhes de um link, o realce aparece no trecho do resultado. Ao recarregar a página com a busca aberta, o Oiê volta à versão anterior selecionada.
+Buscar por `arqiuvo` nas mensagens guardadas pode realçar **arquivo** no balão. Se o resultado vier de uma versão anterior ou dos detalhes de um link, o realce aparece no trecho do resultado. Ao recarregar a página com a busca aberta, o Oiê volta à versão anterior selecionada.
 
 ![Busca por trilha em uma sala. O primeiro de três resultados está destacado na conversa e o campo oferece a opção de incluir o histórico de edições.](imagens/busca-na-sala.webp "Busca no histórico da sala")
 
@@ -60,14 +69,19 @@ Os resultados destacam os termos encontrados e mostram a conta e a conversa de o
 
 Os atalhos **Mídia**, **Links** e **Documentos** abrem o catálogo com o mesmo texto de busca e as contas selecionadas. Para uma consulta rápida em todas as contas, use [Ctrl + K ou ⌘ + K](../atalhos/index.md#busca-geral). A consulta dessa janela é independente da busca da lista.
 
+## Mídia e links
+
+Abra **Mídia e links** na barra lateral para encontrar o que foi compartilhado. As abas **Mídia**, **Links** e **Documentos** agrupam os itens por mês. Use **Contas** para buscar por nome ou endereço e marcar uma ou mais contas. **Limpar seleção** volta a mostrar itens de todas as contas. Sua escolha em **Trocar de conta** continua valendo nas outras telas.
+
+No menu do cartão, use **Ir para a mensagem** para voltar à conversa de origem. Selecione um documento para abri-lo. Se a prévia falhar, use **Tentar novamente** quando essa opção aparecer. O cabeçalho também permite baixar o arquivo ou abrir o endereço original.
+
 ## Mensagens favoritadas
 
-No menu de uma mensagem, escolha **Favoritar**. Abra **Favoritas** na navegação lateral para buscar nas mensagens que você marcou. Cada cartão mostra o remetente, a conversa e a mensagem. Use **Trocar de conta** para ver os favoritos de uma conta específica.
+No menu de uma mensagem, escolha **Favoritar**. Abra **Favoritas** na navegação lateral e use **Pesquisar mensagens favoritas** para buscar pelo texto, pelo remetente ou pela conversa de origem. Os cartões incluem mensagens de conversas arquivadas. Use **Trocar de conta** para restringir a lista a uma conta ou **Todas as contas** para reunir as mensagens de todas elas.
 
-No menu do cartão, use **Ir para a mensagem** para abrir a conversa no ponto em que ela foi enviada. Se quiser tirar uma mensagem da lista, clique na estrela do cartão.
+No menu do cartão, use **Ir para a mensagem** para abrir a conversa no ponto em que ela foi enviada. Você também pode **Copiar mensagem original** ou **Encaminhar**. Para tirar uma mensagem da lista, selecione a estrela. Para localizar conversas favoritas, use o filtro **Favoritas** na lista de conversas.
 
 ![Grade de mensagens favoritadas, com o remetente, a conversa e o balão da mensagem em cada cartão.](imagens/favoritas.webp "Mensagens favoritadas")
-[Ver a captura em tamanho original](imagens/favoritas-original.webp)
 
 ### Favoritar em Mídia e links
 
@@ -79,7 +93,13 @@ Itens da mesma mensagem compartilham a estrela.
 
 ![Estrela cinza no primeiro cartão e estrela amarela no terceiro, ambas no canto superior esquerdo.](imagens/favoritar-midia.webp "Favoritar em Mídia e links")
 
-[Ver a captura em tamanho original](imagens/favoritar-midia-original.webp)
+## Encaminhar mensagens
+
+Abra **Encaminhar** no menu de uma mensagem em **Conversas**, **Favoritas** ou **Mídia e links**. Confira a prévia, escolha uma ou mais salas e confirme em **Encaminhar**. Cada sala mostra a conta que enviará a cópia.
+
+O Oiê prepara o texto e os anexos para cada destino. Se algum envio falhar ou ficar sem confirmação, veja o aviso junto à sala e use **Tentar novamente**. Ao tentar novamente, o Oiê pula as salas cuja cópia já entrou na fila.
+
+![Janela Encaminhar mensagem com a prévia de uma imagem e duas salas selecionadas.](imagens/encaminhar-mensagem.webp "Selecionar salas para encaminhar")
 
 ## Anexos no rascunho
 
@@ -102,8 +122,6 @@ não puder ser criada.
 
 ![Vídeo no rascunho com botão de reprodução, nome do arquivo e botão para remover o anexo.](imagens/video-no-rascunho.webp "Vídeo no rascunho")
 
-[Ver captura em tamanho original](imagens/video-no-rascunho-original.webp).
-
 Em uma conversa direta ou sala, escolha **Reproduzir vídeo** no cartão para
 assistir. Se a miniatura não aparecer, você ainda pode usar o botão de
 reprodução. Em **Configurações → Este dispositivo**, ajuste **Gerar prévias de
@@ -111,8 +129,6 @@ vídeo automaticamente**. Com essa opção desativada, você pode pedir uma pré
 pelo cartão ou pelo menu de ações em **Mídia**.
 
 ![Cartão de vídeo recebido em uma sala, com uma imagem estática e o botão de reprodução ao centro.](imagens/video-recebido.webp "Vídeo recebido em uma sala")
-
-[Ver captura em tamanho original](imagens/video-recebido-original.webp).
 
 ## Envio agendado
 
