@@ -43,6 +43,29 @@ Para ver a conexão e o envio pela API em um ambiente de desenvolvimento, consul
 
 Veja [Arquitetura e deploy](../arquitetura/index.md#motor-hospedado) para hospedar um motor e acessá-lo por uma conexão privada.
 
+## Autenticar no motor hospedado
+
+Use um `oiectl` compilado com o contrato OpenAPI 0.35.0 ou mais recente que
+inclua o suporte a chaves do Oiê. No servidor, crie uma chave e guarde o arquivo
+em local privado. Cada chave dá acesso completo à API da instância.
+
+```sh
+umask 077
+oie auth key-create --data-dir /srv/oie/data --name automacao > oie.key
+```
+
+No cliente, forneça a chave pela variável `OIECTL_TOKEN` ao chamar o endereço
+HTTPS do motor.
+
+```sh
+OIECTL_TOKEN="$(cat oie.key)" oiectl --server https://oie.exemplo.com system health
+```
+
+A chave é mostrada apenas na criação. Use `oie auth key-list` no servidor
+para consultar o ID e a validade de cada chave. Para revogar, rode
+`oie auth key-revoke --data-dir /srv/oie/data --id ID_DA_CHAVE`.
+
+
 ## Consultar e enviar mensagens
 
 ```sh

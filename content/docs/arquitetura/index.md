@@ -76,6 +76,28 @@ Com o túnel aberto, acesse [127.0.0.1:8080](http://127.0.0.1:8080) no computado
 curl --fail http://127.0.0.1:8080/api/v1/health
 ```
 
+### Acesso público com OIDC
+
+A autenticação nativa está no código de desenvolvimento do Oiê. Use uma
+compilação que inclua esse recurso. As instruções da rc.23 acima continuam
+adequadas para acesso privado por túnel.
+
+1. No provedor OIDC, registre um cliente web confidencial com o retorno
+   `https://oie.exemplo.com/auth/callback`. Anote o emissor, o ID do cliente
+   e o `sub` da conta que será dona da instância. Guarde o segredo do cliente
+   em um arquivo privado.
+2. No servidor, configure a conta dona com `oie auth init`. Use o mesmo
+   diretório de dados do motor e informe `--issuer` e `--subject`.
+3. Inicie com `--role hosted`, `--public-url https://oie.exemplo.com`,
+   `--oidc-client-id` e `--oidc-client-secret-file`. Configure o certificado
+   HTTPS no Oiê ou um proxy TLS confiável. Abra o endereço público e selecione
+   **Entrar**.
+
+A conta dona tem acesso completo à instância. O comando `oie auth recover`
+troca a identidade vinculada e revoga as sessões e chaves existentes. O
+histórico e as contas XMPP ficam no diretório de dados. Para automação, veja
+[acesso ao motor hospedado pelo CLI](../cli/index.md#autenticar-no-motor-hospedado).
+
 ## Interface e motor em processos separados
 
 Para separar a interface do motor, inicie o motor hospedado com `--data-only` e rode o BFF apontando para ele. Os comandos abaixo usam duas portas privadas no mesmo servidor e rodam em terminais separados.
