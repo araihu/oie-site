@@ -39,11 +39,11 @@ Para remover o aplicativo e manter seu perfil, execute `sudo apt remove oie`.
 
 ## Instalar com Flatpak
 
-No Linux x86-64, baixe o [bundle Flatpak da v0.0.1-rc.17](https://github.com/araihu/oie/releases/download/v0.0.1-rc.17/oie-v0.0.1-rc.17-x86_64.flatpak). Adicione o Flathub se ainda não estiver cadastrado, para que o Flatpak possa baixar o runtime GNOME 51. Execute os comandos na pasta onde salvou o arquivo.
+No Linux x86-64, baixe o [bundle Flatpak da v0.0.1-rc.18](https://github.com/araihu/oie/releases/download/v0.0.1-rc.18/oie-v0.0.1-rc.18-x86_64.flatpak). Adicione o Flathub se ainda não estiver cadastrado, para que o Flatpak possa baixar o runtime GNOME 51. Execute os comandos na pasta onde salvou o arquivo.
 
 ```sh
 flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak install --user ./oie-v0.0.1-rc.17-x86_64.flatpak
+flatpak install --user ./oie-v0.0.1-rc.18-x86_64.flatpak
 ```
 
 Se você já usava o Flatpak da `rc.8` ou anterior, [migre seu perfil](#migrar-para-comaraihuoie) antes de abrir o novo Oiê. Depois, abra o aplicativo pelo menu ou execute `flatpak run com.araihu.oie`.
@@ -120,7 +120,7 @@ O pacote tem assinatura ad hoc. Se o macOS bloquear a abertura, tente abrir o Oi
 
 ## Compilar a partir do código-fonte
 
-Use Go 1.27.4 ou mais recente e compile no sistema e na arquitetura em que pretende usar o aplicativo. Nos exemplos, substitua `v0.0.1-rc.17` pela versão que você escolheu na página [Baixar](../../baixar/index.md). O comando instala o executável em `~/.local/bin`.
+Use Go 1.27.4 ou mais recente e compile no sistema e na arquitetura em que pretende usar o aplicativo. Nos exemplos, substitua `v0.0.1-rc.18` pela versão que você escolheu na página [Baixar](../../baixar/index.md). O comando instala o executável em `~/.local/bin`.
 
 ### Ubuntu 24.04 x86-64
 
@@ -137,7 +137,7 @@ pkg-config --modversion gtk4 webkitgtk-6.0 libsoup-3.0 gio-unix-2.0
 mkdir -p "$HOME/.local/bin"
 GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
   GONOPROXY=github.com/araihu/oie \
-  go install -tags production github.com/araihu/oie/cmd/oie-desktop@v0.0.1-rc.17
+  go install -tags production github.com/araihu/oie/cmd/oie-desktop@v0.0.1-rc.18
 ```
 
 ### macOS com Apple Silicon
@@ -152,7 +152,7 @@ GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
   CGO_CFLAGS="-O2 -g -mmacosx-version-min=13.0" \
   CGO_LDFLAGS="-O2 -g -mmacosx-version-min=13.0" \
   go install -tags production -ldflags='-extldflags=-mmacosx-version-min=13.0' \
-  github.com/araihu/oie/cmd/oie-desktop@v0.0.1-rc.17
+  github.com/araihu/oie/cmd/oie-desktop@v0.0.1-rc.18
 ```
 
 Os parâmetros de compilação e linkedição mantêm o mesmo alvo. Consulte o [escopo verificado no guia do repositório](https://github.com/araihu/oie/blob/b656812469f12454c7ec55f5a8d64edab63c7ea7/docs/installation.md#platforms-and-verified-scope) para as versões de sistema testadas.
@@ -219,8 +219,9 @@ Abra [127.0.0.1:8080](http://127.0.0.1:8080) no navegador e [conecte sua conta X
 
 ## Rodar no Kubernetes com Helm
 
-Use um cluster com armazenamento persistente e um checkout do Oiê que inclua
-`charts/oie`. O chart usa por padrão a imagem da v0.0.1-rc.16. O instalador da
+Use um cluster com armazenamento persistente e baixe o código-fonte da
+[v0.0.1-rc.18](https://github.com/araihu/oie/tree/v0.0.1-rc.18). O chart em
+`charts/oie` usa por padrão a imagem dessa versão. O instalador da
 página [Baixar](../../baixar/index.md) é destinado ao desktop. Na raiz do
 checkout, execute:
 
@@ -240,7 +241,7 @@ com autenticação em todas as rotas, incluindo a API. Use Ingress ou conecte
 o Oiê a um Gateway existente com `httpRoute.enabled`, `httpRoute.parentRefs`
 e `httpRoute.hostnames`. Se o Gateway estiver em outro namespace, permita
 rotas do namespace do Oiê no listener. Veja exemplos no
-[guia do chart](https://github.com/araihu/oie/tree/main/charts/oie#remote-access).
+[guia do chart](https://github.com/araihu/oie/tree/v0.0.1-rc.18/charts/oie#remote-access).
 
 ## Rodar pelo navegador ou usar o CLI
 

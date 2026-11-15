@@ -25,7 +25,7 @@ Ao atualizar **Baixar**, confira também os comandos e requisitos do [guia de in
 
 ## Documentação do Oiê
 
-A página **Baixar** aponta para os binários e para o código-fonte correspondente da [revisão da v0.0.1-rc.17](https://github.com/araihu/oie/tree/b656812469f12454c7ec55f5a8d64edab63c7ea7).
+A página **Baixar** aponta para os binários e para o código-fonte correspondente da [revisão da v0.0.1-rc.18](https://github.com/araihu/oie/tree/bb2df9e6dc0fe8744a4c28fce200cdf978f2d260).
 
 O manual, os atalhos, os exemplos do CLI e os guias de instalação e arquitetura foram revisados com a [main do aplicativo em 9929391](https://github.com/araihu/oie/tree/9929391579532045b61fcad8d8883f7e3a351215) e a [v0.0.1-rc.3](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.3). Ao atualizar, registre o SHA das páginas revisadas e confira as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
 
@@ -51,9 +51,9 @@ Os fluxos de **Mídia e links**, **Encaminhar mensagens** e **Descobrir e gerenc
 
 A seção Docker da página de arquitetura descreve a [CI da imagem em f9c6a01](https://github.com/araihu/oie/commit/f9c6a01625232e7132a358b27372759144588258).
 
-A seção **Rodar no Kubernetes com Helm** foi conferida na revisão `bfc69e1`
-do Oiê. O chart foi criado depois da rc.16 e usa a imagem publicada dessa
-versão por padrão.
+A seção **Rodar no Kubernetes com Helm** descreve o chart incluído na
+[v0.0.1-rc.18](https://github.com/araihu/oie/tree/bb2df9e6dc0fe8744a4c28fce200cdf978f2d260),
+com suporte a Ingress e Gateway API.
 
 ### Referência do banco de dados
 
