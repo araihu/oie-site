@@ -1,6 +1,6 @@
 ---
 title: Instalação
-description: Instale o Oiê para desktop, rode a versão web com Docker ou Kubernetes com Helm e confira como compilar o código-fonte.
+description: Instale o Oiê para desktop ou rode no navegador com Docker e Kubernetes. Configure o chart Helm com Ingress ou Gateway API.
 language: pt-BR
 ---
 
@@ -236,9 +236,11 @@ já existente, indique o nome do PVC com `persistence.existingClaim`. Use um
 PVC por instância. O volume é mantido quando você desinstala a release Helm.
 
 O Oiê não tem login próprio. Para acesso remoto, configure um proxy HTTPS
-com autenticação em todas as rotas, incluindo a API. Consulte o
-[guia do chart](https://github.com/araihu/oie/tree/main/charts/oie) para
-configurar a imagem, o armazenamento e o Ingress.
+com autenticação em todas as rotas, incluindo a API. Use Ingress ou conecte
+o Oiê a um Gateway existente com `httpRoute.enabled`, `httpRoute.parentRefs`
+e `httpRoute.hostnames`. Se o Gateway estiver em outro namespace, permita
+rotas do namespace do Oiê no listener. Veja exemplos no
+[guia do chart](https://github.com/araihu/oie/tree/main/charts/oie#remote-access).
 
 ## Rodar pelo navegador ou usar o CLI
 

@@ -51,7 +51,7 @@ Os fluxos de **Mídia e links**, **Encaminhar mensagens** e **Descobrir e gerenc
 
 A seção Docker da página de arquitetura descreve a [CI da imagem em f9c6a01](https://github.com/araihu/oie/commit/f9c6a01625232e7132a358b27372759144588258).
 
-A seção **Rodar no Kubernetes com Helm** foi conferida na revisão `73ca653`
+A seção **Rodar no Kubernetes com Helm** foi conferida na revisão `bfc69e1`
 do Oiê. O chart foi criado depois da rc.16 e usa a imagem publicada dessa
 versão por padrão.
 
