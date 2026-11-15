@@ -24,6 +24,8 @@ flowchart TD
 
 Cada instância atende a um único dono, que pode conectar várias contas XMPP. Vários dispositivos podem usar o mesmo motor hospedado e consultar o histórico que ele guarda. Rascunhos e preferências de exibição continuam no dispositivo, e motores independentes mantêm bases separadas. A sincronização entre motores ainda está planejada.
 
+Desde a rc.14, os motores local e hospedado preparam o índice de busca Bleve em segundo plano, no diretório de dados. A busca geral e a busca na conversa continuam disponíveis via SQLite durante a preparação do índice ou quando ele não puder atender à consulta. A variável `OIE_EXPERIMENTAL_BLEVE_SEARCH`, usada na rc.13, foi removida.
+
 Veja os diagramas e o catálogo de tabelas e views em [Banco de dados](../banco-de-dados/index.md).
 
 ## Uso local

@@ -75,6 +75,14 @@ bin/oiectl messages get --message-id MESSAGE_UUID --output json
 
 Se perder a resposta e precisar repetir a mesma solicitação, mantenha a chave e o corpo originais para evitar um envio duplicado.
 
+## Pesquisar mensagens favoritas
+
+Com o CLI compilado da rc.14, consulte as mensagens favoritas pelo texto atual, remetente ou conversa de origem. Use `--account-id` ou `--conversation-id` para restringir a consulta.
+
+```sh
+bin/oiectl messages stars list --q 'trilha' --output json
+```
+
 ## Eventos e saída
 
 ```sh
@@ -89,7 +97,7 @@ Na retomada, use o ID do último evento que você processou por completo. Use `-
 | Para | Comece com |
 | --- | --- |
 | Contas, conexão e histórico | `accounts list`, `accounts connection`, `accounts history` |
-| Salas e arquivo | `conversations preview-room`, `conversations open-room`, `conversations rooms archive` |
+| Salas e arquivo | `conversations discover-rooms`, `conversations open-room`, `conversations get-room-management`, `conversations rooms archive` |
 | Buscar mensagens e consultar estrelas | `messages search`, `messages stars list` |
 | Gerenciar envios pendentes | `messages list-scheduled-messages`, `messages update-pending-message`, `messages send-scheduled-message-now`, `messages outbox cancel` |
 | Ver arquivos e links de conversas | `shared content list` |
