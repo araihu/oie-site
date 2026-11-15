@@ -25,7 +25,7 @@ Ao atualizar **Baixar**, confira também os comandos e requisitos do [guia de in
 
 ## Documentação do Oiê
 
-A página **Baixar** aponta para os binários e para o código-fonte correspondente da [revisão da v0.0.1-rc.19](https://github.com/araihu/oie/tree/bf1c0e25ca8a65a183f4f27205b83d47b019b835).
+A página **Baixar** aponta para os binários e para o código-fonte correspondente da [revisão da v0.0.1-rc.20](https://github.com/araihu/oie/tree/18855159d4ed96dfbb307d7a0cb94d60fd441d09).
 
 O manual, os atalhos, os exemplos do CLI e os guias de instalação e arquitetura foram revisados com a [main do aplicativo em 9929391](https://github.com/araihu/oie/tree/9929391579532045b61fcad8d8883f7e3a351215) e a [v0.0.1-rc.3](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.3). Ao atualizar, registre o SHA das páginas revisadas e confira as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
 
@@ -41,7 +41,7 @@ As seções de prévia e reprodução de vídeo foram conferidas na [revisão c0
 
 A seção **Retenção de mensagens** foi conferida na [revisão 505f6c9 do aplicativo](https://github.com/araihu/oie/tree/505f6c90632a68eea50db9dae92c55e2d533ed13), usada na rc.16. A captura foi feita com dados fictícios em uma instância isolada durante o desenvolvimento do recurso.
 
-A seção **Notificações de mensagens** acompanha a rc.19. A captura mostra as preferências em pt-BR em uma instância de teste. [Revisão do Oiê](https://github.com/araihu/oie/tree/bf1c0e25ca8a65a183f4f27205b83d47b019b835)
+A seção **Notificações de mensagens** acompanha a rc.20. A captura mostra as preferências em pt-BR em uma instância de teste. [Revisão do Oiê](https://github.com/araihu/oie/tree/18855159d4ed96dfbb307d7a0cb94d60fd441d09)
 
 A instalação do `oiectl` por release independente foi conferida com a [release cli/v0.30.1](https://github.com/araihu/oie/releases/tag/cli/v0.30.1), gerada a partir do [contrato no commit f21196a](https://github.com/araihu/oie/tree/f21196a6d8fe2d1b75180470ccd26089db5d6bb9/api).
 
@@ -52,6 +52,10 @@ As capturas da página inicial, do manual e dos atalhos mostram a interface em p
 Os fluxos de **Mídia e links**, **Encaminhar mensagens** e **Descobrir e gerenciar salas**, a busca de favoritas no CLI e o índice de busca padrão foram conferidos na [revisão 4809005 do aplicativo](https://github.com/araihu/oie/tree/48090057513b2eab83d526d44df1d7764ac16a0b), usada na rc.14. As capturas de encaminhamento e gerenciamento de salas vieram dos PRs #31 e #22.
 
 A seção Docker da página de arquitetura descreve a [CI da imagem em f9c6a01](https://github.com/araihu/oie/commit/f9c6a01625232e7132a358b27372759144588258).
+
+A seção **Rodar no Kubernetes com Helm** descreve a
+[release 0.2.0 do chart](https://github.com/araihu/oie/releases/tag/helm-v0.2.0),
+com suporte a Ingress e Gateway API e a imagem `v0.0.1-rc.18` por padrão.
 
 ### Referência do banco de dados
 

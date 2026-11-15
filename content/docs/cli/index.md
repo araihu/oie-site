@@ -6,7 +6,7 @@ language: pt-BR
 
 # CLI do Oiê
 
-O `oiectl` acessa um motor do Oiê em execução. Os exemplos usam uma instância local em `http://127.0.0.1:8080`. O [Oiê v0.0.1-rc.19](../../baixar/index.md) usa a API 0.33.0. A versão do CLI distribuída em separado acompanha o contrato 0.30.1.
+O `oiectl` acessa um motor do Oiê em execução. Os exemplos usam uma instância local em `http://127.0.0.1:8080`. O [Oiê v0.0.1-rc.20](../../baixar/index.md) usa a API 0.33.0. A versão do CLI distribuída em separado acompanha o contrato 0.30.1.
 
 ## Instalar o CLI
 
@@ -20,7 +20,7 @@ oiectl version v0.30.1 (spec openapi/engine/v0.30.1)
 
 ## Compilar e conectar
 
-Use Make e Go 1.27.4 ou mais recente para compilar e iniciar o Oiê a partir do [código-fonte da v0.0.1-rc.19](https://github.com/araihu/oie/tree/bf1c0e25ca8a65a183f4f27205b83d47b019b835).
+Use Make e Go 1.27.4 ou mais recente para compilar e iniciar o Oiê a partir do [código-fonte da v0.0.1-rc.20](https://github.com/araihu/oie/tree/18855159d4ed96dfbb307d7a0cb94d60fd441d09).
 
 ```sh
 make build build-cli
@@ -39,7 +39,7 @@ bin/oiectl system engine --output json
 
 Em um perfil novo, abra [a interface local](http://127.0.0.1:8080) no navegador. [Adicione e conecte sua conta XMPP](../manual/index.md#contas-xmpp). Em **Nova conversa**, informe outro endereço XMPP e selecione **Abrir conversa**. Ela aparecerá em `conversations list`.
 
-Para ver a conexão e o envio pela API em um ambiente de desenvolvimento, consulte o [exemplo com servidor XMPP local](https://github.com/araihu/oie/blob/bf1c0e25ca8a65a183f4f27205b83d47b019b835/README.md#connect-and-message-through-the-api). Para consultar um motor independente que já está em execução, ajuste `OIECTL_SERVER` ou use `--server` em um único comando. Para comandos que recebem JSON, use `--body-stdin` ou `--body-file`. Use um arquivo privado ou stdin para dados com senha.
+Para ver a conexão e o envio pela API em um ambiente de desenvolvimento, consulte o [exemplo com servidor XMPP local](https://github.com/araihu/oie/blob/18855159d4ed96dfbb307d7a0cb94d60fd441d09/README.md#connect-and-message-through-the-api). Para consultar um motor independente que já está em execução, ajuste `OIECTL_SERVER` ou use `--server` em um único comando. Para comandos que recebem JSON, use `--body-stdin` ou `--body-file`. Use um arquivo privado ou stdin para dados com senha.
 
 Veja [Arquitetura e deploy](../arquitetura/index.md#motor-hospedado) para hospedar um motor e acessá-lo por uma conexão privada.
 
