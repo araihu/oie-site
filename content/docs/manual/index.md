@@ -14,9 +14,9 @@ Este manual acompanha o [Oiê v0.0.1-rc.16](../../baixar/index.md).
 
 Os controles de seleção do motor fazem parte da versão em desenvolvimento. A versão v0.0.1-rc.16, oferecida em **Baixar**, permite conectar o desktop por meio da opção [`--engine-url`](../arquitetura/index.md#interface-e-motor-em-processos-separados).
 
-No desktop, abra **Configurações → Geral → Motor**. **Local** é o padrão e roda o motor no seu dispositivo. Para acessar um motor hospedado, selecione **Remoto**, informe seu endereço completo, como `http://127.0.0.1:18084`, e clique em **Salvar**. O Oiê verifica a conexão antes de abrir as conversas do motor remoto. A escolha vale para esse perfil do desktop e é lembrada quando você reabre o aplicativo.
+No desktop, entre em **Configurações → Geral** e abra **Motor**. **Local** é o padrão e roda o motor no seu dispositivo. Para acessar um motor hospedado, selecione **Remoto**, informe seu endereço completo, como `http://127.0.0.1:18084`, e clique em **Salvar**. O Oiê verifica a conexão antes de abrir as conversas do motor remoto. A escolha vale para esse perfil do desktop e é lembrada quando você reabre o aplicativo.
 
-![Configurações do motor com Remoto selecionado, o campo Endereço do motor preenchido e o botão Salvar.](imagens/motor-remoto.webp "Configurações do motor remoto") [Ver captura completa](imagens/motor-remoto-original.webp)
+![Tela Motor com o botão Voltar às configurações, a opção Remoto selecionada, o endereço preenchido e o botão Salvar.](imagens/motor-remoto.webp "Configurações do motor remoto") [Ver captura completa](imagens/motor-remoto-original.webp)
 
 As contas e o histórico de cada motor ficam onde foram gravados. Para voltar às suas conversas deste dispositivo, inclusive se o motor remoto sair do ar, selecione **Local** e salve. O motor remoto continua funcionando no servidor.
 
