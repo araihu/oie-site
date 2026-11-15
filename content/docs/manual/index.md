@@ -1,6 +1,6 @@
 ---
 title: Manual
-description: Escolha o motor local ou remoto, conecte ou remova contas XMPP, gerencie salas, busque e encaminhe mensagens, configure notificações, envie anexos e consulte as opções de retenção e exclusão de dados.
+description: Escolha o motor local ou remoto, conecte ou remova contas XMPP, gerencie salas, busque e encaminhe mensagens, configure notificações, envie anexos, consulte o diagnóstico e gerencie a retenção e exclusão de dados.
 language: pt-BR
 margo:
   imageViewer: true
@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.23](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.24](../../baixar/index.md).
 
 ## Motor local ou remoto
 
@@ -22,11 +22,13 @@ O acesso à API do motor remoto é aberto nesta versão. Use um [túnel SSH ou u
 
 ## Diagnóstico e registro de erros
 
-O diagnóstico chegou depois da versão oferecida em **Baixar** (rc.20).
-
 Abra **Configurações → Diagnóstico**, escolha um período e use **Atualizar**
-para ver os eventos recentes. **Copiar** e **Baixar** usam o mesmo trecho
-exibido na tela. O download gera o arquivo `oie-diagnostics.jsonl`.
+para ver os eventos recentes. Abra uma linha para ver os detalhes. Use
+**Copiar** para colocar o trecho na área de transferência. Para salvar o
+arquivo `oie-diagnostics.jsonl`, abra a seta ao lado de **Copiar** e
+escolha **Baixar**.
+
+![Painel de Diagnóstico com um aviso de conexão expandido e o menu Baixar ao lado de Copiar.](imagens/diagnostico.webp "Visualizador de diagnóstico") [Ver captura completa](imagens/diagnostico-original.webp)
 
 No aplicativo para computador, **Este dispositivo** continua disponível
 se o motor falhar na inicialização ou perder a conexão. Quando o motor
