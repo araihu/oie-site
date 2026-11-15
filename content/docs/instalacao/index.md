@@ -243,6 +243,21 @@ e `httpRoute.hostnames`. Se o Gateway estiver em outro namespace, permita
 rotas do namespace do Oiê no listener. Veja exemplos no
 [guia do chart](https://github.com/araihu/oie/tree/helm-v0.2.1/charts/oie#remote-access).
 
+Se as conversas perderem as atualizações ao vivo, verifique o timeout de
+requisição do Gateway. No chart 0.2.1, ajuste esse limite na configuração do
+controlador. A partir do chart 0.2.2, quando publicado, controladores com
+suporte a timeouts no HTTPRoute aceitam esta configuração no arquivo de valores:
+
+```yaml
+httpRoute:
+  timeouts:
+    request: "0s"
+```
+
+O valor `"0s"` desativa o timeout de requisição para todos os caminhos da rota
+do Oiê. Se você omitir o valor, o controlador aplica seu comportamento padrão.
+[Timeouts do HTTPRoute na Gateway API](https://gateway-api.sigs.k8s.io/reference/api-types/httproute/#timeouts-optional)
+
 ## Rodar pelo navegador ou usar o CLI
 
 Para executar o motor no navegador ou em um servidor, consulte [Arquitetura e deploy](../arquitetura/index.md). Para usar o `oiectl`, veja o [guia do CLI](../cli/index.md).

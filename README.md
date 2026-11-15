@@ -56,6 +56,8 @@ A seção Docker da página de arquitetura descreve a [CI da imagem em f9c6a01](
 A seção **Rodar no Kubernetes com Helm** descreve a
 [release 0.2.1 do chart](https://github.com/araihu/oie/releases/tag/helm-v0.2.1),
 com suporte a Ingress e Gateway API e a imagem `v0.0.1-rc.21` por padrão.
+A configuração de timeout para a próxima versão do chart foi conferida no
+[commit dc945fd do Oiê](https://github.com/araihu/oie/commit/dc945fdf656f81399e34cffdfa96739262ee964e).
 
 ### Referência do banco de dados
 
