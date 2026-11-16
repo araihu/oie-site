@@ -1,6 +1,6 @@
 ---
 title: Instalação
-description: Instale o Oiê para desktop ou rode no navegador com Docker e Kubernetes. Configure o chart Helm com Ingress ou Gateway API.
+description: Instale o Oiê no desktop ou na tela de início do iPhone. Rode o Oiê com Docker ou Kubernetes e configure o chart Helm com Ingress ou Gateway API.
 language: pt-BR
 ---
 
