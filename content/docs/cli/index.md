@@ -52,6 +52,8 @@ bin/oiectl messages search --q 'trilha' --output json
 bin/oiectl messages search --q 'trilha' --include-edit-history --output json
 ```
 
+Nas versões com retração, use `--include-retracted` em `messages search` ou `shared content list` para incluir conteúdo guardado de mensagens retraídas. Em `messages search`, combine a opção com `--include-edit-history` para incluir também as versões anteriores.
+
 Repita `--account-ids` para pesquisar em mais de uma conta. Use os IDs de `accounts list` e reserve `--account-id` para a busca em uma única conta. `shared content list` também aceita o filtro de múltiplas contas.
 
 ```sh

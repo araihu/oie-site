@@ -221,13 +221,29 @@ Itens da mesma mensagem compartilham a estrela.
 
 ![Estrela cinza no primeiro cartão e estrela amarela no terceiro, ambas no canto superior esquerdo.](imagens/favoritar-midia.webp "Favoritar em Mídia e links")
 
+## Editar e retrair mensagens enviadas
+
+Na última mensagem própria enviada, abra **Ações da mensagem → Editar mensagem**. Com o campo de mensagem vazio, você também pode pressionar **↑**. Quando a edição está disponível, o Oiê carrega o texto no campo de mensagem. Depois de salvar, o ícone ao lado do horário abre o **Histórico de edições**.
+
+Em versões posteriores à rc.24, **Editar mensagem** também pode aparecer em respostas com citação enviadas na sessão atual. O Oiê conserva a citação quando você salva o novo texto.
+
+Nas versões com retração, abra **Ações da mensagem → Retrair mensagem** em uma mensagem própria e confirme. A ação aparece nas conversas diretas conectadas e nas salas que permitem verificar a autoria e aceitam a solicitação. Outros participantes ainda podem ter uma cópia.
+
+No histórico, **Mensagem retraída** ocupa o lugar do conteúdo. Se o Oiê ainda guardou a mensagem, use **Revelar original** para lê-la. A busca geral, a busca na conversa e **Mídia e links** ocultam esse conteúdo por padrão. Selecione **Incluir retraídas** para encontrá-lo. Para buscar versões anteriores de mensagens retraídas, ative também **Incluir histórico de edições**.
+
+![Mensagem retraída com a opção Revelar original aberta e o texto guardado abaixo.](imagens/revelar-original.webp "Revelar uma mensagem retraída")
+
+[Abrir a captura da retração em tamanho original](imagens/revelar-original.webp)
+
 ## Encaminhar mensagens
 
-Abra **Encaminhar** no menu de uma mensagem em **Conversas**, **Favoritas** ou **Mídia e links**. Confira a prévia, escolha uma ou mais salas e confirme em **Encaminhar**. Cada sala mostra a conta que enviará a cópia.
+Abra **Encaminhar** no menu de uma mensagem em **Conversas**, **Favoritas** ou **Mídia e links**. Confira a prévia, escolha uma ou mais salas e confirme em **Encaminhar**. A lista mostra a conta que enviará cada cópia. Nas versões com retração, você também pode selecionar conversas diretas na mesma lista.
 
-O Oiê prepara o texto e os anexos para cada destino. Se algum envio falhar ou ficar sem confirmação, veja o aviso junto à sala e use **Tentar novamente**. Ao tentar novamente, o Oiê pula as salas cuja cópia já entrou na fila.
+O Oiê prepara o texto e os anexos para cada destino. Se algum envio falhar ou ficar sem confirmação, veja o aviso junto ao destino e use **Tentar novamente**. Ao tentar novamente, o Oiê pula os destinos cuja cópia já entrou na fila.
 
-![Janela Encaminhar mensagem com a prévia de uma imagem e duas salas selecionadas.](imagens/encaminhar-mensagem.webp "Selecionar salas para encaminhar")
+![Janela Encaminhar mensagem com uma conversa direta selecionada e a conta de origem ao lado de cada destino.](imagens/encaminhar-mensagem.webp "Escolher destinos para encaminhar")
+
+[Abrir a captura do encaminhamento em tamanho original](imagens/encaminhar-mensagem.webp)
 
 ## Anexos no rascunho
 
