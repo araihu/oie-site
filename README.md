@@ -25,10 +25,10 @@ Ao atualizar **Baixar**, confira também os comandos e requisitos do [guia de in
 
 ## Documentação do Oiê
 
-A página **Baixar** aponta para os binários e para o código-fonte correspondente da [v0.0.1-rc.27](https://github.com/araihu/oie/tree/bd4224b1aeae6d464ac7dea776be038c4aa7e307).
+A página **Baixar** aponta para os binários e para o código-fonte correspondente da [v0.0.1-rc.28](https://github.com/araihu/oie/tree/4f46384c9084ff9098481fde658f9d9b55cc4367).
 
 Os guias de autenticação hospedada, conexão do desktop e acesso pelo CLI
-acompanham a rc.27. O guia de Kubernetes usa o
+acompanham a rc.28. O guia de Kubernetes usa o
 [chart 0.2.6](https://github.com/araihu/oie/tree/helm-v0.2.6/charts/oie),
 distribuído como OCI no GHCR.
 

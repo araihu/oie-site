@@ -23,7 +23,7 @@ Para um motor local de teste em outro computador, restrinja o acesso com um
 
 ### Conectar a um servidor OIDC
 
-Use a rc.27 ou posterior no servidor e no desktop.
+Use a rc.28 ou posterior no servidor e no desktop.
 
 1. Abra o site do Oiê hospedado e selecione **Entrar**.
 2. Vá a **Configurações → Geral → Chaves de acesso**. Dê um nome que
