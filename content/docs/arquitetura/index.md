@@ -32,7 +32,7 @@ Veja os diagramas e o catálogo de tabelas e views em [Banco de dados](../banco-
 
 **Desktop.** [Instale o aplicativo](../../baixar/index.md) no macOS ou Linux. O motor e a interface rodam juntos no computador, e o aplicativo usa o diretório de dados do seu usuário. Fechar a janela mantém o motor ativo. Sair do aplicativo encerra o motor.
 
-**Navegador ou CLI.** Com Go 1.27.4 ou mais recente e Make, compile a partir do [código-fonte da v0.0.1-rc.27](https://github.com/araihu/oie/tree/v0.0.1-rc.27) e inicie a interface e a API na mesma porta.
+**Navegador ou CLI.** Com Go 1.27.4 ou mais recente e Make, compile a partir do [código-fonte da v0.0.1-rc.27](https://github.com/araihu/oie/tree/bd4224b1aeae6d464ac7dea776be038c4aa7e307) e inicie a interface e a API na mesma porta.
 
 ```sh
 make build
@@ -142,6 +142,6 @@ bin/oie --role bff --listen 127.0.0.1:8081 \
   --engine-url http://127.0.0.1:8080
 ```
 
-Nesse arranjo, a interface está na porta `8081` e o `oiectl` usa a porta `8080`. Só o motor abre o banco e se conecta ao XMPP. O desktop também pode usar um motor existente por meio de [`--engine-url`](https://github.com/araihu/oie/blob/v0.0.1-rc.27/docs/desktop.md#runtime-options).
+Nesse arranjo, a interface está na porta `8081` e o `oiectl` usa a porta `8080`. Só o motor abre o banco e se conecta ao XMPP. O desktop também pode usar um motor existente por meio de [`--engine-url`](https://github.com/araihu/oie/blob/bd4224b1aeae6d464ac7dea776be038c4aa7e307/docs/desktop.md#runtime-options).
 
 O motor serve seu próprio contrato em `/api/openapi.yaml`. A referência da versão de desenvolvimento está no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).

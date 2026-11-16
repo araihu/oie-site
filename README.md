@@ -25,7 +25,7 @@ Ao atualizar **Baixar**, confira também os comandos e requisitos do [guia de in
 
 ## Documentação do Oiê
 
-A página **Baixar** aponta para os binários e para o código-fonte correspondente da [v0.0.1-rc.27](https://github.com/araihu/oie/tree/v0.0.1-rc.27).
+A página **Baixar** aponta para os binários e para o código-fonte correspondente da [v0.0.1-rc.27](https://github.com/araihu/oie/tree/bd4224b1aeae6d464ac7dea776be038c4aa7e307).
 
 Os guias de autenticação hospedada, conexão do desktop e acesso pelo CLI
 acompanham a rc.27. O guia de Kubernetes usa o
