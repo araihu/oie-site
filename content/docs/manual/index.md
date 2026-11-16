@@ -171,6 +171,8 @@ O prazo também limita a recuperação do histórico no XMPP. Uma instalação n
 
 ## Mensagens não lidas
 
+Em uma versão posterior à v0.0.1-rc.24 oferecida em **Baixar**, o Oiê abre a conversa na primeira mensagem não lida. Se todas estiverem lidas, abre na mais recente. Resultados de busca e respostas citadas continuam abrindo a mensagem selecionada.
+
 Depois de percorrer o histórico, role até o fim ou use **Ir para as mais recentes** acima do campo de mensagem, quando esse botão aparecer. Se chegarem mensagens enquanto você estiver no histórico, o botão mostra **Novas mensagens · ir para as últimas**. Ao permanecer no fim com a janela ou aba em foco e sem buscas ou diálogos abertos, o Oiê marca como lidas também as mensagens anteriores que ficaram fora da tela. O contador de não lidas e o indicador de menções são atualizados na lista de conversas.
 
 ## Notificações de mensagens
@@ -257,6 +259,18 @@ vídeo automaticamente**. Com essa opção desativada, você pode pedir uma pré
 pelo cartão ou pelo menu de ações em **Mídia**.
 
 ![Cartão de vídeo recebido em uma sala, com uma imagem estática e o botão de reprodução ao centro.](imagens/video-recebido.webp "Vídeo recebido em uma sala")
+
+## Áudio e arquivos baixados
+
+*Disponível em uma versão posterior à v0.0.1-rc.24 oferecida em Baixar.*
+
+Use **Reproduzir áudio** no cartão do arquivo na conversa. Os controles de reprodução aparecem depois que você aciona o botão.
+
+Em **Configurações → Este dispositivo → Arquivos baixados**, escolha por quanto tempo o Oiê guarda as cópias. O padrão é **Até eu excluir**. Use **Excluir arquivos baixados** para remover as cópias de uma vez.
+
+![Preferências de arquivos baixados com a opção Até eu excluir e o botão Excluir arquivos baixados.](imagens/arquivos-baixados.webp "Retenção de arquivos baixados") [Ver captura completa](imagens/arquivos-baixados-original.webp)
+
+Para arquivos compatíveis, o Oiê confere o download completo quando o remetente fornece dados de verificação. Se o arquivo for diferente do original anunciado, o download é recusado.
 
 ## Envio agendado
 
