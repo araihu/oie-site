@@ -107,7 +107,9 @@ O botão **Sair**, em **Configurações**, encerra a sessão nas abas. Se a sess
 expirar antes de um novo envio chegar ao motor, entre novamente para
 continuar com o rascunho salvo.
 
-A conta dona tem acesso completo à instância. O comando `oie auth recover`
+A conta dona tem acesso completo à instância e pode emitir uma chave pela
+interface para [conectar o desktop](../manual/index.md#conectar-a-um-servidor-oidc).
+O comando `oie auth recover`
 troca a identidade vinculada e revoga as sessões e chaves existentes. O
 histórico e as contas XMPP ficam no diretório de dados. Para automação, veja
 [acesso ao motor hospedado pelo CLI](../cli/index.md#autenticar-no-motor-hospedado).
