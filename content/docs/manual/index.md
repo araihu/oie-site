@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.28](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.29](../../baixar/index.md).
 
 ## Motor local ou remoto
 
@@ -276,9 +276,9 @@ Itens da mesma mensagem compartilham a estrela.
 
 Na última mensagem própria enviada, abra **Ações da mensagem → Editar mensagem**. Com o campo de mensagem vazio, você também pode pressionar **↑**. Quando a edição está disponível, o Oiê carrega o texto no campo de mensagem. Depois de salvar, o ícone de edição ao lado do horário abre o **Histórico da mensagem**.
 
-Nas versões com edição de respostas, **Editar mensagem** também pode aparecer em respostas com citação enviadas na sessão atual. O Oiê conserva a citação quando você salva o novo texto.
+**Editar mensagem** também pode aparecer em respostas com citação enviadas na sessão atual. O Oiê conserva a citação quando você salva o novo texto.
 
-Nas versões com retração, abra **Ações da mensagem → Retrair mensagem** em uma mensagem própria e confirme. A ação aparece nas conversas diretas conectadas e nas salas que permitem verificar a autoria e aceitam a solicitação. Outros participantes ainda podem ter uma cópia.
+Para retrair, abra **Ações da mensagem → Retrair mensagem** em uma mensagem própria e confirme. A ação depende do suporte do servidor. Em salas, também depende de o Oiê conseguir verificar a autoria. Outros participantes ainda podem ter uma cópia.
 
 No histórico, **Mensagem retraída** ocupa o lugar do conteúdo. Se o Oiê ainda guardou a mensagem, use o ícone **Revelar original** ao lado do horário. O **Histórico da mensagem** mostra a retração como estado atual, seguida das versões guardadas. A busca geral, a busca na conversa e **Mídia e links** ocultam esse conteúdo por padrão. Selecione **Incluir retraídas** para encontrá-lo. Para buscar versões anteriores de mensagens retraídas, ative também **Incluir histórico de edições**.
 
@@ -288,7 +288,7 @@ No histórico, **Mensagem retraída** ocupa o lugar do conteúdo. Se o Oiê aind
 
 ## Encaminhar mensagens
 
-Abra **Encaminhar** no menu de uma mensagem em **Conversas**, **Favoritas** ou **Mídia e links**. Confira a prévia, escolha uma ou mais salas e confirme em **Encaminhar**. A lista mostra a conta que enviará cada cópia. Nas versões com retração, você também pode selecionar conversas diretas na mesma lista.
+Abra **Encaminhar** no menu de uma mensagem em **Conversas**, **Favoritas** ou **Mídia e links**. Confira a prévia, escolha uma ou mais conversas diretas ou salas e confirme em **Encaminhar**. A lista mostra a conta que enviará cada cópia.
 
 O Oiê prepara o texto e os anexos para cada destino. Se algum envio falhar ou ficar sem confirmação, veja o aviso junto ao destino e use **Tentar novamente**. Ao tentar novamente, o Oiê pula os destinos cuja cópia já entrou na fila.
 
@@ -298,7 +298,7 @@ O Oiê prepara o texto e os anexos para cada destino. Se algum envio falhar ou f
 
 ## Anexos no rascunho
 
-Abra **Mais opções** na seta ao lado de **Enviar** e escolha **Imagem** ou **Arquivo**. No instalador da página **Baixar**, essas opções ficam no botão **+**. No navegador, você também pode colar um arquivo no campo ou arrastá-lo para a conversa. Escreva a legenda no próprio campo de mensagem.
+Abra **Mais opções** na seta ao lado de **Enviar** e escolha **Imagem** ou **Arquivo**. No navegador, você também pode colar um arquivo no campo ou arrastá-lo para a conversa. Escreva a legenda no próprio campo de mensagem.
 
 ![Menu ao lado de Enviar com as opções Imagem, Arquivo e Agendar mensagem.](imagens/menu-de-anexos.webp "Menu de envio")
 

@@ -25,11 +25,11 @@ Ao atualizar **Baixar**, confira também os comandos e requisitos do [guia de in
 
 ## Documentação do Oiê
 
-A página **Baixar** aponta para os binários e para o código-fonte correspondente da [v0.0.1-rc.28](https://github.com/araihu/oie/tree/4f46384c9084ff9098481fde658f9d9b55cc4367).
+A página **Baixar** aponta para os binários e para o código-fonte correspondente da [v0.0.1-rc.29](https://github.com/araihu/oie/tree/v0.0.1-rc.29).
 
 Os guias de autenticação hospedada, conexão do desktop e acesso pelo CLI
 acompanham a rc.28. O guia de Kubernetes usa o
-[chart 0.2.6](https://github.com/araihu/oie/tree/helm-v0.2.6/charts/oie),
+[chart 0.2.7](https://github.com/araihu/oie/tree/helm-v0.2.7/charts/oie),
 distribuído como OCI no GHCR.
 
 As seções de contatos, disponibilidade e leitura do manual foram conferidas com a
@@ -106,7 +106,7 @@ A retração de mensagens, a edição de respostas com citação, o encaminhamen
 para conversas diretas e a opção `--include-retracted` do CLI foram conferidos na
 [revisão 71c41cd do Oiê](https://github.com/araihu/oie/tree/71c41cd34221ac98d8e6fc71529f8680db2d19f7).
 As capturas usam duas contas fictícias conectadas a um servidor de teste.
-Esses recursos são posteriores ao instalador oferecido em **Baixar**.
+Esses recursos estão disponíveis na rc.29.
 
 O menu de anexos ao lado de **Enviar** foi conferido na
 [revisão f9b3c71 do Oiê](https://github.com/araihu/oie/tree/f9b3c71722f6a3b008fbad71d40ae3ce5ebe55be).
