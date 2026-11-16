@@ -56,8 +56,9 @@ A seção **Retenção de mensagens** foi conferida na [revisão 505f6c9 do apli
 
 A seção **Notificações de mensagens** e os controles de nome e foto no **Perfil** acompanham a rc.23. A captura de notificações mostra um áudio de exemplo importado numa instância de teste em pt-BR. [Revisão do Oiê](https://github.com/araihu/oie/tree/c5c3f37aeb815dd9ee4a1e94512ebf7fd2467071)
 
-As seções de **Diagnóstico** no manual e no guia de instalação acompanham a [revisão da rc.24](https://github.com/araihu/oie/tree/68f530a8f9da8039f46a0c8eb9cdbf700298ea1f). A captura usa dados fictícios em pt-BR. O caminho pela aba **Geral** e o atalho
-para recuperar uma conexão hospedada no desktop foram conferidos no
+As seções de **Diagnóstico** no manual e no guia de instalação acompanham a [revisão da rc.24](https://github.com/araihu/oie/tree/68f530a8f9da8039f46a0c8eb9cdbf700298ea1f). A captura usa dados fictícios em pt-BR. O caminho pela aba **Geral**, a
+retenção na aba **Motor** e o atalho para recuperar uma conexão hospedada
+no desktop foram conferidos no
 [PR #40 do Oiê](https://github.com/araihu/oie/pull/40), posterior ao instalador
 da rc.28 oferecido em **Baixar**.
 
