@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.24](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.28](../../baixar/index.md).
 
 ## Motor local ou remoto
 
@@ -274,9 +274,9 @@ Itens da mesma mensagem compartilham a estrela.
 
 ## Editar e retrair mensagens enviadas
 
-Na última mensagem própria enviada, abra **Ações da mensagem → Editar mensagem**. Com o campo de mensagem vazio, você também pode pressionar **↑**. Quando a edição está disponível, o Oiê carrega o texto no campo de mensagem. Depois de salvar, o ícone de documento com lupa ao lado do horário abre o **Histórico da mensagem**.
+Na última mensagem própria enviada, abra **Ações da mensagem → Editar mensagem**. Com o campo de mensagem vazio, você também pode pressionar **↑**. Quando a edição está disponível, o Oiê carrega o texto no campo de mensagem. Depois de salvar, o ícone de edição ao lado do horário abre o **Histórico da mensagem**.
 
-Em versões posteriores à rc.24, **Editar mensagem** também pode aparecer em respostas com citação enviadas na sessão atual. O Oiê conserva a citação quando você salva o novo texto.
+Nas versões com edição de respostas, **Editar mensagem** também pode aparecer em respostas com citação enviadas na sessão atual. O Oiê conserva a citação quando você salva o novo texto.
 
 Nas versões com retração, abra **Ações da mensagem → Retrair mensagem** em uma mensagem própria e confirme. A ação aparece nas conversas diretas conectadas e nas salas que permitem verificar a autoria e aceitam a solicitação. Outros participantes ainda podem ter uma cópia.
 
