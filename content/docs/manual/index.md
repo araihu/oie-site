@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.24](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.30](../../baixar/index.md).
 
 ## Motor local ou remoto
 
@@ -272,19 +272,37 @@ Itens da mesma mensagem compartilham a estrela.
 
 ![Estrela cinza no primeiro cartão e estrela amarela no terceiro, ambas no canto superior esquerdo.](imagens/favoritar-midia.webp "Favoritar em Mídia e links")
 
+## Editar e retrair mensagens enviadas
+
+Na última mensagem própria enviada, abra **Ações da mensagem → Editar mensagem**. Com o campo de mensagem vazio, você também pode pressionar **↑**. Quando a edição está disponível, o Oiê carrega o texto no campo de mensagem. Depois de salvar, o ícone de edição ao lado do horário abre o **Histórico da mensagem**.
+
+**Editar mensagem** também pode aparecer em respostas com citação enviadas na sessão atual. O Oiê conserva a citação quando você salva o novo texto.
+
+Para retrair, abra **Ações da mensagem → Retrair mensagem** em uma mensagem própria e confirme. A ação depende do suporte do servidor. Em salas, também depende de o Oiê conseguir verificar a autoria. Outros participantes ainda podem ter uma cópia.
+
+No histórico, **Mensagem retraída** ocupa o lugar do conteúdo. Se o Oiê ainda guardou a mensagem, use o ícone **Revelar original** ao lado do horário. O **Histórico da mensagem** mostra a retração como estado atual, seguida das versões guardadas. A busca geral, a busca na conversa e **Mídia e links** ocultam esse conteúdo por padrão. Selecione **Incluir retraídas** para encontrá-lo. Para buscar versões anteriores de mensagens retraídas, ative também **Incluir histórico de edições**.
+
+![Histórico da mensagem com a retração no topo e as versões guardadas abaixo.](imagens/revelar-original.webp "Revelar uma mensagem retraída")
+
+[Abrir a captura da retração em tamanho original](imagens/revelar-original.webp)
+
 ## Encaminhar mensagens
 
-Abra **Encaminhar** no menu de uma mensagem em **Conversas**, **Favoritas** ou **Mídia e links**. Confira a prévia, escolha uma ou mais salas e confirme em **Encaminhar**. Cada sala mostra a conta que enviará a cópia.
+Abra **Encaminhar** no menu de uma mensagem em **Conversas**, **Favoritas** ou **Mídia e links**. Confira a prévia, escolha uma ou mais conversas diretas ou salas e confirme em **Encaminhar**. A lista mostra a conta que enviará cada cópia.
 
-O Oiê prepara o texto e os anexos para cada destino. Se algum envio falhar ou ficar sem confirmação, veja o aviso junto à sala e use **Tentar novamente**. Ao tentar novamente, o Oiê pula as salas cuja cópia já entrou na fila.
+O Oiê prepara o texto e os anexos para cada destino. Se algum envio falhar ou ficar sem confirmação, veja o aviso junto ao destino e use **Tentar novamente**. Ao tentar novamente, o Oiê pula os destinos cuja cópia já entrou na fila.
 
-![Janela Encaminhar mensagem com a prévia de uma imagem e duas salas selecionadas.](imagens/encaminhar-mensagem.webp "Selecionar salas para encaminhar")
+![Janela Encaminhar mensagem com uma conversa direta selecionada e a conta de origem ao lado de cada destino.](imagens/encaminhar-mensagem.webp "Escolher destinos para encaminhar")
+
+[Abrir a captura do encaminhamento em tamanho original](imagens/encaminhar-mensagem.webp)
 
 ## Anexos no rascunho
 
-Ao lado do campo de mensagem, abra **+** e escolha **Imagem** ou **Arquivo**. No navegador, você também pode colar um arquivo no campo ou arrastá-lo para a conversa. Escreva a legenda no próprio campo de mensagem.
+Abra **Mais opções** na seta ao lado de **Enviar** e escolha **Imagem** ou **Arquivo**. No navegador, você também pode colar um arquivo no campo ou arrastá-lo para a conversa. Escreva a legenda no próprio campo de mensagem.
 
-![Menu de anexos aberto pelo botão de mais, com as opções Imagem e Arquivo.](imagens/menu-de-anexos.webp "Menu de anexos")
+![Menu ao lado de Enviar com as opções Imagem, Arquivo e Agendar mensagem.](imagens/menu-de-anexos.webp "Menu de envio")
+
+[Abrir a captura do menu de envio em tamanho original](imagens/menu-de-anexos.webp)
 
 Você pode clicar no nome de um anexo pronto para baixar o original. No aplicativo de desktop, isso abre a janela do sistema para salvar o arquivo. Use **Remover anexo** para tirar um item do rascunho. Se o preparo falhar, use **Tentar novamente** ou remova o arquivo. Se usou o seletor do Flatpak, escolha o arquivo novamente. Quando todos estiverem prontos, envie a mensagem ou [agende o envio](#envio-agendado).
 
@@ -294,7 +312,7 @@ O Oiê aceita até 16 arquivos por mensagem, de até 20 MiB cada. O serviço XMP
 
 ## Prévia e reprodução de vídeos
 
-Para anexar um vídeo, escolha **+ → Arquivo** e selecione o arquivo.
+Para anexar um vídeo, escolha **Arquivo** no [menu de anexos](#anexos-no-rascunho) e selecione o vídeo.
 Use **Reproduzir vídeo** na miniatura para assistir antes de enviar. O nome
 do arquivo e a opção **Remover anexo** continuam disponíveis se a miniatura
 não puder ser criada.
