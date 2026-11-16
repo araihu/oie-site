@@ -90,7 +90,7 @@ Para atualizar, encerre o Oiê e execute `brew upgrade --cask araihu/oie/oie` no
 
 ## Instalar o pacote publicado
 
-Na página [Baixar](../../baixar/index.md), abra **Notas da versão e instalador**. Nos arquivos da versão que você quer instalar, baixe `install.sh`. O instalador escolhe o pacote para seu sistema e confere a soma SHA-256 antes de extrair os arquivos.
+Baixe o [instalador da RC 28 (install.sh)](https://github.com/araihu/oie/releases/download/v0.0.1-rc.28/install.sh). Ele escolhe o pacote para macOS com Apple Silicon ou Ubuntu 24.04 x86-64 e confere a soma SHA-256 antes de extrair os arquivos.
 
 No **Ubuntu 24.04**, instale primeiro as bibliotecas usadas pelo aplicativo.
 
@@ -112,7 +112,7 @@ sh ./install.sh
 | macOS | `~/Applications/Oie.app` | Abra o Oiê no Finder. |
 | Ubuntu | `~/.local/bin/oie-desktop` | Abra o Oiê pelo menu de aplicativos em uma sessão gráfica. |
 
-O instalador usa por padrão a versão em que foi publicado. Para escolher outra versão publicada ou mudar o destino, consulte as opções `--version` e `--prefix` com `sh ./install.sh --help`.
+Este instalador usa a `v0.0.1-rc.28` por padrão. Para escolher outra versão publicada ou mudar o destino, consulte as opções `--version` e `--prefix` com `sh ./install.sh --help`.
 
 ### Primeira abertura no macOS
 

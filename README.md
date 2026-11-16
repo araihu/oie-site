@@ -32,6 +32,12 @@ acompanham a rc.28. O guia de Kubernetes usa o
 [chart 0.2.6](https://github.com/araihu/oie/tree/helm-v0.2.6/charts/oie),
 distribuído como OCI no GHCR.
 
+As seções de contatos, disponibilidade e leitura do manual foram conferidas com a
+[RC 28 no commit 4f46384](https://github.com/araihu/oie/tree/4f46384c9084ff9098481fde658f9d9b55cc4367).
+As capturas mostram a interface em pt-BR com contas fictícias. O link direto
+para `install.sh` usa o arquivo publicado com essa versão. Os comandos do
+`oiectl` para remover salas e conversas diretas foram conferidos na mesma revisão.
+
 O manual, os atalhos, os exemplos do CLI e os guias de instalação e arquitetura foram revisados com a [main do aplicativo em 9929391](https://github.com/araihu/oie/tree/9929391579532045b61fcad8d8883f7e3a351215) e a [v0.0.1-rc.3](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.3). Ao atualizar, registre o SHA das páginas revisadas e confira as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
 
 A seção de atualização via APT no guia de instalação foi conferida com a [main do aplicativo em baae7e6](https://github.com/araihu/oie/tree/baae7e69541d4f32e999fa277238d34c9808e427) e com o pacote publicado da [v0.0.1-rc.7](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.7).

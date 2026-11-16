@@ -31,8 +31,9 @@ Para rodar a versão web no Kubernetes, veja [Rodar no Kubernetes com Helm](../d
 
 O guia explica a primeira abertura no macOS e quais bibliotecas instalar no Ubuntu.
 
+- [Baixar o instalador da RC 28 (install.sh)](https://github.com/araihu/oie/releases/download/v0.0.1-rc.28/install.sh)
 - [Guia de instalação](../docs/instalacao/index.md)
-- [Notas da versão e instalador](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.28)
+- [Notas da versão](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.28)
 - [Somas de verificação SHA-256](https://github.com/araihu/oie/releases/download/v0.0.1-rc.28/SHA256SUMS)
 
 ## Código-fonte
