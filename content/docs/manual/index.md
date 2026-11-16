@@ -119,12 +119,27 @@ formulário aberto para você corrigir ou tentar de novo.
   sala → Detalhes → Excluir sala para todos**. Confirme para excluir a sala
   do servidor e remover todos os participantes. Quando o servidor confirmar,
   a sala sai de **Conversas** e **Arquivadas** da conta que pediu a exclusão.
-  O histórico salvo será mantido. Outros participantes podem remover a sala
-  das próprias listas.
+  O histórico salvo será mantido. Quem recebe o aviso de exclusão vê **Sala
+  excluída** e pode remover a sala da própria lista.
 
 [![Confirmação para remover uma sala das conversas, com as opções Cancelar e Remover das conversas.](imagens/remover-sala.webp)](imagens/remover-sala-original.webp)
 
 [![Confirmação para excluir a sala para todos, com aviso de que a ação não pode ser desfeita.](imagens/excluir-sala.webp)](imagens/excluir-sala-original.webp)
+
+### Ver o estado de uma sala
+
+O ponto no avatar mostra o estado da sala. O cabeçalho exibe o estado por
+escrito, e a lista destaca quando você está fora da sala ou quando há um
+problema.
+
+- **Na sala** indica que você já entrou.
+- **Conta desconectada** aparece quando sua conta está sem conexão.
+- **Sala excluída** aparece quando o servidor confirma a exclusão. O histórico
+  que você já tem continua acessível.
+- **Acesso restrito** indica que sua entrada foi recusada. **Sala
+  indisponível** indica que o Oiê não conseguiu acessar a sala.
+
+[![Uma sala na lista de conversas com um ponto vermelho no avatar e o rótulo Sala excluída.](imagens/estado-sala-excluida.webp)](imagens/estado-sala-excluida-original.webp)
 
 ## Histórico e busca em salas
 

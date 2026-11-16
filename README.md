@@ -75,6 +75,11 @@ A remoção da sala das listas da conta que confirma sua exclusão foi conferida
 na revisão de desenvolvimento `e81d0d535f2eb5cb2e9f857efd4c14de8131861e` do Oiê. A captura da confirmação
 em pt-BR usa uma sala fictícia.
 
+O indicador de estado no avatar das salas e o rótulo **Sala excluída** foram
+conferidos na revisão de desenvolvimento
+`0149b3894eb4f895f5ba5fadff3ee9bd89dc8552` do Oiê. A captura em pt-BR usa uma
+sala fictícia excluída por outra conta.
+
 ### Referência do banco de dados
 
 O catálogo e os diagramas registram a [revisão dd2e610 do Oiê](https://github.com/araihu/oie/tree/dd2e6106e56f34c86a1b74c6dd989ecdbd350bc6), fixada em `scripts/database-docs/oie-revision`. Para atualizar a referência, coloque nesse arquivo o SHA completo do Oiê que será documentado. Com Python 3 com SQLite e o [tbls v1.96.1](https://github.com/k1LoW/tbls/releases/tag/v1.96.1) no PATH, rode a partir da raiz do site.
