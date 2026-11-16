@@ -47,8 +47,9 @@ sudo install -m 0644 oie.repo /etc/yum.repos.d/araihu-oie.repo
 sudo dnf install oie
 ```
 
-Ao importar a chave, confira se o DNF mostra a impressão digital
-`CA0A 410F B344 E22A B7FB 8011 21CB CCC4 11B0 03A9`.
+Antes de aceitar a chave, confira a impressão digital exibida pelo DNF. Ele
+pode mostrar a chave principal `CA0A 410F B344 E22A B7FB 8011 21CB CCC4 11B0 03A9`
+ou a subchave de assinatura `6F0E BFC3 6E8C 5123 0700 447A 8BA9 F980 6488 4A57`.
 Para atualizar, feche o Oiê e rode `sudo dnf upgrade --refresh oie`.
 
 ## Instalar com pacman
