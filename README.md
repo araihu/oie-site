@@ -117,6 +117,10 @@ O menu de anexos ao lado de **Enviar** foi conferido na
 [revisão f9b3c71 do Oiê](https://github.com/araihu/oie/tree/f9b3c71722f6a3b008fbad71d40ae3ce5ebe55be).
 A captura em pt-BR usa uma conversa fictícia.
 
+O gravador de mensagens de voz, a prévia da gravação e a forma de onda no
+balão foram conferidos na [revisão 96ca2c6 do Oiê](https://github.com/araihu/oie/tree/96ca2c68fb4d8290dd06b58418f23ab32e49c835).
+As capturas em pt-BR usam uma conversa fictícia e áudio de teste.
+
 ### Referência do banco de dados
 
 O catálogo e os diagramas registram a [revisão dd2e610 do Oiê](https://github.com/araihu/oie/tree/dd2e6106e56f34c86a1b74c6dd989ecdbd350bc6), fixada em `scripts/database-docs/oie-revision`. Para atualizar a referência, coloque nesse arquivo o SHA completo do Oiê que será documentado. Com Python 3 com SQLite e o [tbls v1.96.1](https://github.com/k1LoW/tbls/releases/tag/v1.96.1) no PATH, rode a partir da raiz do site.

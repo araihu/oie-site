@@ -283,7 +283,7 @@ No menu do cartão, use **Ir para a mensagem** para voltar à conversa de origem
 
 ### Reprodução de áudio
 
-Para ouvir um anexo de áudio compatível, use o player na mensagem. Para salvar o arquivo, use **Baixar** no menu da mensagem.
+Para ouvir um anexo de áudio compatível, use o player na mensagem. Na rc.31, selecione **Baixar** no menu da mensagem para salvar o arquivo. Consulte [Mensagens de voz](#mensagens-de-voz) para ver o player da versão em desenvolvimento.
 
 ### Arquivos baixados
 
@@ -348,6 +348,22 @@ Você pode clicar no nome de um anexo pronto para baixar o original. No aplicati
 ![Rascunho com uma imagem, dois arquivos de texto e a legenda no campo de mensagem. Cada anexo tem um botão de remoção.](imagens/rascunho-anexos.webp "Anexos no rascunho")
 
 O Oiê aceita até 16 arquivos por mensagem, de até 20 MiB cada. O serviço XMPP pode impor um limite menor ou não permitir anexos naquela conversa. Quem recebe a mensagem pode baixar os arquivos pelos links enviados junto com a legenda. Os anexos prontos ficam no rascunho ao recarregar a página. Aguarde o preparo antes de trocar de conversa.
+
+## Mensagens de voz
+
+O gravador e a forma de onda nos balões chegaram depois da v0.0.1-rc.31 oferecida em [Baixar](../../baixar/index.md).
+
+Com o rascunho sem texto nem anexos, selecione **Gravar áudio** e permita o acesso ao microfone. O botão aparece nas conversas que aceitam anexos, em navegadores e aplicativos compatíveis com a gravação.
+
+Enquanto grava, o campo mostra o tempo e a forma de onda. Selecione **Parar gravação** e use **Reproduzir gravação** para ouvir. Para refazer, use **Cancelar** no rascunho de áudio e selecione o microfone novamente. Quando estiver pronto, selecione **Enviar mensagem**.
+
+![Campo de mensagem durante a gravação, com o tempo, a forma de onda e o botão de parar.](imagens/gravacao-mensagem-de-voz.webp "Gravação em andamento") [Ver captura da gravação](imagens/gravacao-mensagem-de-voz.webp)
+
+![Gravação pronta para ouvir, descartar ou enviar.](imagens/rascunho-mensagem-de-voz.webp "Prévia da gravação") [Ver captura da prévia](imagens/rascunho-mensagem-de-voz.webp)
+
+Para ouvir um áudio da conversa, use **Reproduzir áudio** no balão. Quando disponível, a forma de onda aparece com a duração total. Selecione um ponto nela para avançar ou voltar. Para salvar o original, abra o menu da mensagem e selecione **Baixar áudio**.
+
+![Balão de mensagem com botão de reprodução, forma de onda e duração total.](imagens/onda-de-audio-no-balao.webp "Player de áudio no balão") [Ver captura do player](imagens/onda-de-audio-no-balao.webp)
 
 ## Prévia e reprodução de vídeos
 
