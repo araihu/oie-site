@@ -1,6 +1,6 @@
 ---
 title: Manual
-description: Escolha o motor local ou remoto, conecte ou remova contas XMPP, gerencie salas, busque e encaminhe mensagens, configure notificações, envie anexos e consulte as opções de retenção e exclusão de dados.
+description: Escolha o motor local ou remoto, conecte ou remova contas XMPP, gerencie salas, busque e encaminhe mensagens, configure notificações, envie anexos, consulte o diagnóstico e gerencie a retenção e exclusão de dados.
 language: pt-BR
 margo:
   imageViewer: true
@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.23](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.24](../../baixar/index.md).
 
 ## Motor local ou remoto
 
@@ -36,6 +36,25 @@ conexão por chave na interface.
 O desktop verifica a conexão antes de salvar o endereço e a chave no perfil.
 Para trocar uma chave vencida, crie outra no site do Oiê hospedado e cole-a na
 mesma tela do desktop.
+
+## Diagnóstico e registro de erros
+
+Abra **Configurações → Diagnóstico**, escolha um período e use **Atualizar**
+para ver os eventos recentes. Abra uma linha para ver os detalhes. Use
+**Copiar** para colocar o trecho na área de transferência. Para salvar o
+arquivo `oie-diagnostics.jsonl`, abra a seta ao lado de **Copiar** e
+escolha **Baixar**.
+
+![Painel de Diagnóstico com um aviso de conexão expandido e o menu Baixar ao lado de Copiar.](imagens/diagnostico.webp "Visualizador de diagnóstico") [Ver captura completa](imagens/diagnostico-original.webp)
+
+No aplicativo para computador, **Este dispositivo** continua disponível
+se o motor falhar na inicialização ou perder a conexão. Quando o motor
+remoto oferecer diagnóstico, selecione **Servidor** e informe a chave de
+acesso fornecida por quem administra a instalação.
+
+O registro inclui horários e detalhes de falhas. Mensagens, rascunhos,
+nomes de contas, endereços, credenciais e caminhos de arquivos ficam
+fora do registro. O arquivo só é compartilhado quando você decide enviá-lo.
 
 ## Apagar todos os dados
 

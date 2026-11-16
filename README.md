@@ -25,7 +25,7 @@ Ao atualizar **Baixar**, confira também os comandos e requisitos do [guia de in
 
 ## Documentação do Oiê
 
-A página **Baixar** aponta para os binários e para o código-fonte correspondente da [revisão da v0.0.1-rc.23](https://github.com/araihu/oie/tree/c5c3f37aeb815dd9ee4a1e94512ebf7fd2467071).
+A página **Baixar** aponta para os binários e para o código-fonte correspondente da [revisão da v0.0.1-rc.24](https://github.com/araihu/oie/tree/68f530a8f9da8039f46a0c8eb9cdbf700298ea1f).
 
 O manual, os atalhos, os exemplos do CLI e os guias de instalação e arquitetura foram revisados com a [main do aplicativo em 9929391](https://github.com/araihu/oie/tree/9929391579532045b61fcad8d8883f7e3a351215) e a [v0.0.1-rc.3](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.3). Ao atualizar, registre o SHA das páginas revisadas e confira as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
 
@@ -43,6 +43,8 @@ A seção **Retenção de mensagens** foi conferida na [revisão 505f6c9 do apli
 
 A seção **Notificações de mensagens** e os controles de nome e foto no **Perfil** acompanham a rc.23. A captura de notificações mostra um áudio de exemplo importado numa instância de teste em pt-BR. [Revisão do Oiê](https://github.com/araihu/oie/tree/c5c3f37aeb815dd9ee4a1e94512ebf7fd2467071)
 
+As seções de **Diagnóstico** no manual e no guia de instalação acompanham a [revisão da rc.24](https://github.com/araihu/oie/tree/68f530a8f9da8039f46a0c8eb9cdbf700298ea1f). A captura usa dados fictícios em pt-BR.
+
 A instalação do `oiectl` por release independente foi conferida com a [release cli/v0.30.1](https://github.com/araihu/oie/releases/tag/cli/v0.30.1), gerada a partir do [contrato no commit f21196a](https://github.com/araihu/oie/tree/f21196a6d8fe2d1b75180470ccd26089db5d6bb9/api).
 
 A seção **Histórico e busca em salas** descreve o realce e a seleção de versões anteriores disponíveis desde a rc.13. [Revisão 699be01 do Oiê](https://github.com/araihu/oie/tree/699be01c6aacad2a03f1ddcd2bdb4eb195a64c69)
@@ -53,10 +55,10 @@ Os fluxos de **Mídia e links**, **Encaminhar mensagens** e **Descobrir e gerenc
 
 A seção Docker da página de arquitetura descreve a [CI da imagem em f9c6a01](https://github.com/araihu/oie/commit/f9c6a01625232e7132a358b27372759144588258).
 
-A seção **Rodar no Kubernetes com Helm** descreve a versão 0.2.2 do chart,
-que permite configurar timeouts no HTTPRoute e usa a imagem `v0.0.1-rc.21`
-por padrão. [Release 0.2.2 do chart](https://github.com/araihu/oie/releases/tag/helm-v0.2.2)
-· [Revisão do Oiê](https://github.com/araihu/oie/tree/5d0ac8b49adc11b950a61425e6e7cd6107f80f89)
+A seção **Rodar no Kubernetes com Helm** descreve o chart 0.2.3, que
+usa a imagem `v0.0.1-rc.24` por padrão e permite configurar uma chave de
+Diagnóstico via Secret. [Release 0.2.3 do chart](https://github.com/araihu/oie/releases/tag/helm-v0.2.3)
+· [Revisão do Oiê](https://github.com/araihu/oie/tree/5b78c3f6f00c1674c115a8626852aecf4e3e4f52)
 
 O fluxo de remoção de conta e o comando `oiectl accounts remove` foram conferidos com a [revisão da rc.22](https://github.com/araihu/oie/tree/ffa480cb81a5b79287191a2220d554c4180be3ac) e o contrato 0.34.0. A captura usa uma conta fictícia.
 
