@@ -99,8 +99,8 @@ Se perder a resposta e precisar repetir a mesma solicitação, mantenha a chave 
 
 ## Remover uma conversa da lista
 
-Disponível em uma revisão posterior à versão atual em **Baixar**. Use o CLI
-e o motor compilados da mesma revisão. Em `conversations list --output json`,
+Na rc.28, use o CLI compilado da mesma revisão do motor.
+Em `conversations list --output json`,
 confira o `id`, o `accountId` e o `revisionId` da sala. Substitua os valores
 abaixo e gere um UUIDv7 novo para a solicitação.
 

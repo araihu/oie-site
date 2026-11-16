@@ -1,6 +1,6 @@
 ---
 title: Manual
-description: Escolha o motor local ou remoto, conecte ou remova contas XMPP, gerencie salas, busque e encaminhe mensagens, configure notificações, envie anexos, consulte o diagnóstico e gerencie a retenção e exclusão de dados.
+description: Escolha o motor local ou remoto, conecte ou remova contas XMPP, gerencie contatos e presença, marque conversas como lidas ou não lidas, gerencie salas, busque e encaminhe mensagens, configure notificações, envie anexos, consulte o diagnóstico e gerencie a retenção e exclusão de dados.
 language: pt-BR
 margo:
   imageViewer: true
@@ -74,9 +74,33 @@ Em **Gerenciar contas**, abra o **Perfil** da conta e use **Editar nome** e **Sa
 
 A borda dos avatares das conversas usa a cor da conta de origem, assim como o
 avatar em **Trocar de conta**. O nome e o endereço identificam a conta por
-escrito. As bordas coloridas chegarão depois da versão atual em **Baixar**.
+escrito.
 
 [![A mesma sala nas contas Alice e Bob, com bordas nas cores mostradas no seletor de contas.](imagens/seletor-de-contas.webp)](imagens/seletor-de-contas-original.webp)
+
+### Contatos
+
+Em **Trocar de conta → Gerenciar contas**, abra o **Perfil** da conta e escolha
+**Contatos**. Com a conta conectada, informe o endereço XMPP da pessoa e
+selecione **Adicionar contato**. Em **Solicitações de contato**, use **Aceitar**
+ou **Recusar**.
+
+A presença aparece na lista quando o contato compartilha a disponibilidade
+com sua conta. Para tirar um endereço da lista, selecione **Remover** ao lado
+dele. O Oiê mantém a conversa e as mensagens guardadas.
+
+[![Painel Contatos da conta Pessoal, com o endereço XMPP de Bruno e os botões Adicionar contato e Remover.](imagens/contatos.webp)](imagens/contatos-original.webp)
+
+### Disponibilidade e digitação
+
+No **Perfil** da conta, abra **Disponibilidade**, escolha **Disponível**,
+**Ausente** ou **Não perturbe** e selecione **Salvar**. Em **Não perturbe**,
+as mensagens continuam chegando sem avisos ou sons para aquela conta.
+
+Desative **Mostrar quando estou digitando** e selecione **Salvar** para
+deixar de enviar o indicador nas conversas diretas compatíveis.
+
+[![Preferências da conta com Não perturbe selecionado, a opção Mostrar quando estou digitando e o botão Salvar.](imagens/disponibilidade-conta.webp)](imagens/disponibilidade-conta-original.webp)
 
 ### Remover uma conta
 
@@ -106,8 +130,6 @@ e de **Mídia e links** abrem o histórico salvo em modo de leitura. A conversa
 continua fora da lista.
 
 Para ver **Detalhes da conversa**, clique na foto ou nas iniciais do cabeçalho.
-**Remover das conversas** em conversas diretas chegará depois da versão atual
-em **Baixar**.
 
 ## Salas, convites e entrada automática
 
@@ -129,8 +151,6 @@ A prévia pode mostrar nome, descrição, assunto, foto e número de participant
 ![Aba Detalhes de Gerenciar sala com a imagem da sala e os campos de nome e tópico.](imagens/gerenciar-sala.webp "Aba Detalhes de Gerenciar sala")
 
 ### Conferir o endereço e remover salas
-
-Estas opções chegarão depois da versão atual em **Baixar**.
 
 Ao criar uma sala, use o domínio do serviço de salas XMPP. Por exemplo, se a
 conta for `ana@exemplo.org`, o endereço da sala pode ser
@@ -191,6 +211,18 @@ O prazo também limita a recuperação do histórico no XMPP. Uma instalação n
 ## Mensagens não lidas
 
 Depois de percorrer o histórico, role até o fim ou use **Ir para as mais recentes** acima do campo de mensagem, quando esse botão aparecer. Se chegarem mensagens enquanto você estiver no histórico, o botão mostra **Novas mensagens · ir para as últimas**. Ao permanecer no fim com a janela ou aba em foco e sem buscas ou diálogos abertos, o Oiê marca como lidas também as mensagens anteriores que ficaram fora da tela. O contador de não lidas e o indicador de menções são atualizados na lista de conversas.
+
+### Marcar uma conversa como lida ou não lida
+
+No cabeçalho da conversa, abra **Mais opções → Marcar como lida** para zerar
+o contador e limpar qualquer lembrete, inclusive se você estiver no meio do
+histórico.
+
+Use **Mais opções → Marcar como não lida** para incluir a conversa no filtro
+**Não lidas**. Se todas as mensagens já foram lidas, a lista mostra um ponto
+no lugar do contador. Para tirar o lembrete, escolha **Marcar como lida**.
+
+[![Menu Mais opções de uma conversa com a ação Marcar como não lida.](imagens/marcar-conversa-como-nao-lida.webp)](imagens/marcar-conversa-como-nao-lida-original.webp)
 
 ## Notificações de mensagens
 
