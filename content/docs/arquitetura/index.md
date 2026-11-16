@@ -79,7 +79,7 @@ curl --fail http://127.0.0.1:8080/api/v1/health
 ### Acesso público com OIDC
 
 A autenticação nativa está no código de desenvolvimento do Oiê. Use uma
-compilação que inclua esse recurso. As instruções da rc.23 acima continuam
+compilação que inclua esse recurso. As instruções da rc.24 acima continuam
 adequadas para acesso privado por túnel.
 
 1. No provedor OIDC, registre um cliente web confidencial com o retorno

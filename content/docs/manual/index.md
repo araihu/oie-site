@@ -18,7 +18,7 @@ No desktop, entre em **Configurações → Geral** e abra **Motor**. **Local** �
 
 As contas e o histórico de cada motor ficam onde foram gravados. Para voltar às suas conversas deste dispositivo, inclusive se o motor remoto sair do ar, selecione **Local** e salve. O motor remoto continua funcionando no servidor.
 
-Na rc.23, use um [túnel SSH ou uma rede privada](../arquitetura/index.md#motor-hospedado) para restringir o acesso à sua instância.
+Na rc.24, use um [túnel SSH ou uma rede privada](../arquitetura/index.md#motor-hospedado) para restringir o acesso à sua instância.
 
 ### Conectar a um servidor OIDC
 

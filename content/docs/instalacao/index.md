@@ -236,7 +236,7 @@ instância e reserva 10 GiB para contas, histórico e mídia. Para usar um volum
 já existente, indique o nome do PVC com `persistence.existingClaim`. Use um
 PVC por instância. O volume é mantido quando você desinstala a release Helm.
 
-Com a imagem padrão do chart 0.2.2, configure um proxy HTTPS com
+Com a imagem padrão do chart 0.2.3, configure um proxy HTTPS com
 autenticação em todas as rotas para acesso remoto, incluindo a API. Use Ingress ou conecte
 o Oiê a um Gateway existente com `httpRoute.enabled`, `httpRoute.parentRefs`
 e `httpRoute.hostnames`. Se o Gateway estiver em outro namespace, permita
