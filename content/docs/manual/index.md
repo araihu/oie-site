@@ -115,7 +115,7 @@ formulário aberto para você corrigir ou tentar de novo.
 
 ## Histórico e busca em salas
 
-Em **Detalhes da conversa**, use **Baixar histórico antigo automaticamente** para escolher como o Oiê recupera o histórico daquela sala. Com a opção ligada, ele baixa mensagens antigas aos poucos. Com a opção desligada, pode buscá-las quando você usa **Mensagens anteriores** no topo da conversa ou faz uma busca, conforme o servidor permitir.
+Em **Mais opções → Detalhes da conversa**, use **Baixar histórico antigo automaticamente** para escolher como o Oiê recupera o histórico daquela sala. Com a opção ligada, ele baixa mensagens antigas aos poucos. Com a opção desligada, pode buscá-las quando você usa **Mensagens anteriores** no topo da conversa ou faz uma busca, conforme o servidor permitir.
 
 Dentro de uma sala, abra **Mais opções** e selecione **Pesquisar mensagens**. Essa busca também pode consultar o arquivo do servidor, quando ele oferece busca por texto. Ative **Incluir histórico de edições** para encontrar versões anteriores de mensagens editadas. Use os [atalhos de busca](../atalhos/index.md#busca-na-conversa) para percorrer os resultados.
 
@@ -125,7 +125,7 @@ Buscar por `arqiuvo` nas mensagens guardadas pode realçar **arquivo** no balão
 
 ## Retenção de mensagens
 
-Em **Configurações → Este dispositivo → Retenção de mensagens**, escolha os prazos padrão para **Salas** e **Conversas diretas**. Esses prazos valem para o motor do Oiê em uso, inclusive quando ele é compartilhado entre dispositivos. Para mudar o prazo de uma conversa, abra **Detalhes da conversa → Retenção de mensagens**. Use **Usar o padrão** para voltar ao prazo global.
+Em **Configurações → Este dispositivo → Retenção de mensagens**, escolha os prazos padrão para **Salas** e **Conversas diretas**. Esses prazos valem para o motor do Oiê em uso, inclusive quando ele é compartilhado entre dispositivos. Para mudar o prazo de uma conversa, abra **Mais opções → Detalhes da conversa → Retenção de mensagens**. Use **Usar o padrão** para voltar ao prazo global.
 
 Por padrão, as salas têm prazo de **180 dias** e as conversas diretas usam **Sem limite**. O Oiê preserva as **100 mensagens mais recentes já guardadas de cada sala** e todas as mensagens favoritadas. Reduzir o prazo pode apagar outras mensagens antigas do histórico guardado pelo motor. Em um envio agendado, o prazo conta a partir do envio. Se a mensagem original de uma resposta expirar, o texto da resposta continua visível e a citação fica indisponível.
 
