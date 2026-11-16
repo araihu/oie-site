@@ -264,7 +264,7 @@ pelo cartão ou pelo menu de ações em **Mídia**.
 
 *Disponível em uma versão posterior à v0.0.1-rc.24 oferecida em Baixar.*
 
-Use **Reproduzir áudio** no cartão do arquivo na conversa. Os controles de reprodução aparecem depois que você aciona o botão. Use **Baixar** no menu da mensagem para salvar o arquivo.
+Use o botão de reprodução do player que aparece na mensagem de áudio. Use **Baixar** no menu da mensagem para salvar o arquivo.
 
 Em **Configurações → Este dispositivo → Arquivos baixados**, escolha por quanto tempo o Oiê guarda as cópias. O padrão é **Até eu excluir**. Use **Excluir arquivos baixados** para remover as cópias de uma vez.
 
