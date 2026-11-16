@@ -379,7 +379,7 @@ pelo cartão ou pelo menu de ações em **Mídia**.
 
 ## Enviar sem conexão
 
-Disponível na versão em desenvolvimento, posterior à rc.30 de **Baixar**.
+Disponível na versão em desenvolvimento, posterior à rc.32 de **Baixar**.
 
 Se a conversa já estiver aberta quando a conexão cair, selecione **Enviar**
 para guardar a mensagem neste navegador. O ícone de sinal cortado ao lado do
@@ -390,6 +390,10 @@ reabri-lo pela lista de conversas.
 Enquanto a mensagem estiver aguardando conexão, selecione **Cancelar envio**
 abaixo dela ou no menu **Ações da mensagem**. A mensagem volta ao rascunho,
 onde você pode editar e enviar de novo.
+
+Se outro rascunho estiver aberto, selecione **Envio pendente** para voltar à
+mensagem que aguarda conexão. **Outro rascunho** alterna entre os rascunhos
+guardados na conversa.
 
 [![Mensagem com um ícone de sinal cortado, um aviso de conexão e a ação Cancelar envio.](imagens/envio-sem-conexao.webp)](imagens/envio-sem-conexao-original.webp)
 
