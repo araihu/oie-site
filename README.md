@@ -97,6 +97,10 @@ para conversas diretas e a opção `--include-retracted` do CLI foram conferidos
 As capturas usam duas contas fictícias conectadas a um servidor de teste.
 Esses recursos são posteriores ao instalador oferecido em **Baixar**.
 
+O menu de anexos ao lado de **Enviar** foi conferido na
+[revisão f9b3c71 do Oiê](https://github.com/araihu/oie/tree/f9b3c71722f6a3b008fbad71d40ae3ce5ebe55be).
+A captura em pt-BR usa uma conversa fictícia.
+
 ### Referência do banco de dados
 
 O catálogo e os diagramas registram a [revisão dd2e610 do Oiê](https://github.com/araihu/oie/tree/dd2e6106e56f34c86a1b74c6dd989ecdbd350bc6), fixada em `scripts/database-docs/oie-revision`. Para atualizar a referência, coloque nesse arquivo o SHA completo do Oiê que será documentado. Com Python 3 com SQLite e o [tbls v1.96.1](https://github.com/k1LoW/tbls/releases/tag/v1.96.1) no PATH, rode a partir da raiz do site.

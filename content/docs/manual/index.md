@@ -247,9 +247,11 @@ O Oiê prepara o texto e os anexos para cada destino. Se algum envio falhar ou f
 
 ## Anexos no rascunho
 
-Ao lado do campo de mensagem, abra **+** e escolha **Imagem** ou **Arquivo**. No navegador, você também pode colar um arquivo no campo ou arrastá-lo para a conversa. Escreva a legenda no próprio campo de mensagem.
+Abra **Mais opções** na seta ao lado de **Enviar** e escolha **Imagem** ou **Arquivo**. No instalador da página **Baixar**, essas opções ficam no botão **+**. No navegador, você também pode colar um arquivo no campo ou arrastá-lo para a conversa. Escreva a legenda no próprio campo de mensagem.
 
-![Menu de anexos aberto pelo botão de mais, com as opções Imagem e Arquivo.](imagens/menu-de-anexos.webp "Menu de anexos")
+![Menu ao lado de Enviar com as opções Imagem, Arquivo e Agendar mensagem.](imagens/menu-de-anexos.webp "Menu de envio")
+
+[Abrir a captura do menu de envio em tamanho original](imagens/menu-de-anexos.webp)
 
 Você pode clicar no nome de um anexo pronto para baixar o original. No aplicativo de desktop, isso abre a janela do sistema para salvar o arquivo. Use **Remover anexo** para tirar um item do rascunho. Se o preparo falhar, use **Tentar novamente** ou remova o arquivo. Se usou o seletor do Flatpak, escolha o arquivo novamente. Quando todos estiverem prontos, envie a mensagem ou [agende o envio](#envio-agendado).
 
@@ -259,7 +261,7 @@ O Oiê aceita até 16 arquivos por mensagem, de até 20 MiB cada. O serviço XMP
 
 ## Prévia e reprodução de vídeos
 
-Para anexar um vídeo, escolha **+ → Arquivo** e selecione o arquivo.
+Para anexar um vídeo, escolha **Arquivo** no [menu de anexos](#anexos-no-rascunho) e selecione o vídeo.
 Use **Reproduzir vídeo** na miniatura para assistir antes de enviar. O nome
 do arquivo e a opção **Remover anexo** continuam disponíveis se a miniatura
 não puder ser criada.
