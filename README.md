@@ -62,6 +62,35 @@ Diagnóstico via Secret. [Release 0.2.3 do chart](https://github.com/araihu/oie/
 
 O fluxo de remoção de conta e o comando `oiectl accounts remove` foram conferidos com a [revisão da rc.22](https://github.com/araihu/oie/tree/ffa480cb81a5b79287191a2220d554c4180be3ac) e o contrato 0.34.0. A captura usa uma conta fictícia.
 
+O trecho **Conferir o endereço e remover salas** no manual e o comando
+`oiectl conversations remove-room-from-chats` foram conferidos na revisão de
+desenvolvimento `b9a50667a861fd1eb26559e4aba3a0fdc9e6aecb` do Oiê, posterior
+à versão oferecida em **Baixar**. As capturas em pt-BR usam salas fictícias.
+
+A remoção de conversas diretas e o comando
+`oiectl conversations remove-direct-from-chats` foram conferidos na revisão de
+desenvolvimento `c9f670574b3ca067ff65305f45eef54d784e4878` do Oiê.
+
+A remoção da sala das listas da conta que confirma sua exclusão foi conferida
+na revisão de desenvolvimento `e81d0d535f2eb5cb2e9f857efd4c14de8131861e` do Oiê. A captura da confirmação
+em pt-BR usa uma sala fictícia.
+
+O indicador de estado no avatar das salas e o rótulo **Sala excluída** foram
+conferidos na revisão de desenvolvimento
+`0149b3894eb4f895f5ba5fadff3ee9bd89dc8552` do Oiê. A captura em pt-BR usa uma
+sala fictícia excluída por outra conta.
+
+As bordas dos avatares por conta de origem foram conferidas na revisão de
+desenvolvimento `5b2287a8b90205d6da174cd8fe4da65e12c8fbce` do Oiê. A captura usa
+duas contas fictícias que entraram na mesma sala.
+
+A abertura do histórico de conversas removidas por links foi conferida na
+revisão de desenvolvimento `0b61995218a13e1b3a467fefb55687addfc0fa34` do Oiê.
+
+As mudanças de salas e conversas deste manual foram integradas à
+[main do Oiê](https://github.com/araihu/oie/tree/18de5883825e05a1bc5ed81dae251d0dafe5780c)
+depois da versão v0.0.1-rc.26.
+
 ### Referência do banco de dados
 
 O catálogo e os diagramas registram a [revisão dd2e610 do Oiê](https://github.com/araihu/oie/tree/dd2e6106e56f34c86a1b74c6dd989ecdbd350bc6), fixada em `scripts/database-docs/oie-revision`. Para atualizar a referência, coloque nesse arquivo o SHA completo do Oiê que será documentado. Com Python 3 com SQLite e o [tbls v1.96.1](https://github.com/k1LoW/tbls/releases/tag/v1.96.1) no PATH, rode a partir da raiz do site.

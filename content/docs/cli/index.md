@@ -75,6 +75,28 @@ bin/oiectl messages get --message-id MESSAGE_UUID --output json
 
 Se perder a resposta e precisar repetir a mesma solicitação, mantenha a chave e o corpo originais para evitar um envio duplicado.
 
+## Remover uma conversa da lista
+
+Disponível em uma revisão posterior à versão atual em **Baixar**. Use o CLI
+e o motor compilados da mesma revisão. Em `conversations list --output json`,
+confira o `id`, o `accountId` e o `revisionId` da sala. Substitua os valores
+abaixo e gere um UUIDv7 novo para a solicitação.
+
+```sh
+printf '%s\n' '{"accountId":"ACCOUNT_UUID","expectedRevisionId":"REVISION_UUID"}' |
+  oiectl conversations remove-room-from-chats --conversation-id CONVERSATION_UUID \
+    --idempotency-key REQUEST_UUID --body-stdin
+```
+
+O comando tira a sala de **Conversas** e **Arquivadas** e interrompe a entrada
+automática pelo Oiê. Mantém o histórico e a sala no servidor. Consulte o
+[manual de salas](../manual/index.md#conferir-o-endereo-e-remover-salas)
+para distinguir remoção local e exclusão para todos.
+
+Para uma conversa direta, use `oiectl conversations remove-direct-from-chats`
+com os mesmos parâmetros. O histórico fica salvo e a conversa volta ao
+abrir o endereço novamente ou receber uma nova mensagem.
+
 ## Remover uma conta
 
 Confira o ID da conta com `oiectl accounts list`. O comando abaixo remove a conta, a senha salva, as conversas e as mensagens pendentes do motor selecionado. As mensagens no servidor XMPP são mantidas. O CLI executa a remoção assim que você chama o comando.
