@@ -25,17 +25,19 @@ Ao atualizar **Baixar**, confira também os comandos e requisitos do [guia de in
 
 ## Documentação do Oiê
 
+As instruções dos repositórios DNF, pacman e Flatpak seguem a publicação da [revisão 5a2339c](https://github.com/araihu/oie/tree/5a2339c87e8dc42078afcfc0be2efbade2c6c423).
+
 A página **Baixar** aponta para os binários e para o código-fonte correspondente da [v0.0.1-rc.30](https://github.com/araihu/oie/tree/v0.0.1-rc.30).
 
-Os guias de autenticação hospedada, conexão do desktop e acesso pelo CLI
-acompanham a rc.28. O guia de Kubernetes usa o
+Os guias de autenticação hospedada e conexão do desktop acompanham a rc.28.
+O guia do CLI documenta a API 0.38.0 da rc.30. O guia de Kubernetes usa o
 [chart 0.2.8](https://github.com/araihu/oie/tree/helm-v0.2.8/charts/oie),
 distribuído como OCI no GHCR.
 
 As seções de contatos, disponibilidade e leitura do manual foram conferidas com a
 [RC 28 no commit 4f46384](https://github.com/araihu/oie/tree/4f46384c9084ff9098481fde658f9d9b55cc4367).
 As capturas mostram a interface em pt-BR com contas fictícias. O link direto
-para `install.sh` usa o arquivo publicado com essa versão. Os comandos do
+para `install.sh` usa o arquivo da rc.30. Os comandos do
 `oiectl` para remover salas e conversas diretas foram conferidos na mesma revisão.
 
 O manual, os atalhos, os exemplos do CLI e os guias de instalação e arquitetura foram revisados com a [main do aplicativo em 9929391](https://github.com/araihu/oie/tree/9929391579532045b61fcad8d8883f7e3a351215) e a [v0.0.1-rc.3](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.3). Ao atualizar, registre o SHA das páginas revisadas e confira as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
