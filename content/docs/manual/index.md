@@ -273,6 +273,13 @@ Abra **Mídia e links** na barra lateral para encontrar o que foi compartilhado.
 
 No menu do cartão, use **Ir para a mensagem** para voltar à conversa de origem. Selecione um documento para abri-lo. Se a prévia falhar, use **Tentar novamente** quando essa opção aparecer. O cabeçalho também permite baixar o arquivo ou abrir o endereço original.
 
+### Arquivos baixados
+
+Na versão em desenvolvimento, com o motor local, abra **Configurações →
+Este dispositivo → Arquivos baixados**. Em **Manter arquivos por**, o Oiê
+salva o prazo ao selecionar uma opção. Para liberar espaço agora, selecione
+**Excluir arquivos baixados** e confirme.
+
 ## Mensagens favoritadas
 
 No menu de uma mensagem, escolha **Favoritar**. Abra **Favoritas** na navegação lateral e use **Pesquisar mensagens favoritas** para buscar pelo texto, pelo remetente ou pela conversa de origem. Os cartões incluem mensagens de conversas arquivadas. Use **Trocar de conta** para restringir a lista a uma conta ou **Todas as contas** para reunir as mensagens de todas elas.
