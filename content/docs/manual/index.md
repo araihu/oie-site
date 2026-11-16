@@ -90,6 +90,29 @@ A prévia pode mostrar nome, descrição, assunto, foto e número de participant
 
 ![Aba Detalhes de Gerenciar sala com a imagem da sala e os campos de nome e tópico.](imagens/gerenciar-sala.webp "Aba Detalhes de Gerenciar sala")
 
+### Conferir o endereço e remover salas
+
+Estas opções chegarão depois da versão atual em **Baixar**.
+
+Ao criar uma sala, use o domínio do serviço de salas XMPP. Por exemplo, se a
+conta for `ana@exemplo.org`, o endereço da sala pode ser
+`trilha@salas.exemplo.org`. Confira com quem administra o servidor qual
+domínio usar. Se o endereço não puder ser confirmado, o Oiê mantém o
+formulário aberto para você corrigir ou tentar de novo.
+
+- **Mais opções → Remover das conversas** tira a sala de **Conversas** e
+  **Arquivadas** e interrompe a entrada automática pelo Oiê. Isso funciona
+  também para uma sala que não conectou. A sala e o histórico salvo continuam
+  disponíveis. Para trazê-la de volta, use **Entrar na sala** e informe o endereço.
+- Se você for proprietário, entre na sala e vá a **Mais opções → Gerenciar
+  sala → Detalhes → Excluir sala para todos**. Confirme para excluir a sala
+  do servidor e remover todos os participantes. O histórico já salvo no Oiê
+  será mantido.
+
+[![Confirmação para remover uma sala das conversas, com as opções Cancelar e Remover das conversas.](imagens/remover-sala.webp)](imagens/remover-sala-original.webp)
+
+[![Confirmação para excluir a sala para todos, com aviso de que a ação não pode ser desfeita.](imagens/excluir-sala.webp)](imagens/excluir-sala-original.webp)
+
 ## Histórico e busca em salas
 
 Em **Detalhes da conversa**, use **Baixar histórico antigo automaticamente** para escolher como o Oiê recupera o histórico daquela sala. Com a opção ligada, ele baixa mensagens antigas aos poucos. Com a opção desligada, pode buscá-las quando você usa **Mensagens anteriores** no topo da conversa ou faz uma busca, conforme o servidor permitir.

@@ -62,6 +62,11 @@ Diagnóstico via Secret. [Release 0.2.3 do chart](https://github.com/araihu/oie/
 
 O fluxo de remoção de conta e o comando `oiectl accounts remove` foram conferidos com a [revisão da rc.22](https://github.com/araihu/oie/tree/ffa480cb81a5b79287191a2220d554c4180be3ac) e o contrato 0.34.0. A captura usa uma conta fictícia.
 
+O trecho **Conferir o endereço e remover salas** no manual e o comando
+`oiectl conversations remove-room-from-chats` foram conferidos na revisão de
+desenvolvimento `b9a50667a861fd1eb26559e4aba3a0fdc9e6aecb` do Oiê, posterior
+à versão oferecida em **Baixar**. As capturas em pt-BR usam salas fictícias.
+
 ### Referência do banco de dados
 
 O catálogo e os diagramas registram a [revisão dd2e610 do Oiê](https://github.com/araihu/oie/tree/dd2e6106e56f34c86a1b74c6dd989ecdbd350bc6), fixada em `scripts/database-docs/oie-revision`. Para atualizar a referência, coloque nesse arquivo o SHA completo do Oiê que será documentado. Com Python 3 com SQLite e o [tbls v1.96.1](https://github.com/k1LoW/tbls/releases/tag/v1.96.1) no PATH, rode a partir da raiz do site.
