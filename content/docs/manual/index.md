@@ -117,8 +117,10 @@ formulário aberto para você corrigir ou tentar de novo.
   disponíveis. Para trazê-la de volta, use **Entrar na sala** e informe o endereço.
 - Se você for proprietário, entre na sala e vá a **Mais opções → Gerenciar
   sala → Detalhes → Excluir sala para todos**. Confirme para excluir a sala
-  do servidor e remover todos os participantes. O histórico já salvo no Oiê
-  será mantido.
+  do servidor e remover todos os participantes. Quando o servidor confirmar,
+  a sala sai de **Conversas** e **Arquivadas** da conta que pediu a exclusão.
+  O histórico salvo será mantido. Outros participantes podem remover a sala
+  das próprias listas.
 
 [![Confirmação para remover uma sala das conversas, com as opções Cancelar e Remover das conversas.](imagens/remover-sala.webp)](imagens/remover-sala-original.webp)
 
