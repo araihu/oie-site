@@ -382,12 +382,16 @@ pelo cartão ou pelo menu de ações em **Mídia**.
 Disponível na versão em desenvolvimento, posterior à rc.30 de **Baixar**.
 
 Se a conversa já estiver aberta quando a conexão cair, selecione **Enviar**
-para guardar a mensagem neste navegador. O relógio ao lado do horário da
-mensagem indica **Aguardando conexão**. O Oiê tenta enviá-la quando a
+para guardar a mensagem neste navegador. O ícone de sinal cortado ao lado do
+horário indica **Aguardando conexão**. O Oiê tenta enviá-la quando a
 conexão voltar e o aplicativo estiver aberto neste navegador. Você pode
 reabri-lo pela lista de conversas.
 
-[![Mensagem com um relógio ao lado do horário, indicando que o envio aguarda conexão.](imagens/envio-sem-conexao.webp)](imagens/envio-sem-conexao-original.webp)
+Enquanto a mensagem estiver aguardando conexão, selecione **Cancelar envio**
+abaixo dela ou no menu **Ações da mensagem**. A mensagem volta ao rascunho,
+onde você pode editar e enviar de novo.
+
+[![Mensagem com um ícone de sinal cortado, um aviso de conexão e a ação Cancelar envio.](imagens/envio-sem-conexao.webp)](imagens/envio-sem-conexao-original.webp)
 
 Se aparecer **Verificar e tentar novamente**, use essa ação na mensagem. Se
 o navegador não conseguir guardar a mensagem, o texto continua disponível

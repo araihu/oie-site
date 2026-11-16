@@ -120,7 +120,7 @@ balão foram conferidos na [revisão 96ca2c6 do Oiê](https://github.com/araihu/
 As capturas em pt-BR usam uma conversa fictícia e áudio de teste.
 
 A seção **Enviar sem conexão** foi conferida na
-[revisão de desenvolvimento 995d061 do Oiê](https://github.com/araihu/oie/tree/995d061486fad3c89f23d3b66145e3201b91d510),
+[revisão de desenvolvimento 79dcbde do Oiê](https://github.com/araihu/oie/tree/79dcbdeeefca7a939c75e9353df77393bd9ac19d),
 posterior à rc.30. A captura mostra uma conversa fictícia em pt-BR.
 
 ### Referência do banco de dados
