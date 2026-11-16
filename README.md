@@ -119,6 +119,10 @@ O gravador de mensagens de voz, a prévia da gravação e a forma de onda no
 balão foram conferidos na [revisão 96ca2c6 do Oiê](https://github.com/araihu/oie/tree/96ca2c68fb4d8290dd06b58418f23ab32e49c835).
 As capturas em pt-BR usam uma conversa fictícia e áudio de teste.
 
+A seção **Enviar sem conexão** foi conferida na
+[revisão de desenvolvimento 995d061 do Oiê](https://github.com/araihu/oie/tree/995d061486fad3c89f23d3b66145e3201b91d510),
+posterior à rc.30. A captura mostra uma conversa fictícia em pt-BR.
+
 ### Referência do banco de dados
 
 O catálogo e os diagramas registram a [revisão dd2e610 do Oiê](https://github.com/araihu/oie/tree/dd2e6106e56f34c86a1b74c6dd989ecdbd350bc6), fixada em `scripts/database-docs/oie-revision`. Para atualizar a referência, coloque nesse arquivo o SHA completo do Oiê que será documentado. Com Python 3 com SQLite e o [tbls v1.96.1](https://github.com/k1LoW/tbls/releases/tag/v1.96.1) no PATH, rode a partir da raiz do site.

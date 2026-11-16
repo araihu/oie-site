@@ -377,6 +377,23 @@ pelo cartão ou pelo menu de ações em **Mídia**.
 
 ![Cartão de vídeo recebido em uma sala, com uma imagem estática e o botão de reprodução ao centro.](imagens/video-recebido.webp "Vídeo recebido em uma sala")
 
+## Enviar sem conexão
+
+Disponível na versão em desenvolvimento, posterior à rc.30 de **Baixar**.
+
+Se a conversa já estiver aberta quando a conexão cair, selecione **Enviar**
+para guardar a mensagem neste navegador. O relógio ao lado do horário da
+mensagem indica **Aguardando conexão**. O Oiê tenta enviá-la quando a
+conexão voltar e o aplicativo estiver aberto neste navegador. Você pode
+reabri-lo pela lista de conversas.
+
+[![Mensagem com um relógio ao lado do horário, indicando que o envio aguarda conexão.](imagens/envio-sem-conexao.webp)](imagens/envio-sem-conexao-original.webp)
+
+Se aparecer **Verificar e tentar novamente**, use essa ação na mensagem. Se
+o navegador não conseguir guardar a mensagem, o texto continua disponível
+no campo de edição. Uma mensagem deixada no rascunho só é enviada quando
+você seleciona **Enviar**.
+
 ## Envio agendado
 
 Abra o menu junto ao botão de envio, escolha **Agendar mensagem** e confira a data, o horário e a mensagem. Em **Agendadas**, você pode editar, reagendar, cancelar ou pedir o envio imediato enquanto a mensagem ainda estiver aguardando o primeiro envio.
