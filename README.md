@@ -27,17 +27,21 @@ Ao atualizar **Baixar**, confira também os comandos e requisitos do [guia de in
 
 As instruções dos repositórios DNF, pacman e Flatpak seguem a publicação da [revisão 5a2339c](https://github.com/araihu/oie/tree/5a2339c87e8dc42078afcfc0be2efbade2c6c423).
 
-A página **Baixar** aponta para os binários e para o código-fonte correspondente da [v0.0.1-rc.30](https://github.com/araihu/oie/tree/v0.0.1-rc.30).
+A página **Baixar** aponta para os binários e para o código-fonte correspondente
+da [v0.0.1-rc.31](https://github.com/araihu/oie/tree/4d0fea057a30a76efcf28146004017c8d4ff20e0).
+O guia de instalação e os trechos do manual sobre reconexão, áudio, arquivos
+baixados e abertura na primeira mensagem não lida foram atualizados para
+essa revisão. A captura de arquivos baixados veio do PR #55.
 
 Os guias de autenticação hospedada e conexão do desktop acompanham a rc.28.
-O guia do CLI documenta a API 0.38.0 da rc.30. O guia de Kubernetes usa o
-[chart 0.2.8](https://github.com/araihu/oie/tree/helm-v0.2.8/charts/oie),
+O guia do CLI documenta a API 0.38.0 da rc.31. O guia de Kubernetes usa o
+[chart 0.2.9](https://github.com/araihu/oie/tree/helm-v0.2.9/charts/oie),
 distribuído como OCI no GHCR.
 
 As seções de contatos, disponibilidade e leitura do manual foram conferidas com a
 [RC 28 no commit 4f46384](https://github.com/araihu/oie/tree/4f46384c9084ff9098481fde658f9d9b55cc4367).
 As capturas mostram a interface em pt-BR com contas fictícias. O link direto
-para `install.sh` usa o arquivo da rc.30. Os comandos do
+para `install.sh` usa o arquivo da rc.31. Os comandos do
 `oiectl` para remover salas e conversas diretas foram conferidos na mesma revisão.
 
 O manual, os atalhos, os exemplos do CLI e os guias de instalação e arquitetura foram revisados com a [main do aplicativo em 9929391](https://github.com/araihu/oie/tree/9929391579532045b61fcad8d8883f7e3a351215) e a [v0.0.1-rc.3](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.3). Ao atualizar, registre o SHA das páginas revisadas e confira as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
@@ -60,7 +64,7 @@ As seções de **Diagnóstico** no manual e no guia de instalação acompanham a
 retenção e a confirmação de saída na aba **Motor** e o atalho para recuperar
 uma conexão hospedada no desktop foram conferidos no
 [PR #40 do Oiê](https://github.com/araihu/oie/pull/40), posterior ao instalador
-da rc.30 oferecido em **Baixar**.
+da rc.31 oferecido em **Baixar**.
 
 A instalação do `oiectl` por release independente foi conferida com a [release cli/v0.30.1](https://github.com/araihu/oie/releases/tag/cli/v0.30.1), gerada a partir do [contrato no commit f21196a](https://github.com/araihu/oie/tree/f21196a6d8fe2d1b75180470ccd26089db5d6bb9/api).
 
@@ -71,11 +75,6 @@ As capturas da página inicial, do manual e dos atalhos mostram a interface em p
 Os fluxos de **Mídia e links**, **Encaminhar mensagens** e **Descobrir e gerenciar salas**, a busca de favoritas no CLI e o índice de busca padrão foram conferidos na [revisão 4809005 do aplicativo](https://github.com/araihu/oie/tree/48090057513b2eab83d526d44df1d7764ac16a0b), usada na rc.14. As capturas de encaminhamento e gerenciamento de salas vieram dos PRs #31 e #22.
 
 A seção Docker da página de arquitetura descreve a [CI da imagem em f9c6a01](https://github.com/araihu/oie/commit/f9c6a01625232e7132a358b27372759144588258).
-
-A seção **Rodar no Kubernetes com Helm** descreve o chart 0.2.3, que
-usa a imagem `v0.0.1-rc.24` por padrão e permite configurar uma chave de
-Diagnóstico via Secret. [Release 0.2.3 do chart](https://github.com/araihu/oie/releases/tag/helm-v0.2.3)
-· [Revisão do Oiê](https://github.com/araihu/oie/tree/5b78c3f6f00c1674c115a8626852aecf4e3e4f52)
 
 O fluxo de remoção de conta e o comando `oiectl accounts remove` foram conferidos com a [revisão da rc.22](https://github.com/araihu/oie/tree/ffa480cb81a5b79287191a2220d554c4180be3ac) e o contrato 0.34.0. A captura usa uma conta fictícia.
 
@@ -112,7 +111,7 @@ A retração de mensagens, a edição de respostas com citação, o encaminhamen
 para conversas diretas e a opção `--include-retracted` do CLI foram conferidos na
 [revisão 71c41cd do Oiê](https://github.com/araihu/oie/tree/71c41cd34221ac98d8e6fc71529f8680db2d19f7).
 As capturas usam duas contas fictícias conectadas a um servidor de teste.
-Esses recursos estão disponíveis na rc.30.
+Esses recursos estão disponíveis desde a rc.30.
 
 O menu de anexos ao lado de **Enviar** foi conferido na
 [revisão f9b3c71 do Oiê](https://github.com/araihu/oie/tree/f9b3c71722f6a3b008fbad71d40ae3ce5ebe55be).

@@ -1,6 +1,6 @@
 ---
 title: Instalação
-description: Instale o Oiê para desktop ou rode no navegador com Docker e Kubernetes. Configure o chart Helm com Ingress ou Gateway API.
+description: Instale o Oiê no desktop ou na tela de início do iPhone. Rode o Oiê com Docker ou Kubernetes e configure o chart Helm com Ingress ou Gateway API.
 language: pt-BR
 ---
 
@@ -90,7 +90,7 @@ flatpak install --user araihu-oie com.araihu.oie
 Se você instalou `com.araihu.oie` a partir de um bundle, feche o aplicativo e
 use `flatpak install --user --reinstall araihu-oie com.araihu.oie` para mudar a
 origem e manter o perfil. Depois, atualize com `flatpak update --user com.araihu.oie`.
-O [bundle da rc.30](https://github.com/araihu/oie/releases/download/v0.0.1-rc.30/oie-v0.0.1-rc.30-x86_64.flatpak) também está disponível para download direto.
+O [bundle da rc.31](https://github.com/araihu/oie/releases/download/v0.0.1-rc.31/oie-v0.0.1-rc.31-x86_64.flatpak) também está disponível para download direto.
 
 Se você já usava o Flatpak da `rc.8` ou anterior, [migre seu perfil](#migrar-para-comaraihuoie) antes de abrir o novo Oiê. Depois, abra o aplicativo pelo menu ou execute `flatpak run com.araihu.oie`.
 
@@ -136,7 +136,7 @@ Para atualizar, encerre o Oiê e execute `brew upgrade --cask araihu/oie/oie` no
 
 ## Instalar o pacote publicado
 
-Baixe o [instalador da RC 30 (install.sh)](https://github.com/araihu/oie/releases/download/v0.0.1-rc.30/install.sh). Ele escolhe o pacote para macOS com Apple Silicon ou Ubuntu 24.04 x86-64 e confere a soma SHA-256 antes de extrair os arquivos.
+Baixe o [instalador da RC 31 (install.sh)](https://github.com/araihu/oie/releases/download/v0.0.1-rc.31/install.sh). Ele escolhe o pacote para macOS com Apple Silicon ou Ubuntu 24.04 x86-64 e confere a soma SHA-256 antes de extrair os arquivos.
 
 No **Ubuntu 24.04**, instale primeiro as bibliotecas usadas pelo aplicativo.
 
@@ -158,7 +158,7 @@ sh ./install.sh
 | macOS | `~/Applications/Oie.app` | Abra o Oiê no Finder. |
 | Ubuntu | `~/.local/bin/oie-desktop` | Abra o Oiê pelo menu de aplicativos em uma sessão gráfica. |
 
-Este instalador usa a `v0.0.1-rc.30` por padrão. Para escolher outra versão publicada ou mudar o destino, consulte as opções `--version` e `--prefix` com `sh ./install.sh --help`.
+Este instalador usa a `v0.0.1-rc.31` por padrão. Para escolher outra versão publicada ou mudar o destino, consulte as opções `--version` e `--prefix` com `sh ./install.sh --help`.
 
 ### Primeira abertura no macOS
 
@@ -166,7 +166,7 @@ O pacote tem assinatura ad hoc. Se o macOS bloquear a abertura, tente abrir o Oi
 
 ## Compilar a partir do código-fonte
 
-Use Go 1.27.4 ou mais recente e compile no sistema e na arquitetura em que pretende usar o aplicativo. Nos exemplos, substitua `v0.0.1-rc.30` pela versão que você escolheu na página [Baixar](../../baixar/index.md). O comando instala o executável em `~/.local/bin`.
+Use Go 1.27.4 ou mais recente. No sistema e na arquitetura em que pretende usar o Oiê, substitua a tag abaixo pela versão escolhida na página [Baixar](../../baixar/index.md). O executável vai para `~/.local/bin`.
 
 ### Ubuntu 24.04 x86-64
 
@@ -180,10 +180,11 @@ pkg-config --modversion gtk4 webkitgtk-6.0 libsoup-3.0 gio-unix-2.0
 ```
 
 ```sh
+git clone --branch v0.0.1-rc.31 https://github.com/araihu/oie.git
+cd oie
 mkdir -p "$HOME/.local/bin"
 GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
-  GONOPROXY=github.com/araihu/oie \
-  go install -tags production github.com/araihu/oie/cmd/oie-desktop@v0.0.1-rc.30
+  go install -tags production ./cmd/oie-desktop
 ```
 
 ### macOS com Apple Silicon
@@ -191,25 +192,24 @@ GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
 Instale as ferramentas de linha de comando do Xcode com `xcode-select --install` se elas ainda estiverem ausentes.
 
 ```sh
+git clone --branch v0.0.1-rc.31 https://github.com/araihu/oie.git
+cd oie
 mkdir -p "$HOME/.local/bin"
 GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
-  GONOPROXY=github.com/araihu/oie \
   MACOSX_DEPLOYMENT_TARGET=13.0 \
   CGO_CFLAGS="-O2 -g -mmacosx-version-min=13.0" \
   CGO_LDFLAGS="-O2 -g -mmacosx-version-min=13.0" \
   go install -tags production -ldflags='-extldflags=-mmacosx-version-min=13.0' \
-  github.com/araihu/oie/cmd/oie-desktop@v0.0.1-rc.30
+  ./cmd/oie-desktop
 ```
 
-Os parâmetros de compilação e linkedição mantêm o mesmo alvo. Consulte o [escopo verificado no guia do repositório](https://github.com/araihu/oie/blob/c5c3f37aeb815dd9ee4a1e94512ebf7fd2467071/docs/installation.md#platforms-and-verified-scope) para as versões de sistema testadas.
+Os parâmetros de compilação e linkedição mantêm o mesmo alvo. Consulte o [escopo verificado no guia do repositório](https://github.com/araihu/oie/blob/v0.0.1-rc.31/docs/installation.md#platforms-and-verified-scope) para as versões de sistema testadas.
 
 ### Abrir pelo Terminal
 
 ```sh
 "$HOME/.local/bin/oie-desktop"
 ```
-
-Se estiver trabalhando em um checkout, execute o comando de compilação da sua plataforma na raiz do repositório, substituindo o último argumento por `./cmd/oie-desktop`.
 
 ### Miniaturas de vídeo
 
@@ -219,7 +219,7 @@ suporte a vídeo do próprio dispositivo. A geração dispensa o FFmpeg. Veja
 
 ## Atualizar, remover e guardar seus dados
 
-Se usou o instalador, encerre o Oiê e execute o instalador da versão desejada com o mesmo destino. Se compilou a partir do código-fonte, rode o comando de compilação com a nova versão. Os dados ficam em um perfil separado da instalação.
+Se usou o instalador, encerre o Oiê e execute o instalador da versão desejada com o mesmo destino. Se compilou a partir do código-fonte, obtenha a nova versão e repita o comando de compilação na pasta dessa versão. Os dados ficam em um perfil separado da instalação.
 
 | Sistema | Diretório do perfil |
 | --- | --- |
@@ -263,15 +263,19 @@ docker run -d --name oie \
 
 Abra [127.0.0.1:8080](http://127.0.0.1:8080) no navegador e [conecte sua conta XMPP](../manual/index.md#contas-xmpp). Para escolher a tag da imagem, atualizar o contêiner ou acessar o Oiê de outro computador, veja [Docker em Arquitetura e deploy](../arquitetura/index.md#docker).
 
+## Usar no iPhone
+
+Abra no Safari o endereço HTTPS da sua [instalação hospedada](../arquitetura/index.md#motor-hospedado). No menu da página, selecione **Compartilhar → Adicionar à Tela de Início**. Ative **Abrir como App da Web**, toque em **Adicionar** e abra o Oiê pelo novo ícone.
+
 ## Rodar no Kubernetes com Helm
 
 Use um cluster com armazenamento persistente, o Helm e o `kubectl`.
-O [chart Helm 0.2.8](https://github.com/araihu/oie/releases/tag/helm-v0.2.8)
-está no GHCR e usa por padrão a imagem do Oiê `v0.0.1-rc.30`.
+O [chart Helm 0.2.9](https://github.com/araihu/oie/releases/tag/helm-v0.2.9)
+está no GHCR e usa por padrão a imagem do Oiê `v0.0.1-rc.31`.
 
 ```sh
 helm upgrade --install oie \
-  oci://ghcr.io/araihu/charts/oie --version 0.2.8 \
+  oci://ghcr.io/araihu/charts/oie --version 0.2.9 \
   --namespace oie --create-namespace --wait --timeout 10m
 kubectl --namespace oie port-forward service/oie 8080:80
 ```
@@ -286,7 +290,7 @@ Para acesso público, habilite o [OIDC no Helm](#oidc-no-helm) e configure
 Ingress ou um Gateway HTTPS. Para conectar um Gateway existente, use
 `httpRoute.enabled`, `httpRoute.parentRefs` e `httpRoute.hostnames`. Se o
 Gateway estiver em outro namespace, permita rotas do namespace do Oiê no
-listener. Veja exemplos no [guia do chart](https://github.com/araihu/oie/tree/helm-v0.2.8/charts/oie#remote-access).
+listener. Veja exemplos no [guia do chart](https://github.com/araihu/oie/tree/helm-v0.2.9/charts/oie#remote-access).
 
 Se o timeout de requisição do Gateway interromper as atualizações ao vivo
 das conversas, acrescente este trecho ao arquivo de valores do chart. Use
@@ -341,7 +345,7 @@ use `oie auth recover`. O kubelet consulta as sondas na porta interna
 
 ### Acesso ao diagnóstico no servidor
 
-Com OIDC habilitado na rc.30, entre com a conta dona e abra
+Com OIDC habilitado na rc.31, entre com a conta dona e abra
 **Configurações → Diagnóstico**. Na versão em desenvolvimento, o caminho é
 **Configurações → Geral → Diagnóstico**. Se você usa um proxy de
 autenticação externo, configure

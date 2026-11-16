@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.30](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.31](../../baixar/index.md).
 
 ## Motor local ou remoto
 
@@ -44,16 +44,22 @@ autenticação, o desktop mostra **Entrar pelo navegador** e **Inserir chave de
 acesso**. Use a primeira opção para entrar no servidor e criar a chave e a
 segunda para colá-la no desktop.
 
+### Quando a conexão cai
+
+Se o motor ficar indisponível, o Oiê tenta reabrir a conversa assim que a conexão voltar, mesmo se você abriu a janela durante a queda. Se você já estava escrevendo, o rascunho permanece no campo de mensagem. No desktop, em **Motor local**, o Oiê também tenta reiniciar o motor com o mesmo perfil se ele parar inesperadamente.
+
+Se a conexão com o servidor XMPP cair, o Oiê tenta reconectar a conta e retomar a sessão quando o servidor permite. Os envios que já estavam na fila do motor são retomados quando a conexão volta. Se algum envio ficar sem confirmação, confira o status na conversa. Se a conta parar por causa da senha ou de outra configuração, corrija o problema em **Perfil** e selecione **Conectar**.
+
 ### Sair do Oiê hospedado
 
 Na versão em desenvolvimento, abra **Configurações → Motor**, selecione **Sair**
 e confirme. Isso encerra a sessão em todas as abas deste navegador. O motor
-continua rodando no servidor. Na rc.30 oferecida em **Baixar**, **Sair** fica
+continua rodando no servidor. Na rc.31 oferecida em **Baixar**, **Sair** fica
 no rodapé das configurações.
 
 ## Diagnóstico e registro de erros
 
-Na rc.30 oferecida em **Baixar**, abra **Configurações → Diagnóstico**.
+Na rc.31 oferecida em **Baixar**, abra **Configurações → Diagnóstico**.
 Na versão em desenvolvimento, o caminho é **Configurações → Geral → Diagnóstico**.
 
 ![Aba Geral com Chaves de acesso, Diagnóstico, Sobre e Ações destrutivas.](imagens/configuracoes-geral.webp "Aba Geral na versão em desenvolvimento") [Ver captura completa](imagens/configuracoes-geral-original.webp)
@@ -217,7 +223,7 @@ Buscar por `arqiuvo` nas mensagens guardadas pode realçar **arquivo** no balão
 
 ## Retenção de mensagens
 
-Na versão em desenvolvimento, abra **Configurações → Motor → Retenção de mensagens**. O Oiê salva os prazos padrão de **Salas** e **Conversas diretas** ao sair do campo alterado. Na rc.30 oferecida em **Baixar**, abra **Configurações → Este dispositivo → Retenção de mensagens** e selecione **Salvar** depois de editar.
+Na versão em desenvolvimento, abra **Configurações → Motor → Retenção de mensagens**. O Oiê salva os prazos padrão de **Salas** e **Conversas diretas** ao sair do campo alterado. Na rc.31 oferecida em **Baixar**, abra **Configurações → Este dispositivo → Retenção de mensagens** e selecione **Salvar** depois de editar.
 
 Os prazos padrão valem para o motor do Oiê em uso, inclusive quando ele é compartilhado entre dispositivos. Para mudar o prazo de uma conversa, abra **Mais opções → Detalhes da conversa → Retenção de mensagens**. Use **Usar o padrão** para voltar ao prazo global.
 
@@ -228,6 +234,8 @@ O prazo também limita a recuperação do histórico no XMPP. Uma instalação n
 ![Aba Motor com 180 dias para salas e Sem limite para conversas diretas.](imagens/retencao-de-mensagens.webp "Retenção de mensagens na aba Motor") [Ver captura completa](imagens/retencao-de-mensagens-original.webp)
 
 ## Mensagens não lidas
+
+Ao selecionar uma conversa na lista, o Oiê abre na primeira mensagem não lida que estiver no histórico. Se todas estiverem lidas, mostra as mensagens mais recentes. Resultados de busca e respostas citadas continuam abrindo a mensagem selecionada.
 
 Depois de percorrer o histórico, role até o fim ou use **Ir para as mais recentes** acima do campo de mensagem, quando esse botão aparecer. Se chegarem mensagens enquanto você estiver no histórico, o botão mostra **Novas mensagens · ir para as últimas**. Ao permanecer no fim com a janela ou aba em foco e sem buscas ou diálogos abertos, o Oiê marca como lidas também as mensagens anteriores que ficaram fora da tela. O contador de não lidas e o indicador de menções são atualizados na lista de conversas.
 
@@ -273,12 +281,17 @@ Abra **Mídia e links** na barra lateral para encontrar o que foi compartilhado.
 
 No menu do cartão, use **Ir para a mensagem** para voltar à conversa de origem. Selecione um documento para abri-lo. Se a prévia falhar, use **Tentar novamente** quando essa opção aparecer. O cabeçalho também permite baixar o arquivo ou abrir o endereço original.
 
+### Reprodução de áudio
+
+Para ouvir um anexo de áudio compatível, use o player na mensagem. Para salvar o arquivo, use **Baixar** no menu da mensagem.
+
 ### Arquivos baixados
 
-Na versão em desenvolvimento, com o motor local, abra **Configurações →
-Este dispositivo → Arquivos baixados**. Em **Manter arquivos por**, o Oiê
-salva o prazo ao selecionar uma opção. Para liberar espaço agora, selecione
-**Excluir arquivos baixados** e confirme.
+Em **Configurações → Este dispositivo → Arquivos baixados**, escolha um prazo em **Manter arquivos por**. O padrão é **Até eu excluir**. Na rc.31, selecione **Salvar**. Na versão em desenvolvimento, com o motor local, a escolha é salva ao selecionar uma opção. Para liberar espaço agora, selecione **Excluir arquivos baixados** e confirme.
+
+![Preferências de arquivos baixados com a opção Até eu excluir e os botões Salvar e Excluir arquivos baixados.](imagens/arquivos-baixados.webp "Retenção de arquivos baixados na rc.31")
+
+Quando um anexo compatível inclui dados de verificação, o Oiê confere a integridade do download completo. Se o conteúdo divergir do original anunciado, o Oiê recusa o download.
 
 ## Mensagens favoritadas
 
