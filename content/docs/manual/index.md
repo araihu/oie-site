@@ -223,15 +223,15 @@ Itens da mesma mensagem compartilham a estrela.
 
 ## Editar e retrair mensagens enviadas
 
-Na última mensagem própria enviada, abra **Ações da mensagem → Editar mensagem**. Com o campo de mensagem vazio, você também pode pressionar **↑**. Quando a edição está disponível, o Oiê carrega o texto no campo de mensagem. Depois de salvar, o ícone ao lado do horário abre o **Histórico de edições**.
+Na última mensagem própria enviada, abra **Ações da mensagem → Editar mensagem**. Com o campo de mensagem vazio, você também pode pressionar **↑**. Quando a edição está disponível, o Oiê carrega o texto no campo de mensagem. Depois de salvar, o ícone de documento com lupa ao lado do horário abre o **Histórico da mensagem**.
 
 Em versões posteriores à rc.24, **Editar mensagem** também pode aparecer em respostas com citação enviadas na sessão atual. O Oiê conserva a citação quando você salva o novo texto.
 
 Nas versões com retração, abra **Ações da mensagem → Retrair mensagem** em uma mensagem própria e confirme. A ação aparece nas conversas diretas conectadas e nas salas que permitem verificar a autoria e aceitam a solicitação. Outros participantes ainda podem ter uma cópia.
 
-No histórico, **Mensagem retraída** ocupa o lugar do conteúdo. Se o Oiê ainda guardou a mensagem, use **Revelar original** para lê-la. A busca geral, a busca na conversa e **Mídia e links** ocultam esse conteúdo por padrão. Selecione **Incluir retraídas** para encontrá-lo. Para buscar versões anteriores de mensagens retraídas, ative também **Incluir histórico de edições**.
+No histórico, **Mensagem retraída** ocupa o lugar do conteúdo. Se o Oiê ainda guardou a mensagem, use o ícone **Revelar original** ao lado do horário. O **Histórico da mensagem** mostra a retração como estado atual, seguida das versões guardadas. A busca geral, a busca na conversa e **Mídia e links** ocultam esse conteúdo por padrão. Selecione **Incluir retraídas** para encontrá-lo. Para buscar versões anteriores de mensagens retraídas, ative também **Incluir histórico de edições**.
 
-![Mensagem retraída com a opção Revelar original aberta e o texto guardado abaixo.](imagens/revelar-original.webp "Revelar uma mensagem retraída")
+![Histórico da mensagem com a retração no topo e as versões guardadas abaixo.](imagens/revelar-original.webp "Revelar uma mensagem retraída")
 
 [Abrir a captura da retração em tamanho original](imagens/revelar-original.webp)
 

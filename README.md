@@ -93,7 +93,7 @@ depois da versão v0.0.1-rc.26.
 
 A retração de mensagens, a edição de respostas com citação, o encaminhamento
 para conversas diretas e a opção `--include-retracted` do CLI foram conferidos na
-[revisão 128b153 do Oiê](https://github.com/araihu/oie/tree/128b1533a549a2975694ad0e758e78826459fe66).
+[revisão 71c41cd do Oiê](https://github.com/araihu/oie/tree/71c41cd34221ac98d8e6fc71529f8680db2d19f7).
 As capturas usam duas contas fictícias conectadas a um servidor de teste.
 Esses recursos são posteriores ao instalador oferecido em **Baixar**.
 
