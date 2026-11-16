@@ -25,6 +25,8 @@ Ao atualizar **Baixar**, confira também os comandos e requisitos do [guia de in
 
 ## Documentação do Oiê
 
+As instruções dos repositórios DNF, pacman e Flatpak seguem a publicação da [revisão 5a2339c](https://github.com/araihu/oie/tree/5a2339c87e8dc42078afcfc0be2efbade2c6c423).
+
 A página **Baixar** aponta para os binários e para o código-fonte correspondente da [v0.0.1-rc.28](https://github.com/araihu/oie/tree/4f46384c9084ff9098481fde658f9d9b55cc4367).
 
 Os guias de autenticação hospedada, conexão do desktop e acesso pelo CLI
