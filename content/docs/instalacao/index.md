@@ -6,7 +6,7 @@ language: pt-BR
 
 # Instalação do Oiê
 
-Os pacotes do Oiê estão disponíveis para **macOS com Apple Silicon** e **Ubuntu 24.04 x86-64**. O repositório APT atende também ao **Trisquel 12 x86-64**, e o bundle Flatpak roda no **Linux x86-64**. Para começar a conversar, tenha uma conta XMPP e siga o [passo a passo do manual](../manual/index.md#contas-xmpp) depois de abrir o aplicativo.
+Os pacotes do Oiê estão disponíveis para **macOS com Apple Silicon** e para **Linux x86-64**. No Linux, use APT no Trisquel 12 ou Ubuntu 24.04, DNF no Fedora, pacman no Arch Linux ou Flatpak. Para começar a conversar, tenha uma conta XMPP e siga o [passo a passo do manual](../manual/index.md#contas-xmpp) depois de abrir o aplicativo.
 
 
 ## Instalar com APT
@@ -37,14 +37,59 @@ Ubuntu 24.04 LTS, em ambientes x86-64 emulados, com o repositório já cadastrad
 
 Para remover o aplicativo e manter seu perfil, execute `sudo apt remove oie`.
 
+## Instalar com DNF
+
+No Fedora x86-64, adicione o repositório da Arai Hû e instale o Oiê.
+
+```sh
+curl -fLO https://araihu.github.io/oie/rpm/oie.repo
+sudo install -m 0644 oie.repo /etc/yum.repos.d/araihu-oie.repo
+sudo dnf install oie
+```
+
+Ao importar a chave, confira se o DNF mostra a impressão digital
+`CA0A 410F B344 E22A B7FB 8011 21CB CCC4 11B0 03A9`.
+Para atualizar, feche o Oiê e rode `sudo dnf upgrade --refresh oie`.
+
+## Instalar com pacman
+
+No Arch Linux x86-64, baixe a chave do repositório e confira se o GPG mostra a
+impressão digital `CA0A 410F B344 E22A B7FB 8011 21CB CCC4 11B0 03A9`.
+Depois, adicione a chave ao pacman e assine-a localmente.
+
+```sh
+curl -fLO https://araihu.github.io/oie/oie-archive-keyring.asc
+gpg --show-keys --fingerprint oie-archive-keyring.asc
+sudo pacman-key --add oie-archive-keyring.asc
+sudo pacman-key --lsign-key CA0A410FB344E22AB7FB801121CBCCC411B003A9
+```
+
+Adicione esta seção ao final de `/etc/pacman.conf`.
+
+```ini
+[araihu-oie]
+SigLevel = Required
+Server = https://araihu.github.io/oie/pacman/$arch
+```
+
+Instale com `sudo pacman -Syu araihu-oie/oie`. Nas próximas atualizações,
+feche o Oiê e rode `sudo pacman -Syu`.
+
 ## Instalar com Flatpak
 
-No Linux x86-64, baixe o [bundle Flatpak da v0.0.1-rc.28](https://github.com/araihu/oie/releases/download/v0.0.1-rc.28/oie-v0.0.1-rc.28-x86_64.flatpak). Adicione o Flathub se ainda não estiver cadastrado, para que o Flatpak possa baixar o runtime GNOME 51. Execute os comandos na pasta onde salvou o arquivo.
+No Linux x86-64, adicione o repositório da Arai Hû para instalar e atualizar
+o Oiê. O Flatpak usa o Flathub para obter o runtime GNOME do aplicativo.
 
 ```sh
 flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak install --user ./oie-v0.0.1-rc.28-x86_64.flatpak
+flatpak remote-add --user --if-not-exists araihu-oie https://araihu.github.io/oie/flatpak/oie.flatpakrepo
+flatpak install --user araihu-oie com.araihu.oie
 ```
+
+Se você instalou `com.araihu.oie` a partir de um bundle, feche o aplicativo e
+use `flatpak install --user --reinstall araihu-oie com.araihu.oie` para mudar a
+origem e manter o perfil. Depois, atualize com `flatpak update --user com.araihu.oie`.
+O [bundle da rc.28](https://github.com/araihu/oie/releases/download/v0.0.1-rc.28/oie-v0.0.1-rc.28-x86_64.flatpak) também está disponível para download direto.
 
 Se você já usava o Flatpak da `rc.8` ou anterior, [migre seu perfil](#migrar-para-comaraihuoie) antes de abrir o novo Oiê. Depois, abra o aplicativo pelo menu ou execute `flatpak run com.araihu.oie`.
 

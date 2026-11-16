@@ -20,10 +20,12 @@ Tenha em mãos uma conta XMPP para começar a conversar.
 ## Instalar com um gerenciador de pacotes
 
 - [APT](../docs/instalacao/index.md#instalar-com-apt) para Trisquel 12 e Ubuntu 24.04 x86-64.
-- [Flatpak](../docs/instalacao/index.md#instalar-com-flatpak) para Linux x86-64, com [download do bundle](https://github.com/araihu/oie/releases/download/v0.0.1-rc.28/oie-v0.0.1-rc.28-x86_64.flatpak).
+- [DNF](../docs/instalacao/index.md#instalar-com-dnf) para Fedora x86-64.
+- [pacman](../docs/instalacao/index.md#instalar-com-pacman) para Arch Linux x86-64.
+- [Flatpak](../docs/instalacao/index.md#instalar-com-flatpak) para Linux x86-64.
 - [Homebrew](../docs/instalacao/index.md#instalar-com-homebrew) para macOS com Apple Silicon e Ubuntu 24.04 x86-64.
 
-O APT e o Homebrew seguem seus próprios canais de atualização.
+Depois de cadastrar o repositório uma vez, use o mesmo gerenciador para atualizar o Oiê.
 
 Para rodar a versão web no Kubernetes, veja [Rodar no Kubernetes com Helm](../docs/instalacao/index.md#rodar-no-kubernetes-com-helm).
 
