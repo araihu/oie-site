@@ -18,12 +18,12 @@ No desktop, entre em **Configurações → Geral** e abra **Motor**. **Local** �
 
 As contas e o histórico de cada motor ficam onde foram gravados. Para voltar às suas conversas deste dispositivo, inclusive se o motor remoto sair do ar, selecione **Local** e salve. O motor remoto continua funcionando no servidor.
 
-Na rc.24, use um [túnel SSH ou uma rede privada](../arquitetura/index.md#motor-hospedado) para restringir o acesso à sua instância.
+Para um motor local de teste em outro computador, restrinja o acesso com um
+[túnel SSH ou uma rede privada](../arquitetura/index.md#motor-hospedado).
 
 ### Conectar a um servidor OIDC
 
-Use versões de desenvolvimento do servidor e do desktop que incluam a
-conexão por chave na interface.
+Use a rc.27 ou posterior no servidor e no desktop.
 
 1. Abra o site do Oiê hospedado e selecione **Entrar**.
 2. Vá a **Configurações → Geral → Chaves de acesso**. Dê um nome que
@@ -35,6 +35,7 @@ conexão por chave na interface.
 
 O desktop verifica a conexão antes de salvar o endereço e a chave no perfil.
 Se mudar o endereço depois de colar uma chave, cole a chave do endereço final.
+Se sair da tela antes de salvar, cole a chave novamente ao voltar.
 Para trocar uma chave vencida, crie outra no site do Oiê hospedado e cole-a na
 mesma tela do desktop.
 

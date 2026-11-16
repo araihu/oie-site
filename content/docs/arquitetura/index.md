@@ -6,7 +6,7 @@ language: pt-BR
 
 # Arquitetura e deploy do Oiê
 
-Você pode executar o Oiê no próprio computador ou manter um motor em um servidor privado e acessá-lo de vários dispositivos.
+Você pode executar o Oiê no próprio computador ou manter um motor em um servidor e acessá-lo de vários dispositivos.
 
 ## Componentes do Oiê
 
@@ -32,7 +32,7 @@ Veja os diagramas e o catálogo de tabelas e views em [Banco de dados](../banco-
 
 **Desktop.** [Instale o aplicativo](../../baixar/index.md) no macOS ou Linux. O motor e a interface rodam juntos no computador, e o aplicativo usa o diretório de dados do seu usuário. Fechar a janela mantém o motor ativo. Sair do aplicativo encerra o motor.
 
-**Navegador ou CLI.** Com Go 1.27.4 ou mais recente e Make, compile a partir do [código-fonte da v0.0.1-rc.24](https://github.com/araihu/oie/tree/c5c3f37aeb815dd9ee4a1e94512ebf7fd2467071) e inicie a interface e a API na mesma porta.
+**Navegador ou CLI.** Com Go 1.27.4 ou mais recente e Make, compile a partir do [código-fonte da v0.0.1-rc.27](https://github.com/araihu/oie/tree/v0.0.1-rc.27) e inicie a interface e a API na mesma porta.
 
 ```sh
 make build
@@ -47,24 +47,32 @@ A [imagem do Oiê](https://github.com/araihu/oie/pkgs/container/oie) roda o moto
 
 - `:latest` acompanha a versão mais recente marcada com uma tag, incluindo pré-lançamentos.
 - `:main` acompanha a versão de desenvolvimento.
-- Uma tag como `:v0.0.1-rc.24` seleciona uma versão específica.
+- Uma tag como `:v0.0.1-rc.27` seleciona uma versão específica.
 
 O volume `oie-data` guarda as contas, o histórico e os arquivos de mídia. Para atualizar com `:latest`, baixe a imagem com `docker pull ghcr.io/araihu/oie:latest`, pare e remova o contêiner antigo e execute novamente o comando do guia com o mesmo volume.
 
-Mantenha a porta em localhost. Para acessar o Oiê de outro computador, use o túnel SSH descrito em [Motor hospedado](#motor-hospedado). A imagem vem sem FFmpeg, por isso a geração de miniaturas de vídeo está indisponível no contêiner.
+Mantenha a porta em localhost para uso local. Para acesso remoto, configure
+[OIDC e HTTPS](#acesso-pblico-com-oidc) ou use um túnel SSH. A imagem vem sem
+FFmpeg, por isso a geração de miniaturas de vídeo está indisponível no contêiner.
 
 ## Motor hospedado
 
-Use o modo `hosted` para manter as conexões XMPP, o histórico e os envios pendentes no servidor. As abas do navegador podem fechar enquanto o motor continua em execução. Escolha um diretório persistente e privado para `--data-dir`, mantenha um único processo por diretório e preserve o diretório completo ao fazer uma cópia de segurança com o motor parado. Ele contém as credenciais XMPP da instância.
+As abas do navegador podem fechar enquanto o motor continua em execução no
+servidor. Escolha um diretório persistente e privado para `--data-dir`,
+mantenha um único processo por diretório e preserve o diretório completo ao
+fazer uma cópia de segurança com o motor parado. Ele contém as credenciais
+XMPP da instância.
 
-Com o binário compilado no passo anterior, rode no servidor. A interface web acompanha o motor por padrão.
+Para testar sem autenticação, rode no modo local com a porta em loopback.
+A interface web acompanha o motor por padrão.
 
 ```sh
-bin/oie --role hosted --listen 127.0.0.1:8080 \
+bin/oie --role local --listen 127.0.0.1:8080 \
   --data-dir /caminho/persistente/oie
 ```
 
-O Oiê ainda não tem autenticação própria para o acesso ao servidor. Mantenha a interface e a API acessíveis apenas por um meio privado com controle de acesso. Por exemplo, com acesso SSH ao servidor, abra um túnel a partir do computador cliente.
+Mantenha a interface e a API de teste restritas a uma conexão privada. Para
+acessá-las por SSH, abra o túnel a partir do computador cliente.
 
 ```sh
 ssh -N -L 127.0.0.1:8080:127.0.0.1:8080 usuario@servidor
@@ -78,9 +86,8 @@ curl --fail http://127.0.0.1:8080/api/v1/health
 
 ### Acesso público com OIDC
 
-A autenticação nativa está no código de desenvolvimento do Oiê. Use uma
-compilação que inclua esse recurso. As instruções da rc.24 acima continuam
-adequadas para acesso privado por túnel.
+A partir da rc.27, use o modo `hosted` para acesso público. Ele exige
+login OIDC no navegador e uma chave de acesso na API.
 
 1. No provedor OIDC, registre um cliente web confidencial com o retorno
    `https://oie.exemplo.com/auth/callback`. Anote o emissor, o ID do cliente
@@ -98,7 +105,7 @@ Para configurar o processo por variáveis de ambiente, use
 A última aponta para o arquivo privado com o segredo. Para `oie auth init`
 e `oie auth recover`, use `OIE_DATA_DIR`, `OIE_OIDC_ISSUER` e
 `OIE_OIDC_SUBJECT`. As opções explícitas da linha de comando têm
-precedência. Veja também o [deploy com OIDC no Helm](../instalacao/index.md#oidc-no-chart-de-desenvolvimento).
+precedência. Veja também o [deploy com OIDC no Helm](../instalacao/index.md#oidc-no-helm).
 
 Ao abrir um link de conversa, de notificação ou de busca sem uma sessão,
 entre para voltar ao destino solicitado. Ao clicar em uma notificação da
@@ -135,6 +142,6 @@ bin/oie --role bff --listen 127.0.0.1:8081 \
   --engine-url http://127.0.0.1:8080
 ```
 
-Nesse arranjo, a interface está na porta `8081` e o `oiectl` usa a porta `8080`. Só o motor abre o banco e se conecta ao XMPP. O desktop também pode usar um motor existente por meio de [`--engine-url`](https://github.com/araihu/oie/blob/c5c3f37aeb815dd9ee4a1e94512ebf7fd2467071/docs/desktop.md#runtime-options).
+Nesse arranjo, a interface está na porta `8081` e o `oiectl` usa a porta `8080`. Só o motor abre o banco e se conecta ao XMPP. O desktop também pode usar um motor existente por meio de [`--engine-url`](https://github.com/araihu/oie/blob/v0.0.1-rc.27/docs/desktop.md#runtime-options).
 
 O motor serve seu próprio contrato em `/api/openapi.yaml`. A referência da versão de desenvolvimento está no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
