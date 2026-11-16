@@ -25,6 +25,11 @@ Ao atualizar **Baixar**, confira também os comandos e requisitos do [guia de in
 
 ## Documentação do Oiê
 
+A opção de notificações com o aplicativo fechado no Oiê hospedado foi
+documentada a partir da [revisão b4268c59 do aplicativo](https://github.com/araihu/oie/tree/b4268c594095f2fdf187956bea535a1bc788da8d),
+posterior ao instalador da rc.32. A captura mostra as preferências de uma
+instância descartável em pt-BR.
+
 As instruções dos repositórios DNF, pacman e Flatpak seguem a publicação da [revisão 5a2339c](https://github.com/araihu/oie/tree/5a2339c87e8dc42078afcfc0be2efbade2c6c423).
 
 A página **Baixar** aponta para os binários e para o código-fonte correspondente

@@ -262,6 +262,26 @@ Para silenciar uma conversa ou sala neste dispositivo, abra **Detalhes** no menu
 
 Os alertas chegam enquanto o Oiê está aberto e conectado. Selecione o banner para abrir a mensagem. No desktop, o clique restaura a janela se ela estiver escondida. No navegador ou no app web instalado, um banner que ainda estiver na central de notificações pode reabrir o Oiê após fechar a janela. Se o navegador bloquear áudio ao abrir o Oiê, interaja com a janela para habilitar a reprodução.
 
+### Receber notificações com o Oiê fechado
+
+O Oiê hospedado pode avisar de novas mensagens mesmo quando você fecha o
+app. A opção chegou depois da versão oferecida em **Baixar**. No iPhone ou
+iPad, adicione o Oiê à Tela de Início, abra por lá e entre na sua conta.
+Em **Configurações → Este dispositivo → Notificações**, ligue
+**Notificar com o Oiê fechado** e permita as notificações.
+
+[![Configurações de notificações com Notificar com o Oiê fechado ligado.](imagens/notificacoes-app-fechado.webp)](imagens/notificacoes-app-fechado-original.webp)
+
+O aviso mostra apenas que chegou uma mensagem. Toque nele para abrir a
+conversa na mensagem correspondente. Os silenciamentos deste dispositivo
+e o **Não perturbe** da conta continuam valendo. Em segundo plano, o
+sistema escolhe o som. O toque personalizado toca com o Oiê aberto.
+
+O servidor do Oiê precisa continuar conectado ao XMPP. Se você sair do
+Oiê hospedado ou a sessão expirar, entre novamente e reative a opção.
+Para voltar a receber alertas apenas com o Oiê aberto, desligue
+**Notificar com o Oiê fechado**.
+
 ## Busca geral e filtros por conta
 
 Digite no campo **Pesquisar**, na lista de conversas. **Tudo** reúne conversas, contatos salvos e mensagens guardadas. Use **Conversas** ou **Mensagens** para restringir os resultados. Em **Contas**, marque uma ou mais contas ou limpe a seleção para pesquisar em todas.
