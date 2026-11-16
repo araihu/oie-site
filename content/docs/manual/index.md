@@ -53,7 +53,11 @@ Use **Trocar de conta** para ver todas as conversas ou filtrar por uma conta. Ao
 
 Em **Gerenciar contas**, abra o **Perfil** da conta e use **Editar nome** e **Salvar nome** para alterar o nome mostrado no Oiê. Com a conta conectada, use **Editar foto**, escolha uma imagem PNG, JPEG ou GIF de até 512 KB e confira a prévia antes de selecionar **Salvar foto**.
 
-![Seletor de contas do Oiê aberto, com as opções Todas as contas, Pessoal e Trabalho.](imagens/seletor-de-contas.webp "Seletor de contas")
+A borda dos avatares das conversas usa a cor da conta de origem, assim como o
+avatar em **Trocar de conta**. O nome e o endereço identificam a conta por
+escrito. As bordas coloridas chegarão depois da versão atual em **Baixar**.
+
+[![A mesma sala nas contas Alice e Bob, com bordas nas cores mostradas no seletor de contas.](imagens/seletor-de-contas.webp)](imagens/seletor-de-contas-original.webp)
 
 ### Remover uma conta
 
