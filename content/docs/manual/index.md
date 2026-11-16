@@ -39,10 +39,20 @@ Se sair da tela antes de salvar, cole a chave novamente ao voltar.
 Para trocar uma chave vencida, crie outra no site do Oiê hospedado e cole-a na
 mesma tela do desktop.
 
+Na versão em desenvolvimento, se um motor remoto salvo passar a exigir
+autenticação, o desktop mostra **Entrar pelo navegador** e **Inserir chave de
+acesso**. Use a primeira opção para entrar no servidor e criar a chave e a
+segunda para colá-la no desktop.
+
 ## Diagnóstico e registro de erros
 
-Abra **Configurações → Diagnóstico**, escolha um período e use **Atualizar**
-para ver os eventos recentes. Abra uma linha para ver os detalhes. Use
+Na rc.28 oferecida em **Baixar**, abra **Configurações → Diagnóstico**.
+Na versão em desenvolvimento, o caminho é **Configurações → Geral → Diagnóstico**.
+
+![Aba Geral com Chaves de acesso, Diagnóstico, Sobre e Ações destrutivas.](imagens/configuracoes-geral.webp "Aba Geral na versão em desenvolvimento") [Ver captura completa](imagens/configuracoes-geral-original.webp)
+
+Escolha um período e use **Atualizar** para ver os eventos recentes.
+Abra uma linha para ver os detalhes. Use
 **Copiar** para colocar o trecho na área de transferência. Para salvar o
 arquivo `oie-diagnostics.jsonl`, abra a seta ao lado de **Copiar** e
 escolha **Baixar**.
