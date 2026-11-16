@@ -82,6 +82,10 @@ a conversa de **Conversas** e **Arquivadas**. O histórico fica salvo.
 Abra o endereço novamente com a mesma conta, ou receba uma nova mensagem
 do contato, para a conversa voltar à lista.
 
+Nas salas e nas conversas diretas removidas, os links da busca, de **Favoritas**
+e de **Mídia e links** abrem o histórico salvo em modo de leitura. A conversa
+continua fora da lista.
+
 Para ver **Detalhes da conversa**, clique na foto ou nas iniciais do cabeçalho.
 **Remover das conversas** em conversas diretas chegará depois da versão atual
 em **Baixar**.
