@@ -87,6 +87,10 @@ duas contas fictícias que entraram na mesma sala.
 A abertura do histórico de conversas removidas por links foi conferida na
 revisão de desenvolvimento `0b61995218a13e1b3a467fefb55687addfc0fa34` do Oiê.
 
+As mudanças de salas e conversas deste manual foram integradas à
+[main do Oiê](https://github.com/araihu/oie/tree/18de5883825e05a1bc5ed81dae251d0dafe5780c)
+depois da versão v0.0.1-rc.26.
+
 ### Referência do banco de dados
 
 O catálogo e os diagramas registram a [revisão dd2e610 do Oiê](https://github.com/araihu/oie/tree/dd2e6106e56f34c86a1b74c6dd989ecdbd350bc6), fixada em `scripts/database-docs/oie-revision`. Para atualizar a referência, coloque nesse arquivo o SHA completo do Oiê que será documentado. Com Python 3 com SQLite e o [tbls v1.96.1](https://github.com/k1LoW/tbls/releases/tag/v1.96.1) no PATH, rode a partir da raiz do site.
