@@ -93,6 +93,13 @@ adequadas para acesso privado por túnel.
    HTTPS no Oiê ou um proxy TLS confiável. Abra o endereço público e selecione
    **Entrar**.
 
+Ao abrir um link de conversa, de notificação ou de busca sem uma sessão,
+entre para voltar ao destino solicitado. Ao clicar em uma notificação da
+instância hospedada, o navegador abre o link da mensagem em uma janela.
+O botão **Sair**, em **Configurações**, encerra a sessão nas abas. Se a sessão
+expirar antes de um novo envio chegar ao motor, entre novamente para
+continuar com o rascunho salvo.
+
 A conta dona tem acesso completo à instância. O comando `oie auth recover`
 troca a identidade vinculada e revoga as sessões e chaves existentes. O
 histórico e as contas XMPP ficam no diretório de dados. Para automação, veja
