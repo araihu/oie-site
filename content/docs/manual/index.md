@@ -289,7 +289,7 @@ Para ouvir um anexo de áudio compatível, use o player na mensagem. Para salvar
 
 Em **Configurações → Este dispositivo → Arquivos baixados**, escolha um prazo em **Manter arquivos por**. O padrão é **Até eu excluir**. Na rc.31, selecione **Salvar**. Na versão em desenvolvimento, com o motor local, a escolha é salva ao selecionar uma opção. Para liberar espaço agora, selecione **Excluir arquivos baixados** e confirme.
 
-[![Preferências de arquivos baixados com a opção Até eu excluir e os botões Salvar e Excluir arquivos baixados.](imagens/arquivos-baixados.webp "Retenção de arquivos baixados na rc.31")](imagens/arquivos-baixados-original.webp)
+![Preferências de arquivos baixados com a opção Até eu excluir e os botões Salvar e Excluir arquivos baixados.](imagens/arquivos-baixados.webp "Retenção de arquivos baixados na rc.31")
 
 Quando um anexo compatível inclui dados de verificação, o Oiê confere a integridade do download completo. Se o conteúdo divergir do original anunciado, o Oiê recusa o download.
 
