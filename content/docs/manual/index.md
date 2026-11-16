@@ -44,6 +44,13 @@ autenticação, o desktop mostra **Entrar pelo navegador** e **Inserir chave de
 acesso**. Use a primeira opção para entrar no servidor e criar a chave e a
 segunda para colá-la no desktop.
 
+### Sair do Oiê hospedado
+
+Na versão em desenvolvimento, abra **Configurações → Motor**, selecione **Sair**
+e confirme. Isso encerra a sessão em todas as abas deste navegador. O motor
+continua rodando no servidor. Na rc.28 oferecida em **Baixar**, **Sair** fica
+no rodapé das configurações.
+
 ## Diagnóstico e registro de erros
 
 Na rc.28 oferecida em **Baixar**, abra **Configurações → Diagnóstico**.
