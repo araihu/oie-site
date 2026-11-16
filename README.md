@@ -67,6 +67,10 @@ O trecho **Conferir o endereço e remover salas** no manual e o comando
 desenvolvimento `b9a50667a861fd1eb26559e4aba3a0fdc9e6aecb` do Oiê, posterior
 à versão oferecida em **Baixar**. As capturas em pt-BR usam salas fictícias.
 
+A remoção de conversas diretas e o comando
+`oiectl conversations remove-direct-from-chats` foram conferidos na revisão de
+desenvolvimento `c9f670574b3ca067ff65305f45eef54d784e4878` do Oiê.
+
 ### Referência do banco de dados
 
 O catálogo e os diagramas registram a [revisão dd2e610 do Oiê](https://github.com/araihu/oie/tree/dd2e6106e56f34c86a1b74c6dd989ecdbd350bc6), fixada em `scripts/database-docs/oie-revision`. Para atualizar a referência, coloque nesse arquivo o SHA completo do Oiê que será documentado. Com Python 3 com SQLite e o [tbls v1.96.1](https://github.com/k1LoW/tbls/releases/tag/v1.96.1) no PATH, rode a partir da raiz do site.

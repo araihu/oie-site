@@ -71,6 +71,17 @@ A primeira mensagem de uma conversa direta sem histórico anterior pode aparecer
 
 Uma solicitação arquivada continua em **Arquivadas**, abaixo dos filtros da lista de conversas, mesmo se chegarem mais mensagens. Selecione **Arquivadas** novamente para voltar à lista principal. Se você aceitar uma solicitação de mensagem por lá, a conversa volta à lista principal. Em **Convite para sala**, use **Entrar na sala** para pedir a entrada. O conteúdo aparece quando o servidor XMPP confirma. Você também pode arquivar o convite e decidir depois.
 
+## Remover uma conversa direta
+
+Em **Mais opções → Remover das conversas**, confirme a remoção para tirar
+a conversa de **Conversas** e **Arquivadas**. O histórico fica salvo.
+Abra o endereço novamente com a mesma conta, ou receba uma nova mensagem
+do contato, para a conversa voltar à lista.
+
+Para ver **Detalhes da conversa**, clique na foto ou nas iniciais do cabeçalho.
+**Remover das conversas** em conversas diretas chegará depois da versão atual
+em **Baixar**.
+
 ## Salas, convites e entrada automática
 
 Ao conectar a conta, o Oiê respeita os favoritos XMPP marcados para entrada automática. Usa a parte antes do `@` no endereço da conta como apelido inicial. Se você escolheu outro apelido ou saiu explicitamente de uma sala no Oiê, essa decisão tem prioridade. Para entrar em uma sala salva, abra a conversa e use **Entrar na sala**.
