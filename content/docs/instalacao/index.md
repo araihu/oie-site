@@ -39,11 +39,11 @@ Para remover o aplicativo e manter seu perfil, execute `sudo apt remove oie`.
 
 ## Instalar com Flatpak
 
-No Linux x86-64, baixe o [bundle Flatpak da v0.0.1-rc.24](https://github.com/araihu/oie/releases/download/v0.0.1-rc.24/oie-v0.0.1-rc.24-x86_64.flatpak). Adicione o Flathub se ainda não estiver cadastrado, para que o Flatpak possa baixar o runtime GNOME 51. Execute os comandos na pasta onde salvou o arquivo.
+No Linux x86-64, baixe o [bundle Flatpak da v0.0.1-rc.28](https://github.com/araihu/oie/releases/download/v0.0.1-rc.28/oie-v0.0.1-rc.28-x86_64.flatpak). Adicione o Flathub se ainda não estiver cadastrado, para que o Flatpak possa baixar o runtime GNOME 51. Execute os comandos na pasta onde salvou o arquivo.
 
 ```sh
 flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak install --user ./oie-v0.0.1-rc.24-x86_64.flatpak
+flatpak install --user ./oie-v0.0.1-rc.28-x86_64.flatpak
 ```
 
 Se você já usava o Flatpak da `rc.8` ou anterior, [migre seu perfil](#migrar-para-comaraihuoie) antes de abrir o novo Oiê. Depois, abra o aplicativo pelo menu ou execute `flatpak run com.araihu.oie`.
@@ -90,7 +90,7 @@ Para atualizar, encerre o Oiê e execute `brew upgrade --cask araihu/oie/oie` no
 
 ## Instalar o pacote publicado
 
-Na página [Baixar](../../baixar/index.md), abra **Notas da versão e instalador**. Nos arquivos da versão que você quer instalar, baixe `install.sh`. O instalador escolhe o pacote para seu sistema e confere a soma SHA-256 antes de extrair os arquivos.
+Baixe o [instalador da RC 28 (install.sh)](https://github.com/araihu/oie/releases/download/v0.0.1-rc.28/install.sh). Ele escolhe o pacote para macOS com Apple Silicon ou Ubuntu 24.04 x86-64 e confere a soma SHA-256 antes de extrair os arquivos.
 
 No **Ubuntu 24.04**, instale primeiro as bibliotecas usadas pelo aplicativo.
 
@@ -112,7 +112,7 @@ sh ./install.sh
 | macOS | `~/Applications/Oie.app` | Abra o Oiê no Finder. |
 | Ubuntu | `~/.local/bin/oie-desktop` | Abra o Oiê pelo menu de aplicativos em uma sessão gráfica. |
 
-O instalador usa por padrão a versão em que foi publicado. Para escolher outra versão publicada ou mudar o destino, consulte as opções `--version` e `--prefix` com `sh ./install.sh --help`.
+Este instalador usa a `v0.0.1-rc.28` por padrão. Para escolher outra versão publicada ou mudar o destino, consulte as opções `--version` e `--prefix` com `sh ./install.sh --help`.
 
 ### Primeira abertura no macOS
 
@@ -120,7 +120,7 @@ O pacote tem assinatura ad hoc. Se o macOS bloquear a abertura, tente abrir o Oi
 
 ## Compilar a partir do código-fonte
 
-Use Go 1.27.4 ou mais recente e compile no sistema e na arquitetura em que pretende usar o aplicativo. Nos exemplos, substitua `v0.0.1-rc.24` pela versão que você escolheu na página [Baixar](../../baixar/index.md). O comando instala o executável em `~/.local/bin`.
+Use Go 1.27.4 ou mais recente e compile no sistema e na arquitetura em que pretende usar o aplicativo. Nos exemplos, substitua `v0.0.1-rc.28` pela versão que você escolheu na página [Baixar](../../baixar/index.md). O comando instala o executável em `~/.local/bin`.
 
 ### Ubuntu 24.04 x86-64
 
@@ -137,7 +137,7 @@ pkg-config --modversion gtk4 webkitgtk-6.0 libsoup-3.0 gio-unix-2.0
 mkdir -p "$HOME/.local/bin"
 GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
   GONOPROXY=github.com/araihu/oie \
-  go install -tags production github.com/araihu/oie/cmd/oie-desktop@v0.0.1-rc.24
+  go install -tags production github.com/araihu/oie/cmd/oie-desktop@v0.0.1-rc.28
 ```
 
 ### macOS com Apple Silicon
@@ -152,7 +152,7 @@ GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
   CGO_CFLAGS="-O2 -g -mmacosx-version-min=13.0" \
   CGO_LDFLAGS="-O2 -g -mmacosx-version-min=13.0" \
   go install -tags production -ldflags='-extldflags=-mmacosx-version-min=13.0' \
-  github.com/araihu/oie/cmd/oie-desktop@v0.0.1-rc.24
+  github.com/araihu/oie/cmd/oie-desktop@v0.0.1-rc.28
 ```
 
 Os parâmetros de compilação e linkedição mantêm o mesmo alvo. Consulte o [escopo verificado no guia do repositório](https://github.com/araihu/oie/blob/c5c3f37aeb815dd9ee4a1e94512ebf7fd2467071/docs/installation.md#platforms-and-verified-scope) para as versões de sistema testadas.
@@ -220,12 +220,12 @@ Abra [127.0.0.1:8080](http://127.0.0.1:8080) no navegador e [conecte sua conta X
 ## Rodar no Kubernetes com Helm
 
 Use um cluster com armazenamento persistente, o Helm e o `kubectl`.
-O [chart Helm 0.2.3](https://github.com/araihu/oie/releases/tag/helm-v0.2.3)
-tem versão própria e usa por padrão a imagem do Oiê `v0.0.1-rc.24`.
+O [chart Helm 0.2.6](https://github.com/araihu/oie/releases/tag/helm-v0.2.6)
+está no GHCR e usa por padrão a imagem do Oiê `v0.0.1-rc.28`.
 
 ```sh
 helm upgrade --install oie \
-  https://github.com/araihu/oie/releases/download/helm-v0.2.3/oie-0.2.3.tgz \
+  oci://ghcr.io/araihu/charts/oie --version 0.2.6 \
   --namespace oie --create-namespace --wait --timeout 10m
 kubectl --namespace oie port-forward service/oie 8080:80
 ```
@@ -236,12 +236,11 @@ instância e reserva 10 GiB para contas, histórico e mídia. Para usar um volum
 já existente, indique o nome do PVC com `persistence.existingClaim`. Use um
 PVC por instância. O volume é mantido quando você desinstala a release Helm.
 
-O Oiê não tem login próprio. Para acesso remoto, configure um proxy HTTPS
-com autenticação em todas as rotas, incluindo a API. Use Ingress ou conecte
-o Oiê a um Gateway existente com `httpRoute.enabled`, `httpRoute.parentRefs`
-e `httpRoute.hostnames`. Se o Gateway estiver em outro namespace, permita
-rotas do namespace do Oiê no listener. Veja exemplos no
-[guia do chart](https://github.com/araihu/oie/tree/helm-v0.2.3/charts/oie#remote-access).
+Para acesso público, habilite o [OIDC no Helm](#oidc-no-helm) e configure
+Ingress ou um Gateway HTTPS. Para conectar um Gateway existente, use
+`httpRoute.enabled`, `httpRoute.parentRefs` e `httpRoute.hostnames`. Se o
+Gateway estiver em outro namespace, permita rotas do namespace do Oiê no
+listener. Veja exemplos no [guia do chart](https://github.com/araihu/oie/tree/helm-v0.2.6/charts/oie#remote-access).
 
 Se o timeout de requisição do Gateway interromper as atualizações ao vivo
 das conversas, acrescente este trecho ao arquivo de valores do chart. Use
@@ -258,11 +257,48 @@ O valor `"0s"` desativa o timeout de requisição para todos os caminhos da rota
 do Oiê. Se você omitir o valor, o controlador aplica seu comportamento padrão.
 [Timeouts do HTTPRoute na Gateway API](https://gateway-api.sigs.k8s.io/reference/api-types/httproute/#timeouts-optional)
 
+### OIDC no Helm
+
+Use o chart 0.2.6 ou posterior. Cadastre o retorno
+`https://oie.exemplo.com/auth/callback` no provedor. Crie o namespace da
+release e importe o arquivo do segredo do cliente em um Secret.
+
+```sh
+kubectl -n oie create secret generic oie-oidc --from-file=client-secret=./oidc-client-secret
+```
+
+Salve a configuração em `hosted-values.yaml`. Informe o emissor e o `sub`
+exatos recebidos do provedor e os endereços privados pelos quais o proxy
+chega ao Oiê.
+
+```yaml
+hosted:
+  enabled: true
+  publicURL: https://oie.exemplo.com
+  trustedTLSProxies: 10.42.0.19/32
+  oidc:
+    issuer: https://id.exemplo.com
+    subject: "SUB_DA_CONTA_DONA"
+    clientID: oie
+    clientSecretName: oie-oidc
+    clientSecretKey: client-secret
+```
+
+Configure também o Ingress ou o Gateway HTTPS e inclua
+`--values hosted-values.yaml` ao instalar o chart. O Helm passa a configuração
+OIDC ao pod por variáveis de ambiente e monta o segredo como arquivo somente
+de leitura. Ao trocar o segredo, reinicie o StatefulSet. O pod registra a
+conta dona na primeira inicialização. Para trocar uma conta já registrada,
+use `oie auth recover`. O kubelet consulta as sondas na porta interna
+`8081` do pod. O Service do Oiê publica apenas a porta do aplicativo.
+
+
 ### Acesso ao diagnóstico no servidor
 
-Configure `OIE_DIAGNOSTICS_KEY` no processo do servidor para habilitar o
-visualizador. No Docker, use um arquivo de ambiente privado. No Helm,
-configure `diagnostics.existingSecret` com o nome de um Secret no mesmo
+Com OIDC habilitado, entre com a conta dona e abra **Configurações →
+Diagnóstico**. Se você usa um proxy de autenticação externo, configure
+`OIE_DIAGNOSTICS_KEY` no Docker por um arquivo de ambiente privado. No Helm,
+defina `diagnostics.existingSecret` com o nome de um Secret no mesmo
 namespace da instalação. O chart lê a entrada `key` desse Secret. Se a
 entrada tiver outro nome, informe-o em `diagnostics.secretKey`. Proteja o
 acesso remoto com HTTPS e autenticação no proxy.
