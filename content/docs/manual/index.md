@@ -39,10 +39,27 @@ Se sair da tela antes de salvar, cole a chave novamente ao voltar.
 Para trocar uma chave vencida, crie outra no site do Oiê hospedado e cole-a na
 mesma tela do desktop.
 
+Na versão em desenvolvimento, se um motor remoto salvo passar a exigir
+autenticação, o desktop mostra **Entrar pelo navegador** e **Inserir chave de
+acesso**. Use a primeira opção para entrar no servidor e criar a chave e a
+segunda para colá-la no desktop.
+
+### Sair do Oiê hospedado
+
+Na versão em desenvolvimento, abra **Configurações → Motor**, selecione **Sair**
+e confirme. Isso encerra a sessão em todas as abas deste navegador. O motor
+continua rodando no servidor. Na rc.30 oferecida em **Baixar**, **Sair** fica
+no rodapé das configurações.
+
 ## Diagnóstico e registro de erros
 
-Abra **Configurações → Diagnóstico**, escolha um período e use **Atualizar**
-para ver os eventos recentes. Abra uma linha para ver os detalhes. Use
+Na rc.30 oferecida em **Baixar**, abra **Configurações → Diagnóstico**.
+Na versão em desenvolvimento, o caminho é **Configurações → Geral → Diagnóstico**.
+
+![Aba Geral com Chaves de acesso, Diagnóstico, Sobre e Ações destrutivas.](imagens/configuracoes-geral.webp "Aba Geral na versão em desenvolvimento") [Ver captura completa](imagens/configuracoes-geral-original.webp)
+
+Escolha um período e use **Atualizar** para ver os eventos recentes.
+Abra uma linha para ver os detalhes. Use
 **Copiar** para colocar o trecho na área de transferência. Para salvar o
 arquivo `oie-diagnostics.jsonl`, abra a seta ao lado de **Copiar** e
 escolha **Baixar**.
@@ -200,13 +217,15 @@ Buscar por `arqiuvo` nas mensagens guardadas pode realçar **arquivo** no balão
 
 ## Retenção de mensagens
 
-Em **Configurações → Este dispositivo → Retenção de mensagens**, escolha os prazos padrão para **Salas** e **Conversas diretas**. Esses prazos valem para o motor do Oiê em uso, inclusive quando ele é compartilhado entre dispositivos. Para mudar o prazo de uma conversa, abra **Mais opções → Detalhes da conversa → Retenção de mensagens**. Use **Usar o padrão** para voltar ao prazo global.
+Na versão em desenvolvimento, abra **Configurações → Motor → Retenção de mensagens**. O Oiê salva os prazos padrão de **Salas** e **Conversas diretas** ao sair do campo alterado. Na rc.30 oferecida em **Baixar**, abra **Configurações → Este dispositivo → Retenção de mensagens** e selecione **Salvar** depois de editar.
+
+Os prazos padrão valem para o motor do Oiê em uso, inclusive quando ele é compartilhado entre dispositivos. Para mudar o prazo de uma conversa, abra **Mais opções → Detalhes da conversa → Retenção de mensagens**. Use **Usar o padrão** para voltar ao prazo global.
 
 Por padrão, as salas têm prazo de **180 dias** e as conversas diretas usam **Sem limite**. O Oiê preserva as **100 mensagens mais recentes já guardadas de cada sala** e todas as mensagens favoritadas. Reduzir o prazo pode apagar outras mensagens antigas do histórico guardado pelo motor. Em um envio agendado, o prazo conta a partir do envio. Se a mensagem original de uma resposta expirar, o texto da resposta continua visível e a citação fica indisponível.
 
 O prazo também limita a recuperação do histórico no XMPP. Uma instalação nova pode recuperar menos de 100 mensagens de uma sala, dependendo do prazo e dos dados ainda disponíveis no servidor. Com **Sem limite**, as mensagens deixam de expirar por idade, o histórico pode ocupar mais espaço e a recuperação pode alcançar as mensagens mais antigas que o servidor ainda oferece à sua conta.
 
-![Configuração de retenção com 180 dias para salas e Sem limite para conversas diretas.](imagens/retencao-de-mensagens.webp "Retenção de mensagens")
+![Aba Motor com 180 dias para salas e Sem limite para conversas diretas.](imagens/retencao-de-mensagens.webp "Retenção de mensagens na aba Motor") [Ver captura completa](imagens/retencao-de-mensagens-original.webp)
 
 ## Mensagens não lidas
 
@@ -253,6 +272,13 @@ Os atalhos **Mídia**, **Links** e **Documentos** abrem o catálogo com o mesmo 
 Abra **Mídia e links** na barra lateral para encontrar o que foi compartilhado. As abas **Mídia**, **Links** e **Documentos** agrupam os itens por mês. Use **Contas** para buscar por nome ou endereço e marcar uma ou mais contas. **Limpar seleção** volta a mostrar itens de todas as contas. Sua escolha em **Trocar de conta** continua valendo nas outras telas.
 
 No menu do cartão, use **Ir para a mensagem** para voltar à conversa de origem. Selecione um documento para abri-lo. Se a prévia falhar, use **Tentar novamente** quando essa opção aparecer. O cabeçalho também permite baixar o arquivo ou abrir o endereço original.
+
+### Arquivos baixados
+
+Na versão em desenvolvimento, com o motor local, abra **Configurações →
+Este dispositivo → Arquivos baixados**. Em **Manter arquivos por**, o Oiê
+salva o prazo ao selecionar uma opção. Para liberar espaço agora, selecione
+**Excluir arquivos baixados** e confirme.
 
 ## Mensagens favoritadas
 

@@ -341,8 +341,10 @@ use `oie auth recover`. O kubelet consulta as sondas na porta interna
 
 ### Acesso ao diagnóstico no servidor
 
-Com OIDC habilitado, entre com a conta dona e abra **Configurações →
-Diagnóstico**. Se você usa um proxy de autenticação externo, configure
+Com OIDC habilitado na rc.30, entre com a conta dona e abra
+**Configurações → Diagnóstico**. Na versão em desenvolvimento, o caminho é
+**Configurações → Geral → Diagnóstico**. Se você usa um proxy de
+autenticação externo, configure
 `OIE_DIAGNOSTICS_KEY` no Docker por um arquivo de ambiente privado. No Helm,
 defina `diagnostics.existingSecret` com o nome de um Secret no mesmo
 namespace da instalação. O chart lê a entrada `key` desse Secret. Se a
