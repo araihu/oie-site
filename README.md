@@ -25,6 +25,11 @@ Ao atualizar **Baixar**, confira também os comandos e requisitos do [guia de in
 
 ## Documentação do Oiê
 
+A seção **Ler conversas sem conexão** foi conferida com a
+[revisão 4aeac67 do Oiê](https://github.com/araihu/oie/tree/4aeac671d561d5ac54d07ff767e6856d9a082fc8),
+posterior à rc.36. As capturas mostram o Oiê local em pt-BR com dados fictícios
+e o navegador desconectado.
+
 As instruções dos repositórios DNF, pacman e Flatpak seguem a publicação da [revisão 5a2339c](https://github.com/araihu/oie/tree/5a2339c87e8dc42078afcfc0be2efbade2c6c423).
 
 A página **Baixar** aponta para os binários e para o código-fonte correspondente

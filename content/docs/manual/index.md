@@ -1,6 +1,6 @@
 ---
 title: Manual
-description: Escolha o motor local ou remoto, conecte ou remova contas XMPP, gerencie contatos e presença, marque conversas como lidas ou não lidas, gerencie salas, busque e encaminhe mensagens, configure notificações, use o envio sem conexão, envie anexos, consulte o diagnóstico e gerencie a retenção e exclusão de dados.
+description: Escolha o motor local ou remoto, conecte ou remova contas XMPP, gerencie contatos e presença, marque conversas como lidas ou não lidas, gerencie salas, busque e encaminhe mensagens, configure notificações, consulte conversas recentes sem conexão, envie mensagens e anexos, consulte o diagnóstico e gerencie a retenção e exclusão de dados.
 language: pt-BR
 margo:
   imageViewer: true
@@ -401,6 +401,23 @@ Se aparecer **Verificar e tentar novamente**, use essa ação na mensagem. Se
 o navegador não conseguir guardar a mensagem, o texto continua disponível
 no campo de edição. Uma mensagem deixada no rascunho só é enviada quando
 você seleciona **Enviar**.
+
+## Ler conversas sem conexão
+
+Disponível na versão em desenvolvimento, posterior à rc.36.
+
+No Oiê local, abra no navegador as conversas que quer consultar. Se perder
+acesso ao Oiê, volte ao mesmo endereço no mesmo navegador. Em **Conversas
+recentes**, selecione a conversa para ler as mensagens de texto guardadas.
+**Tentar novamente** volta à conversa normal quando a conexão retornar. Seu
+rascunho reaparece no campo de mensagem.
+
+[![Conversa Casa aberta no navegador com o aviso Sem conexão.](imagens/historico-sem-conexao.webp)](imagens/historico-sem-conexao-original.webp)
+
+O navegador guarda até 12 conversas por até sete dias, com até 50 mensagens
+de texto recentes por conversa dentro do espaço disponível. Esta tela é para
+leitura. Anexos, busca e edição de rascunhos ficam disponíveis ao reconectar.
+O recurso está disponível no Oiê local aberto em localhost ou HTTPS.
 
 ## Envio agendado
 
