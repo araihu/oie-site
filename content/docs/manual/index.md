@@ -34,6 +34,7 @@ conexão por chave na interface.
    selecione **Salvar**.
 
 O desktop verifica a conexão antes de salvar o endereço e a chave no perfil.
+Se mudar o endereço depois de colar uma chave, cole a chave do endereço final.
 Para trocar uma chave vencida, crie outra no site do Oiê hospedado e cole-a na
 mesma tela do desktop.
 
