@@ -25,7 +25,7 @@ Ao atualizar **Baixar**, confira também os comandos e requisitos do [guia de in
 
 ## Documentação do Oiê
 
-A página **Baixar** aponta para os binários e para o código-fonte correspondente da [revisão da v0.0.1-rc.25](https://github.com/araihu/oie/tree/de10c5b1d3575df2b5c802eda8ab65d9350c7383).
+A página **Baixar** aponta para os binários e para o código-fonte correspondente da [revisão da v0.0.1-rc.26](https://github.com/araihu/oie/tree/84900fc82ae790a8f82ee52f42b697b7e32d67f4).
 
 O manual, os atalhos, os exemplos do CLI e os guias de instalação e arquitetura foram revisados com a [main do aplicativo em 9929391](https://github.com/araihu/oie/tree/9929391579532045b61fcad8d8883f7e3a351215) e a [v0.0.1-rc.3](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.3). Ao atualizar, registre o SHA das páginas revisadas e confira as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
 
@@ -55,12 +55,12 @@ Os fluxos de **Mídia e links**, **Encaminhar mensagens** e **Descobrir e gerenc
 
 A seção Docker da página de arquitetura descreve a [CI da imagem em f9c6a01](https://github.com/araihu/oie/commit/f9c6a01625232e7132a358b27372759144588258).
 
-A seção **Usar no iPhone** acompanha a rc.25, verificada em um iPhone 15 Pro simulado com iOS 27.2. [Revisão do Oiê](https://github.com/araihu/oie/tree/de10c5b1d3575df2b5c802eda8ab65d9350c7383)
+A seção **Usar no iPhone** acompanha a rc.26, verificada em um iPhone 15 Pro simulado com iOS 27.2. [Revisão do Oiê](https://github.com/araihu/oie/tree/84900fc82ae790a8f82ee52f42b697b7e32d67f4)
 
-A seção **Rodar no Kubernetes com Helm** descreve o chart 0.2.4, que
-usa a imagem `v0.0.1-rc.25` por padrão e permite configurar uma chave de
-Diagnóstico via Secret. [Release 0.2.4 do chart](https://github.com/araihu/oie/releases/tag/helm-v0.2.4)
-· [Revisão do Oiê](https://github.com/araihu/oie/tree/helm-v0.2.4)
+A seção **Rodar no Kubernetes com Helm** descreve o chart 0.2.5, que
+usa a imagem `v0.0.1-rc.26` por padrão e permite configurar uma chave de
+Diagnóstico via Secret. [Release 0.2.5 do chart](https://github.com/araihu/oie/releases/tag/helm-v0.2.5)
+· [Revisão do Oiê](https://github.com/araihu/oie/tree/helm-v0.2.5)
 
 O fluxo de remoção de conta e o comando `oiectl accounts remove` foram conferidos com a [revisão da rc.22](https://github.com/araihu/oie/tree/ffa480cb81a5b79287191a2220d554c4180be3ac) e o contrato 0.34.0. A captura usa uma conta fictícia.
 
