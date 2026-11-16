@@ -90,7 +90,7 @@ flatpak install --user araihu-oie com.araihu.oie
 Se você instalou `com.araihu.oie` a partir de um bundle, feche o aplicativo e
 use `flatpak install --user --reinstall araihu-oie com.araihu.oie` para mudar a
 origem e manter o perfil. Depois, atualize com `flatpak update --user com.araihu.oie`.
-O [bundle da rc.31](https://github.com/araihu/oie/releases/download/v0.0.1-rc.31/oie-v0.0.1-rc.31-x86_64.flatpak) também está disponível para download direto.
+O [bundle da rc.32](https://github.com/araihu/oie/releases/download/v0.0.1-rc.32/oie-v0.0.1-rc.32-x86_64.flatpak) também está disponível para download direto.
 
 Se você já usava o Flatpak da `rc.8` ou anterior, [migre seu perfil](#migrar-para-comaraihuoie) antes de abrir o novo Oiê. Depois, abra o aplicativo pelo menu ou execute `flatpak run com.araihu.oie`.
 
@@ -136,7 +136,7 @@ Para atualizar, encerre o Oiê e execute `brew upgrade --cask araihu/oie/oie` no
 
 ## Instalar o pacote publicado
 
-Baixe o [instalador da RC 31 (install.sh)](https://github.com/araihu/oie/releases/download/v0.0.1-rc.31/install.sh). Ele escolhe o pacote para macOS com Apple Silicon ou Ubuntu 24.04 x86-64 e confere a soma SHA-256 antes de extrair os arquivos.
+Baixe o [instalador da RC 32 (install.sh)](https://github.com/araihu/oie/releases/download/v0.0.1-rc.32/install.sh). Ele escolhe o pacote para macOS com Apple Silicon ou Ubuntu 24.04 x86-64 e confere a soma SHA-256 antes de extrair os arquivos.
 
 No **Ubuntu 24.04**, instale primeiro as bibliotecas usadas pelo aplicativo.
 
@@ -158,7 +158,7 @@ sh ./install.sh
 | macOS | `~/Applications/Oie.app` | Abra o Oiê no Finder. |
 | Ubuntu | `~/.local/bin/oie-desktop` | Abra o Oiê pelo menu de aplicativos em uma sessão gráfica. |
 
-Este instalador usa a `v0.0.1-rc.31` por padrão. Para escolher outra versão publicada ou mudar o destino, consulte as opções `--version` e `--prefix` com `sh ./install.sh --help`.
+Este instalador usa a `v0.0.1-rc.32` por padrão. Para escolher outra versão publicada ou mudar o destino, consulte as opções `--version` e `--prefix` com `sh ./install.sh --help`.
 
 ### Primeira abertura no macOS
 
@@ -180,7 +180,7 @@ pkg-config --modversion gtk4 webkitgtk-6.0 libsoup-3.0 gio-unix-2.0
 ```
 
 ```sh
-git clone --branch v0.0.1-rc.31 https://github.com/araihu/oie.git
+git clone --branch v0.0.1-rc.32 https://github.com/araihu/oie.git
 cd oie
 mkdir -p "$HOME/.local/bin"
 GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
@@ -192,7 +192,7 @@ GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
 Instale as ferramentas de linha de comando do Xcode com `xcode-select --install` se elas ainda estiverem ausentes.
 
 ```sh
-git clone --branch v0.0.1-rc.31 https://github.com/araihu/oie.git
+git clone --branch v0.0.1-rc.32 https://github.com/araihu/oie.git
 cd oie
 mkdir -p "$HOME/.local/bin"
 GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
@@ -203,7 +203,7 @@ GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
   ./cmd/oie-desktop
 ```
 
-Os parâmetros de compilação e linkedição mantêm o mesmo alvo. Consulte o [escopo verificado no guia do repositório](https://github.com/araihu/oie/blob/v0.0.1-rc.31/docs/installation.md#platforms-and-verified-scope) para as versões de sistema testadas.
+Os parâmetros de compilação e linkedição mantêm o mesmo alvo. Consulte o [escopo verificado no guia do repositório](https://github.com/araihu/oie/blob/v0.0.1-rc.32/docs/installation.md#platforms-and-verified-scope) para as versões de sistema testadas.
 
 ### Abrir pelo Terminal
 
@@ -270,12 +270,12 @@ Abra no Safari o endereço HTTPS da sua [instalação hospedada](../arquitetura/
 ## Rodar no Kubernetes com Helm
 
 Use um cluster com armazenamento persistente, o Helm e o `kubectl`.
-O [chart Helm 0.2.9](https://github.com/araihu/oie/releases/tag/helm-v0.2.9)
-está no GHCR e usa por padrão a imagem do Oiê `v0.0.1-rc.31`.
+O [chart Helm 0.2.10](https://github.com/araihu/oie/releases/tag/helm-v0.2.10)
+está no GHCR e usa por padrão a imagem do Oiê `v0.0.1-rc.32`.
 
 ```sh
 helm upgrade --install oie \
-  oci://ghcr.io/araihu/charts/oie --version 0.2.9 \
+  oci://ghcr.io/araihu/charts/oie --version 0.2.10 \
   --namespace oie --create-namespace --wait --timeout 10m
 kubectl --namespace oie port-forward service/oie 8080:80
 ```
@@ -290,7 +290,7 @@ Para acesso público, habilite o [OIDC no Helm](#oidc-no-helm) e configure
 Ingress ou um Gateway HTTPS. Para conectar um Gateway existente, use
 `httpRoute.enabled`, `httpRoute.parentRefs` e `httpRoute.hostnames`. Se o
 Gateway estiver em outro namespace, permita rotas do namespace do Oiê no
-listener. Veja exemplos no [guia do chart](https://github.com/araihu/oie/tree/helm-v0.2.9/charts/oie#remote-access).
+listener. Veja exemplos no [guia do chart](https://github.com/araihu/oie/tree/helm-v0.2.10/charts/oie#remote-access).
 
 Se o timeout de requisição do Gateway interromper as atualizações ao vivo
 das conversas, acrescente este trecho ao arquivo de valores do chart. Use
@@ -345,8 +345,7 @@ use `oie auth recover`. O kubelet consulta as sondas na porta interna
 
 ### Acesso ao diagnóstico no servidor
 
-Com OIDC habilitado na rc.31, entre com a conta dona e abra
-**Configurações → Diagnóstico**. Na versão em desenvolvimento, o caminho é
+Com OIDC habilitado, entre com a conta dona e abra
 **Configurações → Geral → Diagnóstico**. Se você usa um proxy de
 autenticação externo, configure
 `OIE_DIAGNOSTICS_KEY` no Docker por um arquivo de ambiente privado. No Helm,

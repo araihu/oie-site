@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.31](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.32](../../baixar/index.md).
 
 ## Motor local ou remoto
 
@@ -39,7 +39,7 @@ Se sair da tela antes de salvar, cole a chave novamente ao voltar.
 Para trocar uma chave vencida, crie outra no site do Oiê hospedado e cole-a na
 mesma tela do desktop.
 
-Na versão em desenvolvimento, se um motor remoto salvo passar a exigir
+Se um motor remoto salvo passar a exigir
 autenticação, o desktop mostra **Entrar pelo navegador** e **Inserir chave de
 acesso**. Use a primeira opção para entrar no servidor e criar a chave e a
 segunda para colá-la no desktop.
@@ -52,17 +52,14 @@ Se a conexão com o servidor XMPP cair, o Oiê tenta reconectar a conta e retoma
 
 ### Sair do Oiê hospedado
 
-Na versão em desenvolvimento, abra **Configurações → Motor**, selecione **Sair**
-e confirme. Isso encerra a sessão em todas as abas deste navegador. O motor
-continua rodando no servidor. Na rc.31 oferecida em **Baixar**, **Sair** fica
-no rodapé das configurações.
+Abra **Configurações → Motor**, selecione **Sair** e confirme. Isso encerra
+a sessão em todas as abas deste navegador. O motor continua rodando no servidor.
 
 ## Diagnóstico e registro de erros
 
-Na rc.31 oferecida em **Baixar**, abra **Configurações → Diagnóstico**.
-Na versão em desenvolvimento, o caminho é **Configurações → Geral → Diagnóstico**.
+Abra **Configurações → Geral → Diagnóstico**.
 
-![Aba Geral com Chaves de acesso, Diagnóstico, Sobre e Ações destrutivas.](imagens/configuracoes-geral.webp "Aba Geral na versão em desenvolvimento") [Ver captura completa](imagens/configuracoes-geral-original.webp)
+![Aba Geral com Chaves de acesso, Diagnóstico, Sobre e Ações destrutivas.](imagens/configuracoes-geral.webp "Aba Geral nas configurações") [Ver captura completa](imagens/configuracoes-geral-original.webp)
 
 Escolha um período e use **Atualizar** para ver os eventos recentes.
 Abra uma linha para ver os detalhes. Use
@@ -223,7 +220,7 @@ Buscar por `arqiuvo` nas mensagens guardadas pode realçar **arquivo** no balão
 
 ## Retenção de mensagens
 
-Na versão em desenvolvimento, abra **Configurações → Motor → Retenção de mensagens**. O Oiê salva os prazos padrão de **Salas** e **Conversas diretas** ao sair do campo alterado. Na rc.31 oferecida em **Baixar**, abra **Configurações → Este dispositivo → Retenção de mensagens** e selecione **Salvar** depois de editar.
+Abra **Configurações → Motor → Retenção de mensagens**. O Oiê salva os prazos padrão de **Salas** e **Conversas diretas** ao sair do campo alterado.
 
 Os prazos padrão valem para o motor do Oiê em uso, inclusive quando ele é compartilhado entre dispositivos. Para mudar o prazo de uma conversa, abra **Mais opções → Detalhes da conversa → Retenção de mensagens**. Use **Usar o padrão** para voltar ao prazo global.
 
@@ -237,7 +234,7 @@ O prazo também limita a recuperação do histórico no XMPP. Uma instalação n
 
 Ao selecionar uma conversa na lista, o Oiê abre na primeira mensagem não lida que estiver no histórico. Se todas estiverem lidas, mostra as mensagens mais recentes. Resultados de busca e respostas citadas continuam abrindo a mensagem selecionada.
 
-Depois de percorrer o histórico, role até o fim ou use **Ir para as mais recentes** acima do campo de mensagem, quando esse botão aparecer. Se chegarem mensagens enquanto você estiver no histórico, o botão mostra **Novas mensagens · ir para as últimas**. Ao permanecer no fim com a janela ou aba em foco e sem buscas ou diálogos abertos, o Oiê marca como lidas também as mensagens anteriores que ficaram fora da tela. O contador de não lidas e o indicador de menções são atualizados na lista de conversas.
+Depois de percorrer o histórico, role até o fim ou use o botão com seta para baixo **Ir para as mais recentes**, acima do campo de mensagem. Quando há mensagens não lidas, o botão mostra o contador da conversa e exibe **+99** para valores maiores. Ao permanecer no fim com a janela ou aba em foco e sem buscas ou diálogos abertos, o Oiê marca como lidas também as mensagens anteriores que ficaram fora da tela. O contador de não lidas e o indicador de menções são atualizados na lista de conversas.
 
 ### Marcar uma conversa como lida ou não lida
 
@@ -283,13 +280,13 @@ No menu do cartão, use **Ir para a mensagem** para voltar à conversa de origem
 
 ### Reprodução de áudio
 
-Para ouvir um anexo de áudio compatível, use o player na mensagem. Para salvar o arquivo, use **Baixar** no menu da mensagem.
+Para reproduzir e baixar um anexo de áudio ou uma gravação, consulte [Mensagens de voz](#mensagens-de-voz).
 
 ### Arquivos baixados
 
-Em **Configurações → Este dispositivo → Arquivos baixados**, escolha um prazo em **Manter arquivos por**. O padrão é **Até eu excluir**. Na rc.31, selecione **Salvar**. Na versão em desenvolvimento, com o motor local, a escolha é salva ao selecionar uma opção. Para liberar espaço agora, selecione **Excluir arquivos baixados** e confirme.
+Com o motor local, abra **Configurações → Este dispositivo → Arquivos baixados**. Em **Manter arquivos por**, a escolha é salva ao selecionar uma opção. O padrão é **Até eu excluir**. Para liberar espaço agora, selecione **Excluir arquivos baixados** e confirme.
 
-![Preferências de arquivos baixados com a opção Até eu excluir e os botões Salvar e Excluir arquivos baixados.](imagens/arquivos-baixados.webp "Retenção de arquivos baixados na rc.31")
+![Preferências de arquivos baixados com a opção Até eu excluir e o botão Excluir arquivos baixados.](imagens/arquivos-baixados.webp "Retenção de arquivos baixados") [Ver captura dos arquivos baixados](imagens/arquivos-baixados.webp)
 
 Quando um anexo compatível inclui dados de verificação, o Oiê confere a integridade do download completo. Se o conteúdo divergir do original anunciado, o Oiê recusa o download.
 
@@ -348,6 +345,20 @@ Você pode clicar no nome de um anexo pronto para baixar o original. No aplicati
 ![Rascunho com uma imagem, dois arquivos de texto e a legenda no campo de mensagem. Cada anexo tem um botão de remoção.](imagens/rascunho-anexos.webp "Anexos no rascunho")
 
 O Oiê aceita até 16 arquivos por mensagem, de até 20 MiB cada. O serviço XMPP pode impor um limite menor ou não permitir anexos naquela conversa. Quem recebe a mensagem pode baixar os arquivos pelos links enviados junto com a legenda. Os anexos prontos ficam no rascunho ao recarregar a página. Aguarde o preparo antes de trocar de conversa.
+
+## Mensagens de voz
+
+Com o rascunho sem texto nem anexos, selecione **Gravar áudio** e permita o acesso ao microfone. O botão aparece nas conversas que aceitam anexos, em navegadores e aplicativos compatíveis com a gravação.
+
+Enquanto grava, o campo mostra o tempo e a forma de onda. Selecione **Parar gravação** e use **Reproduzir gravação** para ouvir. Para refazer, use **Cancelar** no rascunho de áudio e selecione o microfone novamente. Quando estiver pronto, selecione **Enviar mensagem**.
+
+![Campo de mensagem durante a gravação, com o tempo, a forma de onda e o botão de parar.](imagens/gravacao-mensagem-de-voz.webp "Gravação em andamento") [Ver captura da gravação](imagens/gravacao-mensagem-de-voz.webp)
+
+![Gravação pronta para ouvir, descartar ou enviar.](imagens/rascunho-mensagem-de-voz.webp "Prévia da gravação") [Ver captura da prévia](imagens/rascunho-mensagem-de-voz.webp)
+
+Para ouvir um áudio da conversa, use **Reproduzir áudio** no balão. Quando disponível, a forma de onda aparece com a duração total. Selecione um ponto nela para avançar ou voltar. Para salvar o original, abra o menu da mensagem e selecione **Baixar áudio**.
+
+![Balão de mensagem com botão de reprodução, forma de onda e duração total.](imagens/onda-de-audio-no-balao.webp "Player de áudio no balão") [Ver captura do player](imagens/onda-de-audio-no-balao.webp)
 
 ## Prévia e reprodução de vídeos
 
