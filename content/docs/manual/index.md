@@ -71,7 +71,11 @@ Use **Trocar de conta** para ver todas as conversas ou filtrar por uma conta. Ao
 
 Em **Gerenciar contas**, abra o **Perfil** da conta e use **Editar nome** e **Salvar nome** para alterar o nome mostrado no Oiê. Com a conta conectada, use **Editar foto**, escolha uma imagem PNG, JPEG ou GIF de até 512 KB e confira a prévia antes de selecionar **Salvar foto**.
 
-![Seletor de contas do Oiê aberto, com as opções Todas as contas, Pessoal e Trabalho.](imagens/seletor-de-contas.webp "Seletor de contas")
+A borda dos avatares das conversas usa a cor da conta de origem, assim como o
+avatar em **Trocar de conta**. O nome e o endereço identificam a conta por
+escrito. As bordas coloridas chegarão depois da versão atual em **Baixar**.
+
+[![A mesma sala nas contas Alice e Bob, com bordas nas cores mostradas no seletor de contas.](imagens/seletor-de-contas.webp)](imagens/seletor-de-contas-original.webp)
 
 ### Remover uma conta
 
@@ -88,6 +92,21 @@ A primeira mensagem de uma conversa direta sem histórico anterior pode aparecer
 ![Solicitação de mensagem arquivada com o endereço do remetente no cabeçalho e o botão Aceitar.](imagens/solicitacao-de-mensagem.webp "Solicitação de mensagem arquivada")
 
 Uma solicitação arquivada continua em **Arquivadas**, abaixo dos filtros da lista de conversas, mesmo se chegarem mais mensagens. Selecione **Arquivadas** novamente para voltar à lista principal. Se você aceitar uma solicitação de mensagem por lá, a conversa volta à lista principal. Em **Convite para sala**, use **Entrar na sala** para pedir a entrada. O conteúdo aparece quando o servidor XMPP confirma. Você também pode arquivar o convite e decidir depois.
+
+## Remover uma conversa direta
+
+Em **Mais opções → Remover das conversas**, confirme a remoção para tirar
+a conversa de **Conversas** e **Arquivadas**. O histórico fica salvo.
+Abra o endereço novamente com a mesma conta, ou receba uma nova mensagem
+do contato, para a conversa voltar à lista.
+
+Nas salas e nas conversas diretas removidas, os links da busca, de **Favoritas**
+e de **Mídia e links** abrem o histórico salvo em modo de leitura. A conversa
+continua fora da lista.
+
+Para ver **Detalhes da conversa**, clique na foto ou nas iniciais do cabeçalho.
+**Remover das conversas** em conversas diretas chegará depois da versão atual
+em **Baixar**.
 
 ## Salas, convites e entrada automática
 
@@ -108,9 +127,49 @@ A prévia pode mostrar nome, descrição, assunto, foto e número de participant
 
 ![Aba Detalhes de Gerenciar sala com a imagem da sala e os campos de nome e tópico.](imagens/gerenciar-sala.webp "Aba Detalhes de Gerenciar sala")
 
+### Conferir o endereço e remover salas
+
+Estas opções chegarão depois da versão atual em **Baixar**.
+
+Ao criar uma sala, use o domínio do serviço de salas XMPP. Por exemplo, se a
+conta for `ana@exemplo.org`, o endereço da sala pode ser
+`trilha@salas.exemplo.org`. Confira com quem administra o servidor qual
+domínio usar. Se o endereço não puder ser confirmado, o Oiê mantém o
+formulário aberto para você corrigir ou tentar de novo.
+
+- **Mais opções → Remover das conversas** tira a sala de **Conversas** e
+  **Arquivadas** e interrompe a entrada automática pelo Oiê. Isso funciona
+  também para uma sala que não conectou. A sala e o histórico salvo continuam
+  disponíveis. Para trazê-la de volta, use **Entrar na sala** e informe o endereço.
+- Se você for proprietário, entre na sala e vá a **Mais opções → Gerenciar
+  sala → Detalhes → Excluir sala para todos**. Confirme para excluir a sala
+  do servidor e remover todos os participantes. Quando o servidor confirmar,
+  a sala sai de **Conversas** e **Arquivadas** da conta que pediu a exclusão.
+  O histórico salvo será mantido. Quem recebe o aviso de exclusão vê **Sala
+  excluída** e pode remover a sala da própria lista.
+
+[![Confirmação para remover uma sala das conversas, com as opções Cancelar e Remover das conversas.](imagens/remover-sala.webp)](imagens/remover-sala-original.webp)
+
+[![Confirmação para excluir a sala para todos, com aviso de que a ação não pode ser desfeita.](imagens/excluir-sala.webp)](imagens/excluir-sala-original.webp)
+
+### Ver o estado de uma sala
+
+O ponto no avatar mostra o estado da sala. O cabeçalho exibe o estado por
+escrito, e a lista destaca quando você está fora da sala ou quando há um
+problema.
+
+- **Na sala** indica que você já entrou.
+- **Conta desconectada** aparece quando sua conta está sem conexão.
+- **Sala excluída** aparece quando o servidor confirma a exclusão. O histórico
+  que você já tem continua acessível.
+- **Acesso restrito** indica que sua entrada foi recusada. **Sala
+  indisponível** indica que o Oiê não conseguiu acessar a sala.
+
+[![Uma sala na lista de conversas com um ponto vermelho no avatar e o rótulo Sala excluída.](imagens/estado-sala-excluida.webp)](imagens/estado-sala-excluida-original.webp)
+
 ## Histórico e busca em salas
 
-Em **Detalhes da conversa**, use **Baixar histórico antigo automaticamente** para escolher como o Oiê recupera o histórico daquela sala. Com a opção ligada, ele baixa mensagens antigas aos poucos. Com a opção desligada, pode buscá-las quando você usa **Mensagens anteriores** no topo da conversa ou faz uma busca, conforme o servidor permitir.
+Para abrir **Detalhes da conversa**, clique na foto ou nas iniciais no cabeçalho da conversa, ou abra **Mais opções → Detalhes da conversa**. Use **Baixar histórico antigo automaticamente** para escolher como o Oiê recupera o histórico daquela sala. Com a opção ligada, ele baixa mensagens antigas aos poucos. Com a opção desligada, pode buscá-las quando você usa **Mensagens anteriores** no topo da conversa ou faz uma busca, conforme o servidor permitir.
 
 Dentro de uma sala, abra **Mais opções** e selecione **Pesquisar mensagens**. Essa busca também pode consultar o arquivo do servidor, quando ele oferece busca por texto. Ative **Incluir histórico de edições** para encontrar versões anteriores de mensagens editadas. Use os [atalhos de busca](../atalhos/index.md#busca-na-conversa) para percorrer os resultados.
 
@@ -120,7 +179,7 @@ Buscar por `arqiuvo` nas mensagens guardadas pode realçar **arquivo** no balão
 
 ## Retenção de mensagens
 
-Em **Configurações → Este dispositivo → Retenção de mensagens**, escolha os prazos padrão para **Salas** e **Conversas diretas**. Esses prazos valem para o motor do Oiê em uso, inclusive quando ele é compartilhado entre dispositivos. Para mudar o prazo de uma conversa, abra **Detalhes da conversa → Retenção de mensagens**. Use **Usar o padrão** para voltar ao prazo global.
+Em **Configurações → Este dispositivo → Retenção de mensagens**, escolha os prazos padrão para **Salas** e **Conversas diretas**. Esses prazos valem para o motor do Oiê em uso, inclusive quando ele é compartilhado entre dispositivos. Para mudar o prazo de uma conversa, abra **Mais opções → Detalhes da conversa → Retenção de mensagens**. Use **Usar o padrão** para voltar ao prazo global.
 
 Por padrão, as salas têm prazo de **180 dias** e as conversas diretas usam **Sem limite**. O Oiê preserva as **100 mensagens mais recentes já guardadas de cada sala** e todas as mensagens favoritadas. Reduzir o prazo pode apagar outras mensagens antigas do histórico guardado pelo motor. Em um envio agendado, o prazo conta a partir do envio. Se a mensagem original de uma resposta expirar, o texto da resposta continua visível e a citação fica indisponível.
 
