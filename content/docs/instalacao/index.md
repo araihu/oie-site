@@ -236,8 +236,8 @@ instância e reserva 10 GiB para contas, histórico e mídia. Para usar um volum
 já existente, indique o nome do PVC com `persistence.existingClaim`. Use um
 PVC por instância. O volume é mantido quando você desinstala a release Helm.
 
-O Oiê não tem login próprio. Para acesso remoto, configure um proxy HTTPS
-com autenticação em todas as rotas, incluindo a API. Use Ingress ou conecte
+Com a imagem padrão do chart 0.2.2, configure um proxy HTTPS com
+autenticação em todas as rotas para acesso remoto, incluindo a API. Use Ingress ou conecte
 o Oiê a um Gateway existente com `httpRoute.enabled`, `httpRoute.parentRefs`
 e `httpRoute.hostnames`. Se o Gateway estiver em outro namespace, permita
 rotas do namespace do Oiê no listener. Veja exemplos no
@@ -257,6 +257,43 @@ httpRoute:
 O valor `"0s"` desativa o timeout de requisição para todos os caminhos da rota
 do Oiê. Se você omitir o valor, o controlador aplica seu comportamento padrão.
 [Timeouts do HTTPRoute na Gateway API](https://gateway-api.sigs.k8s.io/reference/api-types/httproute/#timeouts-optional)
+
+### OIDC no chart de desenvolvimento
+
+Use o chart em `charts/oie` do código-fonte e uma imagem compilada com o
+suporte a OIDC por variáveis de ambiente. Cadastre o retorno
+`https://oie.exemplo.com/auth/callback` no provedor. Crie o namespace da
+release e importe o arquivo do segredo do cliente em um Secret.
+
+```sh
+kubectl -n oie create secret generic oie-oidc --from-file=client-secret=./oidc-client-secret
+```
+
+Salve a configuração em `hosted-values.yaml`. Informe o emissor e o `sub`
+exatos recebidos do provedor e os endereços privados pelos quais o proxy
+chega ao Oiê.
+
+```yaml
+image:
+  tag: "TAG_DA_IMAGEM_COMPATIVEL"
+hosted:
+  enabled: true
+  publicURL: https://oie.exemplo.com
+  trustedTLSProxies: 10.42.0.19/32
+  oidc:
+    issuer: https://id.exemplo.com
+    subject: "SUB_DA_CONTA_DONA"
+    clientID: oie
+    clientSecretName: oie-oidc
+    clientSecretKey: client-secret
+```
+
+Configure também o Ingress ou o Gateway HTTPS e inclua
+`--values hosted-values.yaml` ao instalar o chart. O Helm passa a configuração
+OIDC ao pod por variáveis de ambiente e monta o segredo como arquivo somente
+de leitura. Ao trocar o segredo, reinicie o StatefulSet. O pod registra a
+conta dona na primeira inicialização. Para trocar uma conta já registrada,
+use `oie auth recover`.
 
 ## Rodar pelo navegador ou usar o CLI
 

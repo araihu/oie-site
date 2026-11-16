@@ -93,6 +93,13 @@ adequadas para acesso privado por túnel.
    HTTPS no Oiê ou um proxy TLS confiável. Abra o endereço público e selecione
    **Entrar**.
 
+Para configurar o processo por variáveis de ambiente, use
+`OIE_PUBLIC_URL`, `OIE_OIDC_CLIENT_ID` e `OIE_OIDC_CLIENT_SECRET_FILE`.
+A última aponta para o arquivo privado com o segredo. Para `oie auth init`
+e `oie auth recover`, use `OIE_DATA_DIR`, `OIE_OIDC_ISSUER` e
+`OIE_OIDC_SUBJECT`. As opções explícitas da linha de comando têm
+precedência. Veja também o [deploy com OIDC no Helm](../instalacao/index.md#oidc-no-chart-de-desenvolvimento).
+
 Ao abrir um link de conversa, de notificação ou de busca sem uma sessão,
 entre para voltar ao destino solicitado. Ao clicar em uma notificação da
 instância hospedada, o navegador abre o link da mensagem em uma janela.
