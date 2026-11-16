@@ -120,7 +120,14 @@ O pacote tem assinatura ad hoc. Se o macOS bloquear a abertura, tente abrir o Oi
 
 ## Compilar a partir do código-fonte
 
-Use Go 1.27.4 ou mais recente e compile no sistema e na arquitetura em que pretende usar o aplicativo. Nos exemplos, substitua `v0.0.1-rc.24` pela versão que você escolheu na página [Baixar](../../baixar/index.md). O comando instala o executável em `~/.local/bin`.
+Use Go 1.27.4 ou mais recente e compile no sistema e na arquitetura em que pretende usar o aplicativo. No comando abaixo, substitua `v0.0.1-rc.24` pela versão que você escolheu na página [Baixar](../../baixar/index.md). Execute a instalação dentro do repositório para usar as dependências da versão selecionada.
+
+```sh
+git clone --branch v0.0.1-rc.24 https://github.com/araihu/oie.git
+cd oie
+```
+
+Os comandos de instalação do Ubuntu e do macOS gravam o executável em `~/.local/bin`.
 
 ### Ubuntu 24.04 x86-64
 
@@ -136,8 +143,7 @@ pkg-config --modversion gtk4 webkitgtk-6.0 libsoup-3.0 gio-unix-2.0
 ```sh
 mkdir -p "$HOME/.local/bin"
 GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
-  GONOPROXY=github.com/araihu/oie \
-  go install -tags production github.com/araihu/oie/cmd/oie-desktop@v0.0.1-rc.24
+  go install -tags production ./cmd/oie-desktop
 ```
 
 ### macOS com Apple Silicon
@@ -147,12 +153,11 @@ Instale as ferramentas de linha de comando do Xcode com `xcode-select --install`
 ```sh
 mkdir -p "$HOME/.local/bin"
 GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
-  GONOPROXY=github.com/araihu/oie \
   MACOSX_DEPLOYMENT_TARGET=13.0 \
   CGO_CFLAGS="-O2 -g -mmacosx-version-min=13.0" \
   CGO_LDFLAGS="-O2 -g -mmacosx-version-min=13.0" \
   go install -tags production -ldflags='-extldflags=-mmacosx-version-min=13.0' \
-  github.com/araihu/oie/cmd/oie-desktop@v0.0.1-rc.24
+  ./cmd/oie-desktop
 ```
 
 Os parâmetros de compilação e linkedição mantêm o mesmo alvo. Consulte o [escopo verificado no guia do repositório](https://github.com/araihu/oie/blob/c5c3f37aeb815dd9ee4a1e94512ebf7fd2467071/docs/installation.md#platforms-and-verified-scope) para as versões de sistema testadas.

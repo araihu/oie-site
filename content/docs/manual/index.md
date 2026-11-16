@@ -65,9 +65,11 @@ Em **Gerenciar contas**, abra o **Perfil** da conta e use **Editar nome** e **Sa
 ![Seletor de contas do Oiê aberto, com as opções Todas as contas, Pessoal e Trabalho.](imagens/seletor-de-contas.webp "Seletor de contas")
 
 Na versão em desenvolvimento, o Oiê detecta quando o servidor XMPP deixa de
-responder e tenta reconectar a conta automaticamente. Os envios que aguardavam
-conexão são retomados. Se a conta parar por causa da senha ou da configuração
-do servidor, corrija o problema e volte ao **Perfil** para usar **Conectar**.
+responder e tenta reconectar a conta automaticamente. Quando o servidor permite,
+o Oiê retoma a sessão. Os envios que aguardavam conexão voltam a andar e os envios
+sem confirmação continuam disponíveis para revisão. Se a conta parar por causa
+da senha ou da configuração do servidor, corrija o problema e volte ao
+**Perfil** para usar **Conectar**.
 
 ### Remover uma conta
 

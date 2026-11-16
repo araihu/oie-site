@@ -45,6 +45,8 @@ A seção **Notificações de mensagens** e os controles de nome e foto no **Per
 
 As seções de **Diagnóstico** no manual e no guia de instalação acompanham a [revisão da rc.24](https://github.com/araihu/oie/tree/68f530a8f9da8039f46a0c8eb9cdbf700298ea1f). A captura usa dados fictícios em pt-BR.
 
+A recuperação de conexão e a instalação a partir de um checkout foram conferidas na [revisão 2edcbf9 do Oiê](https://github.com/araihu/oie/tree/2edcbf96d6e2295aa53014a545bf7781fba9a275).
+
 A instalação do `oiectl` por release independente foi conferida com a [release cli/v0.30.1](https://github.com/araihu/oie/releases/tag/cli/v0.30.1), gerada a partir do [contrato no commit f21196a](https://github.com/araihu/oie/tree/f21196a6d8fe2d1b75180470ccd26089db5d6bb9/api).
 
 A seção **Histórico e busca em salas** descreve o realce e a seleção de versões anteriores disponíveis desde a rc.13. [Revisão 699be01 do Oiê](https://github.com/araihu/oie/tree/699be01c6aacad2a03f1ddcd2bdb4eb195a64c69)
