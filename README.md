@@ -25,7 +25,12 @@ Ao atualizar **Baixar**, confira também os comandos e requisitos do [guia de in
 
 ## Documentação do Oiê
 
-A página **Baixar** aponta para os binários e para o código-fonte correspondente da [revisão da v0.0.1-rc.24](https://github.com/araihu/oie/tree/68f530a8f9da8039f46a0c8eb9cdbf700298ea1f).
+A página **Baixar** aponta para os binários e para o código-fonte correspondente da [v0.0.1-rc.28](https://github.com/araihu/oie/tree/4f46384c9084ff9098481fde658f9d9b55cc4367).
+
+Os guias de autenticação hospedada, conexão do desktop e acesso pelo CLI
+acompanham a rc.28. O guia de Kubernetes usa o
+[chart 0.2.6](https://github.com/araihu/oie/tree/helm-v0.2.6/charts/oie),
+distribuído como OCI no GHCR.
 
 O manual, os atalhos, os exemplos do CLI e os guias de instalação e arquitetura foram revisados com a [main do aplicativo em 9929391](https://github.com/araihu/oie/tree/9929391579532045b61fcad8d8883f7e3a351215) e a [v0.0.1-rc.3](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.3). Ao atualizar, registre o SHA das páginas revisadas e confira as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
 
