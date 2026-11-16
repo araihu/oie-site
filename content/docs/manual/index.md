@@ -8,7 +8,13 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.24](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.25](../../baixar/index.md).
+
+## Usar no iPhone
+
+Abra no Safari o endereço da sua instalação do Oiê. No menu da página, selecione **Compartilhar → Adicionar à Tela de Início** e confirme **Abrir como App da Web**. Abra o Oiê pelo novo ícone.
+
+A partir da rc.25, os campos mantêm a leitura ao abrir o teclado e a tela continua ampliável por pinça. Em paisagem, a barra do teclado pode cobrir parte do campo de mensagem e do botão **Enviar**.
 
 ## Motor local ou remoto
 
