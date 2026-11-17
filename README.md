@@ -124,7 +124,7 @@ A seção **Enviar sem conexão** foi conferida na
 posterior à rc.32 de **Baixar**. A captura mostra uma conversa fictícia em pt-BR.
 
 A seção **Criar e restaurar um backup manual** foi conferida na
-[revisão de desenvolvimento 48a4ce5 do Oiê](https://github.com/araihu/oie/tree/48a4ce5ae9485a4807c947ad295d20b7051c3f0a),
+[revisão de desenvolvimento 67e6cdf do Oiê](https://github.com/araihu/oie/tree/67e6cdf381d1cdf82d78f8215902e4f48f23cdb9),
 posterior à rc.32 de **Baixar**. Os comandos foram testados com perfis descartáveis.
 
 ### Referência do banco de dados
