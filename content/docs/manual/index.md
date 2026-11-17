@@ -356,6 +356,8 @@ Enquanto grava, o campo mostra o tempo e a forma de onda. Selecione **Parar grav
 
 ![Gravação pronta para ouvir, descartar ou enviar.](imagens/rascunho-mensagem-de-voz.webp "Prévia da gravação") [Ver captura da prévia](imagens/rascunho-mensagem-de-voz.webp)
 
+A partir da [rc.39](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.39), se o microfone for interrompido durante a gravação, o trecho já gravado fica no rascunho. Use **Reproduzir gravação** para conferir o áudio, **Cancelar** para refazer ou **Enviar mensagem** para aproveitar o trecho.
+
 Para ouvir um áudio da conversa, use **Reproduzir áudio** no balão. Quando disponível, a forma de onda aparece com a duração total. Selecione um ponto nela para avançar ou voltar. Para salvar o original, abra o menu da mensagem e selecione **Baixar áudio**.
 
 ![Balão de mensagem com botão de reprodução, forma de onda e duração total.](imagens/onda-de-audio-no-balao.webp "Player de áudio no balão") [Ver captura do player](imagens/onda-de-audio-no-balao.webp)
