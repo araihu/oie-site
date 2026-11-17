@@ -123,6 +123,10 @@ A seção **Enviar sem conexão** foi conferida na
 [revisão de desenvolvimento 34a1d58 do Oiê](https://github.com/araihu/oie/tree/34a1d58ec9cfc1ba9c3953f734c5437fc5e58645),
 posterior à rc.32 de **Baixar**. A captura mostra uma conversa fictícia em pt-BR.
 
+A seção **Criar e restaurar um backup manual** foi conferida na
+[revisão de desenvolvimento 48a4ce5 do Oiê](https://github.com/araihu/oie/tree/48a4ce5ae9485a4807c947ad295d20b7051c3f0a),
+posterior à rc.32 de **Baixar**. Os comandos foram testados com perfis descartáveis.
+
 ### Referência do banco de dados
 
 O catálogo e os diagramas registram a [revisão dd2e610 do Oiê](https://github.com/araihu/oie/tree/dd2e6106e56f34c86a1b74c6dd989ecdbd350bc6), fixada em `scripts/database-docs/oie-revision`. Para atualizar a referência, coloque nesse arquivo o SHA completo do Oiê que será documentado. Com Python 3 com SQLite e o [tbls v1.96.1](https://github.com/k1LoW/tbls/releases/tag/v1.96.1) no PATH, rode a partir da raiz do site.
