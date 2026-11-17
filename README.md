@@ -68,7 +68,7 @@ A instalação do `oiectl` por release independente foi conferida com a [release
 
 A seção **Histórico e busca em salas** descreve o realce e a seleção de versões anteriores disponíveis desde a rc.13. [Revisão 699be01 do Oiê](https://github.com/araihu/oie/tree/699be01c6aacad2a03f1ddcd2bdb4eb195a64c69)
 
-A seção de confirmações de leitura do manual foi conferida com o Oiê na revisão [f173d06e](https://github.com/araihu/oie/commit/f173d06e29312185aa4010b77b8c21630c8d559b).
+A documentação das confirmações de leitura no manual e no guia do CLI foi conferida na [revisão b7b13f71 do Oiê](https://github.com/araihu/oie/commit/b7b13f7120b31414ab16465a2f9eac266e8a67c7).
 
 As capturas da página inicial, do manual e dos atalhos mostram a interface em pt-BR com dados fictícios em instâncias isoladas. A captura da página inicial e as sete capturas de recursos mais antigas foram refeitas na [revisão e87ea75](https://github.com/araihu/oie/tree/e87ea75b0dac62915c0b4e7fe8cb49d01ecc6692). As capturas da busca geral e da solicitação de mensagem são de `6c8e8c0`, que tem a mesma interface. As capturas dos anexos e da busca de fuso horário foram feitas na revisão da rc.9 (`d6ce9ae`). As imagens estão em WebP.
 

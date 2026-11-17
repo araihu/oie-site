@@ -111,7 +111,7 @@ dele. O Oiê mantém a conversa e as mensagens guardadas.
 
 [![Painel Contatos da conta Pessoal, com o endereço XMPP de Bruno e os botões Adicionar contato e Remover.](imagens/contatos.webp)](imagens/contatos-original.webp)
 
-### Disponibilidade, digitação e confirmações de leitura
+### Disponibilidade e digitação
 
 No **Perfil** da conta, abra **Disponibilidade**, escolha **Disponível**,
 **Ausente** ou **Não perturbe** e selecione **Salvar**. Em **Não perturbe**,
@@ -120,17 +120,7 @@ as mensagens continuam chegando sem avisos ou sons para aquela conta.
 Desative **Mostrar quando estou digitando** e selecione **Salvar** para
 deixar de enviar o indicador nas conversas diretas compatíveis.
 
-**Enviar confirmações de leitura** vem ativado por conta. Para mudar a
-preferência, abra **Trocar de conta → Gerenciar contas → Perfil**, altere a
-opção e selecione **Salvar**. O Oiê pode enviar a confirmação ao ler mensagens
-ou escolher **Marcar como lida** em conversas compatíveis. Em conversas diretas,
-o contato precisa solicitar a confirmação e ter acesso à sua disponibilidade.
-Em salas compatíveis, outros participantes podem receber a confirmação.
-Desativar a opção mantém a contagem de mensagens não lidas no Oiê.
-
-Essa opção requer uma versão posterior à oferecida atualmente em **Baixar**.
-
-[![Preferências da conta com Disponibilidade, Mostrar quando estou digitando, Enviar confirmações de leitura e o botão Salvar.](imagens/disponibilidade-conta.webp)](imagens/disponibilidade-conta-original.webp)
+[![Preferências da conta com Não perturbe selecionado, a opção Mostrar quando estou digitando e o botão Salvar.](imagens/disponibilidade-conta.webp)](imagens/disponibilidade-conta-original.webp)
 
 ### Remover uma conta
 
@@ -239,6 +229,25 @@ Por padrão, as salas têm prazo de **180 dias** e as conversas diretas usam **S
 O prazo também limita a recuperação do histórico no XMPP. Uma instalação nova pode recuperar menos de 100 mensagens de uma sala, dependendo do prazo e dos dados ainda disponíveis no servidor. Com **Sem limite**, as mensagens deixam de expirar por idade, o histórico pode ocupar mais espaço e a recuperação pode alcançar as mensagens mais antigas que o servidor ainda oferece à sua conta.
 
 ![Aba Motor com 180 dias para salas e Sem limite para conversas diretas.](imagens/retencao-de-mensagens.webp "Retenção de mensagens na aba Motor") [Ver captura completa](imagens/retencao-de-mensagens-original.webp)
+
+## Confirmações de leitura
+
+Abra **Configurações → Motor → Confirmações de leitura** para definir o
+**Padrão global**. O Oiê começa com **Enviar**. Se você usar o mesmo motor
+em mais de um dispositivo, todos usam o mesmo padrão.
+
+Para definir uma exceção em uma conversa direta ou sala, abra **Mais opções →
+Detalhes da conversa → Confirmações de leitura**. Escolha **Enviar** ou
+**Não enviar** e selecione **Salvar**. Escolha **Usar o padrão** para voltar
+a acompanhar futuras mudanças na configuração global.
+
+O Oiê pode enviar confirmações ao ler mensagens ou usar **Marcar como lida**.
+Em conversas diretas, o contato precisa solicitar a confirmação e ter acesso
+à sua disponibilidade. Em salas compatíveis, outros participantes podem
+receber a confirmação. A opção de envio é independente da contagem de
+mensagens não lidas.
+
+Esses controles requerem uma versão posterior à oferecida em **Baixar**.
 
 ## Mensagens não lidas
 

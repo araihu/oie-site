@@ -158,8 +158,16 @@ Na retomada, use o ID do último evento que você processou por completo. Use `-
 | Gerenciar envios pendentes | `messages list-scheduled-messages`, `messages update-pending-message`, `messages send-scheduled-message-now`, `messages outbox cancel` |
 | Ver arquivos e links de conversas | `shared content list` |
 | Consultar os prazos de retenção | `engine retention get`, `conversations retention get --conversation-id CONVERSATION_UUID` |
+| Consultar as confirmações de leitura | `engine read-receipts get`, `conversations read-receipts get --conversation-id CONVERSATION_UUID` |
 | Retomar o fluxo de eventos | `events stream` |
 
 Com o CLI compilado da rc.9, `shared content list --include-first-page-counts` inclui a contagem da primeira página de mídia, links e documentos com os filtros usados na consulta.
+
+Os comandos `read-receipts` exigem um motor e CLI com OpenAPI 0.39.0 ou
+posterior. Para mudar o padrão, use `engine read-receipts set` com
+`expectedRevision` e `enabled` no corpo JSON. Para mudar uma conversa, use
+`conversations read-receipts set --conversation-id CONVERSATION_UUID` com
+`expectedRevision` e `override`. Use a revisão retornada por `get` e
+`override: null` para herdar o padrão.
 
 Acrescente `--help` ao grupo ou comando para ver as opções da sua versão, por exemplo `bin/oiectl messages send --help`. Consulte o [contrato OpenAPI 0.30.1 da release do CLI](https://oapi.araihu.com/catalogs/oie/documents/engine-v0.30.1/), o [contrato 0.38.0 usado pela rc.32](https://github.com/araihu/oie/blob/v0.0.1-rc.32/api/openapi.yaml) ou a [prévia do contrato no catálogo](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
