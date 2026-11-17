@@ -236,10 +236,18 @@ Abra **Configurações → Motor → Confirmações de leitura** para definir o
 **Padrão global**. O Oiê começa com **Enviar**. Se você usar o mesmo motor
 em mais de um dispositivo, todos usam o mesmo padrão.
 
-Para definir uma exceção em uma conversa direta ou sala, abra **Mais opções →
-Detalhes da conversa → Confirmações de leitura**. Escolha **Enviar** ou
-**Não enviar** e selecione **Salvar**. Escolha **Usar o padrão** para voltar
-a acompanhar futuras mudanças na configuração global.
+[![Padrão global de confirmações de leitura na aba Motor, com Enviar selecionado.](imagens/confirmacoes-leitura-global.webp)](imagens/confirmacoes-leitura-global-original.webp)
+
+Para definir uma exceção antes de abrir a conversa, use o botão
+**Confirmações de leitura** na linha da conversa direta ou sala, na lista.
+Em um computador, passe o ponteiro sobre a linha para ver o botão. Se a
+conversa já estiver aberta, a mesma opção fica em **Mais opções → Detalhes da
+conversa → Confirmações de leitura**.
+
+Escolha **Enviar** ou **Não enviar** e selecione **Salvar**. Escolha
+**Usar o padrão** para acompanhar futuras mudanças na configuração global.
+
+[![Confirmações de leitura abertas pela lista para a conversa Bruno.](imagens/confirmacoes-leitura-chat.webp)](imagens/confirmacoes-leitura-chat-original.webp)
 
 O Oiê pode enviar confirmações ao ler mensagens ou usar **Marcar como lida**.
 Em conversas diretas, o contato precisa solicitar a confirmação e ter acesso
