@@ -111,7 +111,7 @@ dele. O Oiê mantém a conversa e as mensagens guardadas.
 
 [![Painel Contatos da conta Pessoal, com o endereço XMPP de Bruno e os botões Adicionar contato e Remover.](imagens/contatos.webp)](imagens/contatos-original.webp)
 
-### Disponibilidade e digitação
+### Disponibilidade, digitação e confirmações de leitura
 
 No **Perfil** da conta, abra **Disponibilidade**, escolha **Disponível**,
 **Ausente** ou **Não perturbe** e selecione **Salvar**. Em **Não perturbe**,
@@ -120,7 +120,17 @@ as mensagens continuam chegando sem avisos ou sons para aquela conta.
 Desative **Mostrar quando estou digitando** e selecione **Salvar** para
 deixar de enviar o indicador nas conversas diretas compatíveis.
 
-[![Preferências da conta com Não perturbe selecionado, a opção Mostrar quando estou digitando e o botão Salvar.](imagens/disponibilidade-conta.webp)](imagens/disponibilidade-conta-original.webp)
+**Enviar confirmações de leitura** vem ativado por conta. Para mudar a
+preferência, abra **Trocar de conta → Gerenciar contas → Perfil**, altere a
+opção e selecione **Salvar**. O Oiê pode enviar a confirmação ao ler mensagens
+ou escolher **Marcar como lida** em conversas compatíveis. Em conversas diretas,
+o contato precisa solicitar a confirmação e ter acesso à sua disponibilidade.
+Em salas compatíveis, outros participantes podem receber a confirmação.
+Desativar a opção mantém a contagem de mensagens não lidas no Oiê.
+
+Essa opção requer uma versão posterior à oferecida atualmente em **Baixar**.
+
+[![Preferências da conta com Disponibilidade, Mostrar quando estou digitando, Enviar confirmações de leitura e o botão Salvar.](imagens/disponibilidade-conta.webp)](imagens/disponibilidade-conta-original.webp)
 
 ### Remover uma conta
 

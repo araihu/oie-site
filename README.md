@@ -68,6 +68,8 @@ A instalação do `oiectl` por release independente foi conferida com a [release
 
 A seção **Histórico e busca em salas** descreve o realce e a seleção de versões anteriores disponíveis desde a rc.13. [Revisão 699be01 do Oiê](https://github.com/araihu/oie/tree/699be01c6aacad2a03f1ddcd2bdb4eb195a64c69)
 
+A seção de confirmações de leitura do manual foi conferida com o Oiê na revisão [f173d06e](https://github.com/araihu/oie/commit/f173d06e29312185aa4010b77b8c21630c8d559b).
+
 As capturas da página inicial, do manual e dos atalhos mostram a interface em pt-BR com dados fictícios em instâncias isoladas. A captura da página inicial e as sete capturas de recursos mais antigas foram refeitas na [revisão e87ea75](https://github.com/araihu/oie/tree/e87ea75b0dac62915c0b4e7fe8cb49d01ecc6692). As capturas da busca geral e da solicitação de mensagem são de `6c8e8c0`, que tem a mesma interface. As capturas dos anexos e da busca de fuso horário foram feitas na revisão da rc.9 (`d6ce9ae`). As imagens estão em WebP.
 
 Os fluxos de **Mídia e links**, **Encaminhar mensagens** e **Descobrir e gerenciar salas**, a busca de favoritas no CLI e o índice de busca padrão foram conferidos na [revisão 4809005 do aplicativo](https://github.com/araihu/oie/tree/48090057513b2eab83d526d44df1d7764ac16a0b), usada na rc.14. As capturas de encaminhamento e gerenciamento de salas vieram dos PRs #31 e #22.
