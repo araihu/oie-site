@@ -1,6 +1,6 @@
 ---
 title: Manual
-description: Escolha o motor local ou remoto, conecte ou remova contas XMPP, gerencie contatos e presença, marque conversas como lidas ou não lidas, gerencie salas, busque e encaminhe mensagens, configure notificações, use o envio sem conexão, envie anexos, consulte o diagnóstico e gerencie a retenção e exclusão de dados.
+description: Escolha o motor local ou remoto, conecte ou remova contas XMPP, gerencie contatos e presença, marque conversas como lidas ou não lidas, gerencie salas, busque e encaminhe mensagens, configure notificações, consulte conversas recentes sem conexão, envie mensagens e anexos, consulte o diagnóstico e gerencie a retenção e exclusão de dados.
 language: pt-BR
 margo:
   imageViewer: true
@@ -401,6 +401,40 @@ Se aparecer **Verificar e tentar novamente**, use essa ação na mensagem. Se
 o navegador não conseguir guardar a mensagem, o texto continua disponível
 no campo de edição. Uma mensagem deixada no rascunho só é enviada quando
 você seleciona **Enviar**.
+
+## Ler conversas sem conexão
+
+Disponível a partir da rc.41, posterior à versão oferecida em **Baixar**.
+
+No Oiê local, abra no navegador as conversas que quer consultar. Se perder
+acesso ao Oiê, volte ao mesmo endereço no mesmo navegador. Na lista de
+conversas salvas, selecione a conversa para ler as mensagens de texto guardadas.
+**Tentar novamente** volta à conversa normal quando a conexão retornar. Seu
+rascunho reaparece no campo de mensagem.
+
+[![Conversa Casa aberta no navegador com o aviso Sem conexão.](imagens/historico-sem-conexao.webp)](imagens/historico-sem-conexao-original.webp)
+
+O navegador guarda até 12 conversas, com até 50 mensagens de texto recentes
+por conversa dentro do espaço disponível. Conversas recentes são guardadas
+por até sete dias. Nesta tela você pode ler as mensagens. Anexos, busca e
+edição de rascunhos ficam disponíveis ao reconectar.
+O recurso está disponível no Oiê local aberto em localhost ou HTTPS.
+
+### Manter uma conversa disponível sem conexão
+
+Disponível na versão em desenvolvimento, posterior à rc.44.
+
+Com a conversa aberta, selecione **Detalhes da conversa** e ative
+**Manter disponível sem conexão**. O Oiê protege as mensagens salvas
+do limite de sete dias e da remoção automática para liberar espaço.
+A opção vale para este navegador.
+
+[![Controle Manter disponível sem conexão ativado nos detalhes da conversa.](imagens/manter-disponivel-sem-conexao.webp)](imagens/manter-disponivel-sem-conexao.webp)
+
+Se faltar espaço, desative a opção em outra conversa e tente novamente.
+Se uma conversa protegida crescer e as mensagens mais recentes não couberem,
+o Oiê avisa que a cópia está desatualizada ou indisponível. Depois de liberar
+espaço, reabra a conversa com conexão para atualizar a cópia.
 
 ## Envio agendado
 
