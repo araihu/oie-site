@@ -130,6 +130,14 @@ A remoção apaga a senha salva, as conversas e as mensagens pendentes dessa con
 
 [![Confirmação de remoção da conta Pessoal no Oiê, com as opções Cancelar e Remover conta.](imagens/remover-conta.webp "Confirmação de remoção")](imagens/remover-conta-original.webp)
 
+## Percorrer a lista de conversas
+
+Quando a lista tiver mais de 100 conversas, selecione **Conversas mais antigas** no fim da lista para abrir a próxima página. Use **Conversas mais recentes** para voltar à primeira página. A conversa aberta e os filtros acompanham a navegação. No celular, o botão **Voltar** no cabeçalho da conversa retorna à lista na posição em que você estava.
+
+[![Fim da lista de conversas com a opção Conversas mais antigas.](imagens/paginacao-conversas.webp)](imagens/paginacao-conversas.webp)
+
+A paginação está prevista para uma versão posterior à rc.32 oferecida em **Baixar**.
+
 ## Solicitações de mensagem e convites recebidos
 
 A primeira mensagem de uma conversa direta sem histórico anterior pode aparecer como **Solicitação de mensagem**. Confira o endereço no cabeçalho. Use **Aceitar** para ler e responder, ou **Arquivar** para tirar a solicitação da lista principal. O conteúdo fica oculto até você aceitar.
