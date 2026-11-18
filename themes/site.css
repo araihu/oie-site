@@ -51,7 +51,7 @@
 
 [data-theme="oie"] .margo-landing-hero__visual {
   display: grid;
-  place-items: center;
+  place-items: center stretch;
   min-block-size: clamp(11rem, 28vw, 24rem);
   padding: clamp(1.5rem, 5vw, 3.75rem);
   margin-inline: 0;
