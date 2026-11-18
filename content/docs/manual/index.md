@@ -416,8 +416,7 @@ rascunho reaparece no campo de mensagem.
 
 O navegador guarda até 12 conversas, com até 50 mensagens de texto recentes
 por conversa dentro do espaço disponível. Conversas recentes são guardadas
-por até sete dias. Nesta tela você pode ler as mensagens. Anexos, busca e
-edição de rascunhos ficam disponíveis ao reconectar.
+por até sete dias. Anexos e edição de rascunhos ficam disponíveis ao reconectar.
 O recurso está disponível no Oiê local aberto em localhost ou HTTPS.
 
 ### Manter uma conversa disponível sem conexão
@@ -435,6 +434,22 @@ Se faltar espaço, desative a opção em outra conversa e tente novamente.
 Se uma conversa protegida crescer e as mensagens mais recentes não couberem,
 o Oiê avisa que a cópia está desatualizada ou indisponível. Depois de liberar
 espaço, reabra a conversa com conexão para atualizar a cópia.
+
+### Pesquisar mensagens sem conexão
+
+Disponível na versão em desenvolvimento, posterior à rc.44.
+
+Na lista de conversas salvas, use **Pesquisar mensagens salvas neste dispositivo**
+para procurar uma palavra ou frase. Para procurar em uma única conversa, abra-a
+e use **Pesquisar mensagens salvas nesta conversa**. Selecione um resultado para
+ir à mensagem. Use **Voltar** no navegador para rever os resultados ou limpe
+o campo de pesquisa para voltar às conversas ou às mensagens do chat.
+
+[![Busca sem conexão por “endereço” com resultados nas conversas Casa e Viagem.](imagens/pesquisar-mensagens-sem-conexao.webp)](imagens/pesquisar-mensagens-sem-conexao.webp)
+
+A busca alcança o texto guardado neste navegador. Se a mensagem que você procura
+ficou fora da cópia salva, reconecte o Oiê para pesquisar o histórico completo
+disponível.
 
 ## Envio agendado
 
