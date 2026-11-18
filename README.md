@@ -26,7 +26,7 @@ Ao atualizar **Baixar**, confira também os comandos e requisitos do [guia de in
 ## Documentação do Oiê
 
 As seções **Ler conversas sem conexão** e **Pesquisar mensagens sem conexão**
-foram conferidas na [revisão 632b402 do Oiê](https://github.com/araihu/oie/tree/632b40262c5c12cfd2c516e2133bfb1a4d9f8dfb),
+foram conferidas na [revisão 77af49c do Oiê](https://github.com/araihu/oie/tree/77af49ce87946f082f50571c505d51496e161a33),
 posterior à rc.44. As capturas mostram buscas e mensagens de conversas fictícias
 no Oiê local em pt-BR com o navegador desconectado.
 
