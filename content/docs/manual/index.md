@@ -230,6 +230,33 @@ O prazo também limita a recuperação do histórico no XMPP. Uma instalação n
 
 ![Aba Motor com 180 dias para salas e Sem limite para conversas diretas.](imagens/retencao-de-mensagens.webp "Retenção de mensagens na aba Motor") [Ver captura completa](imagens/retencao-de-mensagens-original.webp)
 
+## Confirmações de leitura
+
+Abra **Configurações → Motor → Confirmações de leitura** para definir o
+**Padrão global**. O Oiê começa com **Enviar**. Se você usar o mesmo motor
+em mais de um dispositivo, todos usam o mesmo padrão.
+
+[![Padrão global de confirmações de leitura na aba Motor, com Enviar selecionado.](imagens/confirmacoes-leitura-global.webp)](imagens/confirmacoes-leitura-global-original.webp)
+
+Para definir uma exceção antes de abrir a conversa, use o botão
+**Confirmações de leitura** na linha da conversa direta ou sala, na lista.
+Em um computador, passe o ponteiro sobre a linha para ver o botão. Se a
+conversa já estiver aberta, a mesma opção fica em **Mais opções → Detalhes da
+conversa → Confirmações de leitura**.
+
+Escolha **Enviar** ou **Não enviar** e selecione **Salvar**. Escolha
+**Usar o padrão** para acompanhar futuras mudanças na configuração global.
+
+[![Confirmações de leitura abertas pela lista para a conversa Bruno.](imagens/confirmacoes-leitura-chat.webp)](imagens/confirmacoes-leitura-chat-original.webp)
+
+O Oiê pode enviar confirmações ao ler mensagens ou usar **Marcar como lida**.
+Em conversas diretas, o contato precisa solicitar a confirmação e ter acesso
+à sua disponibilidade. Em salas compatíveis, outros participantes podem
+receber a confirmação. A opção de envio é independente da contagem de
+mensagens não lidas.
+
+Esses controles requerem uma versão posterior à oferecida em **Baixar**.
+
 ## Mensagens não lidas
 
 Ao selecionar uma conversa na lista, o Oiê abre na primeira mensagem não lida que estiver no histórico. Se todas estiverem lidas, mostra as mensagens mais recentes. Resultados de busca e respostas citadas continuam abrindo a mensagem selecionada.
