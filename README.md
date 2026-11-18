@@ -42,6 +42,10 @@ da [v0.0.1-rc.32](https://github.com/araihu/oie/tree/v0.0.1-rc.32).
 O guia de instalação e os trechos do manual sobre mensagens de voz, arquivos
 baixados e o contador de não lidas acompanham essa versão.
 
+A recuperação do rascunho quando o microfone é interrompido foi conferida na
+[revisão 5aa2aa0 do Oiê](https://github.com/araihu/oie/tree/5aa2aa0e6d49c460ded55e655d832b70746f8799),
+posterior à versão oferecida em **Baixar**.
+
 Os guias de autenticação hospedada e conexão do desktop acompanham a rc.28.
 O guia do CLI documenta a API 0.38.0 da rc.32. O guia de Kubernetes usa o
 [chart 0.2.10](https://github.com/araihu/oie/tree/helm-v0.2.10/charts/oie),
