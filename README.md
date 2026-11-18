@@ -31,7 +31,7 @@ posterior à rc.36. As capturas mostram o Oiê local em pt-BR com dados fictíci
 e o navegador desconectado.
 
 O controle **Manter disponível sem conexão** foi conferido na
-[revisão 7362cbe do Oiê](https://github.com/araihu/oie/tree/7362cbea37bfb4d443ecc76036f8c5f4a2c9bff3),
+[revisão 1261089 do Oiê](https://github.com/araihu/oie/tree/1261089fcd25b0858fff8cbc3ff6a4b992495808),
 posterior à rc.44. A captura mostra os detalhes de uma conversa fictícia no
 Oiê local em pt-BR.
 

@@ -432,7 +432,9 @@ A opção vale para este navegador.
 [![Controle Manter disponível sem conexão ativado nos detalhes da conversa.](imagens/manter-disponivel-sem-conexao.webp)](imagens/manter-disponivel-sem-conexao.webp)
 
 Se faltar espaço, desative a opção em outra conversa e tente novamente.
-Quando a conexão voltar, abra a conversa para atualizar as mensagens salvas.
+Se uma conversa protegida crescer e as mensagens mais recentes não couberem,
+o Oiê avisa que a cópia está desatualizada ou indisponível. Depois de liberar
+espaço, reabra a conversa com conexão para atualizar a cópia.
 
 ## Envio agendado
 
