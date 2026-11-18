@@ -404,20 +404,35 @@ você seleciona **Enviar**.
 
 ## Ler conversas sem conexão
 
-Disponível na versão em desenvolvimento, posterior à rc.36.
+Disponível a partir da rc.41, posterior à versão oferecida em **Baixar**.
 
 No Oiê local, abra no navegador as conversas que quer consultar. Se perder
-acesso ao Oiê, volte ao mesmo endereço no mesmo navegador. Em **Conversas
-recentes**, selecione a conversa para ler as mensagens de texto guardadas.
+acesso ao Oiê, volte ao mesmo endereço no mesmo navegador. Na lista de
+conversas salvas, selecione a conversa para ler as mensagens de texto guardadas.
 **Tentar novamente** volta à conversa normal quando a conexão retornar. Seu
 rascunho reaparece no campo de mensagem.
 
 [![Conversa Casa aberta no navegador com o aviso Sem conexão.](imagens/historico-sem-conexao.webp)](imagens/historico-sem-conexao-original.webp)
 
-O navegador guarda até 12 conversas por até sete dias, com até 50 mensagens
-de texto recentes por conversa dentro do espaço disponível. Esta tela é para
-leitura. Anexos, busca e edição de rascunhos ficam disponíveis ao reconectar.
+O navegador guarda até 12 conversas, com até 50 mensagens de texto recentes
+por conversa dentro do espaço disponível. Conversas recentes são guardadas
+por até sete dias. Nesta tela você pode ler as mensagens. Anexos, busca e
+edição de rascunhos ficam disponíveis ao reconectar.
 O recurso está disponível no Oiê local aberto em localhost ou HTTPS.
+
+### Manter uma conversa disponível sem conexão
+
+Disponível na versão em desenvolvimento, posterior à rc.44.
+
+Com a conversa aberta, selecione **Detalhes da conversa** e ative
+**Manter disponível sem conexão**. O Oiê protege as mensagens salvas
+do limite de sete dias e da remoção automática para liberar espaço.
+A opção vale para este navegador.
+
+[![Controle Manter disponível sem conexão ativado nos detalhes da conversa.](imagens/manter-disponivel-sem-conexao.webp)](imagens/manter-disponivel-sem-conexao.webp)
+
+Se faltar espaço, desative a opção em outra conversa e tente novamente.
+Quando a conexão voltar, abra a conversa para atualizar as mensagens salvas.
 
 ## Envio agendado
 

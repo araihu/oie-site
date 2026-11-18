@@ -30,6 +30,11 @@ A seção **Ler conversas sem conexão** foi conferida com a
 posterior à rc.36. As capturas mostram o Oiê local em pt-BR com dados fictícios
 e o navegador desconectado.
 
+O controle **Manter disponível sem conexão** foi conferido na
+[revisão 7362cbe do Oiê](https://github.com/araihu/oie/tree/7362cbea37bfb4d443ecc76036f8c5f4a2c9bff3),
+posterior à rc.44. A captura mostra os detalhes de uma conversa fictícia no
+Oiê local em pt-BR.
+
 As instruções dos repositórios DNF, pacman e Flatpak seguem a publicação da [revisão 5a2339c](https://github.com/araihu/oie/tree/5a2339c87e8dc42078afcfc0be2efbade2c6c423).
 
 A página **Baixar** aponta para os binários e para o código-fonte correspondente
