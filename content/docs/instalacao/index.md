@@ -90,7 +90,7 @@ flatpak install --user araihu-oie com.araihu.oie
 Se você instalou `com.araihu.oie` a partir de um bundle, feche o aplicativo e
 use `flatpak install --user --reinstall araihu-oie com.araihu.oie` para mudar a
 origem e manter o perfil. Depois, atualize com `flatpak update --user com.araihu.oie`.
-O [bundle da rc.45](https://github.com/araihu/oie/releases/download/v0.0.1-rc.45/oie-v0.0.1-rc.45-x86_64.flatpak) também está disponível para download direto.
+O [bundle da rc.46](https://github.com/araihu/oie/releases/download/v0.0.1-rc.46/oie-v0.0.1-rc.46-x86_64.flatpak) também está disponível para download direto.
 
 Se você já usava o Flatpak da `rc.8` ou anterior, [migre seu perfil](#migrar-para-comaraihuoie) antes de abrir o novo Oiê. Depois, abra o aplicativo pelo menu ou execute `flatpak run com.araihu.oie`.
 
@@ -136,7 +136,7 @@ Para atualizar, encerre o Oiê e execute `brew upgrade --cask araihu/oie/oie` no
 
 ## Instalar o pacote publicado
 
-Baixe o [instalador da RC 45 (install.sh)](https://github.com/araihu/oie/releases/download/v0.0.1-rc.45/install.sh). Ele escolhe o pacote para macOS com Apple Silicon ou Ubuntu 24.04 x86-64 e confere a soma SHA-256 antes de extrair os arquivos.
+Baixe o [instalador da RC 46 (install.sh)](https://github.com/araihu/oie/releases/download/v0.0.1-rc.46/install.sh). Ele escolhe o pacote para macOS com Apple Silicon ou Ubuntu 24.04 x86-64 e confere a soma SHA-256 antes de extrair os arquivos.
 
 No **Ubuntu 24.04**, instale primeiro as bibliotecas usadas pelo aplicativo.
 
@@ -158,7 +158,7 @@ sh ./install.sh
 | macOS | `~/Applications/Oie.app` | Abra o Oiê no Finder. |
 | Ubuntu | `~/.local/bin/oie-desktop` | Abra o Oiê pelo menu de aplicativos em uma sessão gráfica. |
 
-Este instalador usa a `v0.0.1-rc.45` por padrão. Para escolher outra versão publicada ou mudar o destino, consulte as opções `--version` e `--prefix` com `sh ./install.sh --help`.
+Este instalador usa a `v0.0.1-rc.46` por padrão. Para escolher outra versão publicada ou mudar o destino, consulte as opções `--version` e `--prefix` com `sh ./install.sh --help`.
 
 ### Primeira abertura no macOS
 
@@ -180,7 +180,7 @@ pkg-config --modversion gtk4 webkitgtk-6.0 libsoup-3.0 gio-unix-2.0
 ```
 
 ```sh
-git clone --branch v0.0.1-rc.45 https://github.com/araihu/oie.git
+git clone --branch v0.0.1-rc.46 https://github.com/araihu/oie.git
 cd oie
 mkdir -p "$HOME/.local/bin"
 GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
@@ -192,7 +192,7 @@ GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
 Instale as ferramentas de linha de comando do Xcode com `xcode-select --install` se elas ainda estiverem ausentes.
 
 ```sh
-git clone --branch v0.0.1-rc.45 https://github.com/araihu/oie.git
+git clone --branch v0.0.1-rc.46 https://github.com/araihu/oie.git
 cd oie
 mkdir -p "$HOME/.local/bin"
 GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
@@ -203,7 +203,7 @@ GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
   ./cmd/oie-desktop
 ```
 
-Os parâmetros de compilação e linkedição mantêm o mesmo alvo. Consulte o [escopo verificado no guia do repositório](https://github.com/araihu/oie/blob/v0.0.1-rc.45/docs/installation.md#platforms-and-verified-scope) para as versões de sistema testadas.
+Os parâmetros de compilação e linkedição mantêm o mesmo alvo. Consulte o [escopo verificado no guia do repositório](https://github.com/araihu/oie/blob/v0.0.1-rc.46/docs/installation.md#platforms-and-verified-scope) para as versões de sistema testadas.
 
 ### Abrir pelo Terminal
 
@@ -241,7 +241,7 @@ Se a janela não abrir após uma atualização, inicie o Oiê pelo terminal para
 
 ### Criar um backup manual
 
-Na rc.45, você pode exportar o perfil com o motor parado e incluir a mídia baixada. A restauração mescla os dados em um perfil novo ou existente. Crie o arquivo com a rc.45 para restaurá-lo nessa versão. Os envios recuperados ficam pausados até você revisá-los. [Comandos de backup, verificação e restauração](https://github.com/araihu/oie/blob/v0.0.1-rc.45/docs/installation.md#create-and-verify-a-manual-backup)
+Na rc.46, você pode exportar o perfil com o motor parado e incluir a mídia baixada. A restauração mescla os dados em um perfil novo ou existente. A restauração aceita backups com o esquema de banco 54. Os envios recuperados ficam pausados até você revisá-los. [Comandos de backup, verificação e restauração](https://github.com/araihu/oie/blob/v0.0.1-rc.46/docs/installation.md#create-and-verify-a-manual-backup)
 
 ### Remover o aplicativo
 
@@ -274,12 +274,12 @@ Abra no Safari o endereço HTTPS da sua [instalação hospedada](../arquitetura/
 ## Rodar no Kubernetes com Helm
 
 Use um cluster com armazenamento persistente, o Helm e o `kubectl`.
-O [chart Helm 0.2.23](https://github.com/araihu/oie/releases/tag/helm-v0.2.23)
-está no GHCR e usa por padrão a imagem do Oiê `v0.0.1-rc.45`.
+O [chart Helm 0.2.24](https://github.com/araihu/oie/releases/tag/helm-v0.2.24)
+está no GHCR e usa por padrão a imagem do Oiê `v0.0.1-rc.46`.
 
 ```sh
 helm upgrade --install oie \
-  oci://ghcr.io/araihu/charts/oie --version 0.2.23 \
+  oci://ghcr.io/araihu/charts/oie --version 0.2.24 \
   --namespace oie --create-namespace --wait --timeout 10m
 kubectl --namespace oie port-forward service/oie 8080:80
 ```
@@ -294,7 +294,7 @@ Para acesso público, habilite o [OIDC no Helm](#oidc-no-helm) e configure
 Ingress ou um Gateway HTTPS. Para conectar um Gateway existente, use
 `httpRoute.enabled`, `httpRoute.parentRefs` e `httpRoute.hostnames`. Se o
 Gateway estiver em outro namespace, permita rotas do namespace do Oiê no
-listener. Veja exemplos no [guia do chart](https://github.com/araihu/oie/tree/helm-v0.2.23/charts/oie#remote-access).
+listener. Veja exemplos no [guia do chart](https://github.com/araihu/oie/tree/helm-v0.2.24/charts/oie#remote-access).
 
 Se o timeout de requisição do Gateway interromper as atualizações ao vivo
 das conversas, acrescente este trecho ao arquivo de valores do chart. Use
