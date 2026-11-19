@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.45](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.46](../../baixar/index.md).
 
 ## Motor local ou remoto
 
@@ -163,7 +163,7 @@ Ao conectar a conta, o Oiê respeita os favoritos XMPP marcados para entrada aut
 
 Abra o menu **Nova conversa** e escolha **Conversa direta**, **Entrar na sala** ou **Criar sala**. Para entrar ou criar uma sala, siga o formulário da opção escolhida. Selecione a conta e informe um endereço, como `trilha@salas.exemplo.org`. Para entrar, você também pode colar um convite no formato `xmpp:trilha@salas.exemplo.org?join`. Em um cartão de convite, **Ver sala** abre o formulário com o endereço preenchido.
 
-A prévia pode mostrar nome, descrição, assunto, foto e número de participantes, conforme o que o serviço disponibiliza à conta selecionada. A entrada só acontece depois que você confirma. A criação de salas depende do suporte do serviço XMPP. Se a sala exigir senha, informe-a no formulário de entrada.
+A prévia pode mostrar nome, descrição, assunto, foto e número de participantes, conforme o que o serviço disponibiliza à conta selecionada. A entrada só acontece depois que você confirma. A criação de salas depende do suporte do serviço XMPP. Se a sala exigir senha, informe-a no formulário de entrada. Se a conexão cair depois que você confirmar, tente novamente. Ao reabrir o Oiê, ele verifica se o pedido foi aceito e só pede a senha outra vez se precisar reenviá-lo.
 
 ![Cartão de convite para a sala Trilhas de sábado com endereço, descrição e o link Ver sala.](imagens/convite-de-sala.webp "Cartão de convite para uma sala")
 
@@ -443,7 +443,7 @@ espaço, reabra a conversa com conexão para atualizar a cópia.
 
 ### Ajustar o espaço para conversas salvas
 
-Disponível na versão em desenvolvimento, posterior à rc.45.
+Disponível desde a rc.46.
 
 Em **Configurações → Este dispositivo → Armazenamento sem conexão**, confira o
 espaço ocupado pelo texto das conversas e escolha o **Limite para conversas
