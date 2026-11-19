@@ -30,6 +30,9 @@ foram conferidas na [revisão 77af49c do Oiê](https://github.com/araihu/oie/tre
 posterior à rc.44. As capturas mostram buscas e mensagens de conversas fictícias
 no Oiê local em pt-BR com o navegador desconectado.
 
+A configuração **Armazenamento sem conexão** foi conferida na
+[revisão 821db0d do Oiê](https://github.com/araihu/oie/tree/821db0db68442780e25fd49417193f2cb840f84c).
+
 O controle **Manter disponível sem conexão** foi conferido na
 [revisão 1261089 do Oiê](https://github.com/araihu/oie/tree/1261089fcd25b0858fff8cbc3ff6a4b992495808),
 posterior à rc.44. A captura mostra os detalhes de uma conversa fictícia no
