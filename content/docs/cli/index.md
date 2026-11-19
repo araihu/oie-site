@@ -6,7 +6,7 @@ language: pt-BR
 
 # CLI do Oiê
 
-O `oiectl` acessa um motor do Oiê em execução. Os exemplos usam uma instância local em `http://127.0.0.1:8080`. O [Oiê v0.0.1-rc.32](../../baixar/index.md) usa a API 0.38.0. A versão do CLI distribuída em separado acompanha o contrato 0.30.1.
+O `oiectl` acessa um motor do Oiê em execução. Os exemplos usam uma instância local em `http://127.0.0.1:8080`. O [Oiê v0.0.1-rc.45](../../baixar/index.md) usa a API 0.40.0. A versão do CLI distribuída em separado acompanha o contrato 0.30.1.
 
 ## Instalar o CLI
 

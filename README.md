@@ -27,31 +27,29 @@ Ao atualizar **Baixar**, confira também os comandos e requisitos do [guia de in
 
 As seções **Ler conversas sem conexão** e **Pesquisar mensagens sem conexão**
 foram conferidas na [revisão 77af49c do Oiê](https://github.com/araihu/oie/tree/77af49ce87946f082f50571c505d51496e161a33),
-posterior à rc.44. As capturas mostram buscas e mensagens de conversas fictícias
+com busca disponível na rc.45. As capturas mostram buscas e mensagens de conversas fictícias
 no Oiê local em pt-BR com o navegador desconectado.
 
 O controle **Manter disponível sem conexão** foi conferido na
 [revisão 1261089 do Oiê](https://github.com/araihu/oie/tree/1261089fcd25b0858fff8cbc3ff6a4b992495808),
-posterior à rc.44. A captura mostra os detalhes de uma conversa fictícia no
+com o controle disponível na rc.45. A captura mostra os detalhes de uma conversa fictícia no
 Oiê local em pt-BR.
 
 As instruções dos repositórios DNF, pacman e Flatpak seguem a publicação da [revisão 5a2339c](https://github.com/araihu/oie/tree/5a2339c87e8dc42078afcfc0be2efbade2c6c423).
 
 A página **Baixar** aponta para os binários e para o código-fonte correspondente
-da [v0.0.1-rc.32](https://github.com/araihu/oie/tree/v0.0.1-rc.32).
-O guia de instalação e os trechos do manual sobre mensagens de voz, arquivos
-baixados e o contador de não lidas acompanham essa versão.
+da [v0.0.1-rc.45](https://github.com/araihu/oie/tree/v0.0.1-rc.45). O guia de instalação acompanha essa versão. As seções sobre backup e uso sem conexão foram conferidas com a [revisão f722c73](https://github.com/araihu/oie/tree/f722c738d633f83754332c229f232a9582037912). Os trechos do manual sobre mensagens de voz, arquivos baixados e o contador de não lidas foram conferidos na rc.32.
 
+A paginação da lista de conversas no manual foi conferida na [revisão 846788d9 do aplicativo](https://github.com/araihu/oie/commit/846788d9) e está disponível na rc.45.
 Os guias de autenticação hospedada e conexão do desktop acompanham a rc.28.
 O guia do CLI documenta a API 0.38.0 da rc.32. O guia de Kubernetes usa o
-[chart 0.2.10](https://github.com/araihu/oie/tree/helm-v0.2.10/charts/oie),
+[chart 0.2.23](https://github.com/araihu/oie/tree/helm-v0.2.23/charts/oie),
 distribuído como OCI no GHCR.
 
 As seções de contatos, disponibilidade e leitura do manual foram conferidas com a
 [RC 28 no commit 4f46384](https://github.com/araihu/oie/tree/4f46384c9084ff9098481fde658f9d9b55cc4367).
-As capturas mostram a interface em pt-BR com contas fictícias. O link direto
-para `install.sh` usa o arquivo da rc.32. Os comandos do
-`oiectl` para remover salas e conversas diretas foram conferidos na mesma revisão.
+As capturas mostram a interface em pt-BR com contas fictícias. Os comandos do
+`oiectl` para remover salas e conversas diretas foram conferidos na rc.32.
 
 O manual, os atalhos, os exemplos do CLI e os guias de instalação e arquitetura foram revisados com a [main do aplicativo em 9929391](https://github.com/araihu/oie/tree/9929391579532045b61fcad8d8883f7e3a351215) e a [v0.0.1-rc.3](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.3). Ao atualizar, registre o SHA das páginas revisadas e confira as notas da versão oferecida em **Baixar**. O contrato HTTP fica no [catálogo OpenAPI da Arai Hû](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
 
@@ -130,8 +128,8 @@ balão foram conferidos na [revisão 96ca2c6 do Oiê](https://github.com/araihu/
 As capturas em pt-BR usam uma conversa fictícia e áudio de teste.
 
 A seção **Enviar sem conexão** foi conferida na
-[revisão de desenvolvimento 34a1d58 do Oiê](https://github.com/araihu/oie/tree/34a1d58ec9cfc1ba9c3953f734c5437fc5e58645),
-posterior à rc.32 de **Baixar**. A captura mostra uma conversa fictícia em pt-BR.
+[revisão de desenvolvimento 34a1d58 do Oiê](https://github.com/araihu/oie/tree/34a1d58ec9cfc1ba9c3953f734c5437fc5e58645)
+e está disponível desde a rc.34. A captura mostra uma conversa fictícia em pt-BR.
 
 ### Referência do banco de dados
 

@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.32](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.45](../../baixar/index.md).
 
 ## Motor local ou remoto
 
@@ -129,6 +129,12 @@ Em **Trocar de conta → Gerenciar contas**, abra a conta e selecione **Remover 
 A remoção apaga a senha salva, as conversas e as mensagens pendentes dessa conta no Oiê. As outras contas e as mensagens no servidor XMPP são mantidas. Se você usa um motor remoto, a conta também some dos outros dispositivos conectados a ele.
 
 [![Confirmação de remoção da conta Pessoal no Oiê, com as opções Cancelar e Remover conta.](imagens/remover-conta.webp "Confirmação de remoção")](imagens/remover-conta-original.webp)
+
+## Percorrer a lista de conversas
+
+Quando a lista tiver mais de 100 conversas, selecione **Conversas mais antigas** no fim da lista para abrir a próxima página. Use **Conversas mais recentes** para voltar à primeira página. A conversa aberta e os filtros acompanham a navegação. No celular, **Voltar para as conversas** retorna à lista na posição em que você estava, mesmo se a conexão cair.
+
+[![Fim da lista de conversas com a opção Conversas mais antigas.](imagens/paginacao-conversas.webp)](imagens/paginacao-conversas.webp)
 
 ## Solicitações de mensagem e convites recebidos
 
@@ -379,7 +385,7 @@ pelo cartão ou pelo menu de ações em **Mídia**.
 
 ## Enviar sem conexão
 
-Disponível na versão em desenvolvimento, posterior à rc.32 de **Baixar**.
+Disponível desde a rc.34.
 
 Se a conversa já estiver aberta quando a conexão cair, selecione **Enviar**
 para guardar a mensagem neste navegador. O ícone de sinal cortado ao lado do
@@ -404,7 +410,7 @@ você seleciona **Enviar**.
 
 ## Ler conversas sem conexão
 
-Disponível a partir da rc.41, posterior à versão oferecida em **Baixar**.
+Disponível desde a rc.41.
 
 No Oiê local, abra no navegador as conversas que quer consultar. Se perder
 acesso ao Oiê, volte ao mesmo endereço no mesmo navegador. Na lista de
@@ -421,7 +427,7 @@ O recurso está disponível no Oiê local aberto em localhost ou HTTPS.
 
 ### Manter uma conversa disponível sem conexão
 
-Disponível na versão em desenvolvimento, posterior à rc.44.
+Disponível desde a rc.45.
 
 Com a conversa aberta, selecione **Detalhes da conversa** e ative
 **Manter disponível sem conexão**. O Oiê protege as mensagens salvas
@@ -437,7 +443,7 @@ espaço, reabra a conversa com conexão para atualizar a cópia.
 
 ### Pesquisar mensagens sem conexão
 
-Disponível na versão em desenvolvimento, posterior à rc.44.
+Disponível desde a rc.45.
 
 Na lista de conversas salvas, use **Pesquisar mensagens salvas neste dispositivo**
 para procurar uma palavra ou frase. Para procurar em uma única conversa, abra-a
@@ -465,7 +471,7 @@ Se o aplicativo ou a conexão estiver indisponível no horário marcado, o Oiê 
 
 ## Citações e texto original
 
-O Oiê exibe Markdown nas mensagens por padrão. Para citar várias linhas, comece cada uma com `>`. Uma linha sem o marcador fica fora da citação, mesmo quando vem logo abaixo. Em **Configurações → Este dispositivo**, use **Formatar mensagens com Markdown** para ajustar a exibição. No menu da mensagem, use **Copiar mensagem original** para copiar o texto com os marcadores Markdown.
+O Oiê exibe Markdown nas mensagens por padrão. Para citar várias linhas, comece cada uma com `>`. Uma linha sem o marcador fica fora da citação, mesmo quando vem logo abaixo. Em **Configurações → Este dispositivo**, use **Formatar mensagens com Markdown** para ajustar a exibição. Abra **Ações da mensagem → Copiar mensagem original** para copiar o texto com os marcadores Markdown. Se a conexão cair com a conversa aberta, você ainda pode copiar o texto.
 
 O lápis ao lado do horário indica uma mensagem editada. Selecione-o ou use **Ver histórico de edições** no menu da mensagem para consultar as versões que o Oiê guardou.
 
