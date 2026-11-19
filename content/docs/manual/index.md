@@ -441,6 +441,24 @@ Se uma conversa protegida crescer e as mensagens mais recentes não couberem,
 o Oiê avisa que a cópia está desatualizada ou indisponível. Depois de liberar
 espaço, reabra a conversa com conexão para atualizar a cópia.
 
+### Ajustar o espaço para conversas salvas
+
+Disponível na versão em desenvolvimento, posterior à rc.45.
+
+Em **Configurações → Este dispositivo → Armazenamento sem conexão**, confira o
+espaço ocupado pelo texto das conversas e escolha o **Limite para conversas
+salvas**. O padrão é 1 MiB. Você também pode escolher 256 KiB, 512 KiB ou
+2 MiB. A escolha vale para este navegador.
+
+[![Limite de 2 MiB selecionado em Armazenamento sem conexão, com o espaço ocupado pelas conversas salvas.](imagens/limite-conversas-salvas.webp)](imagens/limite-conversas-salvas.webp)
+
+Ao reduzir o limite, o Oiê libera espaço removendo primeiro as cópias mais
+antigas sem proteção. Se as conversas protegidas já ultrapassarem o novo
+limite, o Oiê mantém o anterior e informa quanto espaço liberar. Nesse caso,
+desative **Manter disponível sem conexão** em uma ou mais conversas e tente
+novamente. Rascunhos, mensagens aguardando envio e arquivos baixados ficam
+guardados separadamente.
+
 ### Pesquisar mensagens sem conexão
 
 Disponível desde a rc.45.
