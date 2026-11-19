@@ -437,7 +437,7 @@ espaço, reabra a conversa com conexão para atualizar a cópia.
 
 ### Ajustar o espaço para conversas salvas
 
-Disponível na versão em desenvolvimento, posterior à rc.44.
+Disponível na versão em desenvolvimento, posterior à rc.45.
 
 Em **Configurações → Este dispositivo → Armazenamento sem conexão**, confira o
 espaço ocupado pelo texto das conversas e escolha o **Limite para conversas
