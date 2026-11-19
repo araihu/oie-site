@@ -1,6 +1,6 @@
 ---
 title: Manual
-description: Escolha o motor local ou remoto, conecte ou remova contas XMPP, gerencie contatos e presença, marque conversas como lidas ou não lidas, gerencie salas, busque e encaminhe mensagens, configure notificações, use o envio sem conexão, envie anexos, consulte o diagnóstico e gerencie a retenção e exclusão de dados.
+description: Escolha o motor local ou remoto, conecte ou remova contas XMPP, gerencie contatos e presença, marque conversas como lidas ou não lidas, gerencie salas, busque e encaminhe mensagens, configure notificações, consulte conversas recentes sem conexão, envie mensagens e anexos, consulte o diagnóstico e gerencie a retenção e exclusão de dados.
 language: pt-BR
 margo:
   imageViewer: true
@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.32](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.45](../../baixar/index.md).
 
 ## Motor local ou remoto
 
@@ -132,11 +132,9 @@ A remoção apaga a senha salva, as conversas e as mensagens pendentes dessa con
 
 ## Percorrer a lista de conversas
 
-Quando a lista tiver mais de 100 conversas, selecione **Conversas mais antigas** no fim da lista para abrir a próxima página. Use **Conversas mais recentes** para voltar à primeira página. A conversa aberta e os filtros acompanham a navegação. No celular, o botão **Voltar** no cabeçalho da conversa retorna à lista na posição em que você estava.
+Quando a lista tiver mais de 100 conversas, selecione **Conversas mais antigas** no fim da lista para abrir a próxima página. Use **Conversas mais recentes** para voltar à primeira página. A conversa aberta e os filtros acompanham a navegação. No celular, **Voltar para as conversas** retorna à lista na posição em que você estava, mesmo se a conexão cair.
 
 [![Fim da lista de conversas com a opção Conversas mais antigas.](imagens/paginacao-conversas.webp)](imagens/paginacao-conversas.webp)
-
-A paginação está prevista para uma versão posterior à rc.32 oferecida em **Baixar**.
 
 ## Solicitações de mensagem e convites recebidos
 
@@ -387,7 +385,7 @@ pelo cartão ou pelo menu de ações em **Mídia**.
 
 ## Enviar sem conexão
 
-Disponível na versão em desenvolvimento, posterior à rc.32 de **Baixar**.
+Disponível desde a rc.34.
 
 Se a conversa já estiver aberta quando a conexão cair, selecione **Enviar**
 para guardar a mensagem neste navegador. O ícone de sinal cortado ao lado do
@@ -410,6 +408,55 @@ o navegador não conseguir guardar a mensagem, o texto continua disponível
 no campo de edição. Uma mensagem deixada no rascunho só é enviada quando
 você seleciona **Enviar**.
 
+## Ler conversas sem conexão
+
+Disponível desde a rc.41.
+
+No Oiê local, abra no navegador as conversas que quer consultar. Se perder
+acesso ao Oiê, volte ao mesmo endereço no mesmo navegador. Na lista de
+conversas salvas, selecione a conversa para ler as mensagens de texto guardadas.
+**Tentar novamente** volta à conversa normal quando a conexão retornar. Seu
+rascunho reaparece no campo de mensagem.
+
+[![Conversa Casa aberta no navegador com o aviso Sem conexão.](imagens/historico-sem-conexao.webp)](imagens/historico-sem-conexao-original.webp)
+
+O navegador guarda até 12 conversas, com até 50 mensagens de texto recentes
+por conversa dentro do espaço disponível. Conversas recentes são guardadas
+por até sete dias. Anexos e edição de rascunhos ficam disponíveis ao reconectar.
+O recurso está disponível no Oiê local aberto em localhost ou HTTPS.
+
+### Manter uma conversa disponível sem conexão
+
+Disponível desde a rc.45.
+
+Com a conversa aberta, selecione **Detalhes da conversa** e ative
+**Manter disponível sem conexão**. O Oiê protege as mensagens salvas
+do limite de sete dias e da remoção automática para liberar espaço.
+A opção vale para este navegador.
+
+[![Controle Manter disponível sem conexão ativado nos detalhes da conversa.](imagens/manter-disponivel-sem-conexao.webp)](imagens/manter-disponivel-sem-conexao.webp)
+
+Se faltar espaço, desative a opção em outra conversa e tente novamente.
+Se uma conversa protegida crescer e as mensagens mais recentes não couberem,
+o Oiê avisa que a cópia está desatualizada ou indisponível. Depois de liberar
+espaço, reabra a conversa com conexão para atualizar a cópia.
+
+### Pesquisar mensagens sem conexão
+
+Disponível desde a rc.45.
+
+Na lista de conversas salvas, use **Pesquisar mensagens salvas neste dispositivo**
+para procurar uma palavra ou frase. Para procurar em uma única conversa, abra-a
+e use **Pesquisar mensagens salvas nesta conversa**. Selecione um resultado para
+ir à mensagem. Use **Voltar** no navegador para rever os resultados ou limpe
+o campo de pesquisa para voltar às conversas ou às mensagens do chat.
+
+[![Busca sem conexão por “endereço” com resultados nas conversas Casa e Viagem.](imagens/pesquisar-mensagens-sem-conexao.webp)](imagens/pesquisar-mensagens-sem-conexao.webp)
+
+A busca alcança o texto guardado neste navegador. Se a mensagem que você procura
+ficou fora da cópia salva, reconecte o Oiê para pesquisar o histórico completo
+disponível.
+
 ## Envio agendado
 
 Abra o menu junto ao botão de envio, escolha **Agendar mensagem** e confira a data, o horário e a mensagem. Em **Agendadas**, você pode editar, reagendar, cancelar ou pedir o envio imediato enquanto a mensagem ainda estiver aguardando o primeiro envio.
@@ -424,7 +471,7 @@ Se o aplicativo ou a conexão estiver indisponível no horário marcado, o Oiê 
 
 ## Citações e texto original
 
-O Oiê exibe Markdown nas mensagens por padrão. Para citar várias linhas, comece cada uma com `>`. Uma linha sem o marcador fica fora da citação, mesmo quando vem logo abaixo. Em **Configurações → Este dispositivo**, use **Formatar mensagens com Markdown** para ajustar a exibição. No menu da mensagem, use **Copiar mensagem original** para copiar o texto com os marcadores Markdown.
+O Oiê exibe Markdown nas mensagens por padrão. Para citar várias linhas, comece cada uma com `>`. Uma linha sem o marcador fica fora da citação, mesmo quando vem logo abaixo. Em **Configurações → Este dispositivo**, use **Formatar mensagens com Markdown** para ajustar a exibição. Abra **Ações da mensagem → Copiar mensagem original** para copiar o texto com os marcadores Markdown. Se a conexão cair com a conversa aberta, você ainda pode copiar o texto.
 
 O lápis ao lado do horário indica uma mensagem editada. Selecione-o ou use **Ver histórico de edições** no menu da mensagem para consultar as versões que o Oiê guardou.
 
