@@ -237,6 +237,26 @@ Quando o Oiê precisa atualizar um banco existente na inicialização, primeiro 
 
 Guarde essas cópias em local privado, pois o banco contém o histórico e pode incluir senhas de convites para salas. Para guardar também a mídia e as credenciais de conexão XMPP, encerre o Oiê e copie o perfil inteiro. A opção **Apagar todos os dados** também remove as cópias automáticas do banco.
 
+### Criar e restaurar um backup manual
+
+Os comandos abaixo fazem parte de uma revisão de desenvolvimento posterior à rc.32 de **Baixar**. Use o executável do engine `bin/oie` gerado por `make build` no checkout dessa revisão.
+
+Encerre o Oiê ou pare o engine hospedado antes de copiar ou restaurar seus dados. Use em `--data-dir` a pasta do perfil desejado. Acrescente `--include-media` para guardar também os arquivos disponíveis. Guarde o ZIP em um local privado. Ele contém o histórico e as composições pendentes. Senhas de conexão XMPP, senhas de salas e credenciais hospedadas ficam fora do backup.
+
+```sh
+bin/oie backup create --data-dir "/caminho/do/perfil" --output "$HOME/oie-backup.zip"
+bin/oie backup verify "$HOME/oie-backup.zip"
+bin/oie backup restore --data-dir "/caminho/do/perfil" "$HOME/oie-backup.zip"
+```
+
+A restauração combina o conteúdo do ZIP com o histórico já existente. As exclusões e a retenção do perfil de destino continuam valendo. Reaplicar o mesmo arquivo não duplica mensagens nem recoloca na fila um envio cancelado ou descartado. Dois perfis da mesma conta XMPP podem reconhecer uma mensagem pelo identificador atribuído pela sala ou pelo arquivo do servidor. Se as referências entrarem em conflito ou indicarem uma possível duplicata sem confirmação, a restauração para antes de alterar o histórico. Para inspecionar o ZIP, restaure-o em uma pasta de perfil vazia.
+
+```sh
+bin/oie backup pending --data-dir "/caminho/do/perfil"
+```
+
+A lista mostra os envios recuperados que continuam pausados. Confira a conversa, a mensagem e o horário. Use os IDs de mensagem e revisão dessa lista para descartar o envio com `backup discard`. Para retomar com `backup resume`, use o perfil de origem e confirme com `--confirm-not-sent` somente após verificar que o envio nunca foi transmitido. Se houve uma tentativa anterior ou se o resultado for incerto, o envio continua pausado. [Sintaxe completa dos comandos](https://github.com/araihu/oie/blob/1eb69b553bb8c0aab53ff9e7a0f13a7efa257dfb/docs/installation.md#restore-into-an-existing-profile)
+
 Se a janela não abrir após uma atualização, inicie o Oiê pelo terminal para ver o erro. No macOS, se usou `install.sh` com o destino padrão, execute `~/Applications/Oie.app/Contents/MacOS/oie-desktop`. Se usou o Homebrew com o destino padrão, execute `/Applications/Oie.app/Contents/MacOS/oie-desktop`. No Linux, abra o executável `oie-desktop` no caminho em que foi instalado ou execute `flatpak run com.araihu.oie` para Flatpak. Se o erro indicar falha no backup, confira o espaço livre e as permissões de gravação no perfil e tente novamente.
 
 ### Criar um backup manual
