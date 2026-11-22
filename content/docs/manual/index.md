@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.48](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.49](../../baixar/index.md).
 
 ## Motor local ou remoto
 
@@ -479,7 +479,7 @@ disponível.
 
 Abra o menu junto ao botão de envio, escolha **Agendar mensagem** e confira a data, o horário e a mensagem. Em **Agendadas**, você pode editar, reagendar, cancelar ou pedir o envio imediato enquanto a mensagem ainda estiver aguardando o primeiro envio.
 
-Em **Agendadas**, abra **Conversas** para buscar um destinatário. Você pode marcar várias conversas. Na versão de desenvolvimento posterior à rc.48, com o motor atualizado, a busca também encontra destinatários de envios pendentes que só aparecem nas páginas seguintes da agenda.
+Em **Agendadas**, abra **Conversas** para buscar um destinatário. Você pode marcar várias conversas. Na rc.49, com o motor atualizado, a busca também encontra destinatários de envios pendentes que só aparecem nas páginas seguintes da agenda.
 
 ![Janela Agendar mensagem, com a prévia do lembrete e o campo de data e horário de envio.](imagens/envio-agendado.webp "Prévia e horário do envio agendado")
 
