@@ -354,15 +354,15 @@ O Oiê aceita até 16 arquivos por mensagem, de até 20 MiB cada. O serviço XMP
 
 ## Mensagens de voz
 
-Com o rascunho sem texto nem anexos, selecione **Gravar áudio** e permita o acesso ao microfone. O botão aparece nas conversas que aceitam anexos, em navegadores e aplicativos compatíveis com a gravação.
+Com o rascunho sem texto nem anexos, selecione **Gravar áudio** e permita o acesso ao microfone. O botão aparece nas conversas que aceitam anexos, em navegadores e aplicativos compatíveis com a gravação. Na versão em desenvolvimento, espere o ponto vermelho e o cronômetro aparecerem antes de falar.
 
-Enquanto grava, o campo mostra o tempo e a forma de onda. Selecione **Parar gravação** e use **Reproduzir gravação** para ouvir. Para refazer, use **Cancelar** no rascunho de áudio e selecione o microfone novamente. Quando estiver pronto, selecione **Enviar mensagem**.
+Enquanto grava, o campo mostra o tempo e a forma de onda. Selecione **Parar gravação** e use **Reproduzir gravação** para ouvir. Para refazer, use **Cancelar** no rascunho de áudio e selecione o microfone novamente. Quando estiver pronto, selecione **Enviar mensagem**. Na versão em desenvolvimento, você pode enviar enquanto o áudio ainda carrega. Se o carregamento falhar, selecione **Tentar novamente** e depois **Enviar mensagem**.
 
 ![Campo de mensagem durante a gravação, com o tempo, a forma de onda e o botão de parar.](imagens/gravacao-mensagem-de-voz.webp "Gravação em andamento") [Ver captura da gravação](imagens/gravacao-mensagem-de-voz.webp)
 
 ![Gravação pronta para ouvir, descartar ou enviar.](imagens/rascunho-mensagem-de-voz.webp "Prévia da gravação") [Ver captura da prévia](imagens/rascunho-mensagem-de-voz.webp)
 
-Para ouvir um áudio da conversa, use **Reproduzir áudio** no balão. Quando disponível, a forma de onda aparece com a duração total. Selecione um ponto nela para avançar ou voltar. Para salvar o original, abra o menu da mensagem e selecione **Baixar áudio**.
+Para ouvir um áudio da conversa, use **Reproduzir áudio** no balão. Na versão em desenvolvimento, você já pode ouvir enquanto a forma de onda carrega. Quando disponível, ela aparece com a duração total. Selecione um ponto nela para avançar ou voltar. Para salvar o original, abra o menu da mensagem e selecione **Baixar áudio**.
 
 ![Balão de mensagem com botão de reprodução, forma de onda e duração total.](imagens/onda-de-audio-no-balao.webp "Player de áudio no balão") [Ver captura do player](imagens/onda-de-audio-no-balao.webp)
 
