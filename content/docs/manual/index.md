@@ -479,6 +479,8 @@ disponível.
 
 Abra o menu junto ao botão de envio, escolha **Agendar mensagem** e confira a data, o horário e a mensagem. Em **Agendadas**, você pode editar, reagendar, cancelar ou pedir o envio imediato enquanto a mensagem ainda estiver aguardando o primeiro envio.
 
+Em **Agendadas**, abra **Conversas** para buscar um destinatário. Você pode marcar várias conversas. Na versão de desenvolvimento posterior à rc.48, com o motor atualizado, a busca também encontra destinatários de envios pendentes que só aparecem nas páginas seguintes da agenda.
+
 ![Janela Agendar mensagem, com a prévia do lembrete e o campo de data e horário de envio.](imagens/envio-agendado.webp "Prévia e horário do envio agendado")
 
 Na agenda da navegação lateral, use **Conversas** para escolher quais destinos quer ver. Os envios do mesmo dia aparecem em colunas quando há espaço.
