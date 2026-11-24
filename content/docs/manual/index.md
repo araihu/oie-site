@@ -260,7 +260,7 @@ Em **Configurações → Este dispositivo → Notificações**, ative **Notifica
 
 O som vem ativado para mensagens diretas e, nas salas, para menções e respostas a mensagens suas. Em **Som nas salas**, você pode escolher **Todas as mensagens**, manter **Menções e respostas a você** ou selecionar **Desativado**. Há controles para mensagens diretas, salas arquivadas e a conversa em foco. **Som de notificação** desliga todos os toques.
 
-No iPhone e no iPad, você pode abrir o Oiê, entrar em uma conversa e digitar enquanto ouve música em outro aplicativo.
+No iPhone e no iPad, você pode abrir o Oiê, entrar em uma conversa e digitar enquanto ouve música em outro aplicativo. Se começar a gravar uma mensagem de voz enquanto uma notificação toca, o Oiê interrompe o toque.
 
 Use **Escolher arquivo** em **Toque** para usar um áudio seu de até 5 MB. O Oiê usa os primeiros dois segundos e guarda o toque neste dispositivo. Use o botão de reprodução para ouvi-lo ou o **X** ao lado do nome do arquivo para voltar ao toque do Oiê.
 

@@ -68,7 +68,7 @@ As seções de prévia e reprodução de vídeo foram conferidas na [revisão c0
 
 A seção **Retenção de mensagens** foi conferida na [revisão 505f6c9 do aplicativo](https://github.com/araihu/oie/tree/505f6c90632a68eea50db9dae92c55e2d533ed13), usada na rc.16. A captura foi feita com dados fictícios em uma instância isolada durante o desenvolvimento do recurso.
 
-O comportamento do som de notificações no iPhone e no iPad foi conferido na [revisão 979b4e8 do Oiê](https://github.com/araihu/oie/tree/979b4e8fbde727f001d943db20518f9b0bb655e1).
+O comportamento do som de notificações no iPhone e no iPad foi conferido na [revisão 29440aa do Oiê](https://github.com/araihu/oie/tree/29440aa332db2940347a9f841b3f0daf567b1f99).
 
 A seção **Notificações de mensagens** e os controles de nome e foto no **Perfil** acompanham a rc.23. A captura de notificações mostra um áudio de exemplo importado numa instância de teste em pt-BR. [Revisão do Oiê](https://github.com/araihu/oie/tree/c5c3f37aeb815dd9ee4a1e94512ebf7fd2467071)
 
