@@ -41,16 +41,16 @@ Oiê local em pt-BR.
 As instruções dos repositórios DNF, pacman e Flatpak seguem a publicação da [revisão 5a2339c](https://github.com/araihu/oie/tree/5a2339c87e8dc42078afcfc0be2efbade2c6c423).
 
 A página **Baixar** aponta para os binários e para o código-fonte correspondente
-da [v0.0.1-rc.51](https://github.com/araihu/oie/tree/v0.0.1-rc.51). O guia de instalação e a recuperação de entrada em salas no manual foram conferidos na [revisão b16a701 do Oiê](https://github.com/araihu/oie/tree/b16a7015f4d8991c5529e0db25665a930cbeb8ae). As seções sobre backup e uso sem conexão foram conferidas com a [revisão f722c73](https://github.com/araihu/oie/tree/f722c738d633f83754332c229f232a9582037912). Os trechos do manual sobre mensagens de voz, arquivos baixados e o contador de não lidas foram conferidos na rc.32.
+da [v0.0.1-rc.52](https://github.com/araihu/oie/tree/v0.0.1-rc.52). O guia de instalação e a recuperação de entrada em salas no manual foram conferidos na [revisão b16a701 do Oiê](https://github.com/araihu/oie/tree/b16a7015f4d8991c5529e0db25665a930cbeb8ae). As seções sobre backup e uso sem conexão foram conferidas com a [revisão f722c73](https://github.com/araihu/oie/tree/f722c738d633f83754332c229f232a9582037912). Os trechos do manual sobre mensagens de voz, arquivos baixados e o contador de não lidas foram conferidos na rc.32.
 
 A seção **Qualidade de áudio e vídeo** acompanha a rc.51. O fluxo foi conferido na [revisão b49c3c0 do Oiê](https://github.com/araihu/oie/tree/b49c3c01bc9253fa2f6899223a39568c6dd66ff6) e a captura usa dados fictícios em pt-BR.
 
-O player de áudio da aba **Mídia** foi conferido na [revisão ba82f82 do Oiê](https://github.com/araihu/oie/tree/ba82f822294a463f92e59064336bed608c06cbb8), posterior à RC.51.
+O player de áudio da aba **Mídia** acompanha o [Oiê v0.0.1-rc.52](https://github.com/araihu/oie/tree/v0.0.1-rc.52).
 
 A paginação da lista de conversas no manual foi conferida na [revisão 846788d9 do aplicativo](https://github.com/araihu/oie/commit/846788d9) e está disponível na rc.45.
 Os guias de autenticação hospedada e conexão do desktop acompanham a rc.28.
 O guia do CLI usa a API 0.42.0 da rc.50. O guia de Kubernetes usa o
-[chart 0.2.29](https://github.com/araihu/oie/tree/helm-v0.2.29/charts/oie),
+[chart 0.2.30](https://github.com/araihu/oie/tree/helm-v0.2.30/charts/oie),
 distribuído como OCI no GHCR.
 
 As seções de contatos, disponibilidade e leitura do manual foram conferidas com a
