@@ -40,7 +40,7 @@ Oiê local em pt-BR.
 
 As instruções dos repositórios DNF, pacman e Flatpak seguem a publicação da [revisão 5a2339c](https://github.com/araihu/oie/tree/5a2339c87e8dc42078afcfc0be2efbade2c6c423).
 
-A seção de OMEMO descreve a prévia do motor local em revisão no
+A seção de OMEMO descreve a prévia dos motores local e hospedado em revisão no
 [PR 90 do Oiê](https://github.com/araihu/oie/pull/90). O teste usou Gajim 2.4.3 e
 Conversations 2.21.4 em um perfil descartável. O instalador rc.50 continua com
 o comportamento documentado nas outras seções.

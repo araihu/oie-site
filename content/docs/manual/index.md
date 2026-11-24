@@ -100,18 +100,17 @@ escrito.
 
 ### Mensagens diretas com OMEMO em um perfil de teste
 
-A versão experimental do motor local permite trocar texto criptografado com Gajim e Conversations. O instalador rc.50 ainda não oferece esse recurso. Para experimentar a versão de desenvolvimento, escolha um diretório separado e execute `oie omemo init --data-dir DIRETORIO` com o motor parado. Inicie o Oiê com o mesmo diretório e conecte a conta. Nesse perfil, todas as conversas diretas exigem OMEMO.
+Na prévia de desenvolvimento, você pode trocar mensagens diretas de texto com Gajim e Conversations. No Oiê local, a identidade pertence à instalação. No Oiê hospedado, o servidor guarda as chaves e pode ler as mensagens. Ao entrar pelo celular e pelo computador na mesma conta hospedada, você vê a mesma impressão digital, as mesmas verificações e o mesmo histórico.
 
-Envie uma mensagem curta. Se ela ficar na fila, use `oie omemo devices --data-dir DIRETORIO --account UUID` para consultar o identificador e a impressão digital de cada aparelho. Compare os oito grupos de caracteres com a outra pessoa por um canal conhecido. No Conversations, a impressão digital aparece nos detalhes da conta. No Gajim, consulte as configurações de OMEMO da conta.
+Para experimentar em um perfil separado, execute `oie omemo init --data-dir DIRETORIO` com o motor parado. Inicie o Oiê com esse diretório e conecte a conta. Nas conversas diretas, o envio exige criptografia por padrão. O instalador rc.50 ainda não inclui esse recurso.
 
-Para confirmar um aparelho, execute o comando abaixo. Repita a comparação para cada aparelho listado, inclusive os seus em outros clientes. Depois de verificar todos, o Oiê tenta enviar novamente. Para retirar a confiança, use `distrust` com a mesma conta, endereço e identificador de aparelho.
+Abra **Criptografia OMEMO** nos detalhes da conversa. Compare a impressão digital pelo canal que você costuma usar para confirmar a identidade da outra pessoa. No Conversations, ela aparece nos detalhes da conta. No Gajim, fica nas configurações de OMEMO da conta. Cole a impressão digital ou o link XMPP recebido, ou selecione a imagem do código QR. Escolha **Conferir aparelho**, confira o endereço e confirme. Repita para os demais aparelhos ativos. Para compartilhar sua própria impressão digital, abra **Criptografia OMEMO** na sua conta.
 
-```sh
-oie omemo verify --data-dir DIRETORIO --account UUID --peer pessoa@exemplo.org \
-  --device ID_DO_APARELHO --fingerprint "IMPRESSÃO DIGITAL"
-```
+[![Confirmação da impressão digital de um aparelho do Gajim pelo Oiê hospedado.](imagens/verificar-omemo.webp)](imagens/verificar-omemo-original.webp)
 
-A proteção vale para o texto durante a troca entre os aparelhos. O histórico fica legível no perfil local. O backup ZIP comum fica indisponível nesse perfil. A recuperação criptografada do histórico e a verificação pela interface estão em desenvolvimento.
+Uma mensagem que aguarda verificação fica na fila. Depois que você verificar os aparelhos, o Oiê tenta enviá-la novamente. O controle **Enviar as próximas mensagens sem criptografia** vale só para novas mensagens daquela conversa. Uma mensagem já enfileirada com OMEMO continua exigindo criptografia.
+
+O histórico fica legível no motor que guarda as chaves. Para mudar de instalação, o operador pode exportar a identidade e o histórico separadamente, com senha, usando `oie omemo export-key` e `oie omemo export-history`. Na instalação de destino, `inspect-key` mostra a conta e a impressão digital para conferência. Use `import-history` para recuperar as conversas salvas e `import-key` para recuperar a identidade. Desative a instalação antiga antes de conectar a nova. [Instruções de migração da prévia](https://github.com/araihu/oie/blob/713ff340c0fc366ad7684a72450b250b0d633b09/docs/local-omemo.md).
 
 ### Contatos
 
