@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.50](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.51](../../baixar/index.md).
 
 ## Motor local ou remoto
 
@@ -352,11 +352,11 @@ Você pode clicar no nome de um anexo pronto para baixar o original. No aplicati
 
 ![Rascunho com uma imagem, dois arquivos de texto e a legenda no campo de mensagem. Cada anexo tem um botão de remoção.](imagens/rascunho-anexos.webp "Anexos no rascunho")
 
-O Oiê aceita até 16 arquivos por mensagem. No instalador RC.50, cada arquivo pode ter até 20 MiB. A preparação de mídia descrita a seguir usa o limite do serviço XMPP. O serviço também pode restringir anexos naquela conversa. Quem recebe a mensagem pode baixar os arquivos pelos links enviados junto com a legenda. Os anexos prontos ficam no rascunho ao recarregar a página. Aguarde o preparo antes de trocar de conversa.
+O Oiê aceita até 16 arquivos por mensagem. O limite por arquivo depende do serviço XMPP e aparece no compositor quando está disponível. O serviço também pode restringir anexos naquela conversa. Quem recebe a mensagem pode baixar os arquivos pelos links enviados junto com a legenda. Os anexos prontos ficam no rascunho ao recarregar a página. Aguarde o preparo antes de trocar de conversa.
 
 ### Qualidade de áudio e vídeo
 
-Em desenvolvimento após o instalador RC.50. No menu de anexos, escolha **Áudio ou vídeo**, selecione o arquivo e escolha a qualidade. **SD** reduz o tamanho e vem selecionada em um dispositivo novo. **HD** preserva mais detalhes. **OG** mantém o original quando o formato é compatível e o tamanho cabe no limite informado pelo servidor. Em **Configurações → Este dispositivo → Qualidade da mídia**, você pode mudar a preferência.
+No menu de anexos, escolha **Áudio ou vídeo**, selecione o arquivo e escolha a qualidade. **SD** reduz o tamanho e vem selecionada em um dispositivo novo. **HD** preserva mais detalhes. **OG** mantém o original quando o formato é compatível e o tamanho cabe no limite informado pelo servidor. Em **Configurações → Este dispositivo → Qualidade da mídia**, você pode mudar a preferência.
 
 Em MP3 com capa PNG ou JPEG, **SD** prepara um M4A com a capa e os metadados. Se a economia for menor que 10% e o original couber no limite, o Oiê mantém o MP3. **HD** e **OG** também mantêm o MP3 original quando ele cabe.
 
