@@ -98,6 +98,21 @@ escrito.
 
 [![A mesma sala nas contas Alice e Bob, com bordas nas cores mostradas no seletor de contas.](imagens/seletor-de-contas.webp)](imagens/seletor-de-contas-original.webp)
 
+### Mensagens diretas com OMEMO em um perfil de teste
+
+A versão experimental do motor local permite trocar texto criptografado com Gajim e Conversations. O instalador rc.50 ainda não oferece esse recurso. Para experimentar a versão de desenvolvimento, escolha um diretório separado e execute `oie omemo init --data-dir DIRETORIO` com o motor parado. Inicie o Oiê com o mesmo diretório e conecte a conta. Nesse perfil, todas as conversas diretas exigem OMEMO.
+
+Envie uma mensagem curta. Se ela ficar na fila, use `oie omemo devices --data-dir DIRETORIO --account UUID` para consultar o identificador e a impressão digital de cada aparelho. Compare os oito grupos de caracteres com a outra pessoa por um canal conhecido. No Conversations, a impressão digital aparece nos detalhes da conta. No Gajim, consulte as configurações de OMEMO da conta.
+
+Para confirmar um aparelho, execute o comando abaixo. Repita a comparação para cada aparelho listado, inclusive os seus em outros clientes. Depois de verificar todos, o Oiê tenta enviar novamente. Para retirar a confiança, use `distrust` com a mesma conta, endereço e identificador de aparelho.
+
+```sh
+oie omemo verify --data-dir DIRETORIO --account UUID --peer pessoa@exemplo.org \
+  --device ID_DO_APARELHO --fingerprint "IMPRESSÃO DIGITAL"
+```
+
+A proteção vale para o texto durante a troca entre os aparelhos. O histórico fica legível no perfil local. O backup ZIP comum fica indisponível nesse perfil. A recuperação criptografada do histórico e a verificação pela interface estão em desenvolvimento.
+
 ### Contatos
 
 Em **Trocar de conta → Gerenciar contas**, abra o **Perfil** da conta e escolha
