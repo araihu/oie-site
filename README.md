@@ -64,7 +64,7 @@ As seções sobre anexos, leitura, idioma e fuso horário, a instalação Flatpa
 
 As seções **Mensagens favoritadas** e **Envio agendado** foram conferidas na [revisão ad3f9be do aplicativo](https://github.com/araihu/oie/tree/ad3f9bebd78cb2f9a62769a3f26aabf4a419e808), usada na rc.11. A captura de **Favoritas** usa mensagens fictícias. A seção e a captura de **Favoritar em Mídia e links** foram conferidas na [revisão 902efcd](https://github.com/araihu/oie/tree/902efcdfb5c70e9e942d75eadaa61da2efedb028), usada na rc.12.
 
-A reprodução alternativa de vídeos recebidos foi conferida na [revisão 40517ac do aplicativo](https://github.com/araihu/oie/tree/40517ac48cfc874f4bdafd787e1df85a861c4778) e está identificada no manual como em desenvolvimento.
+A reprodução alternativa de vídeos recebidos foi conferida na [revisão c5379da do aplicativo](https://github.com/araihu/oie/tree/c5379daaed469b18dd206b2905ab884b3bdca0f0) e está identificada no manual como em desenvolvimento.
 
 As seções de prévia e reprodução de vídeo foram conferidas na [revisão c0bc373 do aplicativo](https://github.com/araihu/oie/tree/c0bc373423340724b909e2e7028f324d005640d1). As capturas mostram uma conversa fictícia em pt-BR. A miniatura no rascunho e a geração de prévias sem FFmpeg estão na [rc.12](https://github.com/araihu/oie/tree/902efcdfb5c70e9e942d75eadaa61da2efedb028).
 
