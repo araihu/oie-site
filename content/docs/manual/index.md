@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.50](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.51](../../baixar/index.md).
 
 ## Motor local ou remoto
 
@@ -352,13 +352,25 @@ Você pode clicar no nome de um anexo pronto para baixar o original. No aplicati
 
 ![Rascunho com uma imagem, dois arquivos de texto e a legenda no campo de mensagem. Cada anexo tem um botão de remoção.](imagens/rascunho-anexos.webp "Anexos no rascunho")
 
-O Oiê aceita até 16 arquivos por mensagem, de até 20 MiB cada. O serviço XMPP pode impor um limite menor ou não permitir anexos naquela conversa. Quem recebe a mensagem pode baixar os arquivos pelos links enviados junto com a legenda. Os anexos prontos ficam no rascunho ao recarregar a página. Aguarde o preparo antes de trocar de conversa.
+O Oiê aceita até 16 arquivos por mensagem. O limite por arquivo depende do serviço XMPP e aparece no compositor quando está disponível. O serviço também pode restringir anexos naquela conversa. Quem recebe a mensagem pode baixar os arquivos pelos links enviados junto com a legenda. Os anexos prontos ficam no rascunho ao recarregar a página. Aguarde o preparo antes de trocar de conversa.
+
+### Qualidade de áudio e vídeo
+
+No menu de anexos, escolha **Áudio ou vídeo**, selecione o arquivo e escolha a qualidade. **SD** reduz o tamanho e vem selecionada em um dispositivo novo. **HD** preserva mais detalhes. **OG** mantém o original quando o formato é compatível e o tamanho cabe no limite informado pelo servidor. Em **Configurações → Este dispositivo → Qualidade da mídia**, você pode mudar a preferência.
+
+Em MP3 com capa PNG ou JPEG, **SD** prepara um M4A com a capa e os metadados. Se a economia for menor que 10% e o original couber no limite, o Oiê mantém o MP3. **HD** e **OG** também mantêm o MP3 original quando ele cabe.
+
+O Oiê reconhece um MP3 mesmo com a extensão trocada e aceita vídeos MP4 com capa. Quando uma capa tem descrição própria ou identifica a contracapa, escolha **OG** para preservar essas informações. Para manter a transparência de um vídeo, escolha **Anexar como arquivo**. Se o Oiê avisar que um MP4 ou WAV parece incompleto, procure uma cópia íntegra antes de enviá-lo.
+
+Escolha **Adicionar à mensagem** para preparar o anexo no dispositivo. Depois você pode enviar ou agendar a mensagem. No Flatpak, o arquivo selecionado fica no dispositivo até você confirmar a qualidade. O vídeo mantém as dimensões e a taxa de quadros. Se a conversão afetar uma faixa de áudio ou uma legenda, escolha **Anexar como arquivo** para anexar o original. Quando o servidor informa o tamanho máximo, o Oiê mostra o limite ao escolher a qualidade. Ao reabrir um rascunho com vídeo, você pode dar play mesmo que o vídeo seja grande demais para gerar a miniatura.
+
+![Janela de qualidade para um MP3, com HD selecionada e as opções SD e OG disponíveis.](imagens/qualidade-de-midia.webp) [Ampliar a captura](imagens/qualidade-de-midia.webp)
 
 ## Mensagens de voz
 
 Com o rascunho sem texto nem anexos, selecione **Gravar áudio** e permita o acesso ao microfone. O botão aparece nas conversas que aceitam anexos, em navegadores e aplicativos compatíveis com a gravação.
 
-Enquanto grava, o campo mostra o tempo e a forma de onda. Selecione **Parar gravação** e use **Reproduzir gravação** para ouvir. Para refazer, use **Cancelar** no rascunho de áudio e selecione o microfone novamente. Quando estiver pronto, selecione **Enviar mensagem**.
+Enquanto grava, o campo mostra o tempo e a forma de onda. Selecione **Parar gravação** e use **Reproduzir gravação** para ouvir. Na versão com preparo de mídia, escolha também a qualidade depois de parar a gravação. Para refazer, use **Cancelar** no rascunho de áudio e selecione o microfone novamente. Quando estiver pronto, selecione **Enviar mensagem**.
 
 ![Campo de mensagem durante a gravação, com o tempo, a forma de onda e o botão de parar.](imagens/gravacao-mensagem-de-voz.webp "Gravação em andamento") [Ver captura da gravação](imagens/gravacao-mensagem-de-voz.webp)
 
