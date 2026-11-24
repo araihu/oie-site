@@ -360,9 +360,9 @@ Em desenvolvimento após o instalador RC.50. No menu de anexos, escolha **Áudio
 
 Em MP3 com capa PNG ou JPEG, **SD** prepara um M4A com a capa e os metadados. Se a economia for menor que 10% e o original couber no limite, o Oiê mantém o MP3. **HD** e **OG** também mantêm o MP3 original quando ele cabe.
 
-O Oiê reconhece um MP3 mesmo com a extensão trocada e aceita vídeos MP4 com capa. Para um MP3 com capas identificadas como frente e verso, escolha **OG** para preservar essas informações. Para manter a transparência de um vídeo, escolha **Anexar como arquivo**. Se o Oiê avisar que um MP4 parece incompleto, procure uma cópia íntegra antes de enviá-lo.
+O Oiê reconhece um MP3 mesmo com a extensão trocada e aceita vídeos MP4 com capa. Quando uma capa tem descrição própria ou identifica a contracapa, escolha **OG** para preservar essas informações. Para manter a transparência de um vídeo, escolha **Anexar como arquivo**. Se o Oiê avisar que um MP4 ou WAV parece incompleto, procure uma cópia íntegra antes de enviá-lo.
 
-Escolha **Adicionar à mensagem** para preparar o anexo no dispositivo. Depois você pode enviar ou agendar a mensagem. O vídeo mantém as dimensões e a taxa de quadros. Se a conversão afetar uma faixa de áudio ou uma legenda, escolha **Anexar como arquivo** para anexar o original. Quando o servidor informa o tamanho máximo, o Oiê mostra o limite ao escolher a qualidade.
+Escolha **Adicionar à mensagem** para preparar o anexo no dispositivo. Depois você pode enviar ou agendar a mensagem. No Flatpak, o arquivo selecionado fica no dispositivo até você confirmar a qualidade. O vídeo mantém as dimensões e a taxa de quadros. Se a conversão afetar uma faixa de áudio ou uma legenda, escolha **Anexar como arquivo** para anexar o original. Quando o servidor informa o tamanho máximo, o Oiê mostra o limite ao escolher a qualidade. Ao reabrir um rascunho com vídeo, você pode dar play mesmo que o vídeo seja grande demais para gerar a miniatura.
 
 ![Janela de qualidade para um MP3, com HD selecionada e as opções SD e OG disponíveis.](imagens/qualidade-de-midia.webp) [Ampliar a captura](imagens/qualidade-de-midia.webp)
 
