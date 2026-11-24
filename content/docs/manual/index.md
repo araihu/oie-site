@@ -381,6 +381,8 @@ reprodução. Em **Configurações → Este dispositivo**, ajuste **Gerar prévi
 vídeo automaticamente**. Com essa opção desativada, você pode pedir uma prévia
 pelo cartão ou pelo menu de ações em **Mídia**.
 
+**Em desenvolvimento.** Ao tocar em **Reproduzir vídeo**, o Oiê tenta abrir o vídeo no navegador. Se o formato precisar de outro reprodutor, o Oiê o carrega no próprio dispositivo. A primeira reprodução pode demorar um pouco mais. Se o vídeo travar, use **Baixar original** nos controles do reprodutor para assistir em outro aplicativo. Você também pode usar **Baixar** no menu do arquivo em **Mídia**.
+
 ![Cartão de vídeo recebido em uma sala, com uma imagem estática e o botão de reprodução ao centro.](imagens/video-recebido.webp "Vídeo recebido em uma sala")
 
 ## Enviar sem conexão
