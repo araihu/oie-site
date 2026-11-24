@@ -45,6 +45,8 @@ da [v0.0.1-rc.51](https://github.com/araihu/oie/tree/v0.0.1-rc.51). O guia de in
 
 A seção **Qualidade de áudio e vídeo** acompanha a rc.51. O fluxo foi conferido na [revisão b49c3c0 do Oiê](https://github.com/araihu/oie/tree/b49c3c01bc9253fa2f6899223a39568c6dd66ff6) e a captura usa dados fictícios em pt-BR.
 
+O player de áudio da aba **Mídia** foi conferido na [revisão ba82f82 do Oiê](https://github.com/araihu/oie/tree/ba82f822294a463f92e59064336bed608c06cbb8), posterior à RC.51.
+
 A paginação da lista de conversas no manual foi conferida na [revisão 846788d9 do aplicativo](https://github.com/araihu/oie/commit/846788d9) e está disponível na rc.45.
 Os guias de autenticação hospedada e conexão do desktop acompanham a rc.28.
 O guia do CLI usa a API 0.42.0 da rc.50. O guia de Kubernetes usa o
