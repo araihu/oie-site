@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.51](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.52](../../baixar/index.md).
 
 ## Motor local ou remoto
 
@@ -288,7 +288,9 @@ No menu do cartão, use **Ir para a mensagem** para voltar à conversa de origem
 
 ### Reprodução de áudio
 
-Para reproduzir e baixar um anexo de áudio ou uma gravação, consulte [Mensagens de voz](#mensagens-de-voz).
+Na aba **Mídia**, selecione **Reproduzir áudio** no cartão. Quando a forma de onda e a duração aparecem, selecione um ponto na onda para avançar ou voltar. A reprodução pelo cartão está disponível desde a RC.52.
+
+Para baixar o original, abra a mensagem pelo menu do cartão e siga as instruções de [Mensagens de voz](#mensagens-de-voz).
 
 ### Arquivos baixados
 
