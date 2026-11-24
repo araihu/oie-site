@@ -41,12 +41,12 @@ Oiê local em pt-BR.
 As instruções dos repositórios DNF, pacman e Flatpak seguem a publicação da [revisão 5a2339c](https://github.com/araihu/oie/tree/5a2339c87e8dc42078afcfc0be2efbade2c6c423).
 
 A página **Baixar** aponta para os binários e para o código-fonte correspondente
-da [v0.0.1-rc.49](https://github.com/araihu/oie/tree/v0.0.1-rc.49). O guia de instalação e a recuperação de entrada em salas no manual foram conferidos na [revisão b16a701 do Oiê](https://github.com/araihu/oie/tree/b16a7015f4d8991c5529e0db25665a930cbeb8ae). As seções sobre backup e uso sem conexão foram conferidas com a [revisão f722c73](https://github.com/araihu/oie/tree/f722c738d633f83754332c229f232a9582037912). Os trechos do manual sobre mensagens de voz, arquivos baixados e o contador de não lidas foram conferidos na rc.32.
+da [v0.0.1-rc.50](https://github.com/araihu/oie/tree/v0.0.1-rc.50). O guia de instalação e a recuperação de entrada em salas no manual foram conferidos na [revisão b16a701 do Oiê](https://github.com/araihu/oie/tree/b16a7015f4d8991c5529e0db25665a930cbeb8ae). As seções sobre backup e uso sem conexão foram conferidas com a [revisão f722c73](https://github.com/araihu/oie/tree/f722c738d633f83754332c229f232a9582037912). Os trechos do manual sobre mensagens de voz, arquivos baixados e o contador de não lidas foram conferidos na rc.32.
 
 A paginação da lista de conversas no manual foi conferida na [revisão 846788d9 do aplicativo](https://github.com/araihu/oie/commit/846788d9) e está disponível na rc.45.
 Os guias de autenticação hospedada e conexão do desktop acompanham a rc.28.
-O guia do CLI usa a API 0.42.0 da rc.49. O guia de Kubernetes usa o
-[chart 0.2.27](https://github.com/araihu/oie/tree/helm-v0.2.27/charts/oie),
+O guia do CLI usa a API 0.42.0 da rc.50. O guia de Kubernetes usa o
+[chart 0.2.28](https://github.com/araihu/oie/tree/helm-v0.2.28/charts/oie),
 distribuído como OCI no GHCR.
 
 As seções de contatos, disponibilidade e leitura do manual foram conferidas com a
@@ -67,6 +67,8 @@ As seções **Mensagens favoritadas** e **Envio agendado** foram conferidas na [
 As seções de prévia e reprodução de vídeo foram conferidas na [revisão c0bc373 do aplicativo](https://github.com/araihu/oie/tree/c0bc373423340724b909e2e7028f324d005640d1). As capturas mostram uma conversa fictícia em pt-BR. A miniatura no rascunho e a geração de prévias sem FFmpeg estão na [rc.12](https://github.com/araihu/oie/tree/902efcdfb5c70e9e942d75eadaa61da2efedb028).
 
 A seção **Retenção de mensagens** foi conferida na [revisão 505f6c9 do aplicativo](https://github.com/araihu/oie/tree/505f6c90632a68eea50db9dae92c55e2d533ed13), usada na rc.16. A captura foi feita com dados fictícios em uma instância isolada durante o desenvolvimento do recurso.
+
+O comportamento do som de notificações no iPhone e no iPad foi conferido na [revisão 29440aa do Oiê](https://github.com/araihu/oie/tree/29440aa332db2940347a9f841b3f0daf567b1f99).
 
 A seção **Notificações de mensagens** e os controles de nome e foto no **Perfil** acompanham a rc.23. A captura de notificações mostra um áudio de exemplo importado numa instância de teste em pt-BR. [Revisão do Oiê](https://github.com/araihu/oie/tree/c5c3f37aeb815dd9ee4a1e94512ebf7fd2467071)
 
