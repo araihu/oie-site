@@ -390,10 +390,10 @@ não puder ser criada.
 ![Vídeo no rascunho com botão de reprodução, nome do arquivo e botão para remover o anexo.](imagens/video-no-rascunho.webp "Vídeo no rascunho")
 
 Em uma conversa direta ou sala, escolha **Reproduzir vídeo** no cartão para
-assistir. Se a miniatura não aparecer, você ainda pode usar o botão de
-reprodução. Em **Configurações → Este dispositivo → Mídia e exibição**, ajuste **Gerar prévias de
+assistir. Se a reprodução falhar, use o mesmo botão para tentar de novo.
+Para baixar o arquivo, abra **Ações da mensagem** e escolha **Baixar original**. Em **Configurações → Este dispositivo → Mídia e exibição**, ajuste **Gerar prévias de
 vídeo automaticamente**. Com essa opção desativada, você pode pedir uma prévia
-pelo cartão ou pelo menu de ações em **Mídia**.
+em **Ações da mensagem → Carregar prévia do vídeo** ou no menu do vídeo em **Mídia**.
 
 ![Cartão de vídeo recebido em uma sala, com uma imagem estática e o botão de reprodução ao centro.](imagens/video-recebido.webp "Vídeo recebido em uma sala")
 
