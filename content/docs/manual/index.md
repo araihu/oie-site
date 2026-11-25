@@ -290,7 +290,7 @@ Na conversa, se a imagem ainda não apareceu, abra **Ações da mensagem** e esc
 
 ### Reprodução de áudio
 
-Para reproduzir e baixar um anexo de áudio ou uma gravação, consulte [Mensagens de voz](#mensagens-de-voz).
+Para ouvir um clipe na galeria, use o player do cartão. Abra as ações do cartão para escolher **Baixar áudio** ou, se aparecer após uma falha de reprodução, **Tentar novamente**. Para os controles da conversa, consulte [Mensagens de voz](#mensagens-de-voz).
 
 ### Arquivos baixados
 
