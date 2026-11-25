@@ -59,7 +59,7 @@ a sessão em todas as abas deste navegador. O motor continua rodando no servidor
 
 Abra **Configurações → Diagnóstico**.
 
-![Aba Geral com Chaves de acesso, Diagnóstico, Sobre e Ações destrutivas.](imagens/configuracoes-geral.webp "Aba Geral nas configurações") [Ver captura completa](imagens/configuracoes-geral-original.webp)
+![Configurações com aparência, idioma, fuso horário, idiomas dos atalhos de emoji e acesso às preferências do dispositivo e do motor.](imagens/configuracoes-geral.webp "Página inicial das configurações") [Ver captura completa](imagens/configuracoes-geral-original.webp)
 
 Escolha um período e use **Atualizar** para ver os eventos recentes.
 Abra uma linha para ver os detalhes. Use
