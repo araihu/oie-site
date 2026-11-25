@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.51](../../baixar/index.md). A organização dos painéis descrita aqui está em teste para uma versão posterior ao instalador. Na rc.51, as configurações ainda usam abas.
+Este manual acompanha o [Oiê v0.0.1-rc.54](../../baixar/index.md). A navegação dos painéis e as ações de mídia descritas aqui serão disponibilizadas na próxima versão.
 
 ## Motor local ou remoto
 
@@ -290,7 +290,9 @@ Na conversa, se a imagem ainda não apareceu, abra **Ações da mensagem** e esc
 
 ### Reprodução de áudio
 
-Para ouvir um clipe na galeria, use o player do cartão. Abra as ações do cartão para escolher **Baixar áudio** ou, se aparecer após uma falha de reprodução, **Tentar novamente**. Para os controles da conversa, consulte [Mensagens de voz](#mensagens-de-voz).
+Na aba **Mídia**, selecione **Reproduzir áudio** no cartão. Quando a forma de onda aparece, selecione um ponto nela para avançar ou voltar. A reprodução pelo cartão está disponível desde a rc.52.
+
+Abra as ações do cartão para escolher **Baixar áudio** ou, após uma falha de reprodução, **Tentar novamente**. Para os controles da conversa, consulte [Mensagens de voz](#mensagens-de-voz).
 
 ### Arquivos baixados
 
@@ -396,6 +398,8 @@ assistir. Se a reprodução falhar, use o mesmo botão para tentar de novo.
 Para baixar o arquivo, abra **Ações da mensagem** e escolha **Baixar original**. Em **Configurações → Este dispositivo → Mídia e exibição**, ajuste **Gerar prévias de
 vídeo automaticamente**. Com essa opção desativada, você pode pedir uma prévia
 em **Ações da mensagem → Carregar prévia do vídeo**. Na aba **Mídia**, abra as ações do cartão para carregar a prévia ou escolher **Baixar original**.
+
+Ao tocar em **Reproduzir vídeo**, o Oiê tenta abrir o vídeo no navegador. Se o formato precisar de outro reprodutor, o Oiê o carrega no próprio dispositivo. A primeira reprodução pode demorar um pouco mais. Se o vídeo travar, use **Baixar original** no menu do cartão ou da mensagem para abrir o arquivo em outro aplicativo.
 
 ![Cartão de vídeo recebido em uma sala, com uma imagem estática e o botão de reprodução ao centro.](imagens/video-recebido.webp "Vídeo recebido em uma sala")
 
