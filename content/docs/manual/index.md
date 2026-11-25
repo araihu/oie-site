@@ -170,7 +170,7 @@ A prévia pode mostrar nome, descrição, assunto, foto e número de participant
 ### Descobrir e gerenciar salas
 
 - Em **Nova conversa → Entrar na sala**, abra **Explorar salas públicas** e selecione uma sala para preencher o endereço e ver a prévia. Confirme quando quiser entrar.
-- Selecione a imagem da sala no cabeçalho da conversa e abra **Gerenciar sala**, logo abaixo do nome. Em **Detalhes**, escolha **Editar nome e tópico**. Altere os campos, selecione **Revisar alterações** e confira os valores antigos e novos antes de **Publicar alterações**. As opções dependem das permissões da sua conta. A descrição aparece quando o serviço a fornece. Use **Mais opções → Convidar pessoas** para enviar um convite quando a sala permitir.
+- Selecione a imagem da sala no cabeçalho da conversa e abra **Gerenciar sala**, logo abaixo do nome. A seta à esquerda de **Gerenciar sala** leva de volta aos detalhes da conversa. O **×** fecha o painel. Em **Detalhes**, escolha **Editar nome e tópico**. Altere os campos, selecione **Revisar alterações** e confira os valores antigos e novos antes de **Publicar alterações**. As opções dependem das permissões da sua conta. A descrição aparece quando o serviço a fornece. Use **Mais opções → Convidar pessoas** para enviar um convite quando a sala permitir.
 - Em **Participantes**, busque pelo apelido e abra o nome da pessoa para ver as ações disponíveis. Dependendo das permissões, você pode alterar a função, remover a pessoa ou ajustar o acesso à sala. Em **Banimentos**, administradores e proprietários podem buscar um banimento, banir por endereço ou retirar um banimento.
 - Se o servidor oferecer moderação e sua conta tiver permissão, use **Remover mensagem** no menu da mensagem. A remoção aparece quando a sala a confirma.
 
