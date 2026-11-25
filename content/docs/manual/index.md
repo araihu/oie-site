@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.54](../../baixar/index.md). A navegação dos painéis e as ações de mídia descritas aqui serão disponibilizadas na próxima versão.
+Este manual acompanha o [Oiê v0.0.1-rc.55](../../baixar/index.md).
 
 ## Motor local ou remoto
 
