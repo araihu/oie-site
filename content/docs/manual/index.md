@@ -8,11 +8,11 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.54](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.55](../../baixar/index.md).
 
 ## Motor local ou remoto
 
-No desktop, entre em **Configurações → Geral** e abra **Motor**. **Local** é o padrão e roda o motor no seu dispositivo. Para acessar um motor hospedado, selecione **Remoto**, informe seu endereço completo, como `http://127.0.0.1:18084`, e clique em **Salvar**. O Oiê verifica a conexão antes de abrir as conversas do motor remoto. A escolha vale para esse perfil do desktop e é lembrada quando você reabre o aplicativo.
+No desktop, entre em **Configurações** e abra **Motor**. **Local** é o padrão e roda o motor no seu dispositivo. Para acessar um motor hospedado, selecione **Remoto**, informe seu endereço completo, como `http://127.0.0.1:18084`, e clique em **Salvar**. O Oiê verifica a conexão antes de abrir as conversas do motor remoto. A escolha vale para esse perfil do desktop e é lembrada quando você reabre o aplicativo.
 
 ![Tela Motor com o botão Voltar às configurações, a opção Remoto selecionada, o endereço preenchido e o botão Salvar.](imagens/motor-remoto.webp "Configurações do motor remoto") [Ver captura completa](imagens/motor-remoto-original.webp)
 
@@ -26,10 +26,10 @@ Para um motor local de teste em outro computador, restrinja o acesso com um
 Use a rc.28 ou posterior no servidor e no desktop.
 
 1. Abra o site do Oiê hospedado e selecione **Entrar**.
-2. Vá a **Configurações → Geral → Chaves de acesso**. Dê um nome que
+2. Vá a **Configurações → Chaves de acesso**. Dê um nome que
    identifique o dispositivo, selecione **Criar chave de acesso** e depois
    **Copiar chave**. A chave dá acesso completo e vale por 90 dias.
-3. No desktop, abra **Configurações → Geral → Motor → Remoto**. Informe o
+3. No desktop, abra **Configurações → Motor → Remoto**. Informe o
    endereço HTTPS, cole a chave em **Chave de acesso (se exigida)** e
    selecione **Salvar**.
 
@@ -52,14 +52,14 @@ Se a conexão com o servidor XMPP cair, o Oiê tenta reconectar a conta e retoma
 
 ### Sair do Oiê hospedado
 
-Abra **Configurações → Motor**, selecione **Sair** e confirme. Isso encerra
+Abra **Configurações**, selecione **Sair** no rodapé e confirme. Isso encerra
 a sessão em todas as abas deste navegador. O motor continua rodando no servidor.
 
 ## Diagnóstico e registro de erros
 
-Abra **Configurações → Geral → Diagnóstico**.
+Abra **Configurações → Diagnóstico**.
 
-![Aba Geral com Chaves de acesso, Diagnóstico, Sobre e Ações destrutivas.](imagens/configuracoes-geral.webp "Aba Geral nas configurações") [Ver captura completa](imagens/configuracoes-geral-original.webp)
+![Configurações com aparência, idioma, fuso horário, idiomas dos atalhos de emoji e acesso às preferências do dispositivo e do motor.](imagens/configuracoes-geral.webp "Página inicial das configurações") [Ver captura completa](imagens/configuracoes-geral-original.webp)
 
 Escolha um período e use **Atualizar** para ver os eventos recentes.
 Abra uma linha para ver os detalhes. Use
@@ -80,7 +80,7 @@ fora do registro. O arquivo só é compartilhado quando você decide enviá-lo.
 
 ## Apagar todos os dados
 
-Abra **Configurações → Geral → Ações destrutivas → Apagar todos os dados**.
+Abra **Configurações → Ações destrutivas → Apagar todos os dados**.
 
 Leia o aviso e digite `delete` para confirmar. A exclusão apaga as contas, o histórico e os arquivos guardados pelo motor selecionado. Em um motor compartilhado, isso afeta todos os dispositivos conectados.
 
@@ -170,11 +170,11 @@ A prévia pode mostrar nome, descrição, assunto, foto e número de participant
 ### Descobrir e gerenciar salas
 
 - Em **Nova conversa → Entrar na sala**, abra **Explorar salas públicas** e selecione uma sala para preencher o endereço e ver a prévia. Confirme quando quiser entrar.
-- Dentro de uma sala, abra **Mais opções → Gerenciar sala**. Em **Detalhes**, edite o nome, o tópico ou a foto conforme as permissões da sua conta. Use **Mais opções → Convidar pessoas** para enviar um convite quando a sala permitir.
+- Selecione a imagem da sala no cabeçalho da conversa e abra **Gerenciar sala**, logo abaixo do nome. A seta à esquerda de **Gerenciar sala** leva de volta aos detalhes da conversa. O **×** fecha o painel. Em **Detalhes**, escolha **Editar nome e tópico**. Altere os campos, selecione **Revisar alterações** e confira os valores antigos e novos antes de **Publicar alterações**. As opções dependem das permissões da sua conta. A descrição aparece quando o serviço a fornece. Use **Mais opções → Convidar pessoas** para enviar um convite quando a sala permitir.
 - Em **Participantes**, busque pelo apelido e abra o nome da pessoa para ver as ações disponíveis. Dependendo das permissões, você pode alterar a função, remover a pessoa ou ajustar o acesso à sala. Em **Banimentos**, administradores e proprietários podem buscar um banimento, banir por endereço ou retirar um banimento.
 - Se o servidor oferecer moderação e sua conta tiver permissão, use **Remover mensagem** no menu da mensagem. A remoção aparece quando a sala a confirma.
 
-![Aba Detalhes de Gerenciar sala com a imagem da sala e os campos de nome e tópico.](imagens/gerenciar-sala.webp "Aba Detalhes de Gerenciar sala")
+[![Gerenciar sala com o botão Editar nome e tópico e os valores atuais.](imagens/gerenciar-sala.webp)](imagens/gerenciar-sala-original.webp)
 
 ### Conferir o endereço e remover salas
 
@@ -228,13 +228,13 @@ Buscar por `arqiuvo` nas mensagens guardadas pode realçar **arquivo** no balão
 
 Abra **Configurações → Motor → Retenção de mensagens**. O Oiê salva os prazos padrão de **Salas** e **Conversas diretas** ao sair do campo alterado.
 
-Os prazos padrão valem para o motor do Oiê em uso, inclusive quando ele é compartilhado entre dispositivos. Para mudar o prazo de uma conversa, abra **Mais opções → Detalhes da conversa → Retenção de mensagens**. Use **Usar o padrão** para voltar ao prazo global.
+Os prazos padrão valem para o motor do Oiê em uso, inclusive quando ele é compartilhado entre dispositivos. Para mudar o prazo de uma conversa, abra **Mais opções → Detalhes da conversa → Preferências da conversa → Retenção de mensagens**. A escolha é salva ao selecionar. Para um prazo personalizado, digite os dias e pressione Enter ou saia do campo. Use **Usar o padrão** para voltar ao prazo global.
 
 Por padrão, as salas têm prazo de **180 dias** e as conversas diretas usam **Sem limite**. O Oiê preserva as **100 mensagens mais recentes já guardadas de cada sala** e todas as mensagens favoritadas. Reduzir o prazo pode apagar outras mensagens antigas do histórico guardado pelo motor. Em um envio agendado, o prazo conta a partir do envio. Se a mensagem original de uma resposta expirar, o texto da resposta continua visível e a citação fica indisponível.
 
 O prazo também limita a recuperação do histórico no XMPP. Uma instalação nova pode recuperar menos de 100 mensagens de uma sala, dependendo do prazo e dos dados ainda disponíveis no servidor. Com **Sem limite**, as mensagens deixam de expirar por idade, o histórico pode ocupar mais espaço e a recuperação pode alcançar as mensagens mais antigas que o servidor ainda oferece à sua conta.
 
-![Aba Motor com 180 dias para salas e Sem limite para conversas diretas.](imagens/retencao-de-mensagens.webp "Retenção de mensagens na aba Motor") [Ver captura completa](imagens/retencao-de-mensagens-original.webp)
+![Página Motor com 180 dias para salas e Sem limite para conversas diretas.](imagens/retencao-de-mensagens.webp "Retenção de mensagens no Motor") [Ver captura completa](imagens/retencao-de-mensagens-original.webp)
 
 ## Mensagens não lidas
 
@@ -266,7 +266,7 @@ Use **Escolher arquivo** em **Toque** para usar um áudio seu de até 5 MB. O Oi
 
 ![A seção Notificações mostra o arquivo Toque de exemplo.wav com o botão de reprodução, o X e a opção Escolher arquivo.](imagens/notificacoes.webp "Toque de notificação personalizado") [Ver captura completa](imagens/notificacoes-original.webp)
 
-Para silenciar uma conversa ou sala neste dispositivo, abra **Detalhes** no menu da conversa e ative **Silenciar notificações neste dispositivo**. Ao receber várias mensagens em sequência, o Oiê toca uma vez a cada dois segundos. O contador de mensagens não lidas continua funcionando.
+Para silenciar uma conversa ou sala neste dispositivo, abra **Detalhes da conversa → Preferências da conversa** e ative **Silenciar notificações neste dispositivo**. Ao receber várias mensagens em sequência, o Oiê toca uma vez a cada dois segundos. O contador de mensagens não lidas continua funcionando.
 
 Os alertas chegam enquanto o Oiê está aberto e conectado. Selecione o banner para abrir a mensagem. No desktop, o clique restaura a janela se ela estiver escondida. No navegador ou no app web instalado, um banner que ainda estiver na central de notificações pode reabrir o Oiê após fechar a janela. Se o navegador bloquear áudio ao abrir o Oiê, interaja com a janela para habilitar a reprodução.
 
@@ -284,17 +284,19 @@ Os atalhos **Mídia**, **Links** e **Documentos** abrem o catálogo com o mesmo 
 
 Abra **Mídia e links** na barra lateral para encontrar o que foi compartilhado. As abas **Mídia**, **Links** e **Documentos** agrupam os itens por mês. Use **Contas** para buscar por nome ou endereço e marcar uma ou mais contas. **Limpar seleção** volta a mostrar itens de todas as contas. Sua escolha em **Trocar de conta** continua valendo nas outras telas.
 
-No menu do cartão, use **Ir para a mensagem** para voltar à conversa de origem. Selecione um documento para abri-lo. Se a prévia falhar, use **Tentar novamente** quando essa opção aparecer. O cabeçalho também permite baixar o arquivo ou abrir o endereço original.
+No menu do cartão, use **Carregar imagem** quando a prévia ainda não estiver visível ou **Ir para a mensagem** para voltar à conversa de origem. Selecione um documento para abri-lo. Se a prévia falhar, use **Tentar novamente** quando essa opção aparecer. O cabeçalho também permite baixar o arquivo ou abrir o endereço original.
+
+Na conversa, se a imagem ainda não apareceu, abra **Ações da mensagem** e escolha **Carregar imagem**. Se houver várias imagens na mensagem, escolha o arquivo pelo nome ou pelo número.
 
 ### Reprodução de áudio
 
-Na aba **Mídia**, selecione **Reproduzir áudio** no cartão. Quando a forma de onda e a duração aparecem, selecione um ponto na onda para avançar ou voltar. A reprodução pelo cartão está disponível desde a RC.52.
+Na aba **Mídia**, selecione **Reproduzir áudio** no cartão. Quando a forma de onda aparece, selecione um ponto nela para avançar ou voltar. A reprodução pelo cartão está disponível desde a rc.52.
 
-Para baixar o original, abra a mensagem pelo menu do cartão e siga as instruções de [Mensagens de voz](#mensagens-de-voz).
+Abra as ações do cartão para escolher **Baixar áudio** ou, após uma falha de reprodução, **Tentar novamente**. Para os controles da conversa, consulte [Mensagens de voz](#mensagens-de-voz).
 
 ### Arquivos baixados
 
-Com o motor local, abra **Configurações → Este dispositivo → Arquivos baixados**. Em **Manter arquivos por**, a escolha é salva ao selecionar uma opção. O padrão é **Até eu excluir**. Para liberar espaço agora, selecione **Excluir arquivos baixados** e confirme.
+Com o motor local, abra **Configurações → Este dispositivo → Armazenamento → Arquivos baixados**. Em **Manter arquivos por**, a escolha é salva ao selecionar uma opção. O padrão é **Até eu excluir**. Para liberar espaço agora, selecione **Excluir arquivos baixados** e confirme.
 
 ![Preferências de arquivos baixados com a opção Até eu excluir e o botão Excluir arquivos baixados.](imagens/arquivos-baixados.webp "Retenção de arquivos baixados") [Ver captura dos arquivos baixados](imagens/arquivos-baixados.webp)
 
@@ -358,7 +360,7 @@ O Oiê aceita até 16 arquivos por mensagem. O limite por arquivo depende do ser
 
 ### Qualidade de áudio e vídeo
 
-No menu de anexos, escolha **Áudio ou vídeo**, selecione o arquivo e escolha a qualidade. **SD** reduz o tamanho e vem selecionada em um dispositivo novo. **HD** preserva mais detalhes. **OG** mantém o original quando o formato é compatível e o tamanho cabe no limite informado pelo servidor. Em **Configurações → Este dispositivo → Qualidade da mídia**, você pode mudar a preferência.
+No menu de anexos, escolha **Áudio ou vídeo**, selecione o arquivo e escolha a qualidade. **SD** reduz o tamanho e vem selecionada em um dispositivo novo. **HD** preserva mais detalhes. **OG** mantém o original quando o formato é compatível e o tamanho cabe no limite informado pelo servidor. Em **Configurações → Este dispositivo → Mídia e exibição → Qualidade da mídia**, você pode mudar a preferência.
 
 Em MP3 com capa PNG ou JPEG, **SD** prepara um M4A com a capa e os metadados. Se a economia for menor que 10% e o original couber no limite, o Oiê mantém o MP3. **HD** e **OG** também mantêm o MP3 original quando ele cabe.
 
@@ -392,12 +394,12 @@ não puder ser criada.
 ![Vídeo no rascunho com botão de reprodução, nome do arquivo e botão para remover o anexo.](imagens/video-no-rascunho.webp "Vídeo no rascunho")
 
 Em uma conversa direta ou sala, escolha **Reproduzir vídeo** no cartão para
-assistir. Se a miniatura não aparecer, você ainda pode usar o botão de
-reprodução. Em **Configurações → Este dispositivo**, ajuste **Gerar prévias de
+assistir. Se a reprodução falhar, use o mesmo botão para tentar de novo.
+Para baixar o arquivo, abra **Ações da mensagem** e escolha **Baixar original**. Em **Configurações → Este dispositivo → Mídia e exibição**, ajuste **Gerar prévias de
 vídeo automaticamente**. Com essa opção desativada, você pode pedir uma prévia
-pelo cartão ou pelo menu de ações em **Mídia**.
+em **Ações da mensagem → Carregar prévia do vídeo**. Na aba **Mídia**, abra as ações do cartão para carregar a prévia ou escolher **Baixar original**.
 
-Ao tocar em **Reproduzir vídeo**, o Oiê tenta abrir o vídeo no navegador. Se o formato precisar de outro reprodutor, o Oiê o carrega no próprio dispositivo. A primeira reprodução pode demorar um pouco mais. Se o vídeo travar, use **Baixar original** nos controles do reprodutor para assistir em outro aplicativo. Você também pode usar **Baixar** no menu do arquivo em **Mídia**.
+Ao tocar em **Reproduzir vídeo**, o Oiê tenta abrir o vídeo no navegador. Se o formato precisar de outro reprodutor, o Oiê o carrega no próprio dispositivo. A primeira reprodução pode demorar um pouco mais. Se o vídeo travar, use **Baixar original** no menu do cartão ou da mensagem para abrir o arquivo em outro aplicativo.
 
 ![Cartão de vídeo recebido em uma sala, com uma imagem estática e o botão de reprodução ao centro.](imagens/video-recebido.webp "Vídeo recebido em uma sala")
 
@@ -463,7 +465,7 @@ espaço, reabra a conversa com conexão para atualizar a cópia.
 
 Disponível desde a rc.46.
 
-Em **Configurações → Este dispositivo → Armazenamento sem conexão**, confira o
+Em **Configurações → Este dispositivo → Armazenamento → Armazenamento sem conexão**, confira o
 espaço ocupado pelo texto das conversas e escolha o **Limite para conversas
 salvas**. O padrão é 1 MiB. Você também pode escolher 256 KiB, 512 KiB ou
 2 MiB. A escolha vale para este navegador.
@@ -509,7 +511,7 @@ Se o aplicativo ou a conexão estiver indisponível no horário marcado, o Oiê 
 
 ## Citações e texto original
 
-O Oiê exibe Markdown nas mensagens por padrão. Para citar várias linhas, comece cada uma com `>`. Uma linha sem o marcador fica fora da citação, mesmo quando vem logo abaixo. Em **Configurações → Este dispositivo**, use **Formatar mensagens com Markdown** para ajustar a exibição. Abra **Ações da mensagem → Copiar mensagem original** para copiar o texto com os marcadores Markdown. Se a conexão cair com a conversa aberta, você ainda pode copiar o texto.
+O Oiê exibe Markdown nas mensagens por padrão. Para citar várias linhas, comece cada uma com `>`. Uma linha sem o marcador fica fora da citação, mesmo quando vem logo abaixo. Em **Configurações → Este dispositivo → Mídia e exibição**, use **Formatar mensagens com Markdown** para ajustar a exibição. Abra **Ações da mensagem → Copiar mensagem original** para copiar o texto com os marcadores Markdown. Se a conexão cair com a conversa aberta, você ainda pode copiar o texto.
 
 O lápis ao lado do horário indica uma mensagem editada. Selecione-o ou use **Ver histórico de edições** no menu da mensagem para consultar as versões que o Oiê guardou.
 
@@ -517,7 +519,7 @@ O lápis ao lado do horário indica uma mensagem editada. Selecione-o ou use **V
 
 ## Idioma e fuso horário
 
-Em **Configurações → Geral**, use a busca em **Idioma** ou **Fuso horário de exibição**. A lista de fusos mostra o deslocamento atual em relação ao UTC, incluindo o horário de verão quando aplicável. Você pode buscar pela cidade ou pelo deslocamento, como `UTC+09:00`.
+Em **Configurações**, use a busca em **Idioma** ou **Fuso horário de exibição**. A lista de fusos mostra o deslocamento atual em relação ao UTC, incluindo o horário de verão quando aplicável. Você pode buscar pela cidade ou pelo deslocamento, como `UTC+09:00`.
 
 Escolha **Fuso horário do sistema** para acompanhar o fuso do dispositivo. O idioma e o fuso escolhidos ficam salvos neste aplicativo ou navegador. O agendamento também usa esse fuso para interpretar a data e o horário que você informa.
 
