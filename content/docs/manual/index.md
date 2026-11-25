@@ -286,6 +286,8 @@ Abra **Mídia e links** na barra lateral para encontrar o que foi compartilhado.
 
 No menu do cartão, use **Ir para a mensagem** para voltar à conversa de origem. Selecione um documento para abri-lo. Se a prévia falhar, use **Tentar novamente** quando essa opção aparecer. O cabeçalho também permite baixar o arquivo ou abrir o endereço original.
 
+Na conversa, se a imagem ainda não apareceu, abra **Ações da mensagem** e escolha **Carregar imagem**. Se houver várias imagens na mensagem, escolha o arquivo pelo nome ou pelo número.
+
 ### Reprodução de áudio
 
 Para reproduzir e baixar um anexo de áudio ou uma gravação, consulte [Mensagens de voz](#mensagens-de-voz).
