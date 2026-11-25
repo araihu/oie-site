@@ -284,7 +284,7 @@ Os atalhos **Mídia**, **Links** e **Documentos** abrem o catálogo com o mesmo 
 
 Abra **Mídia e links** na barra lateral para encontrar o que foi compartilhado. As abas **Mídia**, **Links** e **Documentos** agrupam os itens por mês. Use **Contas** para buscar por nome ou endereço e marcar uma ou mais contas. **Limpar seleção** volta a mostrar itens de todas as contas. Sua escolha em **Trocar de conta** continua valendo nas outras telas.
 
-No menu do cartão, use **Ir para a mensagem** para voltar à conversa de origem. Selecione um documento para abri-lo. Se a prévia falhar, use **Tentar novamente** quando essa opção aparecer. O cabeçalho também permite baixar o arquivo ou abrir o endereço original.
+No menu do cartão, use **Carregar imagem** quando a prévia ainda não estiver visível ou **Ir para a mensagem** para voltar à conversa de origem. Selecione um documento para abri-lo. Se a prévia falhar, use **Tentar novamente** quando essa opção aparecer. O cabeçalho também permite baixar o arquivo ou abrir o endereço original.
 
 Na conversa, se a imagem ainda não apareceu, abra **Ações da mensagem** e escolha **Carregar imagem**. Se houver várias imagens na mensagem, escolha o arquivo pelo nome ou pelo número.
 
