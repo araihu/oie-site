@@ -8,7 +8,7 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.52](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.54](../../baixar/index.md).
 
 ## Motor local ou remoto
 
@@ -396,6 +396,8 @@ assistir. Se a miniatura não aparecer, você ainda pode usar o botão de
 reprodução. Em **Configurações → Este dispositivo**, ajuste **Gerar prévias de
 vídeo automaticamente**. Com essa opção desativada, você pode pedir uma prévia
 pelo cartão ou pelo menu de ações em **Mídia**.
+
+Ao tocar em **Reproduzir vídeo**, o Oiê tenta abrir o vídeo no navegador. Se o formato precisar de outro reprodutor, o Oiê o carrega no próprio dispositivo. A primeira reprodução pode demorar um pouco mais. Se o vídeo travar, use **Baixar original** nos controles do reprodutor para assistir em outro aplicativo. Você também pode usar **Baixar** no menu do arquivo em **Mídia**.
 
 ![Cartão de vídeo recebido em uma sala, com uma imagem estática e o botão de reprodução ao centro.](imagens/video-recebido.webp "Vídeo recebido em uma sala")
 
