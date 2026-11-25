@@ -6,7 +6,7 @@ language: pt-BR
 
 # CLI do Oiê
 
-O `oiectl` acessa um motor do Oiê em execução. Os exemplos usam uma instância local em `http://127.0.0.1:8080`. O [Oiê v0.0.1-rc.49](../../baixar/index.md) usa a API 0.42.0. A versão do CLI distribuída em separado acompanha o contrato 0.30.1.
+O `oiectl` acessa um motor do Oiê em execução. Os exemplos usam uma instância local em `http://127.0.0.1:8080`. O [Oiê v0.0.1-rc.50](../../baixar/index.md) usa a API 0.42.0. A versão do CLI distribuída em separado acompanha o contrato 0.30.1.
 
 ## Instalar o CLI
 
@@ -20,14 +20,14 @@ oiectl version v0.30.1 (spec openapi/engine/v0.30.1)
 
 ## Compilar e conectar
 
-Use Make e Go 1.27.4 ou mais recente para compilar e iniciar o Oiê a partir do [código-fonte da v0.0.1-rc.49](https://github.com/araihu/oie/tree/v0.0.1-rc.49).
+Use Make e Go 1.27.4 ou mais recente para compilar e iniciar o Oiê a partir do [código-fonte da v0.0.1-rc.50](https://github.com/araihu/oie/tree/v0.0.1-rc.50).
 
 ```sh
 make build build-cli
 bin/oie --role local --listen 127.0.0.1:8080 --data-dir ./data-cli
 ```
 
-Os exemplos usam o CLI compilado com a rc.49. `bin/oiectl --version` mostra `oiectl version devel (OpenAPI 0.42.0)`. Se instalou o binário no `PATH`, use `oiectl` no lugar de `bin/oiectl`.
+Os exemplos usam o CLI compilado com a rc.50. `bin/oiectl --version` mostra `oiectl version devel (OpenAPI 0.42.0)`. Se instalou o binário no `PATH`, use `oiectl` no lugar de `bin/oiectl`.
 
 Em outro terminal, no mesmo checkout, confira a conexão com a API.
 
@@ -162,4 +162,4 @@ Na retomada, use o ID do último evento que você processou por completo. Use `-
 
 Com o CLI compilado da rc.9, `shared content list --include-first-page-counts` inclui a contagem da primeira página de mídia, links e documentos com os filtros usados na consulta.
 
-Acrescente `--help` ao grupo ou comando para ver as opções da sua versão, por exemplo `bin/oiectl messages send --help`. Consulte o [contrato OpenAPI 0.30.1 da release do CLI](https://oapi.araihu.com/catalogs/oie/documents/engine-v0.30.1/), o [contrato 0.42.0 usado pela rc.49](https://github.com/araihu/oie/blob/v0.0.1-rc.49/api/openapi.yaml) ou a [prévia do contrato no catálogo](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
+Acrescente `--help` ao grupo ou comando para ver as opções da sua versão, por exemplo `bin/oiectl messages send --help`. Consulte o [contrato OpenAPI 0.30.1 da release do CLI](https://oapi.araihu.com/catalogs/oie/documents/engine-v0.30.1/), o [contrato 0.42.0 usado pela rc.50](https://github.com/araihu/oie/blob/v0.0.1-rc.50/api/openapi.yaml) ou a [prévia do contrato no catálogo](https://oapi.araihu.com/catalogs/oie/documents/engine-next/).
