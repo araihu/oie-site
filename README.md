@@ -49,6 +49,8 @@ O player de áudio da aba **Mídia** acompanha o [Oiê v0.0.1-rc.52](https://git
 
 O manual de configurações, detalhes da conversa, gerenciamento de salas e mídia foi conferido com a [revisão 051d0528 do Oiê](https://github.com/araihu/oie/tree/051d052882ce090f3320dc991ea86d08f23ad288), publicada na rc.55.
 
+A seção **Nova conversa** e os rótulos de grupos acompanham a [revisão 1d2512f do Oiê](https://github.com/araihu/oie/commit/1d2512fa9d1a3f0022dbf6ac170cd5ce07828f3e). As capturas usam conversas e contatos fictícios.
+
 A paginação da lista de conversas no manual foi conferida na [revisão 846788d9 do aplicativo](https://github.com/araihu/oie/commit/846788d9) e está disponível na rc.45.
 Os guias de autenticação hospedada e conexão do desktop acompanham a rc.28.
 O guia do CLI usa a API 0.42.0 da rc.50. O guia de Kubernetes usa o
