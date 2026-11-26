@@ -134,7 +134,9 @@ A remoção apaga a senha salva, as conversas e as mensagens pendentes dessa con
 
 No topo de **Conversas**, toque em **+** para abrir **Nova conversa**. No celular, o painel abre pela borda inferior. No computador, ele aparece no centro da janela. Escolha uma conversa recente ou busque uma pessoa pelo nome ou endereço XMPP. O seletor respeita a conta que você está usando na lista de conversas.
 
-Para falar com alguém pela primeira vez, escolha **Conversa direta** e confira a conta e o endereço antes de abrir a conversa. Para salvar a pessoa na sua lista, escolha **Adicionar contato**. Se estiver vendo várias contas, escolha em qual delas deseja salvar o contato.
+Se já houver uma conversa com a pessoa nessa conta, toque no nome dela para abrir o histórico. Para falar com alguém pela primeira vez, selecione um contato ou escolha **Conversa direta** e informe o endereço XMPP. Confira a conta e toque em **Abrir conversa**.
+
+**Adicionar contato**, **Criar grupo** e **Entrar no grupo** também abrem na mesma janela. Use a seta de voltar para retornar à busca.
 
 [![Janela Nova conversa com busca por nome ou endereço, ações de conversa e grupo, conversas recentes e contatos.](imagens/nova-conversa.webp)](imagens/nova-conversa-original.webp)
 
