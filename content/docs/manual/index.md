@@ -10,6 +10,12 @@ margo:
 
 Este manual acompanha o [Oiê v0.0.1-rc.55](../../baixar/index.md).
 
+## Navegar no celular
+
+Na versão em desenvolvimento após a rc.57, a barra flutuante na parte inferior dá acesso a **Conversas**, **Mídia**, **Favoritas** e **Agendadas**. Toque em **Contas** para trocar de conta ou abrir **Configurações**. Dentro de uma conversa, toque em **Voltar** para ver a lista e a barra novamente.
+
+![Barra flutuante com Conversas selecionada e os atalhos Mídia, Favoritas, Agendadas e Contas.](imagens/navegacao-celular.webp) [Ver tela completa](imagens/navegacao-celular-original.webp)
+
 ## Motor local ou remoto
 
 No desktop, entre em **Configurações** e abra **Motor**. **Local** é o padrão e roda o motor no seu dispositivo. Para acessar um motor hospedado, selecione **Remoto**, informe seu endereço completo, como `http://127.0.0.1:18084`, e clique em **Salvar**. O Oiê verifica a conexão antes de abrir as conversas do motor remoto. A escolha vale para esse perfil do desktop e é lembrada quando você reabre o aplicativo.
@@ -312,7 +318,7 @@ Os GIFs começam a se mexer quando o original termina de baixar. Se você desati
 
 ## Mensagens favoritadas
 
-No menu de uma mensagem, escolha **Favoritar**. Abra **Favoritas** na navegação lateral e use **Pesquisar mensagens favoritas** para buscar pelo texto, pelo remetente ou pela conversa de origem. Os cartões incluem mensagens de conversas arquivadas. Use **Trocar de conta** para restringir a lista a uma conta ou **Todas as contas** para reunir as mensagens de todas elas.
+No menu de uma mensagem, escolha **Favoritar**. Abra **Favoritas** e use **Pesquisar mensagens favoritas** para buscar pelo texto, pelo remetente ou pela conversa de origem. Os cartões incluem mensagens de conversas arquivadas. Use **Trocar de conta** para restringir a lista a uma conta ou **Todas as contas** para reunir as mensagens de todas elas.
 
 No menu do cartão, use **Ir para a mensagem** para abrir a conversa no ponto em que ela foi enviada. Você também pode **Copiar mensagem original** ou **Encaminhar**. Para tirar uma mensagem da lista, selecione a estrela. Para localizar conversas favoritas, use o filtro **Favoritas** na lista de conversas.
 
@@ -511,7 +517,7 @@ Em **Agendadas**, abra **Conversas** para buscar um destinatário. Você pode ma
 
 ![Janela Agendar mensagem, com a prévia do lembrete e o campo de data e horário de envio.](imagens/envio-agendado.webp "Prévia e horário do envio agendado")
 
-Na agenda da navegação lateral, use **Conversas** para escolher quais destinos quer ver. Os envios do mesmo dia aparecem em colunas quando há espaço.
+Em **Agendadas**, use **Conversas** para escolher quais destinos quer ver. Os envios do mesmo dia aparecem em colunas quando há espaço.
 
 Para editar uma mensagem sem sair da conversa, abra **Mais opções → Agendadas → Editar mensagem**. O campo de mensagem passa a mostrar o conteúdo agendado. Ao salvar ou cancelar a edição, o Oiê restaura o rascunho que você já tinha naquela conversa.
 
