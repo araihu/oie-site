@@ -103,7 +103,7 @@ Se perder a resposta e precisar repetir a mesma solicitação, mantenha a chave 
 
 Use o CLI compilado da mesma revisão do motor.
 Em `conversations list --output json`,
-confira o `id`, o `accountId` e o `revisionId` da sala. Substitua os valores
+confira o `id`, o `accountId` e o `revisionId` do grupo. Substitua os valores
 abaixo e gere um UUIDv7 novo para a solicitação.
 
 ```sh
@@ -112,9 +112,9 @@ printf '%s\n' '{"accountId":"ACCOUNT_UUID","expectedRevisionId":"REVISION_UUID"}
     --idempotency-key REQUEST_UUID --body-stdin
 ```
 
-O comando tira a sala de **Conversas** e **Arquivadas** e interrompe a entrada
-automática pelo Oiê. Mantém o histórico e a sala no servidor. Consulte o
-[manual de salas](../manual/index.md#conferir-o-endereo-e-remover-salas)
+O comando tira o grupo de **Conversas** e **Arquivadas** e interrompe a entrada
+automática pelo Oiê. Mantém o histórico e o grupo no servidor. Consulte o
+[manual de grupos](../manual/index.md#conferir-o-endereo-e-remover-grupos)
 para distinguir remoção local e exclusão para todos.
 
 Para uma conversa direta, use `oiectl conversations remove-direct-from-chats`
@@ -153,7 +153,7 @@ Na retomada, use o ID do último evento que você processou por completo. Use `-
 | Para | Comece com |
 | --- | --- |
 | Contas, conexão e histórico | `accounts list`, `accounts connection`, `accounts history` |
-| Salas e arquivo | `conversations discover-rooms`, `conversations open-room`, `conversations get-room-management`, `conversations rooms archive` |
+| Grupos e arquivo | `conversations discover-rooms`, `conversations open-room`, `conversations get-room-management`, `conversations rooms archive` |
 | Buscar mensagens e consultar estrelas | `messages search`, `messages stars list` |
 | Gerenciar envios pendentes | `messages list-scheduled-messages`, `messages update-pending-message`, `messages send-scheduled-message-now`, `messages outbox cancel` |
 | Ver arquivos e links de conversas | `shared content list` |
