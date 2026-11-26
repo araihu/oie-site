@@ -99,8 +99,8 @@ O fluxo de remoção de conta e o comando `oiectl accounts remove` foram conferi
 
 O trecho **Conferir o endereço e remover grupos** no manual e o comando
 `oiectl conversations remove-room-from-chats` foram conferidos na revisão de
-desenvolvimento `b9a50667a861fd1eb26559e4aba3a0fdc9e6aecb` do Oiê, posterior
-à versão oferecida em **Baixar**. As capturas em pt-BR usam salas fictícias.
+desenvolvimento `b9a50667a861fd1eb26559e4aba3a0fdc9e6aecb` do Oiê, incluída
+na rc.32. As capturas em pt-BR usam grupos fictícios.
 
 A remoção de conversas diretas e o comando
 `oiectl conversations remove-direct-from-chats` foram conferidos na revisão de
