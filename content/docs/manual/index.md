@@ -302,6 +302,12 @@ Com o motor local, abra **Configurações → Este dispositivo → Armazenamento
 
 Quando um anexo compatível inclui dados de verificação, o Oiê confere a integridade do download completo. Se o conteúdo divergir do original anunciado, o Oiê recusa o download.
 
+### Figurinhas e GIFs na conversa
+
+Na próxima versão, as imagens que o aplicativo de origem identificar como **figurinhas** aparecerão pequenas, diretamente sobre o fundo da conversa. Um GIF enviado como imagem continuará no balão de mensagem.
+
+Os GIFs começam a se mexer quando o original termina de baixar. Se você desativou o download automático, use **Carregar imagem** no menu da mensagem. Com a opção **Reduzir movimento** do sistema ativada, a conversa mostra um quadro estático. Abra a imagem para ver a animação.
+
 ## Mensagens favoritadas
 
 No menu de uma mensagem, escolha **Favoritar**. Abra **Favoritas** na navegação lateral e use **Pesquisar mensagens favoritas** para buscar pelo texto, pelo remetente ou pela conversa de origem. Os cartões incluem mensagens de conversas arquivadas. Use **Trocar de conta** para restringir a lista a uma conta ou **Todas as contas** para reunir as mensagens de todas elas.
