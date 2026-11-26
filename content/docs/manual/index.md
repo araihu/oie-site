@@ -366,6 +366,14 @@ Você pode clicar no nome de um anexo pronto para baixar o original. No aplicati
 
 O Oiê aceita até 16 arquivos por mensagem. O limite por arquivo depende do serviço XMPP e aparece no compositor quando está disponível. O serviço também pode restringir anexos naquela conversa. Quem recebe a mensagem pode baixar os arquivos pelos links enviados junto com a legenda. Os anexos prontos ficam no rascunho ao recarregar a página. Aguarde o preparo antes de trocar de conversa.
 
+### Abrir anexos no iPhone
+
+Na versão de desenvolvimento posterior à rc.55, toque no nome do anexo para abri-lo dentro do Oiê. Toque em **Fechar** para voltar à conversa, inclusive enquanto o arquivo carrega. Para guardar uma cópia, toque em **Compartilhar arquivo** e escolha **Salvar em Arquivos**. Se o iPhone oferecer **Baixar**, use essa opção.
+
+![Imagem aberta no iPhone com Fechar no canto superior direito e Compartilhar arquivo na parte de baixo.](imagens/anexo-iphone.webp)
+
+[Abrir a captura do anexo no iPhone em tamanho original](imagens/anexo-iphone.webp)
+
 ### Qualidade de áudio e vídeo
 
 No menu de anexos, escolha **Áudio ou vídeo**, selecione o arquivo e escolha a qualidade. **SD** reduz o tamanho e vem selecionada em um dispositivo novo. **HD** preserva mais detalhes. **OG** mantém o original quando o formato é compatível e o tamanho cabe no limite informado pelo servidor. Em **Configurações → Este dispositivo → Mídia e exibição → Qualidade da mídia**, você pode mudar a preferência.
