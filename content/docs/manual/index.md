@@ -140,7 +140,7 @@ Se já houver uma conversa com a pessoa nessa conta, toque no nome dela para abr
 
 [![Janela Nova conversa com busca por nome ou endereço, ações de conversa e grupo, conversas recentes e contatos.](imagens/nova-conversa.webp)](imagens/nova-conversa-original.webp)
 
-O seletor com busca e os novos rótulos de grupo estão em desenvolvimento para uma versão posterior ao instalador atual.
+O seletor com busca e as ações com o nome **Grupo** estão disponíveis a partir da [rc.59 do Oiê](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.59).
 
 ## Percorrer a lista de conversas
 
