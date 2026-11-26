@@ -98,6 +98,34 @@ escrito.
 
 [![A mesma sala nas contas Alice e Bob, com bordas nas cores mostradas no seletor de contas.](imagens/seletor-de-contas.webp)](imagens/seletor-de-contas-original.webp)
 
+### Mensagens diretas com OMEMO em um perfil de teste
+
+Na prévia de desenvolvimento, você pode trocar mensagens diretas de texto com Gajim e Conversations. No Oiê local, a identidade pertence à instalação. No Oiê hospedado, o servidor guarda as chaves e pode ler as mensagens. Ao entrar pelo celular e pelo computador na mesma conta hospedada, você vê a mesma impressão digital, as mesmas verificações e o mesmo histórico.
+
+Para experimentar em um perfil separado, execute `oie omemo init --data-dir DIRETORIO` com o motor parado. Inicie o Oiê com esse diretório e conecte a conta. Nas conversas diretas, o envio exige criptografia por padrão. O instalador rc.50 ainda não inclui esse recurso.
+
+Abra **Criptografia OMEMO** nos detalhes da conversa. Compare a impressão digital pelo canal que você costuma usar para confirmar a identidade da outra pessoa. No Conversations, ela aparece nos detalhes da conta. No Gajim, fica nas configurações de OMEMO da conta. Cole a impressão digital ou o link XMPP recebido, ou selecione a imagem do código QR. Escolha **Conferir aparelho**, confira o endereço e confirme. Repita para os demais aparelhos ativos. Para compartilhar sua própria impressão digital, abra **Criptografia OMEMO** na sua conta.
+
+[![Confirmação da impressão digital de um aparelho do Gajim pelo Oiê hospedado.](imagens/verificar-omemo.webp)](imagens/verificar-omemo-original.webp)
+
+Uma mensagem que aguarda verificação fica na fila. Depois que você verificar os aparelhos, o Oiê tenta enviá-la novamente. O controle **Enviar as próximas mensagens sem criptografia** vale só para novas mensagens daquela conversa. Uma mensagem já enfileirada com OMEMO continua exigindo criptografia.
+
+Com o OMEMO ativo, use **Anexar** na conversa direta para cifrar e enviar arquivos. No Gajim e no Conversations, a legenda e cada arquivo aparecem em mensagens separadas. Para receber, selecione o nome do arquivo na conversa. O Oiê confere o conteúdo antes de oferecer o download. Se a conversa estiver no modo hospedado, o servidor Oiê pode ler os arquivos que processa.
+
+Ao conectar ou reconectar a conta, o Oiê local e o hospedado recuperam mensagens diretas do arquivo XMPP. Você também pode baixar um anexo recuperado enquanto o serviço de upload ainda guardar o arquivo. Uma mensagem recuperada aparece com o horário original e o selo **OMEMO**. Se a conta indicar que parte do histórico está indisponível, confira os aparelhos do contato em **Criptografia OMEMO**. A recuperação depende de o servidor ainda guardar a mensagem e de esta instalação ter as chaves para decifrá-la. Se a mensagem foi cifrada apenas para outro aparelho, você pode recuperar uma cópia do histórico salvo por esse aparelho.
+
+O histórico fica legível no motor que guarda as chaves. Para mudar de instalação, o operador pode exportar a identidade e o histórico separadamente, com senha, usando `oie omemo export-key` e `oie omemo export-history`. Na instalação de destino, `inspect-key` mostra a conta e a impressão digital para conferência. Use `import-history` para recuperar as conversas salvas e `import-key` para recuperar a identidade. Desative a instalação antiga antes de conectar a nova. [Instruções de migração da prévia](https://github.com/araihu/oie/blob/978e26d32c28c0484201572c4794d5539485ab86/docs/local-omemo.md).
+
+### OMEMO em salas privadas
+
+A sala deve ser restrita a membros, com os endereços XMPP visíveis aos participantes. Nos detalhes da sala, abra **Criptografia OMEMO** e escolha **Ativar OMEMO na sala**. Em **Verificar aparelhos dos membros**, selecione cada endereço e confirme as impressões digitais. O Oiê cifra para todos os membros, inclusive quem está offline. Gajim e Conversations têm seus próprios controles de criptografia para a sala.
+
+Com o OMEMO ativo, você pode enviar texto e usar **Anexar** na sala. Se faltar a verificação de um aparelho ou se a sala deixar de atender aos requisitos, o Oiê mantém a mensagem cifrada na fila. Você pode cancelar enquanto ela aguarda verificação, antes de o envio começar. O motor local e o hospedado recuperam mensagens do arquivo da sala quando o servidor oferece um histórico compatível e o motor tem as chaves. No modo hospedado, o servidor Oiê é o aparelho que os membros verificam e pode ler o conteúdo que processa.
+
+Ao responder, a citação faz parte do texto cifrado. As menções aparecem como texto. Ao encaminhar um anexo, vale a configuração de criptografia da conversa de destino.
+
+Desativar o OMEMO pausa o recebimento e a recuperação de mensagens cifradas. Ao reativar, o Oiê volta a consultar o histórico cifrado se o servidor oferecer um arquivo compatível.
+
 ### Contatos
 
 Em **Trocar de conta → Gerenciar contas**, abra o **Perfil** da conta e escolha

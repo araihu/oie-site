@@ -40,6 +40,11 @@ Oiê local em pt-BR.
 
 As instruções dos repositórios DNF, pacman e Flatpak seguem a publicação da [revisão 5a2339c](https://github.com/araihu/oie/tree/5a2339c87e8dc42078afcfc0be2efbade2c6c423).
 
+A seção de OMEMO descreve a prévia dos motores local e hospedado em revisão no
+[PR 90 do Oiê](https://github.com/araihu/oie/pull/90). O teste usou Gajim 2.4.3 e
+Conversations 2.21.4 em um perfil descartável. O instalador rc.50 continua com
+o comportamento documentado nas outras seções.
+
 A página **Baixar** aponta para os binários e para o código-fonte correspondente
 da [v0.0.1-rc.55](https://github.com/araihu/oie/tree/v0.0.1-rc.55). O guia de instalação e a recuperação de entrada em salas no manual foram conferidos na [revisão b16a701 do Oiê](https://github.com/araihu/oie/tree/b16a7015f4d8991c5529e0db25665a930cbeb8ae). As seções sobre backup e uso sem conexão foram conferidas com a [revisão f722c73](https://github.com/araihu/oie/tree/f722c738d633f83754332c229f232a9582037912). Os trechos do manual sobre mensagens de voz, arquivos baixados e o contador de não lidas foram conferidos na rc.32.
 
