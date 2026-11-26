@@ -8,7 +8,13 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.55](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.59](../../baixar/index.md).
+
+## Navegar no celular
+
+A partir da rc.59, a barra flutuante na parte inferior dá acesso a **Conversas**, **Mídia**, **Favoritas** e **Agendadas**. Toque em **Contas** para trocar de conta ou abrir **Configurações**. Dentro de uma conversa, toque em **Voltar** para ver a lista e a barra novamente.
+
+![Barra flutuante com Conversas selecionada e os atalhos Mídia, Favoritas, Agendadas e Contas.](imagens/navegacao-celular.webp) [Ver tela completa](imagens/navegacao-celular-original.webp)
 
 ## Motor local ou remoto
 
@@ -294,7 +300,7 @@ Os atalhos **Mídia**, **Links** e **Documentos** abrem o catálogo com o mesmo 
 
 ## Mídia e links
 
-Abra **Mídia e links** na barra lateral para encontrar o que foi compartilhado. As abas **Mídia**, **Links** e **Documentos** agrupam os itens por mês. Use **Contas** para buscar por nome ou endereço e marcar uma ou mais contas. **Limpar seleção** volta a mostrar itens de todas as contas. Sua escolha em **Trocar de conta** continua valendo nas outras telas.
+Para encontrar o que foi compartilhado, toque em **Mídia** na barra inferior do celular ou abra **Mídia e links** na barra lateral do computador. As abas **Mídia**, **Links** e **Documentos** agrupam os itens por mês. Use o filtro **Contas** da galeria para buscar por nome ou endereço e marcar uma ou mais contas. **Limpar seleção** volta a mostrar itens de todas as contas. Sua escolha em **Trocar de conta** continua valendo nas outras telas.
 
 A partir da rc.58, as figurinhas aparecem inteiras e em tamanho compacto dentro dos cartões, tanto aqui quanto nas mídias da conversa. Os GIFs começam a tocar quando o original estiver disponível. Com **Reduzir movimento** ativado no sistema, abra a imagem para ver a animação.
 
@@ -324,7 +330,7 @@ Os GIFs começam a se mexer quando o original termina de baixar. Se você desati
 
 ## Mensagens favoritadas
 
-No menu de uma mensagem, escolha **Favoritar**. Abra **Favoritas** na navegação lateral e use **Pesquisar mensagens favoritas** para buscar pelo texto, pelo remetente ou pela conversa de origem. Os cartões incluem mensagens de conversas arquivadas. Use **Trocar de conta** para restringir a lista a uma conta ou **Todas as contas** para reunir as mensagens de todas elas.
+No menu de uma mensagem, escolha **Favoritar**. Abra **Favoritas** e use **Pesquisar mensagens favoritas** para buscar pelo texto, pelo remetente ou pela conversa de origem. Os cartões incluem mensagens de conversas arquivadas. Use **Trocar de conta** para restringir a lista a uma conta ou **Todas as contas** para reunir as mensagens de todas elas.
 
 No menu do cartão, use **Ir para a mensagem** para abrir a conversa no ponto em que ela foi enviada. Você também pode **Copiar mensagem original** ou **Encaminhar**. Para tirar uma mensagem da lista, selecione a estrela. Para localizar conversas favoritas, use o filtro **Favoritas** na lista de conversas.
 
@@ -523,7 +529,7 @@ Em **Agendadas**, abra **Conversas** para buscar um destinatário. Você pode ma
 
 ![Janela Agendar mensagem, com a prévia do lembrete e o campo de data e horário de envio.](imagens/envio-agendado.webp "Prévia e horário do envio agendado")
 
-Na agenda da navegação lateral, use **Conversas** para escolher quais destinos quer ver. Os envios do mesmo dia aparecem em colunas quando há espaço.
+Os envios do mesmo dia aparecem em colunas quando há espaço.
 
 Para editar uma mensagem sem sair da conversa, abra **Mais opções → Agendadas → Editar mensagem**. O campo de mensagem passa a mostrar o conteúdo agendado. Ao salvar ou cancelar a edição, o Oiê restaura o rascunho que você já tinha naquela conversa.
 
