@@ -296,6 +296,8 @@ Os atalhos **Mídia**, **Links** e **Documentos** abrem o catálogo com o mesmo 
 
 Abra **Mídia e links** na barra lateral para encontrar o que foi compartilhado. As abas **Mídia**, **Links** e **Documentos** agrupam os itens por mês. Use **Contas** para buscar por nome ou endereço e marcar uma ou mais contas. **Limpar seleção** volta a mostrar itens de todas as contas. Sua escolha em **Trocar de conta** continua valendo nas outras telas.
 
+A partir da rc.58, as figurinhas aparecem inteiras e em tamanho compacto dentro dos cartões, tanto aqui quanto nas mídias da conversa. Os GIFs começam a tocar quando o original estiver disponível. Com **Reduzir movimento** ativado no sistema, abra a imagem para ver a animação.
+
 No menu do cartão, use **Carregar imagem** quando a prévia ainda não estiver visível ou **Ir para a mensagem** para voltar à conversa de origem. Selecione um documento para abri-lo. Se a prévia falhar, use **Tentar novamente** quando essa opção aparecer. O cabeçalho também permite baixar o arquivo ou abrir o endereço original.
 
 Na conversa, se a imagem ainda não apareceu, abra **Ações da mensagem** e escolha **Carregar imagem**. Se houver várias imagens na mensagem, escolha o arquivo pelo nome ou pelo número.
@@ -316,7 +318,7 @@ Quando um anexo compatível inclui dados de verificação, o Oiê confere a inte
 
 ### Figurinhas e GIFs na conversa
 
-Na próxima versão, arquivos GIF, PNG e JPEG que o remetente enviar como **figurinhas** aparecerão pequenos, diretamente sobre o fundo da conversa. Um GIF enviado como imagem continuará no balão de mensagem.
+A partir da rc.57, arquivos GIF, PNG e JPEG que o remetente enviar como **figurinhas** aparecem pequenos, diretamente sobre o fundo da conversa. Um GIF enviado como imagem continua no balão de mensagem.
 
 Os GIFs começam a se mexer quando o original termina de baixar. Se você desativou o download automático, abra a miniatura para baixar o original. Quando a mensagem ainda não mostrar uma miniatura, use **Carregar imagem** no menu da mensagem. Com a opção **Reduzir movimento** do sistema ativada, a conversa mostra um quadro estático. Abra a imagem para ver a animação.
 
