@@ -304,9 +304,9 @@ Quando um anexo compatível inclui dados de verificação, o Oiê confere a inte
 
 ### Figurinhas e GIFs na conversa
 
-Na próxima versão, as imagens que o aplicativo de origem identificar como **figurinhas** aparecerão pequenas, diretamente sobre o fundo da conversa. Um GIF enviado como imagem continuará no balão de mensagem.
+Na próxima versão, arquivos GIF, PNG e JPEG que o remetente enviar como **figurinhas** aparecerão pequenos, diretamente sobre o fundo da conversa. Um GIF enviado como imagem continuará no balão de mensagem.
 
-Os GIFs começam a se mexer quando o original termina de baixar. Se você desativou o download automático, use **Carregar imagem** no menu da mensagem. Com a opção **Reduzir movimento** do sistema ativada, a conversa mostra um quadro estático. Abra a imagem para ver a animação.
+Os GIFs começam a se mexer quando o original termina de baixar. Se você desativou o download automático, abra a miniatura para baixar o original. Quando a mensagem ainda não mostrar uma miniatura, use **Carregar imagem** no menu da mensagem. Com a opção **Reduzir movimento** do sistema ativada, a conversa mostra um quadro estático. Abra a imagem para ver a animação.
 
 ## Mensagens favoritadas
 
