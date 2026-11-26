@@ -1,12 +1,12 @@
 ---
 title: Oiê · Conversas no XMPP
-description: Conecte suas contas XMPP e reúna conversas diretas e salas no Oiê, um aplicativo de código aberto.
+description: Conecte suas contas XMPP e reúna conversas diretas e grupos no Oiê, um aplicativo de código aberto.
 language: pt-BR
 ---
 
 # Um Oiê para suas conversas.
 
-Reúna suas conversas e salas do XMPP em um só lugar.
+Reúna suas conversas diretas e seus grupos do XMPP em um só lugar.
 
 Conecte as contas que você já usa, retome conversas pelo histórico e guarde as mensagens que quer encontrar depois.
 
@@ -16,13 +16,13 @@ Conecte as contas que você já usa, retome conversas pelo histórico e guarde a
 
 ## Uma olhada no Oiê
 
-![Interface do Oiê com a lista de conversas, a sala Trilhas de sábado aberta e o campo de mensagem](brand/conversa.webp)
+![Interface do Oiê com a lista de conversas, o grupo Trilhas de sábado aberto e o campo de mensagem](brand/conversa.webp)
 
 *Interface do Oiê com uma conversa de exemplo.*
 
 ## Converse com quem já está no XMPP
 
-Troque mensagens diretas, entre nas suas salas salvas e responda a mensagens do grupo. Se você usa mais de uma conta, escolha com qual delas quer conversar.
+Troque mensagens diretas, entre nos seus grupos salvos e responda a mensagens do grupo. Se você usa mais de uma conta, escolha com qual delas quer conversar.
 
 ## Retome de onde parou
 

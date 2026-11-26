@@ -16,13 +16,13 @@ margo:
 | **Shift + Enter** | Insere uma quebra de linha. |
 | **↑** com o campo vazio | Abre a edição se a sua última mensagem nesta conversa for um texto simples ainda editável. O envio precisa ter sido feito pelo mesmo Oiê na conexão atual. |
 | **Esc** durante a edição | Sai da edição e volta ao campo de mensagem. |
-| `@` no início de uma palavra em uma sala | Abre sugestões de participantes. Use **↑** e **↓** e confirme com **Enter**. **Tab** também confirma se você digitou parte do apelido e há uma sugestão selecionada. |
+| `@` no início de uma palavra em um grupo | Abre sugestões de participantes. Use **↑** e **↓** e confirme com **Enter**. **Tab** também confirma se você digitou parte do apelido e há uma sugestão selecionada. |
 | `:joinha` ou `:thumbs-up` no início de uma palavra | Abre sugestões de emoji. Use **↑** ou **↓** e confirme com **Enter** para inserir o emoji. |
 | **Esc** com sugestões abertas | Fecha as sugestões. |
 
 Em **Configurações → Este dispositivo**, use **Idiomas dos atalhos de emoji** para escolher os idiomas das sugestões. Por padrão, o Oiê aceita nomes em português e inglês.
 
-![Ao digitar @an no campo de mensagem de uma sala, aparecem as sugestões Ana e André.](imagens/mencoes.webp "Sugestões de menção em uma sala")
+![Ao digitar @an no campo de mensagem de um grupo, aparecem as sugestões Ana e André.](imagens/mencoes.webp "Sugestões de menção em um grupo")
 
 ![Ao digitar :joinha no campo de mensagem, aparece a sugestão do emoji de polegar para cima.](imagens/atalho-de-emoji.webp "Sugestão de emoji no campo de mensagem")
 
