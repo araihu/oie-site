@@ -130,6 +130,16 @@ A remoção apaga a senha salva, as conversas e as mensagens pendentes dessa con
 
 [![Confirmação de remoção da conta Pessoal no Oiê, com as opções Cancelar e Remover conta.](imagens/remover-conta.webp "Confirmação de remoção")](imagens/remover-conta-original.webp)
 
+## Nova conversa
+
+No topo de **Conversas**, toque em **+** para abrir **Nova conversa**. No celular, o painel abre pela borda inferior. No computador, ele aparece no centro da janela. Escolha uma conversa recente ou busque uma pessoa pelo nome ou endereço XMPP. O seletor respeita a conta que você está usando na lista de conversas.
+
+Para falar com alguém pela primeira vez, escolha **Conversa direta** e confira a conta e o endereço antes de abrir a conversa. Para salvar a pessoa na sua lista, escolha **Adicionar contato**. Se estiver vendo várias contas, escolha em qual delas deseja salvar o contato.
+
+[![Janela Nova conversa com busca por nome ou endereço, ações de conversa e sala, conversas recentes e contatos.](imagens/nova-conversa.webp)](imagens/nova-conversa-original.webp)
+
+O seletor com busca está em desenvolvimento para uma versão posterior ao instalador atual.
+
 ## Percorrer a lista de conversas
 
 Quando a lista tiver mais de 100 conversas, selecione **Conversas mais antigas** no fim da lista para abrir a próxima página. Use **Conversas mais recentes** para voltar à primeira página. A conversa aberta e os filtros acompanham a navegação. No celular, **Voltar para as conversas** retorna à lista na posição em que você estava, mesmo se a conexão cair.
@@ -161,7 +171,7 @@ Para ver **Detalhes da conversa**, clique na foto ou nas iniciais do cabeçalho.
 
 Ao conectar a conta, o Oiê respeita os favoritos XMPP marcados para entrada automática. Usa a parte antes do `@` no endereço da conta como apelido inicial. Se você escolheu outro apelido ou saiu explicitamente de uma sala no Oiê, essa decisão tem prioridade. Para entrar em uma sala salva, abra a conversa e use **Entrar na sala**.
 
-Abra o menu **Nova conversa** e escolha **Conversa direta**, **Entrar na sala** ou **Criar sala**. Para entrar ou criar uma sala, siga o formulário da opção escolhida. Selecione a conta e informe um endereço, como `trilha@salas.exemplo.org`. Para entrar, você também pode colar um convite no formato `xmpp:trilha@salas.exemplo.org?join`. Em um cartão de convite, **Ver sala** abre o formulário com o endereço preenchido.
+Em **+ (Nova conversa)**, escolha **Entrar na sala** ou **Criar sala**. Para entrar ou criar uma sala, siga o formulário da opção escolhida. Selecione a conta e informe um endereço, como `trilha@salas.exemplo.org`. Para entrar, você também pode colar um convite no formato `xmpp:trilha@salas.exemplo.org?join`. Em um cartão de convite, **Ver sala** abre o formulário com o endereço preenchido.
 
 A prévia pode mostrar nome, descrição, assunto, foto e número de participantes, conforme o que o serviço disponibiliza à conta selecionada. A entrada só acontece depois que você confirma. A criação de salas depende do suporte do serviço XMPP. Se a sala exigir senha, informe-a no formulário de entrada. Se a conexão cair depois que você confirmar, tente novamente. Ao reabrir o Oiê, ele verifica se o pedido foi aceito e só pede a senha outra vez se precisar reenviá-lo.
 
