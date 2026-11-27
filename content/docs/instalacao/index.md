@@ -90,7 +90,7 @@ flatpak install --user araihu-oie com.araihu.oie
 Se você instalou `com.araihu.oie` a partir de um bundle, feche o aplicativo e
 use `flatpak install --user --reinstall araihu-oie com.araihu.oie` para mudar a
 origem e manter o perfil. Depois, atualize com `flatpak update --user com.araihu.oie`.
-O [bundle da rc.55](https://github.com/araihu/oie/releases/download/v0.0.1-rc.55/oie-v0.0.1-rc.55-x86_64.flatpak) também está disponível para download direto.
+O [bundle da rc.59](https://github.com/araihu/oie/releases/download/v0.0.1-rc.59/oie-v0.0.1-rc.59-x86_64.flatpak) também está disponível para download direto.
 
 Se você já usava o Flatpak da `rc.8` ou anterior, [migre seu perfil](#migrar-para-comaraihuoie) antes de abrir o novo Oiê. Depois, abra o aplicativo pelo menu ou execute `flatpak run com.araihu.oie`.
 
@@ -136,7 +136,7 @@ Para atualizar, encerre o Oiê e execute `brew upgrade --cask araihu/oie/oie` no
 
 ## Instalar o pacote publicado
 
-Baixe o [instalador da RC 55 (install.sh)](https://github.com/araihu/oie/releases/download/v0.0.1-rc.55/install.sh). Ele escolhe o pacote para macOS com Apple Silicon ou Ubuntu 24.04 x86-64 e confere a soma SHA-256 antes de extrair os arquivos.
+Baixe o [instalador da RC 59 (install.sh)](https://github.com/araihu/oie/releases/download/v0.0.1-rc.59/install.sh). Ele escolhe o pacote para macOS com Apple Silicon ou Ubuntu 24.04 x86-64 e confere a soma SHA-256 antes de extrair os arquivos.
 
 No **Ubuntu 24.04**, instale primeiro as bibliotecas usadas pelo aplicativo.
 
@@ -158,7 +158,7 @@ sh ./install.sh
 | macOS | `~/Applications/Oie.app` | Abra o Oiê no Finder. |
 | Ubuntu | `~/.local/bin/oie-desktop` | Abra o Oiê pelo menu de aplicativos em uma sessão gráfica. |
 
-Este instalador usa a `v0.0.1-rc.55` por padrão. Para escolher outra versão publicada ou mudar o destino, consulte as opções `--version` e `--prefix` com `sh ./install.sh --help`.
+Este instalador usa a `v0.0.1-rc.59` por padrão. Para escolher outra versão publicada ou mudar o destino, consulte as opções `--version` e `--prefix` com `sh ./install.sh --help`.
 
 ### Primeira abertura no macOS
 
@@ -180,7 +180,7 @@ pkg-config --modversion gtk4 webkitgtk-6.0 libsoup-3.0 gio-unix-2.0
 ```
 
 ```sh
-git clone --branch v0.0.1-rc.55 https://github.com/araihu/oie.git
+git clone --branch v0.0.1-rc.59 https://github.com/araihu/oie.git
 cd oie
 mkdir -p "$HOME/.local/bin"
 GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
@@ -192,7 +192,7 @@ GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
 Instale as ferramentas de linha de comando do Xcode com `xcode-select --install` se elas ainda estiverem ausentes.
 
 ```sh
-git clone --branch v0.0.1-rc.55 https://github.com/araihu/oie.git
+git clone --branch v0.0.1-rc.59 https://github.com/araihu/oie.git
 cd oie
 mkdir -p "$HOME/.local/bin"
 GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
@@ -203,7 +203,7 @@ GOBIN="$HOME/.local/bin" GOFLAGS= GOWORK=off CGO_ENABLED=1 \
   ./cmd/oie-desktop
 ```
 
-Os parâmetros de compilação e linkedição mantêm o mesmo alvo. Consulte o [escopo verificado no guia do repositório](https://github.com/araihu/oie/blob/v0.0.1-rc.55/docs/installation.md#platforms-and-verified-scope) para as versões de sistema testadas.
+Os parâmetros de compilação e linkedição mantêm o mesmo alvo. Consulte o [escopo verificado no guia do repositório](https://github.com/araihu/oie/blob/v0.0.1-rc.59/docs/installation.md#platforms-and-verified-scope) para as versões de sistema testadas.
 
 ### Abrir pelo Terminal
 
@@ -235,13 +235,13 @@ Disponível desde a `v0.0.1-rc.10`.
 
 Quando o Oiê precisa atualizar um banco existente na inicialização, primeiro guarda uma cópia em `private/migration-backups/` dentro do perfil. O nome começa com `oie-before-v` e inclui a versão anterior do banco e o horário em UTC. Reserve espaço para uma segunda cópia do banco. Se a cópia falhar, o Oiê interrompe a inicialização antes de atualizar o banco.
 
-Guarde essas cópias em local privado, pois o banco contém o histórico e pode incluir senhas de convites para salas. Para guardar também a mídia e as credenciais de conexão XMPP, encerre o Oiê e copie o perfil inteiro. A opção **Apagar todos os dados** também remove as cópias automáticas do banco.
+Guarde essas cópias em local privado, pois o banco contém o histórico e pode incluir senhas de convites para grupos. Para guardar também a mídia e as credenciais de conexão XMPP, encerre o Oiê e copie o perfil inteiro. A opção **Apagar todos os dados** também remove as cópias automáticas do banco.
 
 Se a janela não abrir após uma atualização, inicie o Oiê pelo terminal para ver o erro. No macOS, se usou `install.sh` com o destino padrão, execute `~/Applications/Oie.app/Contents/MacOS/oie-desktop`. Se usou o Homebrew com o destino padrão, execute `/Applications/Oie.app/Contents/MacOS/oie-desktop`. No Linux, abra o executável `oie-desktop` no caminho em que foi instalado ou execute `flatpak run com.araihu.oie` para Flatpak. Se o erro indicar falha no backup, confira o espaço livre e as permissões de gravação no perfil e tente novamente.
 
 ### Criar um backup manual
 
-Na rc.50, você pode exportar o perfil com o motor parado e incluir a mídia baixada. A restauração mescla os dados em um perfil novo ou existente. A restauração aceita backups com o esquema de banco 54. Os envios recuperados ficam pausados até você revisá-los. [Comandos de backup, verificação e restauração](https://github.com/araihu/oie/blob/v0.0.1-rc.55/docs/installation.md#create-and-verify-a-manual-backup)
+Na rc.50, você pode exportar o perfil com o motor parado e incluir a mídia baixada. A restauração mescla os dados em um perfil novo ou existente. A restauração aceita backups com o esquema de banco 54. Os envios recuperados ficam pausados até você revisá-los. [Comandos de backup, verificação e restauração](https://github.com/araihu/oie/blob/v0.0.1-rc.59/docs/installation.md#create-and-verify-a-manual-backup)
 
 ### Remover o aplicativo
 
@@ -274,12 +274,12 @@ Abra no Safari o endereço HTTPS da sua [instalação hospedada](../arquitetura/
 ## Rodar no Kubernetes com Helm
 
 Use um cluster com armazenamento persistente, o Helm e o `kubectl`.
-O [chart Helm 0.2.33](https://github.com/araihu/oie/releases/tag/helm-v0.2.33)
-está no GHCR e usa por padrão a imagem do Oiê `v0.0.1-rc.55`.
+O [chart Helm 0.2.37](https://github.com/araihu/oie/releases/tag/helm-v0.2.37)
+está no GHCR e usa por padrão a imagem do Oiê `v0.0.1-rc.59`.
 
 ```sh
 helm upgrade --install oie \
-  oci://ghcr.io/araihu/charts/oie --version 0.2.33 \
+  oci://ghcr.io/araihu/charts/oie --version 0.2.37 \
   --namespace oie --create-namespace --wait --timeout 10m
 kubectl --namespace oie port-forward service/oie 8080:80
 ```
@@ -294,7 +294,7 @@ Para acesso público, habilite o [OIDC no Helm](#oidc-no-helm) e configure
 Ingress ou um Gateway HTTPS. Para conectar um Gateway existente, use
 `httpRoute.enabled`, `httpRoute.parentRefs` e `httpRoute.hostnames`. Se o
 Gateway estiver em outro namespace, permita rotas do namespace do Oiê no
-listener. Veja exemplos no [guia do chart](https://github.com/araihu/oie/tree/helm-v0.2.33/charts/oie#remote-access).
+listener. Veja exemplos no [guia do chart](https://github.com/araihu/oie/tree/helm-v0.2.37/charts/oie#remote-access).
 
 Se o timeout de requisição do Gateway interromper as atualizações ao vivo
 das conversas, acrescente este trecho ao arquivo de valores do chart. Use

@@ -1,6 +1,6 @@
 ---
 title: Manual
-description: Escolha o motor local ou remoto, conecte ou remova contas XMPP, gerencie contatos e presença, marque conversas como lidas ou não lidas, gerencie salas, busque e encaminhe mensagens, configure notificações, consulte conversas recentes sem conexão, envie mensagens e anexos, consulte o diagnóstico e gerencie a retenção e exclusão de dados.
+description: Escolha o motor local ou remoto, conecte ou remova contas XMPP, gerencie contatos e presença, marque conversas como lidas ou não lidas, gerencie grupos, busque e encaminhe mensagens, configure notificações, consulte conversas recentes sem conexão, envie mensagens e anexos, consulte o diagnóstico e gerencie a retenção e exclusão de dados.
 language: pt-BR
 margo:
   imageViewer: true
@@ -8,7 +8,13 @@ margo:
 
 # Manual do Oiê
 
-Este manual acompanha o [Oiê v0.0.1-rc.55](../../baixar/index.md).
+Este manual acompanha o [Oiê v0.0.1-rc.59](../../baixar/index.md).
+
+## Navegar no celular
+
+A partir da rc.59, a barra flutuante na parte inferior dá acesso a **Conversas**, **Mídia**, **Favoritas** e **Agendadas**. Toque em **Contas** para trocar de conta ou abrir **Configurações**. Dentro de uma conversa, toque em **Voltar** para ver a lista e a barra novamente.
+
+![Barra flutuante com Conversas selecionada e os atalhos Mídia, Favoritas, Agendadas e Contas.](imagens/navegacao-celular.webp) [Ver tela completa](imagens/navegacao-celular-original.webp)
 
 ## Motor local ou remoto
 
@@ -96,7 +102,7 @@ A borda dos avatares das conversas usa a cor da conta de origem, assim como o
 avatar em **Trocar de conta**. O nome e o endereço identificam a conta por
 escrito.
 
-[![A mesma sala nas contas Alice e Bob, com bordas nas cores mostradas no seletor de contas.](imagens/seletor-de-contas.webp)](imagens/seletor-de-contas-original.webp)
+[![O mesmo grupo nas contas Alice e Bob, com bordas nas cores mostradas no seletor de contas.](imagens/seletor-de-contas.webp)](imagens/seletor-de-contas-original.webp)
 
 ### Contatos
 
@@ -130,6 +136,18 @@ A remoção apaga a senha salva, as conversas e as mensagens pendentes dessa con
 
 [![Confirmação de remoção da conta Pessoal no Oiê, com as opções Cancelar e Remover conta.](imagens/remover-conta.webp "Confirmação de remoção")](imagens/remover-conta-original.webp)
 
+## Nova conversa
+
+No topo de **Conversas**, toque em **+** para abrir **Nova conversa**. No celular, o painel abre pela borda inferior. No computador, ele aparece no centro da janela. Escolha uma conversa recente ou busque uma pessoa pelo nome ou endereço XMPP. O seletor respeita a conta que você está usando na lista de conversas.
+
+Se já houver uma conversa com a pessoa nessa conta, toque no nome dela para abrir o histórico. Para falar com alguém pela primeira vez, selecione um contato ou escolha **Conversa direta** e informe o endereço XMPP. Confira a conta e toque em **Abrir conversa**.
+
+**Adicionar contato**, **Criar grupo** e **Entrar no grupo** também abrem na mesma janela. Use a seta de voltar para retornar à busca.
+
+[![Janela Nova conversa com busca por nome ou endereço, ações de conversa e grupo, conversas recentes e contatos.](imagens/nova-conversa.webp)](imagens/nova-conversa-original.webp)
+
+O seletor com busca e as ações com o nome **Grupo** estão disponíveis a partir da [rc.59 do Oiê](https://github.com/araihu/oie/releases/tag/v0.0.1-rc.59).
+
 ## Percorrer a lista de conversas
 
 Quando a lista tiver mais de 100 conversas, selecione **Conversas mais antigas** no fim da lista para abrir a próxima página. Use **Conversas mais recentes** para voltar à primeira página. A conversa aberta e os filtros acompanham a navegação. No celular, **Voltar para as conversas** retorna à lista na posição em que você estava, mesmo se a conexão cair.
@@ -142,7 +160,7 @@ A primeira mensagem de uma conversa direta sem histórico anterior pode aparecer
 
 ![Solicitação de mensagem arquivada com o endereço do remetente no cabeçalho e o botão Aceitar.](imagens/solicitacao-de-mensagem.webp "Solicitação de mensagem arquivada")
 
-Uma solicitação arquivada continua em **Arquivadas**, abaixo dos filtros da lista de conversas, mesmo se chegarem mais mensagens. Selecione **Arquivadas** novamente para voltar à lista principal. Se você aceitar uma solicitação de mensagem por lá, a conversa volta à lista principal. Em **Convite para sala**, use **Entrar na sala** para pedir a entrada. O conteúdo aparece quando o servidor XMPP confirma. Você também pode arquivar o convite e decidir depois.
+Uma solicitação arquivada continua em **Arquivadas**, abaixo dos filtros da lista de conversas, mesmo se chegarem mais mensagens. Selecione **Arquivadas** novamente para voltar à lista principal. Se você aceitar uma solicitação de mensagem por lá, a conversa volta à lista principal. Em **Convite para grupo**, use **Entrar no grupo** para pedir a entrada. O conteúdo aparece quando o servidor XMPP confirma. Você também pode arquivar o convite e decidir depois.
 
 ## Remover uma conversa direta
 
@@ -151,90 +169,90 @@ a conversa de **Conversas** e **Arquivadas**. O histórico fica salvo.
 Abra o endereço novamente com a mesma conta, ou receba uma nova mensagem
 do contato, para a conversa voltar à lista.
 
-Nas salas e nas conversas diretas removidas, os links da busca, de **Favoritas**
+Em grupos e conversas diretas removidos da lista, os links da busca, de **Favoritas**
 e de **Mídia e links** abrem o histórico salvo em modo de leitura. A conversa
 continua fora da lista.
 
 Para ver **Detalhes da conversa**, clique na foto ou nas iniciais do cabeçalho.
 
-## Salas, convites e entrada automática
+## Grupos, convites e entrada automática
 
-Ao conectar a conta, o Oiê respeita os favoritos XMPP marcados para entrada automática. Usa a parte antes do `@` no endereço da conta como apelido inicial. Se você escolheu outro apelido ou saiu explicitamente de uma sala no Oiê, essa decisão tem prioridade. Para entrar em uma sala salva, abra a conversa e use **Entrar na sala**.
+Ao conectar a conta, o Oiê respeita os favoritos XMPP marcados para entrada automática. Usa a parte antes do `@` no endereço da conta como apelido inicial. Se você escolheu outro apelido ou saiu explicitamente de um grupo no Oiê, essa decisão tem prioridade. Para entrar em um grupo salvo, abra a conversa e use **Entrar no grupo**.
 
-Abra o menu **Nova conversa** e escolha **Conversa direta**, **Entrar na sala** ou **Criar sala**. Para entrar ou criar uma sala, siga o formulário da opção escolhida. Selecione a conta e informe um endereço, como `trilha@salas.exemplo.org`. Para entrar, você também pode colar um convite no formato `xmpp:trilha@salas.exemplo.org?join`. Em um cartão de convite, **Ver sala** abre o formulário com o endereço preenchido.
+Em **+ (Nova conversa)**, escolha **Entrar no grupo** ou **Criar grupo**. Para entrar ou criar um grupo, siga o formulário da opção escolhida. Selecione a conta e informe um endereço, como `trilha@grupos.exemplo.org`. Para entrar, você também pode colar um convite no formato `xmpp:trilha@grupos.exemplo.org?join`. Em um cartão de convite, **Ver grupo** abre o formulário com o endereço preenchido.
 
-A prévia pode mostrar nome, descrição, assunto, foto e número de participantes, conforme o que o serviço disponibiliza à conta selecionada. A entrada só acontece depois que você confirma. A criação de salas depende do suporte do serviço XMPP. Se a sala exigir senha, informe-a no formulário de entrada. Se a conexão cair depois que você confirmar, tente novamente. Ao reabrir o Oiê, ele verifica se o pedido foi aceito e só pede a senha outra vez se precisar reenviá-lo.
+A prévia pode mostrar nome, descrição, assunto, foto e número de participantes, conforme o que o serviço disponibiliza à conta selecionada. A entrada só acontece depois que você confirma. A criação de grupos depende do suporte do serviço XMPP. Se o grupo exigir senha, informe-a no formulário de entrada. Se a conexão cair depois que você confirmar, tente novamente. Ao reabrir o Oiê, ele verifica se o pedido foi aceito e só pede a senha outra vez se precisar reenviá-lo.
 
-![Cartão de convite para a sala Trilhas de sábado com endereço, descrição e o link Ver sala.](imagens/convite-de-sala.webp "Cartão de convite para uma sala")
+![Cartão de convite para o grupo Trilhas de sábado com endereço, descrição e o link Ver grupo.](imagens/convite-de-sala.webp "Cartão de convite para um grupo")
 
-### Descobrir e gerenciar salas
+### Descobrir e gerenciar grupos
 
-- Em **Nova conversa → Entrar na sala**, abra **Explorar salas públicas** e selecione uma sala para preencher o endereço e ver a prévia. Confirme quando quiser entrar.
-- Selecione a imagem da sala no cabeçalho da conversa e abra **Gerenciar sala**, logo abaixo do nome. A seta à esquerda de **Gerenciar sala** leva de volta aos detalhes da conversa. O **×** fecha o painel. Em **Detalhes**, escolha **Editar nome e tópico**. Altere os campos, selecione **Revisar alterações** e confira os valores antigos e novos antes de **Publicar alterações**. As opções dependem das permissões da sua conta. A descrição aparece quando o serviço a fornece. Use **Mais opções → Convidar pessoas** para enviar um convite quando a sala permitir.
-- Em **Participantes**, busque pelo apelido e abra o nome da pessoa para ver as ações disponíveis. Dependendo das permissões, você pode alterar a função, remover a pessoa ou ajustar o acesso à sala. Em **Banimentos**, administradores e proprietários podem buscar um banimento, banir por endereço ou retirar um banimento.
-- Se o servidor oferecer moderação e sua conta tiver permissão, use **Remover mensagem** no menu da mensagem. A remoção aparece quando a sala a confirma.
+- Em **Nova conversa → Entrar no grupo**, abra **Explorar grupos públicos** e selecione um grupo para preencher o endereço e ver a prévia. Confirme quando quiser entrar.
+- Selecione a imagem do grupo no cabeçalho da conversa e abra **Gerenciar grupo**, logo abaixo do nome. A seta à esquerda de **Gerenciar grupo** leva de volta aos detalhes da conversa. O **×** fecha o painel. Em **Detalhes**, escolha **Editar nome e tópico**. Altere os campos, selecione **Revisar alterações** e confira os valores antigos e novos antes de **Publicar alterações**. As opções dependem das permissões da sua conta. A descrição aparece quando o serviço a fornece. Use **Mais opções → Convidar pessoas** para enviar um convite quando o grupo permitir.
+- Em **Participantes**, busque pelo apelido e abra o nome da pessoa para ver as ações disponíveis. Dependendo das permissões, você pode alterar a função, remover a pessoa ou ajustar o acesso ao grupo. Em **Banimentos**, administradores e proprietários podem buscar um banimento, banir por endereço ou retirar um banimento.
+- Se o servidor oferecer moderação e sua conta tiver permissão, use **Remover mensagem** no menu da mensagem. A remoção aparece quando o grupo a confirma.
 
-[![Gerenciar sala com o botão Editar nome e tópico e os valores atuais.](imagens/gerenciar-sala.webp)](imagens/gerenciar-sala-original.webp)
+[![Gerenciar grupo com o botão Editar nome e tópico e os valores atuais.](imagens/gerenciar-sala.webp)](imagens/gerenciar-sala-original.webp)
 
-### Conferir o endereço e remover salas
+### Conferir o endereço e remover grupos
 
-Ao criar uma sala, use o domínio do serviço de salas XMPP. Por exemplo, se a
-conta for `ana@exemplo.org`, o endereço da sala pode ser
-`trilha@salas.exemplo.org`. Confira com quem administra o servidor qual
+Ao criar um grupo, use o domínio do serviço de grupos XMPP. Por exemplo, se a
+conta for `ana@exemplo.org`, o endereço do grupo pode ser
+`trilha@grupos.exemplo.org`. Confira com quem administra o servidor qual
 domínio usar. Se o endereço não puder ser confirmado, o Oiê mantém o
 formulário aberto para você corrigir ou tentar de novo.
 
-- **Mais opções → Remover das conversas** tira a sala de **Conversas** e
+- **Mais opções → Remover das conversas** tira o grupo de **Conversas** e
   **Arquivadas** e interrompe a entrada automática pelo Oiê. Isso funciona
-  também para uma sala que não conectou. A sala e o histórico salvo continuam
-  disponíveis. Para trazê-la de volta, use **Entrar na sala** e informe o endereço.
-- Se você for proprietário, entre na sala e vá a **Mais opções → Gerenciar
-  sala → Detalhes → Excluir sala para todos**. Confirme para excluir a sala
+  também para um grupo que não conectou. O grupo e o histórico salvo continuam
+  disponíveis. Para trazê-lo de volta, use **Entrar no grupo** e informe o endereço.
+- Se você for proprietário, entre no grupo e vá a **Mais opções → Gerenciar
+  grupo → Detalhes → Excluir grupo para todos**. Confirme para excluir o grupo
   do servidor e remover todos os participantes. Quando o servidor confirmar,
-  a sala sai de **Conversas** e **Arquivadas** da conta que pediu a exclusão.
-  O histórico salvo será mantido. Quem recebe o aviso de exclusão vê **Sala
-  excluída** e pode remover a sala da própria lista.
+  o grupo sai de **Conversas** e **Arquivadas** da conta que pediu a exclusão.
+  O histórico salvo será mantido. Quem recebe o aviso de exclusão vê **Grupo
+  excluído** e pode remover o grupo da própria lista.
 
-[![Confirmação para remover uma sala das conversas, com as opções Cancelar e Remover das conversas.](imagens/remover-sala.webp)](imagens/remover-sala-original.webp)
+[![Confirmação para remover um grupo das conversas, com as opções Cancelar e Remover das conversas.](imagens/remover-sala.webp)](imagens/remover-sala-original.webp)
 
-[![Confirmação para excluir a sala para todos, com aviso de que a ação não pode ser desfeita.](imagens/excluir-sala.webp)](imagens/excluir-sala-original.webp)
+[![Confirmação para excluir o grupo para todos, com aviso de que a ação não pode ser desfeita.](imagens/excluir-sala.webp)](imagens/excluir-sala-original.webp)
 
-### Ver o estado de uma sala
+### Ver o estado de um grupo
 
-O ponto no avatar mostra o estado da sala. O cabeçalho exibe o estado por
-escrito, e a lista destaca quando você está fora da sala ou quando há um
+O ponto no avatar mostra o estado do grupo. O cabeçalho exibe o estado por
+escrito, e a lista destaca quando você está fora do grupo ou quando há um
 problema.
 
-- **Na sala** indica que você já entrou.
+- **No grupo** indica que você já entrou.
 - **Conta desconectada** aparece quando sua conta está sem conexão.
-- **Sala excluída** aparece quando o servidor confirma a exclusão. O histórico
+- **Grupo excluído** aparece quando o servidor confirma a exclusão. O histórico
   que você já tem continua acessível.
-- **Acesso restrito** indica que sua entrada foi recusada. **Sala
-  indisponível** indica que o Oiê não conseguiu acessar a sala.
+- **Acesso restrito** indica que sua entrada foi recusada. **Grupo
+  indisponível** indica que o Oiê não conseguiu acessar o grupo.
 
-[![Uma sala na lista de conversas com um ponto vermelho no avatar e o rótulo Sala excluída.](imagens/estado-sala-excluida.webp)](imagens/estado-sala-excluida-original.webp)
+[![Um grupo na lista de conversas com um ponto vermelho no avatar e o rótulo Grupo excluído.](imagens/estado-sala-excluida.webp)](imagens/estado-sala-excluida-original.webp)
 
-## Histórico e busca em salas
+## Histórico e busca em grupos
 
-Para abrir **Detalhes da conversa**, clique na foto ou nas iniciais no cabeçalho da conversa, ou abra **Mais opções → Detalhes da conversa**. Use **Baixar histórico antigo automaticamente** para escolher como o Oiê recupera o histórico daquela sala. Com a opção ligada, ele baixa mensagens antigas aos poucos. Com a opção desligada, pode buscá-las quando você usa **Mensagens anteriores** no topo da conversa ou faz uma busca, conforme o servidor permitir.
+Para abrir **Detalhes da conversa**, clique na foto ou nas iniciais no cabeçalho da conversa, ou abra **Mais opções → Detalhes da conversa**. Use **Baixar histórico antigo automaticamente** para escolher como o Oiê recupera o histórico daquele grupo. Com a opção ligada, ele baixa mensagens antigas aos poucos. Com a opção desligada, pode buscá-las quando você usa **Mensagens anteriores** no topo da conversa ou faz uma busca, conforme o servidor permitir.
 
-Dentro de uma sala, abra **Mais opções** e selecione **Pesquisar mensagens**. Essa busca também pode consultar o arquivo do servidor, quando ele oferece busca por texto. Ative **Incluir histórico de edições** para encontrar versões anteriores de mensagens editadas. Use os [atalhos de busca](../atalhos/index.md#busca-na-conversa) para percorrer os resultados.
+Dentro de um grupo, abra **Mais opções** e selecione **Pesquisar mensagens**. Essa busca também pode consultar o arquivo do servidor, quando ele oferece busca por texto. Ative **Incluir histórico de edições** para encontrar versões anteriores de mensagens editadas. Use os [atalhos de busca](../atalhos/index.md#busca-na-conversa) para percorrer os resultados.
 
 Buscar por `arqiuvo` nas mensagens guardadas pode realçar **arquivo** no balão. Se o resultado vier de uma versão anterior ou dos detalhes de um link, o realce aparece no trecho do resultado. Ao recarregar a página com a busca aberta, o Oiê volta à versão anterior selecionada.
 
-![Busca por trilha em uma sala. O primeiro de três resultados está destacado na conversa e o campo oferece a opção de incluir o histórico de edições.](imagens/busca-na-sala.webp "Busca no histórico da sala")
+![Busca por trilha em um grupo. O primeiro de três resultados está destacado na conversa e o campo oferece a opção de incluir o histórico de edições.](imagens/busca-na-sala.webp "Busca no histórico do grupo")
 
 ## Retenção de mensagens
 
-Abra **Configurações → Motor → Retenção de mensagens**. O Oiê salva os prazos padrão de **Salas** e **Conversas diretas** ao sair do campo alterado.
+Abra **Configurações → Motor → Retenção de mensagens**. O Oiê salva os prazos padrão de **Grupos** e **Conversas diretas** ao sair do campo alterado.
 
 Os prazos padrão valem para o motor do Oiê em uso, inclusive quando ele é compartilhado entre dispositivos. Para mudar o prazo de uma conversa, abra **Mais opções → Detalhes da conversa → Preferências da conversa → Retenção de mensagens**. A escolha é salva ao selecionar. Para um prazo personalizado, digite os dias e pressione Enter ou saia do campo. Use **Usar o padrão** para voltar ao prazo global.
 
-Por padrão, as salas têm prazo de **180 dias** e as conversas diretas usam **Sem limite**. O Oiê preserva as **100 mensagens mais recentes já guardadas de cada sala** e todas as mensagens favoritadas. Reduzir o prazo pode apagar outras mensagens antigas do histórico guardado pelo motor. Em um envio agendado, o prazo conta a partir do envio. Se a mensagem original de uma resposta expirar, o texto da resposta continua visível e a citação fica indisponível.
+Por padrão, os grupos têm prazo de **180 dias** e as conversas diretas usam **Sem limite**. O Oiê preserva as **100 mensagens mais recentes já guardadas de cada grupo** e todas as mensagens favoritadas. Reduzir o prazo pode apagar outras mensagens antigas do histórico guardado pelo motor. Em um envio agendado, o prazo conta a partir do envio. Se a mensagem original de uma resposta expirar, o texto da resposta continua visível e a citação fica indisponível.
 
-O prazo também limita a recuperação do histórico no XMPP. Uma instalação nova pode recuperar menos de 100 mensagens de uma sala, dependendo do prazo e dos dados ainda disponíveis no servidor. Com **Sem limite**, as mensagens deixam de expirar por idade, o histórico pode ocupar mais espaço e a recuperação pode alcançar as mensagens mais antigas que o servidor ainda oferece à sua conta.
+O prazo também limita a recuperação do histórico no XMPP. Uma instalação nova pode recuperar menos de 100 mensagens de um grupo, dependendo do prazo e dos dados ainda disponíveis no servidor. Com **Sem limite**, as mensagens deixam de expirar por idade, o histórico pode ocupar mais espaço e a recuperação pode alcançar as mensagens mais antigas que o servidor ainda oferece à sua conta.
 
-![Página Motor com 180 dias para salas e Sem limite para conversas diretas.](imagens/retencao-de-mensagens.webp "Retenção de mensagens no Motor") [Ver captura completa](imagens/retencao-de-mensagens-original.webp)
+![Página Motor com 180 dias para grupos e Sem limite para conversas diretas.](imagens/retencao-de-mensagens.webp "Retenção de mensagens no Motor") [Ver captura completa](imagens/retencao-de-mensagens-original.webp)
 
 ## Mensagens não lidas
 
@@ -258,7 +276,7 @@ no lugar do contador. Para tirar o lembrete, escolha **Marcar como lida**.
 
 Em **Configurações → Este dispositivo → Notificações**, ative **Notificações de mensagens** para receber banners e conceda a permissão quando o navegador ou o sistema pedir.
 
-O som vem ativado para mensagens diretas e, nas salas, para menções e respostas a mensagens suas. Em **Som nas salas**, você pode escolher **Todas as mensagens**, manter **Menções e respostas a você** ou selecionar **Desativado**. Há controles para mensagens diretas, salas arquivadas e a conversa em foco. **Som de notificação** desliga todos os toques.
+O som vem ativado para mensagens diretas e, nos grupos, para menções e respostas a mensagens suas. Em **Som nos grupos**, você pode escolher **Todas as mensagens**, manter **Menções e respostas a você** ou selecionar **Desativado**. Há controles para mensagens diretas, grupos arquivados e a conversa em foco. **Som de notificação** desliga todos os toques.
 
 No iPhone e no iPad, você pode abrir o Oiê, entrar em uma conversa e digitar enquanto ouve música em outro aplicativo. Se começar a gravar uma mensagem de voz enquanto uma notificação toca, o Oiê interrompe o toque.
 
@@ -266,7 +284,7 @@ Use **Escolher arquivo** em **Toque** para usar um áudio seu de até 5 MB. O Oi
 
 ![A seção Notificações mostra o arquivo Toque de exemplo.wav com o botão de reprodução, o X e a opção Escolher arquivo.](imagens/notificacoes.webp "Toque de notificação personalizado") [Ver captura completa](imagens/notificacoes-original.webp)
 
-Para silenciar uma conversa ou sala neste dispositivo, abra **Detalhes da conversa → Preferências da conversa** e ative **Silenciar notificações neste dispositivo**. Ao receber várias mensagens em sequência, o Oiê toca uma vez a cada dois segundos. O contador de mensagens não lidas continua funcionando.
+Para silenciar uma conversa direta ou um grupo neste dispositivo, abra **Detalhes da conversa → Preferências da conversa** e ative **Silenciar notificações neste dispositivo**. Ao receber várias mensagens em sequência, o Oiê toca uma vez a cada dois segundos. O contador de mensagens não lidas continua funcionando.
 
 Os alertas chegam enquanto o Oiê está aberto e conectado. Selecione o banner para abrir a mensagem. No desktop, o clique restaura a janela se ela estiver escondida. No navegador ou no app web instalado, um banner que ainda estiver na central de notificações pode reabrir o Oiê após fechar a janela. Se o navegador bloquear áudio ao abrir o Oiê, interaja com a janela para habilitar a reprodução.
 
@@ -282,7 +300,7 @@ Os atalhos **Mídia**, **Links** e **Documentos** abrem o catálogo com o mesmo 
 
 ## Mídia e links
 
-Abra **Mídia e links** na barra lateral para encontrar o que foi compartilhado. As abas **Mídia**, **Links** e **Documentos** agrupam os itens por mês. Use **Contas** para buscar por nome ou endereço e marcar uma ou mais contas. **Limpar seleção** volta a mostrar itens de todas as contas. Sua escolha em **Trocar de conta** continua valendo nas outras telas.
+Para encontrar o que foi compartilhado, toque em **Mídia** na barra inferior do celular ou abra **Mídia e links** na barra lateral do computador. As abas **Mídia**, **Links** e **Documentos** agrupam os itens por mês. Use o filtro **Contas** da galeria para buscar por nome ou endereço e marcar uma ou mais contas. **Limpar seleção** volta a mostrar itens de todas as contas. Sua escolha em **Trocar de conta** continua valendo nas outras telas.
 
 A partir da rc.58, as figurinhas aparecem inteiras e em tamanho compacto dentro dos cartões, tanto aqui quanto nas mídias da conversa. Os GIFs começam a tocar quando o original estiver disponível. Com **Reduzir movimento** ativado no sistema, abra a imagem para ver a animação.
 
@@ -312,7 +330,7 @@ Os GIFs começam a se mexer quando o original termina de baixar. Se você desati
 
 ## Mensagens favoritadas
 
-No menu de uma mensagem, escolha **Favoritar**. Abra **Favoritas** na navegação lateral e use **Pesquisar mensagens favoritas** para buscar pelo texto, pelo remetente ou pela conversa de origem. Os cartões incluem mensagens de conversas arquivadas. Use **Trocar de conta** para restringir a lista a uma conta ou **Todas as contas** para reunir as mensagens de todas elas.
+No menu de uma mensagem, escolha **Favoritar**. Abra **Favoritas** e use **Pesquisar mensagens favoritas** para buscar pelo texto, pelo remetente ou pela conversa de origem. Os cartões incluem mensagens de conversas arquivadas. Use **Trocar de conta** para restringir a lista a uma conta ou **Todas as contas** para reunir as mensagens de todas elas.
 
 No menu do cartão, use **Ir para a mensagem** para abrir a conversa no ponto em que ela foi enviada. Você também pode **Copiar mensagem original** ou **Encaminhar**. Para tirar uma mensagem da lista, selecione a estrela. Para localizar conversas favoritas, use o filtro **Favoritas** na lista de conversas.
 
@@ -334,7 +352,7 @@ Na última mensagem própria enviada, abra **Ações da mensagem → Editar mens
 
 **Editar mensagem** também pode aparecer em respostas com citação enviadas na sessão atual. O Oiê conserva a citação quando você salva o novo texto.
 
-Para retrair, abra **Ações da mensagem → Retrair mensagem** em uma mensagem própria e confirme. A ação depende do suporte do servidor. Em salas, também depende de o Oiê conseguir verificar a autoria. Outros participantes ainda podem ter uma cópia.
+Para retrair, abra **Ações da mensagem → Retrair mensagem** em uma mensagem própria e confirme. A ação depende do suporte do servidor. Em grupos, também depende de o Oiê conseguir verificar a autoria. Outros participantes ainda podem ter uma cópia.
 
 No histórico, **Mensagem retraída** ocupa o lugar do conteúdo. Se o Oiê ainda guardou a mensagem, use o ícone **Revelar original** ao lado do horário. O **Histórico da mensagem** mostra a retração como estado atual, seguida das versões guardadas. A busca geral, a busca na conversa e **Mídia e links** ocultam esse conteúdo por padrão. Selecione **Incluir retraídas** para encontrá-lo. Para buscar versões anteriores de mensagens retraídas, ative também **Incluir histórico de edições**.
 
@@ -344,7 +362,7 @@ No histórico, **Mensagem retraída** ocupa o lugar do conteúdo. Se o Oiê aind
 
 ## Encaminhar mensagens
 
-Abra **Encaminhar** no menu de uma mensagem em **Conversas**, **Favoritas** ou **Mídia e links**. Confira a prévia, escolha uma ou mais conversas diretas ou salas e confirme em **Encaminhar**. A lista mostra a conta que enviará cada cópia.
+Abra **Encaminhar** no menu de uma mensagem em **Conversas**, **Favoritas** ou **Mídia e links**. Confira a prévia, escolha uma ou mais conversas diretas ou grupos e confirme em **Encaminhar**. A lista mostra a conta que enviará cada cópia.
 
 O Oiê prepara o texto e os anexos para cada destino. Se algum envio falhar ou ficar sem confirmação, veja o aviso junto ao destino e use **Tentar novamente**. Ao tentar novamente, o Oiê pula os destinos cuja cópia já entrou na fila.
 
@@ -413,7 +431,7 @@ não puder ser criada.
 
 ![Vídeo no rascunho com botão de reprodução, nome do arquivo e botão para remover o anexo.](imagens/video-no-rascunho.webp "Vídeo no rascunho")
 
-Em uma conversa direta ou sala, escolha **Reproduzir vídeo** no cartão para
+Em uma conversa direta ou em um grupo, escolha **Reproduzir vídeo** no cartão para
 assistir. Se a reprodução falhar, use o mesmo botão para tentar de novo.
 Para baixar o arquivo, abra **Ações da mensagem** e escolha **Baixar original**. Em **Configurações → Este dispositivo → Mídia e exibição**, ajuste **Gerar prévias de
 vídeo automaticamente**. Com essa opção desativada, você pode pedir uma prévia
@@ -421,7 +439,7 @@ em **Ações da mensagem → Carregar prévia do vídeo**. Na aba **Mídia**, ab
 
 Ao tocar em **Reproduzir vídeo**, o Oiê tenta abrir o vídeo no navegador. Se o formato precisar de outro reprodutor, o Oiê o carrega no próprio dispositivo. A primeira reprodução pode demorar um pouco mais. Se o vídeo travar, use **Baixar original** no menu do cartão ou da mensagem para abrir o arquivo em outro aplicativo.
 
-![Cartão de vídeo recebido em uma sala, com uma imagem estática e o botão de reprodução ao centro.](imagens/video-recebido.webp "Vídeo recebido em uma sala")
+![Cartão de vídeo recebido em um grupo, com uma imagem estática e o botão de reprodução ao centro.](imagens/video-recebido.webp "Vídeo recebido em um grupo")
 
 ## Enviar sem conexão
 
@@ -523,11 +541,11 @@ Em **Agendadas**, abra **Conversas** para buscar um destinatário. Você pode ma
 
 ![Janela Agendar mensagem, com a prévia do lembrete e o campo de data e horário de envio.](imagens/envio-agendado.webp "Prévia e horário do envio agendado")
 
-Na agenda da navegação lateral, use **Conversas** para escolher quais destinos quer ver. Os envios do mesmo dia aparecem em colunas quando há espaço.
+Os envios do mesmo dia aparecem em colunas quando há espaço.
 
 Para editar uma mensagem sem sair da conversa, abra **Mais opções → Agendadas → Editar mensagem**. O campo de mensagem passa a mostrar o conteúdo agendado. Ao salvar ou cancelar a edição, o Oiê restaura o rascunho que você já tinha naquela conversa.
 
-Se o aplicativo ou a conexão estiver indisponível no horário marcado, o Oiê tenta enviar quando voltar a funcionar e a conversa estiver disponível. Em salas, isso exige que a conta esteja na sala. Fechar a janela do aplicativo de desktop o mantém em execução. Para encerrá-lo, use [o atalho de saída](../atalhos/index.md#aplicativo-de-desktop).
+Se o aplicativo ou a conexão estiver indisponível no horário marcado, o Oiê tenta enviar quando voltar a funcionar e a conversa estiver disponível. Em grupos, isso exige que a conta esteja no grupo. Fechar a janela do aplicativo de desktop o mantém em execução. Para encerrá-lo, use [o atalho de saída](../atalhos/index.md#aplicativo-de-desktop).
 
 ## Citações e texto original
 

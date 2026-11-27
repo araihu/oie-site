@@ -5,7 +5,7 @@ assets: local
 offline: true
 site:
   name: Oiê
-  description: Um aplicativo de código aberto para suas conversas e salas no XMPP.
+  description: Um aplicativo de código aberto para suas conversas e grupos no XMPP.
   repository_url: https://github.com/araihu/oie
   base_url: https://oie.araihu.com
   logo: content/brand/logo.svg

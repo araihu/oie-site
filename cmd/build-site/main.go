@@ -37,6 +37,9 @@ func build(ctx context.Context, output string) error {
 		switch {
 		case strings.HasPrefix(artifact.Path, "docs/") && strings.HasSuffix(artifact.Path, ".html"):
 			result.Artifacts[i].Content = prepareDocs(artifact.Content)
+			if artifact.Path == "docs/manual/index.html" {
+				result.Artifacts[i].Content = addManualHeadingAliases(result.Artifacts[i].Content)
+			}
 		case artifact.Path == "margo-assets/search-interactions.js":
 			script := searchLabels.Replace(string(artifact.Content))
 			result.Artifacts[i].Content = []byte(strings.Replace(script, searchResultOrder, rankedSearchResultOrder, 1))

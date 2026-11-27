@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bytes"
 	"regexp"
 	"strings"
 )
@@ -94,4 +95,19 @@ func prepareDocs(content []byte) []byte {
 
 	start := headings[0][0]
 	return []byte(page[:start] + toc.String() + page[start:])
+}
+
+// Keep links shared before the manual adopted “grupo” for group chats.
+func addManualHeadingAliases(page []byte) []byte {
+	for current, former := range map[string]string{
+		"grupos-convites-e-entrada-automtica": "salas-convites-e-entrada-automtica",
+		"descobrir-e-gerenciar-grupos":        "descobrir-e-gerenciar-salas",
+		"conferir-o-endereo-e-remover-grupos": "conferir-o-endereo-e-remover-salas",
+		"ver-o-estado-de-um-grupo":            "ver-o-estado-de-uma-sala",
+		"histrico-e-busca-em-grupos":          "histrico-e-busca-em-salas",
+	} {
+		heading := `id="` + current + `" data-toc-heading="">`
+		page = bytes.Replace(page, []byte(heading), []byte(heading+`<span id="`+former+`"></span>`), 1)
+	}
+	return page
 }

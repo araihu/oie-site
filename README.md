@@ -43,7 +43,7 @@ Oiê local em pt-BR.
 As instruções dos repositórios DNF, pacman e Flatpak seguem a publicação da [revisão 5a2339c](https://github.com/araihu/oie/tree/5a2339c87e8dc42078afcfc0be2efbade2c6c423).
 
 A página **Baixar** aponta para os binários e para o código-fonte correspondente
-da [v0.0.1-rc.55](https://github.com/araihu/oie/tree/v0.0.1-rc.55). O guia de instalação e a recuperação de entrada em salas no manual foram conferidos na [revisão b16a701 do Oiê](https://github.com/araihu/oie/tree/b16a7015f4d8991c5529e0db25665a930cbeb8ae). As seções sobre backup e uso sem conexão foram conferidas com a [revisão f722c73](https://github.com/araihu/oie/tree/f722c738d633f83754332c229f232a9582037912). Os trechos do manual sobre mensagens de voz, arquivos baixados e o contador de não lidas foram conferidos na rc.32.
+da [v0.0.1-rc.59](https://github.com/araihu/oie/tree/v0.0.1-rc.59). O guia de instalação e a recuperação de entrada em salas no manual foram conferidos na [revisão b16a701 do Oiê](https://github.com/araihu/oie/tree/b16a7015f4d8991c5529e0db25665a930cbeb8ae). As seções sobre backup e uso sem conexão foram conferidas com a [revisão f722c73](https://github.com/araihu/oie/tree/f722c738d633f83754332c229f232a9582037912). Os trechos do manual sobre mensagens de voz, arquivos baixados e o contador de não lidas foram conferidos na rc.32.
 
 A seção **Qualidade de áudio e vídeo** acompanha a rc.51. O fluxo foi conferido na [revisão b49c3c0 do Oiê](https://github.com/araihu/oie/tree/b49c3c01bc9253fa2f6899223a39568c6dd66ff6) e a captura usa dados fictícios em pt-BR.
 
@@ -51,10 +51,12 @@ O player de áudio da aba **Mídia** acompanha o [Oiê v0.0.1-rc.52](https://git
 
 O manual de configurações, detalhes da conversa, gerenciamento de salas e mídia foi conferido com a [revisão 051d0528 do Oiê](https://github.com/araihu/oie/tree/051d052882ce090f3320dc991ea86d08f23ad288), publicada na rc.55.
 
+A seção **Nova conversa** e os rótulos de grupos acompanham a [revisão 1d2512f do Oiê](https://github.com/araihu/oie/commit/1d2512fa9d1a3f0022dbf6ac170cd5ce07828f3e). As capturas usam conversas e contatos fictícios.
+
 A paginação da lista de conversas no manual foi conferida na [revisão 846788d9 do aplicativo](https://github.com/araihu/oie/commit/846788d9) e está disponível na rc.45.
 Os guias de autenticação hospedada e conexão do desktop acompanham a rc.28.
 O guia do CLI usa a API 0.42.0 da rc.50. O guia de Kubernetes usa o
-[chart 0.2.33](https://github.com/araihu/oie/tree/helm-v0.2.33/charts/oie),
+[chart 0.2.37](https://github.com/araihu/oie/tree/helm-v0.2.37/charts/oie),
 distribuído como OCI no GHCR.
 
 As seções de contatos, disponibilidade e leitura do manual foram conferidas com a
@@ -89,20 +91,20 @@ uma conexão hospedada no desktop foram conferidos no
 
 A instalação do `oiectl` por release independente foi conferida com a [release cli/v0.30.1](https://github.com/araihu/oie/releases/tag/cli/v0.30.1), gerada a partir do [contrato no commit f21196a](https://github.com/araihu/oie/tree/f21196a6d8fe2d1b75180470ccd26089db5d6bb9/api).
 
-A seção **Histórico e busca em salas** descreve o realce e a seleção de versões anteriores disponíveis desde a rc.13. [Revisão 699be01 do Oiê](https://github.com/araihu/oie/tree/699be01c6aacad2a03f1ddcd2bdb4eb195a64c69)
+A seção **Histórico e busca em grupos** descreve o realce e a seleção de versões anteriores disponíveis desde a rc.13. [Revisão 699be01 do Oiê](https://github.com/araihu/oie/tree/699be01c6aacad2a03f1ddcd2bdb4eb195a64c69)
 
 As capturas da página inicial, do manual e dos atalhos mostram a interface em pt-BR com dados fictícios em instâncias isoladas. A captura da página inicial e as sete capturas de recursos mais antigas foram refeitas na [revisão e87ea75](https://github.com/araihu/oie/tree/e87ea75b0dac62915c0b4e7fe8cb49d01ecc6692). As capturas da busca geral e da solicitação de mensagem são de `6c8e8c0`, que tem a mesma interface. As capturas dos anexos e da busca de fuso horário foram feitas na revisão da rc.9 (`d6ce9ae`). As imagens estão em WebP.
 
-Os fluxos de **Mídia e links**, **Encaminhar mensagens** e **Descobrir e gerenciar salas**, a busca de favoritas no CLI e o índice de busca padrão foram conferidos na [revisão 4809005 do aplicativo](https://github.com/araihu/oie/tree/48090057513b2eab83d526d44df1d7764ac16a0b), usada na rc.14. As capturas de encaminhamento e gerenciamento de salas vieram dos PRs #31 e #22.
+Os fluxos de **Mídia e links**, **Encaminhar mensagens** e **Descobrir e gerenciar grupos**, a busca de favoritas no CLI e o índice de busca padrão foram conferidos na [revisão 4809005 do aplicativo](https://github.com/araihu/oie/tree/48090057513b2eab83d526d44df1d7764ac16a0b), usada na rc.14. As capturas de encaminhamento e gerenciamento de salas vieram dos PRs #31 e #22.
 
 A seção Docker da página de arquitetura descreve a [CI da imagem em f9c6a01](https://github.com/araihu/oie/commit/f9c6a01625232e7132a358b27372759144588258).
 
 O fluxo de remoção de conta e o comando `oiectl accounts remove` foram conferidos com a [revisão da rc.22](https://github.com/araihu/oie/tree/ffa480cb81a5b79287191a2220d554c4180be3ac) e o contrato 0.34.0. A captura usa uma conta fictícia.
 
-O trecho **Conferir o endereço e remover salas** no manual e o comando
+O trecho **Conferir o endereço e remover grupos** no manual e o comando
 `oiectl conversations remove-room-from-chats` foram conferidos na revisão de
-desenvolvimento `b9a50667a861fd1eb26559e4aba3a0fdc9e6aecb` do Oiê, posterior
-à versão oferecida em **Baixar**. As capturas em pt-BR usam salas fictícias.
+desenvolvimento `b9a50667a861fd1eb26559e4aba3a0fdc9e6aecb` do Oiê, incluída
+na rc.32. As capturas em pt-BR usam grupos fictícios.
 
 A remoção de conversas diretas e o comando
 `oiectl conversations remove-direct-from-chats` foram conferidos na revisão de
