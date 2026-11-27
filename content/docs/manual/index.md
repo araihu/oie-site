@@ -238,7 +238,7 @@ Para abrir **Detalhes da conversa**, clique na foto ou nas iniciais no cabeçalh
 
 Em uma conversa direta ou em um grupo, abra **Mais opções → Pesquisar mensagens**. Nos grupos, uma busca por texto também pode consultar o arquivo do servidor, quando disponível. Ative **Incluir histórico de edições** para encontrar versões anteriores de mensagens editadas. Use os [atalhos de busca](../atalhos/index.md#busca-na-conversa) para percorrer os resultados.
 
-Na versão em desenvolvimento após a rc.59, abra **Filtros** para pesquisar por **Remetente**, **Data inicial** ou **Data final**. Digite parte do nome que aparece na mensagem. Você pode deixar o texto da busca em branco e preencher apenas um filtro. O intervalo inclui as duas datas e segue o fuso horário escolhido no Oiê.
+Na versão em desenvolvimento após a rc.59, abra **Filtros** para escolher a **Data inicial** ou a **Data final**. Em grupos, você também pode escolher um **Remetente** na lista de participantes e autores das mensagens carregadas. Você pode deixar o texto da busca em branco e preencher apenas um filtro. O intervalo inclui as duas datas e segue o fuso horário escolhido no Oiê.
 
 [![Filtros da busca na conversa com o nome Nina e as duas datas preenchidas.](imagens/filtros-busca-conversa.webp)](imagens/filtros-busca-conversa.webp)
 
@@ -521,7 +521,7 @@ o campo de pesquisa para voltar às conversas ou às mensagens do chat.
 
 [![Busca sem conexão por “endereço” com resultados nas conversas Casa e Viagem.](imagens/pesquisar-mensagens-sem-conexao.webp)](imagens/pesquisar-mensagens-sem-conexao.webp)
 
-Na versão em desenvolvimento após a rc.59, **Filtros** também permite restringir os resultados por remetente e data dentro de uma conversa salva.
+Na versão em desenvolvimento após a rc.59, use **Filtros** para buscar por data em uma conversa salva. Nos grupos, você também pode escolher um remetente entre os autores das mensagens salvas no dispositivo.
 
 A busca alcança o texto guardado neste navegador. Se a mensagem que você procura
 ficou fora da cópia salva, reconecte o Oiê para pesquisar o histórico completo
