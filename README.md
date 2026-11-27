@@ -25,6 +25,10 @@ Ao atualizar **Baixar**, confira também os comandos e requisitos do [guia de in
 
 ## Documentação do Oiê
 
+Os filtros de busca por remetente e data no manual e no guia do CLI foram
+conferidos na [revisão e72c714 do Oiê](https://github.com/araihu/oie/tree/e72c714061676f1a597dfb780c69b996e16b004a),
+com a API 0.46.0 em desenvolvimento após a rc.59.
+
 As seções **Ler conversas sem conexão** e **Pesquisar mensagens sem conexão**
 foram conferidas na [revisão 77af49c do Oiê](https://github.com/araihu/oie/tree/77af49ce87946f082f50571c505d51496e161a33),
 com busca disponível na rc.45. As capturas mostram buscas e mensagens de conversas fictícias

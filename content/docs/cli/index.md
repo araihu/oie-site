@@ -83,6 +83,14 @@ bin/oiectl messages search --q 'trilha' \
   --account-ids PESSOAL_UUID --account-ids TRABALHO_UUID --output json
 ```
 
+Com o motor e o CLI compilados para a API 0.46.0, use `--sender` para buscar por parte do nome do remetente em uma conversa. Preencha `--q ''` para usar só os filtros. O exemplo inclui o instante inicial e vai até o início do dia seguinte, com os horários em UTC. [Revisão com os filtros da busca](https://github.com/araihu/oie/tree/e72c714061676f1a597dfb780c69b996e16b004a)
+
+```sh
+bin/oiectl messages search --conversation-id CONVERSATION_UUID --q '' \
+  --sender Nina --sent-from 2026-11-07T00:00:00Z \
+  --sent-before 2026-11-08T00:00:00Z --output json
+```
+
 Para enviar, substitua `CONVERSATION_UUID` pelo ID retornado em `conversations list` e `REQUEST_UUID` por um UUIDv7 novo para essa mensagem.
 
 ```sh
