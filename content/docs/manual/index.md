@@ -360,7 +360,7 @@ Abra **Mais opções** na seta ao lado de **Enviar** e escolha **Imagem** ou **A
 
 [Abrir a captura do menu de envio em tamanho original](imagens/menu-de-anexos.webp)
 
-Você pode clicar no nome de um anexo pronto para baixar o original. No aplicativo de desktop, isso abre a janela do sistema para salvar o arquivo. Use **Remover anexo** para tirar um item do rascunho. Se o preparo falhar, use **Tentar novamente** ou remova o arquivo. Se usou o seletor do Flatpak, escolha o arquivo novamente. Quando todos estiverem prontos, envie a mensagem ou [agende o envio](#envio-agendado).
+No computador, clique no nome de um anexo pronto para baixar o original. No aplicativo de desktop, isso abre a janela do sistema para salvar o arquivo. No iPhone, consulte [Abrir anexos no iPhone](#abrir-anexos-no-iphone). Use **Remover anexo** para tirar um item do rascunho. Se o preparo falhar, use **Tentar novamente** ou remova o arquivo. Se usou o seletor do Flatpak, escolha o arquivo novamente. Quando todos estiverem prontos, envie a mensagem ou [agende o envio](#envio-agendado).
 
 ![Rascunho com uma imagem, dois arquivos de texto e a legenda no campo de mensagem. Cada anexo tem um botão de remoção.](imagens/rascunho-anexos.webp "Anexos no rascunho")
 
@@ -368,7 +368,11 @@ O Oiê aceita até 16 arquivos por mensagem. O limite por arquivo depende do ser
 
 ### Abrir anexos no iPhone
 
-Na versão de desenvolvimento posterior à rc.55, toque no nome do anexo para abri-lo dentro do Oiê. Toque em **Fechar** para voltar à conversa, inclusive enquanto o arquivo carrega. Para guardar uma cópia, toque em **Compartilhar arquivo** e escolha **Salvar em Arquivos**. Se o iPhone oferecer **Baixar**, use essa opção.
+Na versão de desenvolvimento, tocar no nome de um arquivo anexado à conversa, ao rascunho ou a uma mensagem agendada abre o anexo dentro do Oiê. Toque em **Fechar** para voltar à tela em que estava, inclusive enquanto o arquivo carrega.
+
+Se aparecer **Prévia indisponível**, você ainda pode guardar uma cópia. Toque em **Compartilhar arquivo** e escolha **Salvar em Arquivos**, ou toque em **Baixar** quando essa opção aparecer.
+
+Essa mudança ainda não está no instalador oferecido em **Baixar**.
 
 ![Imagem aberta no iPhone com Fechar no canto superior direito e Compartilhar arquivo na parte de baixo.](imagens/anexo-iphone.webp)
 

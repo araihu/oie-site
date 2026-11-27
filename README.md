@@ -25,7 +25,7 @@ Ao atualizar **Baixar**, confira também os comandos e requisitos do [guia de in
 
 ## Documentação do Oiê
 
-A seção sobre abrir anexos no iPhone foi conferida no simulador com a [revisão 15d7a8f do Oiê](https://github.com/araihu/oie/tree/15d7a8f8ec5ce07998bed4b305ac3bfe2f169b8c), posterior à rc.55.
+A seção sobre abrir anexos no iPhone foi conferida no simulador com a [revisão 15d7a8f do Oiê](https://github.com/araihu/oie/tree/15d7a8f8ec5ce07998bed4b305ac3bfe2f169b8c). Esse fluxo está na versão de desenvolvimento e ainda não chegou ao instalador oferecido em **Baixar**.
 
 As seções **Ler conversas sem conexão** e **Pesquisar mensagens sem conexão**
 foram conferidas na [revisão 77af49c do Oiê](https://github.com/araihu/oie/tree/77af49ce87946f082f50571c505d51496e161a33),
