@@ -236,7 +236,11 @@ problema.
 
 Para abrir **Detalhes da conversa**, clique na foto ou nas iniciais no cabeçalho da conversa, ou abra **Mais opções → Detalhes da conversa**. Use **Baixar histórico antigo automaticamente** para escolher como o Oiê recupera o histórico daquele grupo. Com a opção ligada, ele baixa mensagens antigas aos poucos. Com a opção desligada, pode buscá-las quando você usa **Mensagens anteriores** no topo da conversa ou faz uma busca, conforme o servidor permitir.
 
-Dentro de um grupo, abra **Mais opções** e selecione **Pesquisar mensagens**. Essa busca também pode consultar o arquivo do servidor, quando ele oferece busca por texto. Ative **Incluir histórico de edições** para encontrar versões anteriores de mensagens editadas. Use os [atalhos de busca](../atalhos/index.md#busca-na-conversa) para percorrer os resultados.
+Em uma conversa direta ou em um grupo, abra **Mais opções → Pesquisar mensagens**. Nos grupos, uma busca por texto também pode consultar o arquivo do servidor, quando disponível. Ative **Incluir histórico de edições** para encontrar versões anteriores de mensagens editadas. Use os [atalhos de busca](../atalhos/index.md#busca-na-conversa) para percorrer os resultados.
+
+Na versão em desenvolvimento após a rc.59, abra **Filtros** para pesquisar por **Remetente**, **Data inicial** ou **Data final**. Digite parte do nome que aparece na mensagem. Você pode deixar o texto da busca em branco e preencher apenas um filtro. O intervalo inclui as duas datas e segue o fuso horário escolhido no Oiê.
+
+[![Filtros da busca na conversa com o nome Nina e as duas datas preenchidas.](imagens/filtros-busca-conversa.webp)](imagens/filtros-busca-conversa.webp)
 
 Buscar por `arqiuvo` nas mensagens guardadas pode realçar **arquivo** no balão. Se o resultado vier de uma versão anterior ou dos detalhes de um link, o realce aparece no trecho do resultado. Ao recarregar a página com a busca aberta, o Oiê volta à versão anterior selecionada.
 
@@ -516,6 +520,8 @@ ir à mensagem. Use **Voltar** no navegador para rever os resultados ou limpe
 o campo de pesquisa para voltar às conversas ou às mensagens do chat.
 
 [![Busca sem conexão por “endereço” com resultados nas conversas Casa e Viagem.](imagens/pesquisar-mensagens-sem-conexao.webp)](imagens/pesquisar-mensagens-sem-conexao.webp)
+
+Na versão em desenvolvimento após a rc.59, **Filtros** também permite restringir os resultados por remetente e data dentro de uma conversa salva.
 
 A busca alcança o texto guardado neste navegador. Se a mensagem que você procura
 ficou fora da cópia salva, reconecte o Oiê para pesquisar o histórico completo
